@@ -263,14 +263,18 @@ function stpSize(p, maxCap) {
   if (cap == null || isNaN(cap) || cap <= 0) return 16;
   return Math.round(15 + 25 * Math.sqrt(cap / maxCap));
 }
-function factoryIcon(p, maxCap) {
+function stpIcon(p, maxCap) {
   const color = stpColor(p);
   const s = stpSize(p, maxCap);
+  // a clarifier basin seen from above — a round tank with a scraper arm,
+  // which is what a treatment plant actually looks like (and what it looks
+  // like on the satellite view). Not a factory: a plant cleans water, it
+  // does not manufacture anything.
   const svg = '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24">' +
-    '<path d="M3 21V10.5l3.4 2.1v-2.1l3.4 2.1v-2.1l3.4 2.1v-2.1l3.4 2.1v-2.1L21 12.4V21H3z" fill="' + color + '" fill-opacity="0.95" stroke="#fff" stroke-width="1.2"/>' +
-    '<rect x="4.4" y="4.5" width="2.3" height="6" fill="' + color + '" stroke="#fff" stroke-width="1"/>' +
-    '<rect x="6" y="16.4" width="2" height="2.3" fill="#fff" opacity="0.9"/><rect x="11" y="16.4" width="2" height="2.3" fill="#fff" opacity="0.9"/>' +
-    '<rect x="16" y="16.4" width="2" height="2.3" fill="#fff" opacity="0.9"/></svg>';
+    '<circle cx="12" cy="12" r="9.4" fill="' + color + '" fill-opacity="0.95" stroke="#fff" stroke-width="1.4"/>' +
+    '<circle cx="12" cy="12" r="6.1" fill="#fff" fill-opacity="0.30"/>' +
+    '<line x1="12" y1="12" x2="12" y2="3.4" stroke="#fff" stroke-width="1.7"/>' +
+    '<circle cx="12" cy="12" r="1.7" fill="#fff"/></svg>';
   return L.divIcon({ html: svg, className: 'mk-icon', iconSize: [s, s], iconAnchor: [s / 2, s / 2] });
 }
 function wqIcon(p) {
@@ -430,7 +434,7 @@ function buildLayers() {
           const a = i * 2.399, r = 0.00018 * (1 + Math.floor(i / 2) * 0.6);
           lat += Math.sin(a) * r; lng += Math.cos(a) * r;
         }
-        const m = L.marker([lat, lng], { icon: factoryIcon(f.properties, R.maxStpCap) });
+        const m = L.marker([lat, lng], { icon: stpIcon(f.properties, R.maxStpCap) });
         m.on('click', () => showStp(f.properties));
         m.bindTooltip('<b>' + esc(f.properties.plant_name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.capacity_mld, 0) + ' MLD');
         sc.addLayer(m);
@@ -563,7 +567,7 @@ function renderLegend() {
   $('#legendPanel').innerHTML =
     '<h4>How to read the map</h4>' +
     '<div class="lg-row"><span class="swatch"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2.2C12 2.2 5.4 10.1 5.4 14.7a6.6 6.6 0 0 0 13.2 0C18.6 10.1 12 2.2 12 2.2Z" fill="#dc2626"/></svg></span><span><b>Drains</b> — droplet. Size = BOD load added. Colour = how bad: amber → red. Faded = load estimated, not measured. Green only for tapped (intercepted) drains. A drain is never green.</span></div>' +
-    '<div class="lg-row"><span class="swatch"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M3 21V10.5l3.4 2.1v-2.1l3.4 2.1v-2.1l3.4 2.1v-2.1l3.4 2.1v-2.1L21 12.4V21H3z" fill="#6d28d9"/><rect x="4.4" y="4.5" width="2.3" height="6" fill="#6d28d9"/></svg></span><span><b>Treatment plants</b> — factory. Size = capacity in MLD. Green meets NGT norms · red fails · grey not assessed.</span></div>' +
+    '<div class="lg-row"><span class="swatch"><svg width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="#6d28d9"/><circle cx="12" cy="12" r="6.1" fill="#fff" fill-opacity="0.3"/><line x1="12" y1="12" x2="12" y2="3.4" stroke="#fff" stroke-width="1.7"/><circle cx="12" cy="12" r="1.7" fill="#fff"/></svg></span><span><b>Treatment plants</b> — round tank. Size = capacity in MLD. Green meets NGT norms · red fails · grey not assessed.</span></div>' +
     '<div class="lg-row"><span class="swatch">●</span><span><b>Water quality</b> — colour = latest BOD vs the 3 mg/l bathing limit.</span></div>' +
     '<div class="lg-row"><span class="swatch">●</span><span><b>Towns</b> — size = population (2011). Tap for people &amp; MLA.</span></div>' +
     '<div class="lg-row"><span class="swatch">◆</span><span><b>Industries</b> — diamond. Position approximate (town/locality level).</span></div>' +
