@@ -16,16 +16,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.864706,
+     19.9359437
     ]
    }
   },
@@ -44,16 +46,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.864706,
+     19.9359437
     ]
    }
   },
@@ -72,16 +76,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8581,
+     19.9854
     ]
    }
   },
@@ -100,16 +106,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8581,
+     19.9854
     ]
    }
   },
@@ -128,16 +136,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8581,
+     19.9854
     ]
    }
   },
@@ -156,16 +166,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8180127,
+     19.9984256
     ]
    }
   },
@@ -184,16 +196,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8180127,
+     19.9984256
     ]
    }
   },
@@ -212,16 +226,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8287102,
+     19.984996
     ]
    }
   },
@@ -240,16 +256,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.8287102,
+     19.984996
     ]
    }
   },
@@ -268,16 +286,18 @@
     "moefcc_compliant": "True",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "MEDIUM"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     73.7902364,
-     20.0112475
+     73.7195693,
+     20.0325836
     ]
    }
   },
@@ -688,16 +708,18 @@
     "moefcc_compliant": "False",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     79.0820556,
-     21.1498134
+     79.1549182,
+     21.1378729
     ]
    }
   },
@@ -716,16 +738,18 @@
     "moefcc_compliant": "False",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "HIGH"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     79.0820556,
-     21.1498134
+     79.1590066,
+     21.1378452
     ]
    }
   },
@@ -800,16 +824,18 @@
     "moefcc_compliant": "False",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "MEDIUM"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     79.0820556,
-     21.1498134
+     79.0199404,
+     21.1520625
     ]
    }
   },
@@ -884,16 +910,18 @@
     "moefcc_compliant": "False",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "MEDIUM"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     79.0820556,
-     21.1498134
+     79.0748666,
+     21.087217
     ]
    }
   },
@@ -912,16 +940,18 @@
     "moefcc_compliant": "False",
     "inspection_date": "2026-03",
     "data_status": "measured",
-    "coord_accuracy": "town-centroid",
+    "coord_accuracy": "satellite-verified",
     "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
     "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
-    "as_of": "2026-03"
+    "as_of": "2026-03",
+    "coord_source": "Google Maps satellite + OpenStreetMap, verified 2026-11-27 by vikas.singh.76",
+    "coord_confidence": "MEDIUM"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     79.0820556,
-     21.1498134
+     79.0715,
+     21.0882
     ]
    }
   },

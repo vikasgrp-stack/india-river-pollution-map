@@ -45,8 +45,8 @@ Rivers live (5), all added 2026-11-27 in 14 commits, last commit
 - Ganga — 609 drains, 145 STPs (+6 commissioned 2024-2026),
   115 water-quality stations, 493 towns. STP locations: 33 of 151
   plants now satellite-verified (Prayagraj, Varanasi, Kanpur, Patna,
-  Haridwar) on branch `vikas.singh.76/ganga-stp-locations`, PR open,
-  not yet merged (2026-11-27, vikas.singh.76).
+  Haridwar), merged 2026-11-27 in PR #1 (merge commit `739023c1`,
+  vikas.singh.76).
 - Yamuna — 50 drains, 115 STPs, 35 stations, 45 towns
 - Sabarmati — added 2026-11-27; counts not in README, verify in
   `data/sabarmati/analysis.json`
@@ -63,7 +63,8 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   33 plants located on 24 sites (Prayagraj 8, Varanasi 6, Kanpur 6,
   Patna 8, Haridwar 5), 2 unconfirmed (Phaphamau 14 MLD, Jhunsi
   16 MLD — left at town-centroid, no coordinate invented). Branch
-  `vikas.singh.76/ganga-stp-locations`, PR open, not merged.
+  `vikas.singh.76/ganga-stp-locations`, PR #1 merged 2026-11-27
+  (merge commit `739023c1`).
   Files: `data/ganga/stp_accountability.geojson` +
   `data/ganga/stp_accountability.csv`, `coord_accuracy` set to
   `satellite-verified` with `coord_source` + `coord_confidence`.
@@ -87,11 +88,19 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   or a town offset. — unclaimed
 - [ ] Industries (Ganga): 25 Point, `coord_status` = approximate,
   plotted at town / in an area. Find exact sites where published. — unclaimed
-- [ ] Nashik / Godavari STPs: 15 plants on 5 sites already
-  satellite-verified 2026-11-27 by vikas.singh.76 (Tapovan,
-  Chehedi, Panchak, Agar Takali, Gangapur — see
-  `STP-location-corrections.md` in the working notes, not in the
-  repo yet). Apply on a branch + PR after the Ganga PR merges. — unclaimed
+- [x] Nashik / Godavari STPs: satellite-verified 2026-11-27 by
+  vikas.singh.76 and applied in this PR with the Nagpur plants
+  (branch `vikas.singh.76/godavari-stp-locations`, PR open, not
+  merged). Nashik: 10 of 15 plants moved, on 5 sites (Tapovan,
+  Chehedi, Panchak, Agar Takali, Gangapur). NOT moved: Pimpalgaon
+  Baswant 32 MLD (never verified, no site found) and the 4 Kumbh
+  2027 plants (Tapovan 180, Agartakli 97, Chehedi 64, Panchak 75 —
+  under construction, do not move to operating-plant footprints).
+  Nagpur: 5 of 12 moved (Bhandewadi 200 + 130, Somalwada-1/2,
+  Kachimet); Sonegaon 0.3 MLD held (LOW confidence) and 6 plants
+  unconfirmed (Mankapur, Mokshadham, Hazari Pahad, Ambazari, Dabha,
+  Ittabhatti — left at town-centroid). Somalwada -1/-2 split is NOT
+  verified from maps and could be swapped (both MEDIUM).
 
 ### P1 — data gaps
 - [ ] Godavari: no CPCB drain inventory. 95 of 97 drains unmeasured.
@@ -133,9 +142,10 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Ganga STP locations (vikas.singh.76, 2026-11-27): corrections done
-  and in PR from branch `vikas.singh.76/ganga-stp-locations` — do not
-  start a second STP-location edit until that PR merges.
+- Godavari STP locations (vikas.singh.76, 2026-11-27): Nashik +
+  Nagpur corrections done and in PR from branch
+  `vikas.singh.76/godavari-stp-locations` — do not start a second
+  STP-location edit until that PR merges. Ganga PR #1 is merged.
 
 ## Open questions for the user
 
@@ -166,3 +176,26 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   held for a separate PR after this one. Next step: water-quality
   stations, then drains, then industries (user expanded scope to
   all locations).
+- 2026-11-27 — vikas.singh.76: Fixed Godavari STP locations
+  (Nashik + Nagpur), after Ganga PR #1 merged (merge commit
+  `739023c1`). 15 plants moved to 10 sites in
+  `data/godavari/stps.geojson` + `stps.csv`, in lockstep,
+  `coord_accuracy` = `satellite-verified`, with `coord_source` and
+  `coord_confidence` (HIGH/MEDIUM). Nashik 10/15: Tapovan 78+52,
+  Chehedi 22+21, Panchak 7.5+21+32, Agar Takali 70+40 (HIGH),
+  Gangapur 18 (MEDIUM). Nagpur 5/12: Bhandewadi 200 + 130 (HIGH),
+  Somalwada-1 east unit + Somalwada-2 west unit (MEDIUM — the -1/-2
+  split is NOT verified from maps and could be swapped), Kachimet 1
+  (MEDIUM). NOT moved: Nashik Pimpalgaon Baswant 32 MLD (never
+  verified) and the 4 Kumbh 2027 plants (do not move to
+  operating-plant footprints); Nagpur Sonegaon 0.3 MLD (LOW
+  confidence, pin in housing, no visible footprint — needs ground
+  check) and 6 unconfirmed (Mankapur, Mokshadham, Hazari Pahad,
+  Ambazari, Dabha, Ittabhatti). Hingna footprint 21.1205224,
+  78.9744285 not assigned to any plant; Gorewada Rd water-treatment
+  plant and generic Nagpur STP pin 21.1392632, 79.152384 not used.
+  Note: the working notes said "Nashik 15/15" and "21 plants" in
+  total, but only 10 Nashik + 5 Nagpur plants match a verified site,
+  so 15 moved — the rest stay at town-centroid, no coordinate
+  invented. Distinct Godavari STP coords 63 -> 73. Branch
+  `vikas.singh.76/godavari-stp-locations`, PR open, not merged.
