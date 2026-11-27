@@ -1,0 +1,1358 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "population_2011": 8443675,
+    "population_basis": "Census of India 2011 (Bangalore city, BBMP area)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"IT and services capital; the Vrishabhavathi valley carries the city’s sewage and industrial effluent to the Arkavathi.\"}",
+    "mla_name": "L.A. Ravi Subramanya",
+    "mla_party": "BJP",
+    "constituency": "Basavanagudi",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Bengaluru' article coordinates; 78.90 km from the river centreline",
+    "notes": "Tier 2 (78.9 km from the river; included via its STP/drain row). Included via its tributary drains: the Vrishabhavathi rises in Basavanagudi, Bengaluru, and joins the Arkavathi near Kanakapura; Bengaluru has 8 V-Valley STPs (390 MLD) and the valley-outflow drain (215 MLD estimated) in the dataset. Basavanagudi is the assembly seat where the Vrishabhavathi rises.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mysuru",
+    "state": "Karnataka",
+    "population_2011": 920550,
+    "population_basis": "",
+    "area_km2": 286.0,
+    "population_density_per_sqkm": 3219,
+    "literacy_pct": 86.84,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Heritage and tourism city; sandalwood, silk and services; the city’s sewage goes to the Rayanakere and Vidyaranyapuram plants.\"}",
+    "mla_name": "T.S. Srivathsa",
+    "mla_party": "BJP",
+    "constituency": "Krishnaraja",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Mysore' article coordinates; 12.55 km from the river centreline",
+    "notes": "Tier 2 (12.6 km from the river; included via its STP/drain row). 12.6 km from the river; the 4 Mysuru STPs (165.5 MLD) are in the dataset. The city has 3 assembly seats; Krishnaraja is the city-centre seat used here.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6530556,
+     12.3086111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Srirangapatna",
+    "state": "Karnataka",
+    "population_2011": 25061,
+    "population_basis": "",
+    "area_km2": 11.62,
+    "population_density_per_sqkm": 2157,
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Historic temple town; tourism and agriculture on the Cauvery.\"}",
+    "mla_name": "A.B. Ramesha Bandisiddegowda",
+    "mla_party": "INC",
+    "constituency": "Shrirangapattana",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Srirangapatna' article coordinates; 0.71 km from the river centreline",
+    "notes": "Tier 1. The Karnataka MPR Jan 2025 gives the town population as 25,069; the Wikipedia infobox figure 25,061 is used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.704,
+     12.414
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bannur",
+    "state": "Karnataka",
+    "population_2011": 21896,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 70.75,
+    "sex_ratio": 1018,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture.\"}",
+    "mla_name": "Dr. H.C. Mahadevappa",
+    "mla_party": "INC",
+    "constituency": "T. Narasipur",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Bannur' article coordinates; 1.69 km from the river centreline",
+    "notes": "Tier 1. The Karnataka MPR Jan 2025 gives the town population as 24,430; the Wikipedia infobox figure 21,896 is used. Bannur town is in the T. Narasipur (SC) constituency.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.907,
+     12.2548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "T Narasipura",
+    "state": "Karnataka",
+    "population_2011": 31498,
+    "population_basis": "Census of India 2011 (Wikipedia infobox; Karnataka MPR Jan 2025 gives the same figure)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Temple town at the Kabini-Cauvery confluence; agriculture.\"}",
+    "mla_name": "Dr. H.C. Mahadevappa",
+    "mla_party": "INC",
+    "constituency": "T. Narasipur",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Thirumakudalu Narasipura' article coordinates; 1.02 km from the river centreline",
+    "notes": "Tier 1. Town at the Kabini-Cauvery confluence; the KR Nagar STPs (5.39 MLD) are plotted at this centroid (nearest named town in the dataset).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kollegala",
+    "state": "Karnataka",
+    "population_2011": 57149,
+    "population_basis": "",
+    "area_km2": 27.47,
+    "population_density_per_sqkm": 2080,
+    "literacy_pct": 69.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; silk, agriculture and forest produce.\"}",
+    "mla_name": "A.R. Krishnamurthy",
+    "mla_party": "INC",
+    "constituency": "Kollegal",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Kollegal, Chamarajanagar district, Karnataka; 3.65 km from the river centreline",
+    "notes": "Tier 1. Kollegal is the MPR spelling of the constituency; the town is Kollegala.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1071726,
+     12.1560966
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Malavalli",
+    "state": "Karnataka",
+    "population_2011": 37601,
+    "population_basis": "",
+    "area_km2": 10.36,
+    "population_density_per_sqkm": 3629,
+    "literacy_pct": 64.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture (sugarcane, paddy).\"}",
+    "mla_name": "P.M. Narendraswamy",
+    "mla_party": "INC",
+    "constituency": "Malavalli",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Malavalli, Mandya district, Karnataka; 14.47 km from the river centreline",
+    "notes": "Tier 2 (14.5 km from the river; included via its STP/drain row). 14.5 km from the river; the Malavalli STP (5.65 MLD) is in the dataset. On the Shimsha, a Cauvery tributary.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0589464,
+     12.3864073
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kanakapura",
+    "state": "Karnataka",
+    "population_2011": 54014,
+    "population_basis": "",
+    "area_km2": 7.8,
+    "population_density_per_sqkm": 6925,
+    "literacy_pct": 76.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; silk and agriculture; Arkavathi valley.\"}",
+    "mla_name": "D.K. Shivakumar",
+    "mla_party": "INC",
+    "constituency": "Kanakapura",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Kanakapura' article coordinates; 28.72 km from the river centreline",
+    "notes": "Tier 2 (28.7 km from the river; included via its STP/drain row). 28.7 km from the main stem; on the Arkavathi, at the Vrishabhavathi confluence. The Kanakapura STP (6.29 MLD) and the 5-drain aggregate are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.417,
+     12.55
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ramanagara",
+    "state": "Karnataka",
+    "population_2011": 95167,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 63.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Silk and granite town; Arkavathi valley.\"}",
+    "mla_name": "H.A. Iqbal Hussain",
+    "mla_party": "INC",
+    "constituency": "Ramanagaram",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Ramanagara' article coordinates; 45.25 km from the river centreline",
+    "notes": "Tier 2 (45.3 km from the river; included via its STP/drain row). 45.3 km from the main stem; on the Arkavathi. The Ramanagara STP (7.56 MLD) and the 11-drain aggregate are in the dataset. MyNeta spells the constituency Ramanagaram.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2790994,
+     12.7208575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Maddur",
+    "state": "Karnataka",
+    "population_2011": 28754,
+    "population_basis": "Census of India 2011 (article Demographics; Wikipedia infobox as_of 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture, famous for Maddur vada.\"}",
+    "mla_name": "K.M. Udaya",
+    "mla_party": "INC",
+    "constituency": "Maddur",
+    "mla_election_year": 2023,
+    "mla_source": "Wikipedia, Maddur Assembly constituency (ECI 2023 results); absent from the downloaded MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Maddur, Mandya' article coordinates; 33.10 km from the river centreline",
+    "notes": "Tier 2 (33.1 km from the river; included via its STP/drain row). 33.1 km from the main stem; on the Shimsha. The 2 Maddur STPs (6.5 MLD) are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.05,
+     12.5849
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mandya",
+    "state": "Karnataka",
+    "population_2011": 137735,
+    "population_basis": "",
+    "area_km2": 17.03,
+    "population_density_per_sqkm": 8088,
+    "literacy_pct": 85.32,
+    "sex_ratio": 1000,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Sugarcane heartland; agriculture and sugar mills.\"}",
+    "mla_name": "Ravikumar Gowda (Ganiga)",
+    "mla_party": "INC",
+    "constituency": "Mandya",
+    "mla_election_year": 2023,
+    "mla_source": "Wikipedia, Mandya Assembly constituency (ECI 2023 results); absent from the downloaded MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Mandya' article coordinates; 18.58 km from the river centreline",
+    "notes": "Tier 2 (18.6 km from the river; included via its STP/drain row). 18.6 km from the river; the 2 Mandya STPs (18.52 MLD) are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9,
+     12.52
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nanjangud",
+    "state": "Karnataka",
+    "population_2011": 61961,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Temple town on the Kabini; agriculture and industry.\"}",
+    "mla_name": "Darshan Dhruvanarayana",
+    "mla_party": "INC",
+    "constituency": "Nanjangud",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Nanjangud' article coordinates; 27.00 km from the river centreline",
+    "notes": "Tier 2 (27.0 km from the river; included via its STP/drain row). 27.0 km from the main stem; on the Kabini. The 2 Nanjangud STPs (8.3 MLD) are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.68,
+     12.12
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Hunsur",
+    "state": "Karnataka",
+    "population_2011": 50865,
+    "population_basis": "",
+    "area_km2": 11.76,
+    "population_density_per_sqkm": 4325,
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; tobacco, coffee trading and agriculture.\"}",
+    "mla_name": "G.D. Harish Gowda",
+    "mla_party": "JD(S)",
+    "constituency": "Hunsur",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Hunsur' article coordinates; 21.28 km from the river centreline",
+    "notes": "Tier 2 (21.3 km from the river; included via its STP/drain row). 21.3 km from the main stem; on the Lakshmantirtha. The Hunsur STP (8 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2802055,
+     12.3105671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kushalnagar",
+    "state": "Karnataka",
+    "population_2011": 23200,
+    "population_basis": "Census of India 2011 (article Demographics; Wikipedia infobox 29,268 is a 2022 estimate)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 89.53,
+    "sex_ratio": 980,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town in Kodagu; coffee, spices and tourism.\"}",
+    "mla_name": "Dr. Mantar Gowda",
+    "mla_party": "INC",
+    "constituency": "Madikeri",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Kushalanagar' article coordinates; 0.64 km from the river centreline",
+    "notes": "Tier 1. Town on the upper Cauvery (Kodagu). The under-construction Kushalnagar STP (6.5 MLD) is in the dataset; the Madikeri STP (4.5 MLD, under construction) is plotted at this centroid.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.960332,
+     12.457434
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Hassan",
+    "state": "Karnataka",
+    "population_2011": 177484,
+    "population_basis": "Census of India 2011 urban population (article Demographics; pre-expansion CMC 133,436; infobox 300,000 is a 2025 estimate)",
+    "area_km2": 86.01,
+    "population_density_per_sqkm": 2064,
+    "literacy_pct": 80.8,
+    "sex_ratio": 1020,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; coffee trading and agriculture (Hemavathy basin).\"}",
+    "mla_name": "H.P. Swaroop",
+    "mla_party": "JD(S)",
+    "constituency": "Hassan",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Hassan, Karnataka' article coordinates; 42.53 km from the river centreline",
+    "notes": "Tier 2 (42.5 km from the river; included via its STP/drain row). 42.5 km from the main stem; on the Hemavathy (via the Yagachi). The Hassan STP (10 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.100339,
+     13.003512
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Holenarasipura",
+    "state": "Karnataka",
+    "population_2011": 29938,
+    "population_basis": "",
+    "area_km2": 7.38,
+    "population_density_per_sqkm": 4057,
+    "literacy_pct": 73.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture (Hemavathy basin).\"}",
+    "mla_name": "H.D. Revanna",
+    "mla_party": "JD(S)",
+    "constituency": "Holenarasipur",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Holenarasipura' article coordinates; 23.46 km from the river centreline",
+    "notes": "Tier 2 (23.5 km from the river; included via its STP/drain row). 23.5 km from the main stem; on the Hemavathy. The Holenarasipura STP (3 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.243,
+     12.783
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Belur",
+    "state": "Karnataka",
+    "population_2011": 22484,
+    "population_basis": "",
+    "area_km2": 6.3,
+    "population_density_per_sqkm": 3569,
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Temple town (Hoysala); tourism and agriculture (Yagachi basin).\"}",
+    "mla_name": "H.K. Suresh",
+    "mla_party": "BJP",
+    "constituency": "Belur",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Belur, Hassan district, Karnataka; 63.62 km from the river centreline",
+    "notes": "Tier 2 (63.6 km from the river; included via its STP/drain row). 63.6 km from the main stem; on the Yagachi (Hemavathy system). The 2 Belur STPs (5.3 MLD) are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8634851,
+     13.1645671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Krishnarajanagara",
+    "state": "Karnataka",
+    "population_2011": 35805,
+    "population_basis": "",
+    "area_km2": 8.6,
+    "population_density_per_sqkm": 4163,
+    "literacy_pct": 78.2,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture on the Lakshmantirtha.\"}",
+    "mla_name": "D. Ravishankar",
+    "mla_party": "INC",
+    "constituency": "Krishnarajanagara",
+    "mla_election_year": 2023,
+    "mla_source": "MyNeta (ADR) Karnataka 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Krishnarajanagara' article coordinates; 3.66 km from the river centreline",
+    "notes": "Tier 1. Town on the Lakshmantirtha near its Cauvery confluence; no STP or drain row — included as a Tier 1 corridor town.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.3805556,
+     12.4372222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Periyapatna",
+    "state": "Karnataka",
+    "population_2011": 16685,
+    "population_basis": "",
+    "area_km2": 12.5,
+    "population_density_per_sqkm": 1335,
+    "literacy_pct": 80.8,
+    "sex_ratio": 957,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture (Lakshmantirtha basin).\"}",
+    "mla_name": "K. Venkatesh",
+    "mla_party": "INC",
+    "constituency": "Periyapatna",
+    "mla_election_year": 2023,
+    "mla_source": "Wikipedia, Periyapatna Assembly constituency (ECI 2023 results); IndiaVotes; MyNeta candidate affidavit (Karnataka 2023)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Periyapatna' article coordinates; 17.17 km from the river centreline",
+    "notes": "Tier 2 (17.2 km from the river; included via its STP/drain row). 17.2 km from the main stem; on the Lakshmantirtha. The Periyapatna STP (4.2 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.07918,
+     12.33649
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mettur",
+    "state": "Tamil Nadu",
+    "population_2011": 52813,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 76.82,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Industrial town (Mettur Dam, chemicals, aluminium); Cauvery water supply.\"}",
+    "mla_name": "G. Venkatachalam",
+    "mla_party": "AIADMK",
+    "constituency": "Mettur",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Mettur' article coordinates; 0.89 km from the river centreline",
+    "notes": "Tier 1. Mettur Dam town; the 3 Mettur STPs (8.19 MLD) are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.8,
+     11.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhavani",
+    "state": "Tamil Nadu",
+    "population_2011": 39225,
+    "population_basis": "",
+    "area_km2": 2.17,
+    "population_density_per_sqkm": 18076,
+    "literacy_pct": 77.12,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Textile town at the Bhavani-Cauvery confluence; agriculture.\"}",
+    "mla_name": "K.C. Karuppannan",
+    "mla_party": "AIADMK",
+    "constituency": "Bhavani",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Bhavani, Erode district, Tamil Nadu; 38.79 km from the river centreline",
+    "notes": "Tier 2 (38.8 km from the river; included via its STP/drain row). 38.8 km from the main-stem centreline; at the Bhavani-Cauvery confluence (the town sits on the Bhavani river). The 6-drain aggregate (3.50 MLD, upper bound for the Cauvery) is in the dataset; no STP row.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3312149,
+     11.4699779
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kumarapalayam",
+    "state": "Tamil Nadu",
+    "population_2011": 71594,
+    "population_basis": "",
+    "area_km2": 15.0,
+    "population_density_per_sqkm": 4773,
+    "literacy_pct": 72.14,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Textile and powerloom town; dyeing units.\"}",
+    "mla_name": "C. Vijayalakshmi",
+    "mla_party": "TVK",
+    "constituency": "Kumarapalayam",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Komarapalayam' article coordinates; 3.72 km from the river centreline",
+    "notes": "Tier 1. Also spelled Komarapalayam in the TN MPR Feb 2021. The 5-drain aggregate (5.60 MLD, no STP) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7232,
+     11.4363
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Pallipalayam",
+    "state": "Tamil Nadu",
+    "population_2011": 40140,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 66.47,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Textile and powerloom town; dyeing units.\"}",
+    "mla_name": "K.G. Arunraj",
+    "mla_party": "TVK",
+    "constituency": "Tiruchengode",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Pallipalayam, Namakkal district, Tamil Nadu; 0.66 km from the river centreline",
+    "notes": "Tier 1. Pallipalayam town is in the Tiruchengode constituency. The 7-drain aggregate (4.34 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7482633,
+     11.3652431
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Erode",
+    "state": "Tamil Nadu",
+    "population_2011": 521776,
+    "population_basis": "Census of India 2011 urban agglomeration (article Demographics; Wikipedia infobox 157,101 is the pre-expansion municipality)",
+    "area_km2": 109.52,
+    "population_density_per_sqkm": 4764,
+    "literacy_pct": 85.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Textile and turmeric trading city; dyeing and bleaching units on the Cauvery.\"}",
+    "mla_name": "M. Vijay Balaji",
+    "mla_party": "TVK",
+    "constituency": "Erode (East)",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list; cross-checked against dataofindia.com and IndiaVotes",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Erode' article coordinates; 3.54 km from the river centreline",
+    "notes": "Tier 1. The city has 2 assembly seats; Erode East is the city-centre seat used here. The Erode STP (50.55 MLD) and the untreated-outfalls drain (27.75 MLD, pre-UGSS 2022) are in the dataset.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7171111,
+     11.3408889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kodumudi",
+    "state": "Tamil Nadu",
+    "population_2011": 13225,
+    "population_basis": "Census of India 2011 (census2011.co.in; Wikipedia still shows the 2001 figure 12,669)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 79.62,
+    "sex_ratio": 1026,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Temple town (Magudeswarar); agriculture.\"}",
+    "mla_name": "D. Shanmugan",
+    "mla_party": "TVK",
+    "constituency": "Modakkurichi",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Kodumudi' article coordinates; 0.39 km from the river centreline",
+    "notes": "Tier 1. Kodumudi town is in the Modakkurichi constituency. The 3-drain aggregate is in the dataset; no STP row.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.8867,
+     11.0788
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Karur",
+    "state": "Tamil Nadu",
+    "population_2011": 70980,
+    "population_basis": "Census of India 2011, pre-expansion municipal area (article Demographics; infobox 394,719 is a 2023 post-expansion estimate)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 81.7,
+    "sex_ratio": 1032,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Textile, bus-body building and home-textile town; Amaravathy confluence.\"}",
+    "mla_name": "M.R. Vijayabhaskar",
+    "mla_party": "AIADMK",
+    "constituency": "Karur",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Karur' article coordinates; 11.13 km from the river centreline",
+    "notes": "Tier 2 (11.1 km from the river; included via its STP/drain row). 11.1 km from the centreline; at the Amaravathy confluence. The Karur STP (15 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.075,
+     10.96
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kulithalai",
+    "state": "Tamil Nadu",
+    "population_2011": 27910,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture (paddy, banana) on the Cauvery.\"}",
+    "mla_name": "Suriyanur A. Chandran",
+    "mla_party": "DMK",
+    "constituency": "Kulithalai",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "mindat.org locality record for Kulittalai (10.93487, 78.41251); Wikipedia's 10.56N 78.25E is ~40 km south of the Cauvery here and is not used — see people_NOTES.md; 1.79 km from the river centreline",
+    "notes": "Tier 1. Town on the south bank of the Cauvery, at the Musiri bridge. The 3-drain aggregate is in the dataset; no STP row.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.41251,
+     10.93487
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Musiri",
+    "state": "Tamil Nadu",
+    "population_2011": 27941,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 75.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture on the Cauvery.\"}",
+    "mla_name": "M. Vignesh",
+    "mla_party": "TVK",
+    "constituency": "Musiri",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Musiri' article coordinates; 0.10 km from the river centreline",
+    "notes": "Tier 1. Town on the north bank of the Cauvery, at the Kulithalai bridge; no STP or drain row — included as a Tier 1 corridor town.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.45,
+     10.93
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "population_2011": 916857,
+    "population_basis": "",
+    "area_km2": 167.23,
+    "population_density_per_sqkm": 5483,
+    "literacy_pct": "",
+    "sex_ratio": 975,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Industrial and temple city; BHEL, fabrication, agriculture.\"}",
+    "mla_name": "C. Joseph Vijay",
+    "mla_party": "TVK",
+    "constituency": "Tiruchirappalli (East)",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list; cross-checked against dataofindia.com",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Tiruchirappalli' article coordinates; 3.64 km from the river centreline",
+    "notes": "Tier 1. The city has 2 assembly seats; Tiruchirappalli East is the city-centre seat used here. The 2 Trichy STPs (95 MLD) are in the dataset. Srirangam merged into the Corporation in 2011 and is covered by this row.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6891725,
+     10.80644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Thanjavur",
+    "state": "Tamil Nadu",
+    "population_2011": 222943,
+    "population_basis": "",
+    "area_km2": 36.31,
+    "population_density_per_sqkm": 6140,
+    "literacy_pct": 83.14,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Rice-bowl city; agriculture, temples and the Grand Anicut.\"}",
+    "mla_name": "R. Vijaysaravanan",
+    "mla_party": "TVK",
+    "constituency": "Thanjavur",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Thanjavur' article coordinates; 10.62 km from the river centreline",
+    "notes": "Tier 2 (10.6 km from the river; included via its STP/drain row). 10.6 km from the centreline; the Thanjavur STP (28.05 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1377778,
+     10.7869444
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kumbakonam",
+    "state": "Tamil Nadu",
+    "population_2011": 140156,
+    "population_basis": "Census of India 2011 (article Demographics; Wikipedia infobox as_of field reads 2021 but the figure is the 2011 census figure)",
+    "area_km2": 42.95,
+    "population_density_per_sqkm": 3263,
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Temple town; agriculture, brass and silk.\"}",
+    "mla_name": "Vinoth",
+    "mla_party": "TVK",
+    "constituency": "Kumbakonam",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list; cross-checked against dataofindia.com, IndiaVotes and Wikipedia",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Kumbakonam' article coordinates; 1.05 km from the river centreline",
+    "notes": "Tier 1. The Kumbakonam STP (17 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3845,
+     10.9602
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mayiladuthurai",
+    "state": "Tamil Nadu",
+    "population_2011": 85632,
+    "population_basis": "",
+    "area_km2": 55.0,
+    "population_density_per_sqkm": 1557,
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Temple town; agriculture in the delta.\"}",
+    "mla_name": "Jamal Mohamed Younoos Y.N.",
+    "mla_party": "INC",
+    "constituency": "Mayiladuthurai",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list; cross-checked against dataofindia.com and truetamil.in",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Mayiladuthurai' article coordinates; 0.34 km from the river centreline",
+    "notes": "Tier 1. The Mayiladuthurai STP (5.85 MLD) is in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.65,
+     11.1019
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Poompuhar",
+    "state": "Tamil Nadu",
+    "population_2011": "",
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Fishing village and ancient port at the Cauvery mouth.\"}",
+    "mla_name": "Nivedha M. Murugan",
+    "mla_party": "DMK",
+    "constituency": "Poompuhar",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Poompuhar, Mayiladuthurai district, Tamil Nadu; 0.94 km from the river centreline",
+    "notes": "Tier 1. River-mouth town where the Cauvery meets the Bay of Bengal. No Census 2011 population found for Poompuhar (village); population left blank. No STP or drain row — included as a Tier 1 corridor town.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8537308,
+     11.1452914
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Namakkal",
+    "state": "Tamil Nadu",
+    "population_2011": 119491,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 82.52,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Poultry, egg and transport hub; agriculture.\"}",
+    "mla_name": "C.S. Dilip",
+    "mla_party": "TVK",
+    "constituency": "Namakkal",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Namakkal' article coordinates; 17.48 km from the river centreline",
+    "notes": "Tier 2 (17.5 km from the river; included via its STP/drain row). 17.5 km from the river; the Namakkal STP (7 MLD) is in the dataset. On the Thirumanimutharu, a Cauvery tributary.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.1666667,
+     11.2166667
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Salem",
+    "state": "Tamil Nadu",
+    "population_2011": 829267,
+    "population_basis": "",
+    "area_km2": 91.34,
+    "population_density_per_sqkm": 9079,
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Steel, textiles and sago town; Thirumanimutharu basin.\"}",
+    "mla_name": "K. Sivakumar",
+    "mla_party": "TVK",
+    "constituency": "Salem (North)",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Salem, Tamil Nadu; 46.86 km from the river centreline",
+    "notes": "Tier 2 (46.9 km from the river; included via its STP/drain row). 46.9 km from the river; the 4 Salem STPs (98 MLD) are in the dataset. Salem drains via the Thirumanimutharu/Sarabanga tributaries. The city has 3 assembly seats; Salem North is the city-centre seat used here.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2106958,
+     11.6469616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Tiruppur",
+    "state": "Tamil Nadu",
+    "population_2011": 877778,
+    "population_basis": "",
+    "area_km2": 159.6,
+    "population_density_per_sqkm": 5500,
+    "literacy_pct": 78.17,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Knitwear export hub; dyeing and bleaching units on the Noyyal.\"}",
+    "mla_name": "V. Sathyabama",
+    "mla_party": "TVK",
+    "constituency": "Tiruppur (North)",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Tiruppur' article coordinates; 50.62 km from the river centreline",
+    "notes": "Tier 2 (50.6 km from the river; included via its STP/drain row). 50.6 km from the river; the 4 Tiruppur STPs (86 MLD) and the Tiruppur CETP aggregate are in the dataset. On the Noyyal. The city has 2 assembly seats; Tiruppur North is used here.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3411,
+     11.1085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Coimbatore",
+    "state": "Tamil Nadu",
+    "population_2011": 1601438,
+    "population_basis": "",
+    "area_km2": 257.04,
+    "population_density_per_sqkm": 6230,
+    "literacy_pct": 89.23,
+    "sex_ratio": 997,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Textile and engineering city; Noyyal basin.\"}",
+    "mla_name": "V. Senthilbalaji",
+    "mla_party": "DMK",
+    "constituency": "Coimbatore (South)",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Coimbatore' article coordinates; 91.34 km from the river centreline",
+    "notes": "Tier 2 (91.3 km from the river; included via its STP/drain row). 91.3 km from the river; the 4 Coimbatore STPs (200.53 MLD) are in the dataset. On the Noyyal. The city has 6 assembly seats; Coimbatore South is the city-centre seat used here.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9633333,
+     11.0008333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sathyamangalam",
+    "state": "Tamil Nadu",
+    "population_2011": 37816,
+    "population_basis": "Census of India 2011 (article Demographics)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 72.02,
+    "sex_ratio": 1006,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture, at the edge of the Sathyamangalam Tiger Reserve.\"}",
+    "mla_name": "V.P. Tamilselvi",
+    "mla_party": "TVK",
+    "constituency": "Bhavanisagar",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list (BHAVANISAGAR (SC)); Wikipedia, Sathyamangalam (former constituency merged into Bhavanisagar, 2008 delimitation)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Sathyamangalam' article coordinates; 48.25 km from the river centreline",
+    "notes": "Tier 2 (48.3 km from the river; included via its STP/drain row). 48.3 km from the river; the Sathyamangalam STP (4.08 MLD) is in the dataset. On the Bhavani. The Sathyamangalam Assembly constituency was abolished in 2008 and merged into Bhavanisagar (SC); the town is in Bhavanisagar AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25,
+     11.5167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mettupalayam",
+    "state": "Tamil Nadu",
+    "population_2011": 69213,
+    "population_basis": "Census of India 2011 (article Demographics; Wikipedia infobox 66,595 differs)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 77.11,
+    "sex_ratio": 1022,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town at the Nilgiri foothills; agriculture and the Bhavani.\"}",
+    "mla_name": "Sunilanand",
+    "mla_party": "TVK",
+    "constituency": "Mettupalayam",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Mettupalayam, Coimbatore' article coordinates; 82.64 km from the river centreline",
+    "notes": "Tier 2 (82.6 km from the river; included via its STP/drain row). 82.6 km from the river; the Mettupalayam STP (8.65 MLD) is in the dataset. On the Bhavani.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.935,
+     11.3055556
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Rasipuram",
+    "state": "Tamil Nadu",
+    "population_2011": 50244,
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 77.71,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture and textiles.\"}",
+    "mla_name": "D. Logesh Tamilselvan",
+    "mla_party": "TVK",
+    "constituency": "Rasipuram",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Rasipuram' article coordinates; 43.11 km from the river centreline",
+    "notes": "Tier 2 (43.1 km from the river; included via its STP/drain row). 43.1 km from the river; the Rasipuram STP (6.96 MLD) is in the dataset. On the Thirumanimutharu, a Cauvery tributary.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.1909,
+     11.4618
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Perundurai",
+    "state": "Tamil Nadu",
+    "population_2011": 15500,
+    "population_basis": "Census of India 2011 (censusindia2011.com; Wikipedia still shows the 2001 figure 16,973)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 72.0,
+    "sex_ratio": 1010,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Cauvery towns; see people_NOTES.md.\", \"plain_language\": \"Industrial town (SIPCOT); textiles and engineering.\"}",
+    "mla_name": "S. Jayakumar",
+    "mla_party": "AIADMK",
+    "constituency": "Perundurai",
+    "mla_election_year": 2026,
+    "mla_source": "MyNeta (ADR) Tamil Nadu 2026 winners list; cross-checked against the Wikipedia 2026 Perundurai result (AIADMK hold)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia 'Perundurai' article coordinates; 18.46 km from the river centreline",
+    "notes": "Tier 2 (18.5 km from the river; included via its STP/drain row). 18.5 km from the river; the Perundurai STP (3.14 MLD) and the Perundurai CETP aggregate are in the dataset.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5827,
+     11.2746
+    ]
+   }
+  }
+ ]
+}

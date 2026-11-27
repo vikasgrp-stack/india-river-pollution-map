@@ -1,0 +1,1909 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-001",
+    "plant_name": "V Valley 150 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "ASP",
+    "capacity_mld": 150,
+    "operational_status": "operational",
+    "utilised_mld": 150.36,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-002",
+    "plant_name": "Chikkabanavara 5 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 5,
+    "operational_status": "operational",
+    "utilised_mld": 4.88,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-003",
+    "plant_name": "Doddabele 40 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 40,
+    "operational_status": "operational",
+    "utilised_mld": 39.95,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-004",
+    "plant_name": "Doddabele 20 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 20,
+    "operational_status": "operational",
+    "utilised_mld": 25.66,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-005",
+    "plant_name": "Kengeri 60 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "ASP",
+    "capacity_mld": 60,
+    "operational_status": "operational",
+    "utilised_mld": 59.94,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-006",
+    "plant_name": "Mailsandra 75 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "EA",
+    "capacity_mld": 75,
+    "operational_status": "operational",
+    "utilised_mld": 67.85,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-007",
+    "plant_name": "Nagasandra 20 MLD (SBR)",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 20,
+    "operational_status": "operational",
+    "utilised_mld": 18.81,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-008",
+    "plant_name": "Nagasandra 20 MLD (Extended Aeration)",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "Extended Aeration",
+    "capacity_mld": 20,
+    "operational_status": "operational",
+    "utilised_mld": 14.57,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-009",
+    "plant_name": "Ramanagara 7.56 MLD (Kumbapura)",
+    "town": "Ramanagara",
+    "state": "Karnataka",
+    "technology": "Aerated Lagoon",
+    "capacity_mld": 7.56,
+    "operational_status": "operational",
+    "utilised_mld": 6.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Ramanagara' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2790994,
+     12.7208575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-010",
+    "plant_name": "Kanakapura 6.29 MLD (Aralalu Village)",
+    "town": "Kanakapura",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 6.29,
+    "operational_status": "operational",
+    "utilised_mld": 6.29,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Kanakapura' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.417,
+     12.55
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-011",
+    "plant_name": "Rayanakere 60 MLD",
+    "town": "Mysuru",
+    "state": "Karnataka",
+    "technology": "Surface aerator",
+    "capacity_mld": 60,
+    "operational_status": "operational",
+    "utilised_mld": 51,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mysore' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6530556,
+     12.3086111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-012",
+    "plant_name": "Vidyaranyapuram 67.5 MLD",
+    "town": "Mysuru",
+    "state": "Karnataka",
+    "technology": "Surface aerator",
+    "capacity_mld": 67.5,
+    "operational_status": "operational",
+    "utilised_mld": 54,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mysore' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6530556,
+     12.3086111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-013",
+    "plant_name": "Hebbal 8 MLD",
+    "town": "Mysuru",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 8,
+    "operational_status": "operational",
+    "utilised_mld": 7.8,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mysore' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6530556,
+     12.3086111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-014",
+    "plant_name": "Kesare 30 MLD",
+    "town": "Mysuru",
+    "state": "Karnataka",
+    "technology": "Surface aerator",
+    "capacity_mld": 30,
+    "operational_status": "operational",
+    "utilised_mld": 27,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mysore' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6530556,
+     12.3086111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-015",
+    "plant_name": "Mandya 9.62 MLD",
+    "town": "Mandya",
+    "state": "Karnataka",
+    "technology": "OP",
+    "capacity_mld": 9.62,
+    "operational_status": "operational",
+    "utilised_mld": 9.62,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mandya' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9,
+     12.52
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-016",
+    "plant_name": "Mandya 8.9 MLD",
+    "town": "Mandya",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 8.9,
+    "operational_status": "operational",
+    "utilised_mld": 8.9,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mandya' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9,
+     12.52
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-017",
+    "plant_name": "Malavalli 5.65 MLD (Gowdagere village)",
+    "town": "Malavalli",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 5.65,
+    "operational_status": "operational",
+    "utilised_mld": 4.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Malavalli, Mandya district, Karnataka",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0589464,
+     12.3864073
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-018",
+    "plant_name": "Maddur 6 MLD (Hole Anjananeya Temple)",
+    "town": "Maddur",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 6,
+    "operational_status": "operational",
+    "utilised_mld": 1.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Maddur, Mandya' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.05,
+     12.5849
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-019",
+    "plant_name": "Maddur 0.5 MLD (Channegowdanadoddi)",
+    "town": "Maddur",
+    "state": "Karnataka",
+    "technology": "MBBR",
+    "capacity_mld": 0.5,
+    "operational_status": "operational",
+    "utilised_mld": 0.165,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Maddur, Mandya' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.05,
+     12.5849
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-020",
+    "plant_name": "Hunsur 8 MLD (Kalkunike)",
+    "town": "Hunsur",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 8,
+    "operational_status": "operational",
+    "utilised_mld": 7,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Hunsur' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.2802055,
+     12.3105671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-021",
+    "plant_name": "KR Nagar 1.44 MLD (Kantenahalli)",
+    "town": "KR Nagar",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 1.44,
+    "operational_status": "operational",
+    "utilised_mld": 1.44,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Thirumakudalu Narasipura' article coordinates; plotted at the T Narasipura town centroid",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-022",
+    "plant_name": "KR Nagar 1.45 MLD (Madhuvinahalli)",
+    "town": "KR Nagar",
+    "state": "Karnataka",
+    "technology": "",
+    "capacity_mld": 1.45,
+    "operational_status": "operational",
+    "utilised_mld": 1.45,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Thirumakudalu Narasipura' article coordinates; plotted at the T Narasipura town centroid",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-023",
+    "plant_name": "KR Nagar 2.5 MLD",
+    "town": "KR Nagar",
+    "state": "Karnataka",
+    "technology": "",
+    "capacity_mld": 2.5,
+    "operational_status": "operational",
+    "utilised_mld": 0.9,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Thirumakudalu Narasipura' article coordinates; plotted at the T Narasipura town centroid",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-024",
+    "plant_name": "Periyapatna 4.2 MLD (Keernalli village)",
+    "town": "Periyapatna",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 4.2,
+    "operational_status": "operational",
+    "utilised_mld": 2.7,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Periyapatna' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.07918,
+     12.33649
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-025",
+    "plant_name": "Nanjangud 8 MLD (Goluru)",
+    "town": "Nanjangud",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 8,
+    "operational_status": "operational",
+    "utilised_mld": 3.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Nanjangud' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.68,
+     12.12
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-026",
+    "plant_name": "Nanjangud 0.3 MLD (Near Military campus)",
+    "town": "Nanjangud",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 0.3,
+    "operational_status": "operational",
+    "utilised_mld": 0.3,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Nanjangud' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.68,
+     12.12
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-027",
+    "plant_name": "Bannur 3.8 MLD (Chamanahalli)",
+    "town": "Bannur",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 3.8,
+    "operational_status": "operational",
+    "utilised_mld": 2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bannur' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.907,
+     12.2548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-028",
+    "plant_name": "Bannur 0.65 MLD (Chamnahalli Gudda)",
+    "town": "Bannur",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 0.65,
+    "operational_status": "operational",
+    "utilised_mld": 0.2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bannur' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.907,
+     12.2548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-029",
+    "plant_name": "Bannur 0.65 MLD (Bismilla Nagar)",
+    "town": "Bannur",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 0.65,
+    "operational_status": "operational",
+    "utilised_mld": 0.4,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bannur' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.907,
+     12.2548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-030",
+    "plant_name": "Bannur 0.23 MLD (Ashraya Badavane)",
+    "town": "Bannur",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 0.23,
+    "operational_status": "operational",
+    "utilised_mld": 0.23,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bannur' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.907,
+     12.2548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-031",
+    "plant_name": "Bannur 0.15 MLD (Near Kaveri Circle)",
+    "town": "Bannur",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 0.15,
+    "operational_status": "operational",
+    "utilised_mld": 0.1,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bannur' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.907,
+     12.2548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-032",
+    "plant_name": "T Narasipura 5.5 MLD",
+    "town": "T Narasipura",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 5.5,
+    "operational_status": "operational",
+    "utilised_mld": 3.67,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Thirumakudalu Narasipura' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-033",
+    "plant_name": "Kollegala 9 MLD (Kollegala-Mulluru Road)",
+    "town": "Kollegala",
+    "state": "Karnataka",
+    "technology": "Extended Aeration",
+    "capacity_mld": 9,
+    "operational_status": "operational",
+    "utilised_mld": 6,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Kollegal, Chamarajanagar district, Karnataka",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1071726,
+     12.1560966
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-034",
+    "plant_name": "Srirangapatna 5 MLD (Chandagalu road, Ganjam)",
+    "town": "Srirangapatna",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 5,
+    "operational_status": "operational",
+    "utilised_mld": 1.44,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Srirangapatna' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.704,
+     12.414
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-035",
+    "plant_name": "Hassan 10 MLD (Bittagowdanahalli)",
+    "town": "Hassan",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 10,
+    "operational_status": "operational",
+    "utilised_mld": 10,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Hassan, Karnataka' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.100339,
+     13.003512
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-036",
+    "plant_name": "Holenarasipura 3 MLD (Tattekere Grama)",
+    "town": "Holenarasipura",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 3,
+    "operational_status": "operational",
+    "utilised_mld": 3,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Holenarasipura' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.243,
+     12.783
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-037",
+    "plant_name": "Belur 5 MLD (Hole Beedhi)",
+    "town": "Belur",
+    "state": "Karnataka",
+    "technology": "SBR",
+    "capacity_mld": 5,
+    "operational_status": "operational",
+    "utilised_mld": 2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Belur, Hassan district, Karnataka",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8634851,
+     13.1645671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-038",
+    "plant_name": "Belur 0.3 MLD (Behind Ayyappa Swamy Temple)",
+    "town": "Belur",
+    "state": "Karnataka",
+    "technology": "WSP",
+    "capacity_mld": 0.3,
+    "operational_status": "operational",
+    "utilised_mld": 0.3,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Belur, Hassan district, Karnataka",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8634851,
+     13.1645671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-039",
+    "plant_name": "V Valley new 150 MLD",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "technology": "SBR with ASP",
+    "capacity_mld": 150,
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Bengaluru' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-040",
+    "plant_name": "Kushalnagar 6.5 MLD (Gummankolli village)",
+    "town": "Kushalnagar",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 6.5,
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Kushalanagar' article coordinates",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.960332,
+     12.457434
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-KA-041",
+    "plant_name": "Madikeri 4.5 MLD (K.Badaga village)",
+    "town": "Madikeri",
+    "state": "Karnataka",
+    "technology": "SBT",
+    "capacity_mld": 4.5,
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2025-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Kushalanagar' article coordinates; plotted at the Kushalnagar town centroid",
+    "source": "Karnataka Monthly Progress Report, Nov 2025, Annexure-1 (existing STPs)",
+    "as_of": "2025-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.960332,
+     12.457434
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-001",
+    "plant_name": "Thanjavur 28.05 MLD",
+    "town": "Thanjavur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 28.05,
+    "operational_status": "operational",
+    "utilised_mld": 19.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Thanjavur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1377778,
+     10.7869444
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-002",
+    "plant_name": "Karur 15 MLD",
+    "town": "Karur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 15,
+    "operational_status": "operational",
+    "utilised_mld": 7.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Karur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.075,
+     10.96
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-003",
+    "plant_name": "Namakkal 7 MLD",
+    "town": "Namakkal",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 7,
+    "operational_status": "operational",
+    "utilised_mld": 5.7,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Namakkal' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.1666667,
+     11.2166667
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-004",
+    "plant_name": "Tiruchirappalli 58 MLD (PRS)",
+    "town": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 58,
+    "operational_status": "operational",
+    "utilised_mld": 58,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Tiruchirappalli' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6891725,
+     10.80644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-005",
+    "plant_name": "Tiruchirappalli STP2 37 MLD (PRS)",
+    "town": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 37,
+    "operational_status": "under trial run",
+    "utilised_mld": 3.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Tiruchirappalli' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6891725,
+     10.80644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-006",
+    "plant_name": "Salem Vellakuttai 13 MLD (PRS)",
+    "town": "Salem",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 13,
+    "operational_status": "operational",
+    "utilised_mld": 4,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Salem, Tamil Nadu",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2106958,
+     11.6469616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-007",
+    "plant_name": "Salem Anaimedu 6 MLD (PRS)",
+    "town": "Salem",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 6,
+    "operational_status": "operational",
+    "utilised_mld": 2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Salem, Tamil Nadu",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2106958,
+     11.6469616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-008",
+    "plant_name": "Salem Mankuttai 35 MLD (PRS)",
+    "town": "Salem",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 35,
+    "operational_status": "operational",
+    "utilised_mld": 4,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Salem, Tamil Nadu",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2106958,
+     11.6469616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-009",
+    "plant_name": "Salem Vandipettai 44 MLD (PRS)",
+    "town": "Salem",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 44,
+    "operational_status": "operational",
+    "utilised_mld": 1.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nominatim geocode of Salem, Tamil Nadu",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2106958,
+     11.6469616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-010",
+    "plant_name": "Erode 50.55 MLD (PRS)",
+    "town": "Erode",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 50.55,
+    "operational_status": "operational",
+    "utilised_mld": 30,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Erode' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7171111,
+     11.3408889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-011",
+    "plant_name": "Mettur STP-1 0.82 MLD (PRS)",
+    "town": "Mettur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 0.82,
+    "operational_status": "operational",
+    "utilised_mld": 0.42,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mettur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.8,
+     11.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-012",
+    "plant_name": "Mettur STP-2 1.92 MLD (PRS)",
+    "town": "Mettur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 1.92,
+    "operational_status": "operational",
+    "utilised_mld": 0.9,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mettur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.8,
+     11.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-013",
+    "plant_name": "Mettur STP-3 5.45 MLD (PRS)",
+    "town": "Mettur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 5.45,
+    "operational_status": "operational",
+    "utilised_mld": 3,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mettur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.8,
+     11.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-014",
+    "plant_name": "Kumbakonam 17 MLD (PRS)",
+    "town": "Kumbakonam",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 17,
+    "operational_status": "operational",
+    "utilised_mld": 13,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Kumbakonam' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3845,
+     10.9602
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-015",
+    "plant_name": "Mayiladuthurai 5.85 MLD (PRS)",
+    "town": "Mayiladuthurai",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 5.85,
+    "operational_status": "operational",
+    "utilised_mld": 4,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mayiladuthurai' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.65,
+     11.1019
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-016",
+    "plant_name": "Sathyamangalam 4.08 MLD (PRS)",
+    "town": "Sathyamangalam",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 4.08,
+    "operational_status": "operational",
+    "utilised_mld": 2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Sathyamangalam' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25,
+     11.5167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-017",
+    "plant_name": "Mettupalayam 8.65 MLD (PRS)",
+    "town": "Mettupalayam",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 8.65,
+    "operational_status": "operational",
+    "utilised_mld": 4.2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Mettupalayam, Coimbatore' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.935,
+     11.3055556
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-018",
+    "plant_name": "Rasipuram 6.96 MLD (PRS)",
+    "town": "Rasipuram",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 6.96,
+    "operational_status": "operational",
+    "utilised_mld": 4.6,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Rasipuram' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.1909,
+     11.4618
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-019",
+    "plant_name": "Coimbatore Ukkadam 70 MLD",
+    "town": "Coimbatore",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 70,
+    "operational_status": "operational",
+    "utilised_mld": 33.32,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Coimbatore' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9633333,
+     11.0008333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-020",
+    "plant_name": "Coimbatore Ondiputhur 60 MLD",
+    "town": "Coimbatore",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 60,
+    "operational_status": "operational",
+    "utilised_mld": 27.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Coimbatore' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9633333,
+     11.0008333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-021",
+    "plant_name": "Coimbatore Nanjundapuram 40 MLD",
+    "town": "Coimbatore",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 40,
+    "operational_status": "operational",
+    "utilised_mld": 23,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Coimbatore' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9633333,
+     11.0008333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-022",
+    "plant_name": "Coimbatore Kuruchi & Kuniyamuthur 30.53 MLD",
+    "town": "Coimbatore",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 30.53,
+    "operational_status": "operational",
+    "utilised_mld": 11,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Coimbatore' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9633333,
+     11.0008333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-023",
+    "plant_name": "Tiruppur 15 MLD",
+    "town": "Tiruppur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 15,
+    "operational_status": "operational",
+    "utilised_mld": 8.2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Tiruppur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3411,
+     11.1085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-024",
+    "plant_name": "Tiruppur 15 MLD (Expansion of existing)",
+    "town": "Tiruppur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 15,
+    "operational_status": "operational",
+    "utilised_mld": 5.6,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Tiruppur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3411,
+     11.1085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-025",
+    "plant_name": "Tiruppur 36 MLD (Sarkarperiyapalayam)",
+    "town": "Tiruppur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 36,
+    "operational_status": "operational",
+    "utilised_mld": 17.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Tiruppur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3411,
+     11.1085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-026",
+    "plant_name": "Tiruppur 20 MLD (Chinnandipalayam)",
+    "town": "Tiruppur",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 20,
+    "operational_status": "operational",
+    "utilised_mld": 6.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Tiruppur' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3411,
+     11.1085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TN-027",
+    "plant_name": "Perundurai 3.14 MLD",
+    "town": "Perundurai",
+    "state": "Tamil Nadu",
+    "technology": "",
+    "capacity_mld": 3.14,
+    "operational_status": "operational",
+    "utilised_mld": 1.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wikipedia 'Perundurai' article coordinates",
+    "source": "Tamil Nadu Monthly Progress Report, Aug 2026 (NGT OA 673/2018)",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5827,
+     11.2746
+    ]
+   }
+  }
+ ]
+}

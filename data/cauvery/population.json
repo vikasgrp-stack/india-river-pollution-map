@@ -1,0 +1,349 @@
+{
+ "corridor": {
+  "buffer_km": 10,
+  "total": 9022109,
+  "method": "10 km buffer (Lambert Azimuthal Equal-Area, centred 77.5098E/11.7888N) around the Cauvery centreline: OSM relation 2704746 (Talakaveri, Kodagu, Karnataka to Poompuhar, Bay of Bengal, 807.07 km). GHSL GHS-POP R2023A 2020 epoch, 30 arc-second grid, clipped by cell centre inside the buffer; cell values summed.",
+  "raster": "GHSL GHS-POP R2023A, epoch 2020, 30 arc-second (4326_30ss), JRC open-data server / AWS mirror s3://jrc-ghsl",
+  "vintage": "2020",
+  "status": "computed",
+  "buffer_area_km2": 14330,
+  "centreline_length_km": 807.07,
+  "cells_in_buffer": 17123,
+  "cross_check_worldpop_2020_100m_unadj": {
+   "total": null,
+   "status": "pending: remote /vsicurl read failed (Range downloading not supported by this server!); no full 1.65 GB India file was downloaded (the Sabarmati build's download of the same file timed out on this network); re-run this script once a local copy is available",
+   "raster": "WorldPop India 2020, 100 m, UN-adjusted (ind_ppp_2020_UNadj.tif), CC-BY-4.0",
+   "cells_in_buffer": null
+  }
+ },
+ "towns": [
+  {
+   "town": "Bengaluru",
+   "state": "Karnataka",
+   "population_2011": 8443675,
+   "basis": "Census of India 2011 (Bangalore city, BBMP area)",
+   "source": "Census of India 2011 (Bangalore city, BBMP area)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mysuru",
+   "state": "Karnataka",
+   "population_2011": 920550,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Srirangapatna",
+   "state": "Karnataka",
+   "population_2011": 25061,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bannur",
+   "state": "Karnataka",
+   "population_2011": 21896,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "T Narasipura",
+   "state": "Karnataka",
+   "population_2011": 31498,
+   "basis": "Census of India 2011 (Wikipedia infobox; Karnataka MPR Jan 2025 gives the same figure)",
+   "source": "Census of India 2011 (Wikipedia infobox; Karnataka MPR Jan 2025 gives the same figure)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kollegala",
+   "state": "Karnataka",
+   "population_2011": 57149,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Malavalli",
+   "state": "Karnataka",
+   "population_2011": 37601,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kanakapura",
+   "state": "Karnataka",
+   "population_2011": 54014,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ramanagara",
+   "state": "Karnataka",
+   "population_2011": 95167,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Maddur",
+   "state": "Karnataka",
+   "population_2011": 28754,
+   "basis": "Census of India 2011 (article Demographics; Wikipedia infobox as_of 2011)",
+   "source": "Census of India 2011 (article Demographics; Wikipedia infobox as_of 2011)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mandya",
+   "state": "Karnataka",
+   "population_2011": 137735,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nanjangud",
+   "state": "Karnataka",
+   "population_2011": 61961,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Hunsur",
+   "state": "Karnataka",
+   "population_2011": 50865,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kushalnagar",
+   "state": "Karnataka",
+   "population_2011": 23200,
+   "basis": "Census of India 2011 (article Demographics; Wikipedia infobox 29,268 is a 2022 estimate)",
+   "source": "Census of India 2011 (article Demographics; Wikipedia infobox 29,268 is a 2022 estimate)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Hassan",
+   "state": "Karnataka",
+   "population_2011": 177484,
+   "basis": "Census of India 2011 urban population (article Demographics; pre-expansion CMC 133,436; infobox 300,000 is a 2025 estimate)",
+   "source": "Census of India 2011 urban population (article Demographics; pre-expansion CMC 133,436; infobox 300,000 is a 2025 estimate)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Holenarasipura",
+   "state": "Karnataka",
+   "population_2011": 29938,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Belur",
+   "state": "Karnataka",
+   "population_2011": 22484,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Krishnarajanagara",
+   "state": "Karnataka",
+   "population_2011": 35805,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Periyapatna",
+   "state": "Karnataka",
+   "population_2011": 16685,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mettur",
+   "state": "Tamil Nadu",
+   "population_2011": 52813,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhavani",
+   "state": "Tamil Nadu",
+   "population_2011": 39225,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kumarapalayam",
+   "state": "Tamil Nadu",
+   "population_2011": 71594,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Pallipalayam",
+   "state": "Tamil Nadu",
+   "population_2011": 40140,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Erode",
+   "state": "Tamil Nadu",
+   "population_2011": 521776,
+   "basis": "Census of India 2011 urban agglomeration (article Demographics; Wikipedia infobox 157,101 is the pre-expansion municipality)",
+   "source": "Census of India 2011 urban agglomeration (article Demographics; Wikipedia infobox 157,101 is the pre-expansion municipality)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kodumudi",
+   "state": "Tamil Nadu",
+   "population_2011": 13225,
+   "basis": "Census of India 2011 (census2011.co.in; Wikipedia still shows the 2001 figure 12,669)",
+   "source": "Census of India 2011 (census2011.co.in; Wikipedia still shows the 2001 figure 12,669)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Karur",
+   "state": "Tamil Nadu",
+   "population_2011": 70980,
+   "basis": "Census of India 2011, pre-expansion municipal area (article Demographics; infobox 394,719 is a 2023 post-expansion estimate)",
+   "source": "Census of India 2011, pre-expansion municipal area (article Demographics; infobox 394,719 is a 2023 post-expansion estimate)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kulithalai",
+   "state": "Tamil Nadu",
+   "population_2011": 27910,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Musiri",
+   "state": "Tamil Nadu",
+   "population_2011": 27941,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Tiruchirappalli",
+   "state": "Tamil Nadu",
+   "population_2011": 916857,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Thanjavur",
+   "state": "Tamil Nadu",
+   "population_2011": 222943,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kumbakonam",
+   "state": "Tamil Nadu",
+   "population_2011": 140156,
+   "basis": "Census of India 2011 (article Demographics; Wikipedia infobox as_of field reads 2021 but the figure is the 2011 census figure)",
+   "source": "Census of India 2011 (article Demographics; Wikipedia infobox as_of field reads 2021 but the figure is the 2011 census figure)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mayiladuthurai",
+   "state": "Tamil Nadu",
+   "population_2011": 85632,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Poompuhar",
+   "state": "Tamil Nadu",
+   "population_2011": null,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Namakkal",
+   "state": "Tamil Nadu",
+   "population_2011": 119491,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Salem",
+   "state": "Tamil Nadu",
+   "population_2011": 829267,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Tiruppur",
+   "state": "Tamil Nadu",
+   "population_2011": 877778,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Coimbatore",
+   "state": "Tamil Nadu",
+   "population_2011": 1601438,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sathyamangalam",
+   "state": "Tamil Nadu",
+   "population_2011": 37816,
+   "basis": "Census of India 2011 (article Demographics)",
+   "source": "Census of India 2011 (article Demographics)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mettupalayam",
+   "state": "Tamil Nadu",
+   "population_2011": 69213,
+   "basis": "Census of India 2011 (article Demographics; Wikipedia infobox 66,595 differs)",
+   "source": "Census of India 2011 (article Demographics; Wikipedia infobox 66,595 differs)",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Rasipuram",
+   "state": "Tamil Nadu",
+   "population_2011": 50244,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Perundurai",
+   "state": "Tamil Nadu",
+   "population_2011": 15500,
+   "basis": "Census of India 2011 (censusindia2011.com; Wikipedia still shows the 2001 figure 16,973)",
+   "source": "Census of India 2011 (censusindia2011.com; Wikipedia still shows the 2001 figure 16,973)",
+   "urban_agglomeration_2011": null
+  }
+ ]
+}

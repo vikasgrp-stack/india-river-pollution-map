@@ -1,0 +1,467 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Vrishabhavathi valley outflow (Bengaluru untreated sewage)",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "tributary",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Untreated flow ~215 MLD (IISc/NEERI 2017 estimate)",
+    "flow_mld": 215.0,
+    "bod_load_tpd": 53.75,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated ~480 MLD (2017) minus treatment capability ~265 MLD",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "IISc blueprint / CSIR-NEERI interim report, May 2021 (WP 6961/2020), Vrishabhavathi Valley; coordinate note: Plotted at the Bengaluru town centroid; the outflow itself is the valley drain leaving the city towards the Arkavathi (confluence near Kanakapura).",
+    "as_of": "2017"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5916667,
+     12.9788889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Ramanagara drains (11 drains, aggregate)",
+    "town": "Ramanagara",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "tributary",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Untreated flow 4.0 MLD (sewage 10.0 MLD, STP utilised 6.0 MLD)",
+    "flow_mld": 4.0,
+    "bod_load_tpd": 1.0,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 10.0 MLD minus STP utilised 6.0 MLD (Karnataka MPR Jan 2025)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Plotted at the Ramanagara town centroid; the 11 drains are not individually located in the source.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2790994,
+     12.7208575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kanakapura drains (5 drains, aggregate)",
+    "town": "Kanakapura",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "tributary",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Untreated flow 0.6 MLD (sewage 4.4 MLD, STP utilised 3.8 MLD)",
+    "flow_mld": 0.6,
+    "bod_load_tpd": 0.15,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 4.4 MLD minus STP utilised 3.8 MLD (Karnataka MPR Jan 2025)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Plotted at the Kanakapura town centroid; the 5 drains are not individually located in the source.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.417,
+     12.55
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Srirangapatna drains (3 drains, aggregate)",
+    "town": "Srirangapatna",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not stated (Karnataka MPR Jan 2025); drains being connected to a wet well to pump to the STP",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Plotted at the Srirangapatna town centroid; the 3 drains are not individually located in the source.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.704,
+     12.414
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "T Narasipura drains (4 drains, aggregate)",
+    "town": "T Narasipura",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not stated (Karnataka MPR Jan 2025); drains carrying sullage, to be connected to a wet well",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Plotted at the T Narasipura town centroid; the 4 drains are not individually located in the source.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Mullur Gram Panchayat drains (2 drains, aggregate)",
+    "town": "Srirangapatna",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generated 0.24 MLD, no STP",
+    "flow_mld": 0.24,
+    "bod_load_tpd": 0.06,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 0.24 MLD, no STP (Karnataka MPR Jan 2025)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Nominatim geocode of Mullur village (Mysuru-Kushalnagar road); the GP has no published coordinates — this is the nearest named Mullur and may not be the stretch GP; see drains_NOTES.md.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.36533,
+     12.38717
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Harale Gram Panchayat drains (Dasanapura & Harle, 5 drains, aggregate)",
+    "town": "T Narasipura",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generated 0.14 MLD, no STP",
+    "flow_mld": 0.14,
+    "bod_load_tpd": 0.04,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 0.14 MLD, no STP (Karnataka MPR Jan 2025)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: No published coordinates for Harale GP; plotted at the nearest named town, T Narasipura.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9036111,
+     12.2125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Yedkuri village drains, Satthegala Gram Panchayat (1 drain)",
+    "town": "Kollegala",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generated 0.018 MLD, no STP",
+    "flow_mld": 0.018,
+    "bod_load_tpd": 0.0,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 0.018 MLD, no STP (Karnataka MPR Jan 2025). Flow x 250 mg/l = 0.0045 TPD, rounds to 0.00 at 2 dp — the load is small, not zero.",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Nominatim geocode of Satthegala (Kollegala taluk), the GP of Yedkuri village; the village itself has no published coordinates.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1412364,
+     12.240843
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kollegala unconnected areas (HosaAnagalli, Shankanapura, Upparamole, Bendarahalli, Booditittu)",
+    "town": "Kollegala",
+    "state": "Karnataka",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Untreated flow 1.69 MLD (sewage 6.19 MLD, STP utilised 4.5 MLD)",
+    "flow_mld": 1.69,
+    "bod_load_tpd": 0.42,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 6.19 MLD minus STP utilised 4.5 MLD (Karnataka MPR Jan 2025, detail table)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Karnataka Monthly Progress Report, Jan 2025 (NGT OA 673/2018); coordinate note: Plotted at the Kollegala town centroid; the unconnected areas are not individually located in the source.",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1071726,
+     12.1560966
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Erode untreated sewage outfalls (aggregate)",
+    "town": "Erode",
+    "state": "Tamil Nadu",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "~27.75 MLD untreated sewage (NGT order, Jan 2022; pre-UGSS)",
+    "flow_mld": 27.75,
+    "bod_load_tpd": 6.94,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = ~27.75 MLD untreated sewage discharged to water bodies (NGT Southern Zone order, 31 Jan 2022). PRE-UGSS FIGURE: the underground sewerage scheme for the remaining 85,000 households was due May 2022, so the current untreated flow is likely lower — see drains_NOTES.md.",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NGT Southern Zone order, 31 Jan 2022 (Cauvery pollution case); coordinate note: Plotted at the Erode town centroid; the outfalls are not individually located in the source.",
+    "as_of": "2022-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7171111,
+     11.3408889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kumarapalayam drains (5 drains, aggregate)",
+    "town": "Kumarapalayam",
+    "state": "Tamil Nadu",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generated 5.60 MLD, no STP",
+    "flow_mld": 5.6,
+    "bod_load_tpd": 1.4,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 5.60 MLD, no STP (NGT Southern Zone order, 31 Jan 2022)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NGT Southern Zone order, 31 Jan 2022 (Cauvery pollution case); coordinate note: Plotted at the Kumarapalayam town centroid; the 5 drains are not individually located in the source.",
+    "as_of": "2022-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7232,
+     11.4363
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Pallipalayam drains (7 drains, aggregate)",
+    "town": "Pallipalayam",
+    "state": "Tamil Nadu",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generated 4.34 MLD, untreated",
+    "flow_mld": 4.34,
+    "bod_load_tpd": 1.08,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 4.34 MLD, untreated sewage joins the Cauvery (NGT Southern Zone order, 31 Jan 2022)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NGT Southern Zone order, 31 Jan 2022 (Cauvery pollution case); coordinate note: Plotted at the Pallipalayam town centroid; the 7 drains are not individually located in the source.",
+    "as_of": "2022-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7482633,
+     11.3652431
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kulithalai drains (3 drains, aggregate)",
+    "town": "Kulithalai",
+    "state": "Tamil Nadu",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Estimated sewage 4.13 MLD (population 27,910 x 185 lpcd x 0.8); no STP in the sources used",
+    "flow_mld": 4.13,
+    "bod_load_tpd": 1.03,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Town estimated sewage = population 27,910 x 185 lpcd x 0.8 (Ganga v1.1 method), then flow x 250 mg/l raw-sewage BOD",
+    "population_2011": 27910,
+    "population_source": "Census of India 2011",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Tamil Nadu Monthly Progress Report, Feb 2021 (NGT OA 673/2018); population Census of India 2011; coordinate note: Plotted at the Kulithalai town centroid; the 3 drains are not individually located in the source.",
+    "as_of": "2021-02"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.41251,
+     10.93487
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhavani drains (6 drains, aggregate)",
+    "town": "Bhavani",
+    "state": "Tamil Nadu",
+    "source_type": "Mixed",
+    "river": "Cauvery",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generated 3.50 MLD (part to the Bhavani river, part to the Cauvery)",
+    "flow_mld": 3.5,
+    "bod_load_tpd": 0.88,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method); flow = sewage generated 3.50 MLD (NGT Southern Zone order, 31 Jan 2022). UPPER BOUND for the Cauvery: part of Bhavani town sewage joins the Bhavani river and part joins the Cauvery — the split is not published.",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NGT Southern Zone order, 31 Jan 2022 (Cauvery pollution case); coordinate note: Plotted at the Bhavani town centroid; the 6 drains are not individually located in the source.",
+    "as_of": "2022-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3312149,
+     11.4699779
+    ]
+   }
+  }
+ ]
+}

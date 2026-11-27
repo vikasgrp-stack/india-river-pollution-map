@@ -1,0 +1,290 @@
+{
+ "river": {
+  "name": "Cauvery",
+  "osm_relation": 2704746,
+  "centreline_length_km": 807.07,
+  "from": "Talakaveri, Kodagu district, Karnataka (75.5336, 12.3843)",
+  "to": "Poompuhar, Bay of Bengal, Tamil Nadu (79.8579, 11.1367)",
+  "corridor_buffer_km": 10,
+  "buffer_area_km2": 14330
+ },
+ "drains": {
+  "count": 14,
+  "by_data_status": {
+   "estimated": 12,
+   "unmeasured": 2
+  },
+  "measured": {
+   "count": 0,
+   "flow_mld": 0,
+   "bod_tpd": 0
+  },
+  "estimated": {
+   "count": 12,
+   "flow_mld": 267.01,
+   "bod_tpd": 66.75
+  },
+  "unmeasured": {
+   "count": 2,
+   "flow_mld": 0.0,
+   "bod_tpd": 0.0
+  },
+  "note": "NO measured drain exists for the Cauvery in any source used: every drain row is an estimate (untreated flow x 250 mg/l raw-sewage BOD, Ganga v1.1 method) or unmeasured (flow not published). Measured and estimated totals are separate and are never summed into a single \"total pollution\" figure. The biggest estimated load is the Vrishabhavathi valley outflow from Bengaluru (215 MLD, 53.75 TPD, 2017 vintage) — 80.5% of the estimated BOD total; it is a 2017 estimate, and Bengaluru treatment capacity has since risen to 390 MLD.",
+  "bod_tpd_by_state_measured": {},
+  "flow_mld_by_state_measured": {},
+  "bod_tpd_by_state_estimated": {
+   "Karnataka": 55.42,
+   "Tamil Nadu": 11.33
+  },
+  "flow_mld_by_state_estimated": {
+   "Karnataka": 221.69,
+   "Tamil Nadu": 45.32
+  },
+  "tapped_status": {
+   "Untapped": 14
+  },
+  "top_10_by_bod_tpd": [
+   {
+    "drain": "Vrishabhavathi valley outflow (Bengaluru untreated sewage)",
+    "town": "Bengaluru",
+    "state": "Karnataka",
+    "bod_tpd": 53.75,
+    "flow_mld": 215.0,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Erode untreated sewage outfalls (aggregate)",
+    "town": "Erode",
+    "state": "Tamil Nadu",
+    "bod_tpd": 6.94,
+    "flow_mld": 27.75,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Kumarapalayam drains (5 drains, aggregate)",
+    "town": "Kumarapalayam",
+    "state": "Tamil Nadu",
+    "bod_tpd": 1.4,
+    "flow_mld": 5.6,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Pallipalayam drains (7 drains, aggregate)",
+    "town": "Pallipalayam",
+    "state": "Tamil Nadu",
+    "bod_tpd": 1.08,
+    "flow_mld": 4.34,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Kulithalai drains (3 drains, aggregate)",
+    "town": "Kulithalai",
+    "state": "Tamil Nadu",
+    "bod_tpd": 1.03,
+    "flow_mld": 4.13,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Ramanagara drains (11 drains, aggregate)",
+    "town": "Ramanagara",
+    "state": "Karnataka",
+    "bod_tpd": 1.0,
+    "flow_mld": 4.0,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Bhavani drains (6 drains, aggregate)",
+    "town": "Bhavani",
+    "state": "Tamil Nadu",
+    "bod_tpd": 0.88,
+    "flow_mld": 3.5,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Kollegala unconnected areas (HosaAnagalli, Shankanapura, Upparamole, Bendarahalli, Booditittu)",
+    "town": "Kollegala",
+    "state": "Karnataka",
+    "bod_tpd": 0.42,
+    "flow_mld": 1.69,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Kanakapura drains (5 drains, aggregate)",
+    "town": "Kanakapura",
+    "state": "Karnataka",
+    "bod_tpd": 0.15,
+    "flow_mld": 0.6,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Mullur Gram Panchayat drains (2 drains, aggregate)",
+    "town": "Srirangapatna",
+    "state": "Karnataka",
+    "bod_tpd": 0.06,
+    "flow_mld": 0.24,
+    "data_status": "estimated"
+   }
+  ],
+  "top_towns_by_bod_tpd_measured": [],
+  "top_towns_by_bod_tpd_estimated": [
+   {
+    "town": "Bengaluru",
+    "bod_tpd": 53.75
+   },
+   {
+    "town": "Erode",
+    "bod_tpd": 6.94
+   },
+   {
+    "town": "Kumarapalayam",
+    "bod_tpd": 1.4
+   },
+   {
+    "town": "Pallipalayam",
+    "bod_tpd": 1.08
+   },
+   {
+    "town": "Kulithalai",
+    "bod_tpd": 1.03
+   },
+   {
+    "town": "Ramanagara",
+    "bod_tpd": 1.0
+   },
+   {
+    "town": "Bhavani",
+    "bod_tpd": 0.88
+   },
+   {
+    "town": "Kollegala",
+    "bod_tpd": 0.42
+   },
+   {
+    "town": "Kanakapura",
+    "bod_tpd": 0.15
+   },
+   {
+    "town": "Srirangapatna",
+    "bod_tpd": 0.06
+   },
+   {
+    "town": "T Narasipura",
+    "bod_tpd": 0.04
+   }
+  ]
+ },
+ "stps": {
+  "count": 68,
+  "by_state": {
+   "Karnataka": 41,
+   "Tamil Nadu": 27
+  },
+  "capacity_mld_total": 1464.19,
+  "operational_status": {
+   "operational": 64,
+   "under construction": 3,
+   "under trial run": 1
+  },
+  "utilised_mld_known_plants": 65,
+  "utilised_mld_total": 907.87,
+  "utilised_mld_unknown_plants": 3,
+  "utilised_mld_assessed_capacity": 1303.19,
+  "utilisation_pct_of_assessed": 69.7,
+  "ngt_compliant": 0,
+  "ngt_non_compliant": 0,
+  "ngt_compliance_null": 68,
+  "moefcc_compliant": 65,
+  "moefcc_non_compliant": 0,
+  "moefcc_compliance_null": 3,
+  "budgets": {
+   "undisclosed": 68,
+   "disclosed": 0,
+   "partially disclosed": 0
+  },
+  "note": "Compliance is mapped from the MPRs' single \"Complied/Complying\" flag: it means the plant meets the consent standard (BOD 20 mg/l, i.e. the MoEFCC 2017 norm), so it meets MoEFCC; NGT compliance (BOD 10 mg/l) cannot be inferred from a consent flag and is left null. NO Cauvery plant in the sources used has a published per-plant effluent BOD value, so 0 plants are shown meeting NGT norms — a DATA LIMIT, not a finding. All 65 operational/under-trial plants carry the Complied flag (Karnataka MPR Nov 2025, TN MPR Aug 2026); the 3 under-construction plants are unassessed. The older Karnataka MPR Jan 2025 flagged Ramanagara and Kanakapura Non-complying; the Nov 2025 annexure supersedes it (see stps_NOTES.md). No operator is named per plant in the TN MPR; Karnataka plants list BWSSB (Bengaluru) or KUWS&DB / concerned ULB."
+ },
+ "water_quality": {
+  "stations": 22,
+  "bod_trend": {
+   "improving": 5,
+   "stable": 13,
+   "worsening": 4
+  },
+  "series_years": "2009, 2022, 2023, 2025",
+  "worst_station_latest": {
+   "station": "Erode near Chirapalayam",
+   "state": "Tamil Nadu",
+   "bod_mg_l": 17.0,
+   "bod_year": 2009
+  },
+  "worst_stretch": {
+   "stretch": "Mettur to Mayiladuthurai (200 km), Tamil Nadu",
+   "priority": "II (CPCB Oct 2025 revision; Priority I in 2018)",
+   "max_bod_mg_l": 24,
+   "basis": "CPCB Oct 2025 revision (2022-23 basis), via TN MPR Aug 2026",
+   "worst_station": "Erode near Chirapalayam — BOD 17.0 mg/l, DO 1.5 mg/l (CPCB 2009, earliest snapshot)",
+   "karnataka_stretch": "Ranganathittu to Satyagala Bridge, BOD 3.1-6.7 mg/l, Priority IV (CPCB 2022 report); 2025-revision status unknown",
+   "note": "The worst-station figure (Erode, BOD 17.0) is from 2009 — the most recent per-station value published for the Tamil Nadu reach. The most recent per-station values anywhere are Mar 2023 (KSPCB): Lakshmantirtha D/S Hunsur and D/S Kattemalavadi, BOD 8.0 mg/l each; Arkavathi D/S Kanakapura, BOD 7.0 mg/l."
+  },
+  "top_5_by_bod_latest": [
+   {
+    "station": "Erode near Chirapalayam",
+    "state": "Tamil Nadu",
+    "bod_mg_l": 17.0,
+    "bod_year": 2009,
+    "trend": "stable"
+   },
+   {
+    "station": "Tiruchirapalli",
+    "state": "Tamil Nadu",
+    "bod_mg_l": 15.7,
+    "bod_year": 2009,
+    "trend": "stable"
+   },
+   {
+    "station": "Trichy Grand Anicut",
+    "state": "Tamil Nadu",
+    "bod_mg_l": 8.4,
+    "bod_year": 2009,
+    "trend": "stable"
+   },
+   {
+    "station": "Lakshmantirtha D/S Hunsur",
+    "state": "Karnataka",
+    "bod_mg_l": 8.0,
+    "bod_year": 2023,
+    "trend": "worsening"
+   },
+   {
+    "station": "Lakshmantirtha D/S Kattemalavadi",
+    "state": "Karnataka",
+    "bod_mg_l": 8.0,
+    "bod_year": 2023,
+    "trend": "worsening"
+   }
+  ],
+  "note": "Series years are SNAPSHOTS, not a like-for-like series: 2009 = CPCB annual-summary values (Tamil Nadu stations only); 2022 = KSPCB March monthly samples; 2023 = KSPCB March monthly samples; 2025 = Karnataka MPR Jan 2025 single-month samples (4 main-stem stations). The 2009 values sit in bod_earliest/bod_latest only — the schema year columns start at 2014, so no bod_2009 column exists (see wq_NOTES.md). Trends are indicative only. The TN MPR Aug 2026 gives only a range for the Cauvery (BOD 2.0-4.7 mg/l across 19 stations), no per-station values, so there are no 2026 values. No pH values are published for any Cauvery station in the sources used."
+ },
+ "people": {
+  "towns": 41,
+  "towns_with_population_2011": 40,
+  "towns_with_mla": 41,
+  "summed_town_population_2011": 16103461,
+  "note": "The summed town population is NOT the corridor population; see population below. Tamil Nadu MLAs are the 2026 election winners (polling 23 Apr 2026, results 4 May 2026; hung assembly: TVK 108, DMK 59, AIADMK 47, INC 5). Karnataka MLAs are the 2023 election winners."
+ },
+ "population": {
+  "corridor_10km_ghsl_2020": 9022109,
+  "corridor_10km_worldpop_2020": null,
+  "worldpop_status": "pending: remote /vsicurl read failed (Range downloading not supported by this server!); no full 1.65 GB India file was downloaded (the Sabarmati build's download of the same file timed out on this network); re-run this script once a local copy is available",
+  "buffer_area_km2": 14330,
+  "cells_in_buffer_ghsl": 17123
+ },
+ "industries": {
+  "rows": 8,
+  "note": "8 aggregate rows. Karnataka: Vrishabhavathi Valley industrial belt (191 industries, 8.008 MLD effluent generated) plus Srirangapatna, Bannur, T Narasipura and Kollegala town aggregates (0.0196-0.027 MLD each). Tamil Nadu: Trichy CETP (0.2014 MLD reported), Perundurai CETPs (3.681 MLD reported), Tiruppur CETPs (65.096 MLD reported — most Tiruppur CETPs claim ZLD, so treat as reported, not verified). Effluent figures are consented/reported figures, never measurements, and are not added to any drain load."
+ },
+ "drain_courses": {
+  "rows": 0,
+  "note": "No drain course geometry is published for any Cauvery drain; no OSM way carries a named Cauvery drain course."
+ }
+}
