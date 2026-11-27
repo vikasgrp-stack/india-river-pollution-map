@@ -1,4 +1,4 @@
-/* Ganga & Yamuna River Pollution Map — clean, spacious, government-service style */
+/* India River Pollution Map — clean, spacious, government-service style */
 :root {
   --ink: #1a2b3c;
   --ink-soft: #44566b;
@@ -30,24 +30,11 @@ h3 { font-size: 19px; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px 
 h4 { font-size: 16px; margin: 18px 0 6px; }
 p { margin: 0 0 12px; }
 
-/* ---------- header ---------- */
-.site-header { background: var(--card); border-bottom: 1px solid var(--line); }
-.header-inner {
-  max-width: 1240px; margin: 0 auto; padding: 18px 20px 12px;
-  display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; justify-content: space-between;
-}
-.subtitle { color: var(--ink-soft); max-width: 640px; margin: 0; font-size: 14.5px; }
-.river-switch { text-align: right; }
-.switch-label { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 6px; }
-.switch-buttons { display: inline-flex; border: 1px solid var(--accent); border-radius: 8px; overflow: hidden; }
-.river-btn {
-  border: 0; background: #fff; color: var(--accent); font-size: 15px; font-weight: 600;
-  padding: 8px 22px; cursor: pointer;
-}
-.river-btn.active { background: var(--accent); color: #fff; }
-.top-tabs {
+/* ---------- top bar (tabs only — the map is the experience) ---------- */
+.topbar {
   max-width: 1240px; margin: 0 auto; padding: 0 20px;
   display: flex; gap: 4px; align-items: flex-end; flex-wrap: wrap;
+  background: var(--card); border-bottom: 1px solid var(--line);
 }
 .top-tab {
   border: 1px solid transparent; border-bottom: 0; background: transparent;
@@ -63,7 +50,7 @@ p { margin: 0 0 12px; }
 .page-intro { color: var(--ink-soft); font-size: 15px; }
 
 /* ---------- map view ---------- */
-#mapView { position: relative; height: calc(100vh - 158px); min-height: 560px; }
+#mapView { position: relative; height: calc(100vh - 49px); min-height: 560px; }
 #map { position: absolute; inset: 0; background: #dce8f2; z-index: 1; }
 .leaflet-container { font-family: inherit; }
 .map-panel {
@@ -72,6 +59,13 @@ p { margin: 0 0 12px; }
   box-shadow: 0 2px 10px rgba(20,40,60,0.12); padding: 12px 14px;
 }
 .control-row { display: flex; gap: 8px; align-items: center; margin-bottom: 9px; flex-wrap: wrap; }
+.panel-title-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.panel-title { font-size: 16px; font-weight: 700; margin: 0; flex: 1; min-width: 150px; letter-spacing: -0.01em; }
+.river-filter-label { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+#riverFilter {
+  border: 1px solid var(--accent); background: #fff; color: var(--accent);
+  border-radius: 7px; padding: 6px 8px; font-size: 13.5px; font-weight: 600; cursor: pointer;
+}
 .control-row:last-child { margin-bottom: 0; }
 .control-label { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); width: 64px; flex: none; }
 #townSearch {
@@ -233,10 +227,57 @@ p { margin: 0 0 12px; }
 
 @media (max-width: 760px) {
   h1 { font-size: 21px; }
-  #mapView { height: calc(100vh - 210px); }
+  #mapView { height: calc(100vh - 110px); }
   .map-panel { width: calc(100vw - 24px); }
   .detail-panel { width: calc(100vw - 24px); top: auto; bottom: 12px; max-height: 62vh; }
   .header-counts { display: none; }
   .kv { grid-template-columns: 1fr 1fr; }
-  .river-switch { text-align: left; }
+  .std-row { grid-template-columns: 120px 1fr 84px; }
 }
+
+/* ---------- shared chart tooltip (one component for every chart) ---------- */
+.chart-tip {
+  position: fixed; z-index: 2000; max-width: 300px; pointer-events: none;
+  background: #1a2b3c; color: #fff; font-size: 13px; line-height: 1.45;
+  border-radius: 8px; padding: 8px 11px; box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+[data-tip] { cursor: pointer; }
+.hbar-fill[data-tip]:hover, .dot-row .d[data-tip]:hover { filter: brightness(1.25); }
+svg [data-tip]:hover { opacity: 0.75; }
+.donut-legend [data-tip]:hover { background: #eef2f6; border-radius: 4px; }
+
+/* ---------- standards comparison chart ---------- */
+.std-takeaway { font-size: 15.5px; }
+.std-params { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 12px; }
+.std-param-btn {
+  border: 1px solid var(--line); background: #fff; border-radius: 999px;
+  padding: 6px 13px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft); cursor: pointer;
+}
+.std-param-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.std-chart { margin: 4px 0 8px; }
+.std-row { display: grid; grid-template-columns: 170px 1fr 110px; gap: 10px; align-items: center; margin: 7px 0; font-size: 13.5px; }
+.std-row .std-regime { font-weight: 600; }
+.std-row .std-regime .tag { display: block; font-size: 11px; font-weight: 400; color: var(--muted); }
+.std-track { background: #eef2f6; border-radius: 4px; height: 18px; overflow: hidden; position: relative; }
+.std-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease, left 0.5s ease; }
+.std-val { text-align: right; font-weight: 700; }
+.std-nolimit { color: var(--muted); font-style: italic; font-weight: 400; }
+.std-details { margin-top: 12px; }
+.std-details summary {
+  cursor: pointer; font-weight: 700; color: var(--accent); font-size: 14.5px; padding: 6px 0;
+}
+.std-details .table-scroll { margin-top: 10px; }
+
+/* ---------- action list: locate on map ---------- */
+.action-list li { cursor: pointer; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.action-list li:hover, .action-list li:focus-within { border-color: var(--accent); box-shadow: 0 2px 10px rgba(31,78,121,0.15); }
+.action-list .where { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.action-list .where b { color: var(--accent); }
+.locate-btn {
+  border: 1px solid var(--accent); background: #fff; color: var(--accent);
+  border-radius: 999px; padding: 4px 12px; font-size: 12.5px; font-weight: 700; cursor: pointer; margin-top: 8px;
+}
+.locate-btn:hover { background: var(--accent-soft); }
+.action-bar { margin-top: 8px; }
+.locate-ring { animation: ringpulse 1.1s ease-out infinite; }
+@keyframes ringpulse { 0% { opacity: 0.95; } 100% { opacity: 0.15; } }

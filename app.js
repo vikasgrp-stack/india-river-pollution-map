@@ -1,4 +1,4 @@
-/* Ganga & Yamuna River Pollution Map — standalone Leaflet build.
+/* India River Pollution Map — standalone Leaflet build.
    Data: local GeoJSON/CSV under data/. Basemaps: OSM streets + Esri World
    Imagery satellite (free, attribution only) with Esri reference overlays. */
 'use strict';
@@ -34,17 +34,20 @@ const PARTY_COLORS = { 'BJP': '#f97316', 'SP': '#dc2626', 'INC': '#38bdf8', 'AIT
 const STATE_AGENCY_DEFAULT = 'state executing agency + State Pollution Control Board';
 
 const state = {
-  river: 'ganga',
+  riverFilter: 'all',   // 'all' | 'ganga' | 'yamuna' — the map shows ALL rivers at once by default
   basemap: 'streets',
   activeLayer: 'all',       // 'all' or one of: drains, stps, wq, towns, courses, industries, corridor
   shortcomingsOnly: false,
   data: {},                 // per-river cache: { drains, stps, wq, people, courses, industries, river, corridor, population }
-  layers: {},               // leaflet layer objects for current river
-  townByName: {},
+  layers: {},               // leaflet layer objects for the current scope
+  townIndex: {},            // "Town · River" -> { river, props }
   stpBudgetById: {},        // yamuna budgets
   religionRuling: null,
   standards: null,
+  stdParam: 'BOD',
 };
+function activeRivers() { return state.riverFilter === 'all' ? Object.keys(RIVERS) : [state.riverFilter]; }
+function riverLabel(river) { return RIVERS[river].label; }
 
 /* ============================== helpers ============================== */
 const $ = (s) => document.querySelector(s);
@@ -82,11 +85,62 @@ function parseCSV(text) {
 async function fetchJSON(p) { const r = await fetch(p); if (!r.ok) throw new Error('Failed to load ' + p); return r.json(); }
 async function fetchText(p) { const r = await fetch(p); if (!r.ok) throw new Error('Failed to load ' + p); return r.text(); }
 
+/* ---------- shared chart tooltip: one component, every chart ----------
+   Any element with a data-tip attribute shows the tooltip on hover (and on
+   tap/click, which pins it for touch). Charts also get a visible hover state
+   via CSS. Elements that represent a real item get a data-open attribute
+   ("kind|river|key") — clicking opens that item's detail card. */
+const chartTip = document.getElementById('chartTip');
+let tipPinned = null;
+function showTip(text, x, y) {
+  chartTip.textContent = text;
+  chartTip.hidden = false;
+  const pad = 12, w = chartTip.offsetWidth, h = chartTip.offsetHeight;
+  chartTip.style.left = Math.min(window.innerWidth - w - pad, Math.max(pad, x + 14)) + 'px';
+  chartTip.style.top = Math.max(pad, Math.min(window.innerHeight - h - pad, y + 14)) + 'px';
+}
+function hideTip() { chartTip.hidden = true; tipPinned = null; }
+document.addEventListener('mouseover', (e) => {
+  if (tipPinned) return;
+  const t = e.target.closest ? e.target.closest('[data-tip]') : null;
+  if (t) showTip(t.getAttribute('data-tip'), e.clientX, e.clientY);
+});
+document.addEventListener('mousemove', (e) => {
+  if (tipPinned || chartTip.hidden) return;
+  const t = e.target.closest ? e.target.closest('[data-tip]') : null;
+  if (t) showTip(t.getAttribute('data-tip'), e.clientX, e.clientY);
+  else hideTip();
+});
+document.addEventListener('mouseout', (e) => {
+  if (tipPinned) return;
+  const t = e.target.closest ? e.target.closest('[data-tip]') : null;
+  if (t && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('[data-tip]') === t)) hideTip();
+});
+document.addEventListener('click', (e) => {
+  const t = e.target.closest ? e.target.closest('[data-tip]') : null;
+  if (t && e.target.closest('[data-open]') == null) {
+    // tap pins the tooltip (touch); a second tap dismisses it
+    if (tipPinned === t) { hideTip(); return; }
+    tipPinned = t;
+    showTip(t.getAttribute('data-tip'), e.clientX, e.clientY);
+    return;
+  }
+  if (!t) hideTip();
+});
+document.addEventListener('click', (e) => {
+  const opener = e.target.closest ? e.target.closest('[data-open]') : null;
+  if (!opener) return;
+  const parts = opener.getAttribute('data-open').split('|');
+  const kind = parts[0], river = parts[1], key = parts.slice(2).join('|');
+  openItemCard(kind, river, key);
+});
+
 /* ---------- tiny SVG chart helpers ---------- */
-function hbarRow(label, value, max, color, valText) {
+function hbarRow(label, value, max, color, valText, tipText) {
   const w = max > 0 ? Math.max(2, Math.min(100, (value / max) * 100)) : 0;
+  const tip = tipText ? ' data-tip="' + esc(tipText) + '"' : '';
   return '<div class="hbar-row"><span>' + esc(label) + '</span>' +
-    '<div class="hbar-track"><div class="hbar-fill" style="width:' + w + '%;background:' + color + '"></div></div>' +
+    '<div class="hbar-track"><div class="hbar-fill" style="width:' + w + '%;background:' + color + '"' + tip + '></div></div>' +
     '<span style="text-align:right;font-weight:700">' + esc(valText) + '</span></div>';
 }
 function donutSVG(parts, size, holeLabel) {
@@ -95,25 +149,31 @@ function donutSVG(parts, size, holeLabel) {
   const R = 42, C = 2 * Math.PI * R; let off = 0, segs = '';
   for (const p of parts) {
     const frac = p.value / total;
+    const tip = p.label + ' — ' + pct(p.value) + ' of workers';
     segs += '<circle cx="50" cy="50" r="' + R + '" fill="none" stroke="' + p.color + '" stroke-width="15" ' +
-      'stroke-dasharray="' + (frac * C).toFixed(1) + ' ' + (C - frac * C).toFixed(1) + '" stroke-dashoffset="' + (-off * C).toFixed(1) + '" transform="rotate(-90 50 50)"/>';
+      'stroke-dasharray="' + (frac * C).toFixed(1) + ' ' + (C - frac * C).toFixed(1) + '" stroke-dashoffset="' + (-off * C).toFixed(1) + '" transform="rotate(-90 50 50)" data-tip="' + esc(tip) + '"/>';
     off += frac;
   }
   return '<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">' +
     '<svg width="' + size + '" height="' + size + '" viewBox="0 0 100 100">' + segs +
     '<text x="50" y="47" text-anchor="middle" font-size="15" font-weight="700" fill="#1a2b3c">' + esc(holeLabel) + '</text>' +
     '<text x="50" y="62" text-anchor="middle" font-size="8.5" fill="#6b7d90">of workers</text></svg>' +
-    '<div style="font-size:13.5px">' + parts.map((p) => '<div style="margin:2px 0"><span style="display:inline-block;width:11px;height:11px;border-radius:3px;background:' + p.color + ';margin-right:6px"></span>' + esc(p.label) + ' — <b>' + pct(p.value) + '</b></div>').join('') + '</div></div>';
+    '<div class="donut-legend" style="font-size:13.5px">' + parts.map((p) => '<div style="margin:2px 0;padding:1px 4px" data-tip="' + esc(p.label + ' — ' + pct(p.value) + ' of workers') + '"><span style="display:inline-block;width:11px;height:11px;border-radius:3px;background:' + p.color + ';margin-right:6px"></span>' + esc(p.label) + ' — <b>' + pct(p.value) + '</b></div>').join('') + '</div></div>';
 }
-function sparkline(values, color) {
+function sparkline(values, color, years) {
   const w = 260, h = 54, pad = 4;
   const pts = values.filter((v) => v != null && !isNaN(v));
   if (pts.length < 2) return '<p class="chart-sub">Not enough yearly readings to draw a trend.</p>';
   const min = Math.min.apply(null, pts), max = Math.max.apply(null, pts);
   const span = (max - min) || 1;
-  const xy = pts.map((v, i) => [pad + (i * (w - 2 * pad)) / (pts.length - 1), h - pad - ((v - min) / span) * (h - 2 * pad)]);
-  const line = xy.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
-  const dots = xy.map((p) => '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3" fill="' + color + '"/>').join('');
+  const xy = values.map((v, i) => [pad + (i * (w - 2 * pad)) / (values.length - 1), (v == null || isNaN(v)) ? null : h - pad - ((v - min) / span) * (h - 2 * pad)]);
+  const linePts = xy.filter((p) => p[1] != null);
+  const line = linePts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+  const dots = xy.map((p, i) => {
+    if (p[1] == null) return '';
+    const yr = years ? years[i] : (2014 + i);
+    return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3.5" fill="' + color + '" data-tip="' + yr + ': BOD ' + num(values[i]) + ' mg/l (bathing standard 3 mg/l)"/>';
+  }).join('');
   return '<svg width="100%" viewBox="0 0 ' + w + ' ' + h + '" style="max-width:280px"><path d="' + line + '" fill="none" stroke="' + color + '" stroke-width="2.5"/>' + dots + '</svg>';
 }
 function animateCountUps(root) {
@@ -250,6 +310,11 @@ async function loadRiverData(river) {
     fetchJSON(d + '/' + F.river), fetchJSON(d + '/' + F.corridor), fetchJSON(d + '/' + F.population),
   ]);
   const data = { drains, stps, wq, people, courses, industries, riverGeo, corridor, population };
+  // stamp every plotted feature with its river id — cards and the action
+  // list must know which river an item belongs to, whatever the filter is
+  ['drains', 'stps', 'wq', 'people', 'courses', 'industries'].forEach((k) => {
+    data[k].features.forEach((f) => { f.properties._river = river; });
+  });
   // merge per-year water-quality series from the CSV (the geojson carries latest values only)
   try {
     const wqCsv = parseCSV(await fetchText(d + '/water_quality.csv'));
@@ -285,12 +350,12 @@ function shortcomingFilter(kind, p) {
   if (kind === 'drain') return !(p.tapped === true || p.tapped_status === 'Tapped');
   if (kind === 'stp') return p.ngt_compliant === false;
   if (kind === 'wq') { const b = +p.bod_latest; return !isNaN(b) && b > 3; }
-  if (kind === 'town') return townShortfall(p.town) > 0;
+  if (kind === 'town') return townShortfall(p._river, p.town) > 0;
   if (kind === 'course') return p.tapped_status !== 'Tapped';
   return true;
 }
-function townStats(town) {
-  const R = state.data[state.river];
+function townStats(river, town) {
+  const R = state.data[river];
   const drains = R.drains.features.filter((f) => f.properties.town === town);
   const stps = R.stps.features.filter((f) => f.properties.town === town);
   const untapped = drains.filter((f) => f.properties.tapped !== true)
@@ -301,75 +366,102 @@ function townStats(town) {
   const compliant = stps.filter((f) => f.properties.ngt_compliant === true).length;
   return { drains: drains.length, untapped, capacity, utilised, stps: stps.length, compliant, assessed: assessed.length };
 }
-function townShortfall(town) {
-  const t = townStats(town);
+function townShortfall(river, town) {
+  const t = townStats(river, town);
   return Math.max(0, t.untapped - t.capacity);
 }
 
 function buildLayers() {
   clearLayers();
-  const R = RIVERS[state.river], data = state.data[state.river];
   const L_ = {};
-  // --- river line + corridor (always built; corridor shown per layer rule) ---
-  L_.river = L.geoJSON(data.riverGeo, { style: { color: '#1d4ed8', weight: 3.5, opacity: 0.9 } }).addTo(map);
-  L_.corridor = L.geoJSON(data.corridor, { style: { color: '#3b82f6', weight: 1, fillColor: '#3b82f6', fillOpacity: 0.05 } });
+  state.townIndex = {};
+  // --- river lines (always on) + corridors (per layer rule) ---
+  const riverLines = [], corridors = [];
+  activeRivers().forEach((river) => {
+    const data = state.data[river];
+    riverLines.push(L.geoJSON(data.riverGeo, { style: { color: '#1d4ed8', weight: 3.5, opacity: 0.9 } }));
+    corridors.push(L.geoJSON(data.corridor, { style: { color: '#3b82f6', weight: 1, fillColor: '#3b82f6', fillOpacity: 0.05 } }));
+  });
+  L_.river = L.layerGroup(riverLines).addTo(map);
+  L_.corridor = L.layerGroup(corridors);
   // --- drains (clustered) ---
   const dc = L.markerClusterGroup({ iconCreateFunction: clusterIcon('#b91c1c'), disableClusteringAtZoom: 12, maxClusterRadius: 55 });
-  data.drains.features.forEach((f) => {
-    if (!f.geometry || !shortcomingFilter('drain', f.properties)) return;
-    const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: dropletIcon(f.properties, R.maxDrainLoad) });
-    m.on('click', () => showDrain(f.properties));
-    m.bindTooltip('<b>' + esc(f.properties.name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.bod_load_tpd) + ' t/day BOD');
-    dc.addLayer(m);
+  activeRivers().forEach((river) => {
+    const R = RIVERS[river], data = state.data[river];
+    data.drains.features.forEach((f) => {
+      if (!f.geometry || !shortcomingFilter('drain', f.properties)) return;
+      const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: dropletIcon(f.properties, R.maxDrainLoad) });
+      m.on('click', () => showDrain(f.properties));
+      m.bindTooltip('<b>' + esc(f.properties.name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.bod_load_tpd) + ' t/day BOD');
+      dc.addLayer(m);
+    });
   });
   L_.drains = dc;
   // --- STPs (clustered) ---
   const sc = L.markerClusterGroup({ iconCreateFunction: clusterIcon('#6d28d9'), disableClusteringAtZoom: 12, maxClusterRadius: 55 });
-  data.stps.features.forEach((f) => {
-    if (!f.geometry || !shortcomingFilter('stp', f.properties)) return;
-    const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: factoryIcon(f.properties, R.maxStpCap) });
-    m.on('click', () => showStp(f.properties));
-    m.bindTooltip('<b>' + esc(f.properties.plant_name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.capacity_mld, 0) + ' MLD');
-    sc.addLayer(m);
+  activeRivers().forEach((river) => {
+    const R = RIVERS[river], data = state.data[river];
+    data.stps.features.forEach((f) => {
+      if (!f.geometry || !shortcomingFilter('stp', f.properties)) return;
+      const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: factoryIcon(f.properties, R.maxStpCap) });
+      m.on('click', () => showStp(f.properties));
+      m.bindTooltip('<b>' + esc(f.properties.plant_name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.capacity_mld, 0) + ' MLD');
+      sc.addLayer(m);
+    });
   });
   L_.stps = sc;
   // --- water quality (clustered) ---
   const wc = L.markerClusterGroup({ iconCreateFunction: clusterIcon('#0369a1'), disableClusteringAtZoom: 12, maxClusterRadius: 55 });
-  data.wq.features.forEach((f) => {
-    if (!f.geometry || !shortcomingFilter('wq', f.properties)) return;
-    const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: wqIcon(f.properties) });
-    m.on('click', () => showWq(f.properties));
-    m.bindTooltip('<b>' + esc(f.properties.station) + '</b><br>BOD ' + num(f.properties.bod_latest) + ' mg/l (limit 3)');
-    wc.addLayer(m);
+  activeRivers().forEach((river) => {
+    const data = state.data[river];
+    data.wq.features.forEach((f) => {
+      if (!f.geometry || !shortcomingFilter('wq', f.properties)) return;
+      const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: wqIcon(f.properties) });
+      m.on('click', () => showWq(f.properties));
+      m.bindTooltip('<b>' + esc(f.properties.station) + '</b><br>BOD ' + num(f.properties.bod_latest) + ' mg/l (limit 3)');
+      wc.addLayer(m);
+    });
   });
   L_.wq = wc;
   // --- towns (clustered) ---
   const tc = L.markerClusterGroup({ iconCreateFunction: clusterIcon('#2563eb'), disableClusteringAtZoom: 10, maxClusterRadius: 60 });
-  state.townByName = {};
-  data.people.features.forEach((f) => {
-    if (!f.geometry) return;
-    state.townByName[f.properties.town] = f.properties;
-    if (!shortcomingFilter('town', f.properties)) return;
-    const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: townIcon(f.properties) });
-    m.on('click', () => showTown(f.properties));
-    m.bindTooltip('<b>' + esc(f.properties.town) + '</b><br>pop. ' + num0(f.properties.population_2011) + ' (2011)');
-    tc.addLayer(m);
+  activeRivers().forEach((river) => {
+    const data = state.data[river];
+    data.people.features.forEach((f) => {
+      if (!f.geometry) return;
+      state.townIndex[f.properties.town + ' · ' + riverLabel(river)] = { river, props: f.properties };
+      if (!shortcomingFilter('town', f.properties)) return;
+      const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: townIcon(f.properties) });
+      m.on('click', () => showTown(f.properties));
+      m.bindTooltip('<b>' + esc(f.properties.town) + '</b><br>pop. ' + num0(f.properties.population_2011) + ' (2011)');
+      tc.addLayer(m);
+    });
   });
   L_.towns = tc;
   // --- drain courses ---
-  L_.courses = L.geoJSON(data.courses, { style: (f) => {
-    const load = +f.properties.bod_load_tpd || 0;
-    return { color: load > 50 ? '#991b1b' : load > 10 ? '#dc2626' : '#ea580c',
-             weight: Math.max(2, Math.min(6, 2 + load / 40)), opacity: 0.85,
-             dashArray: (f.properties.course_status && /approx/i.test(f.properties.course_status)) ? '7 5' : null };
-  }, onEachFeature: (f, l) => { l.on('click', () => showCourse(f.properties)); l.bindTooltip('<b>' + esc(f.properties.drain_name) + '</b><br>' + num(f.properties.bod_load_tpd) + ' t/day BOD · ' + num(f.properties.course_length_km) + ' km'); } });
+  const courseLayers = [];
+  activeRivers().forEach((river) => {
+    const data = state.data[river];
+    courseLayers.push(L.geoJSON(data.courses, { style: (f) => {
+      const load = +f.properties.bod_load_tpd || 0;
+      return { color: load > 50 ? '#991b1b' : load > 10 ? '#dc2626' : '#ea580c',
+               weight: Math.max(2, Math.min(6, 2 + load / 40)), opacity: 0.85,
+               dashArray: (f.properties.course_status && /approx/i.test(f.properties.course_status)) ? '7 5' : null };
+    }, onEachFeature: (f, l) => { l.on('click', () => showCourse(f.properties)); l.bindTooltip('<b>' + esc(f.properties.drain_name) + '</b><br>' + num(f.properties.bod_load_tpd) + ' t/day BOD · ' + num(f.properties.course_length_km) + ' km'); } }));
+  });
+  L_.courses = L.layerGroup(courseLayers);
   // --- industries ---
-  L_.industries = L.geoJSON(data.industries, { pointToLayer: (f, ll) => {
-    const m = L.marker(ll, { icon: industryIcon(f.properties) });
-    m.on('click', () => showIndustry(f.properties));
-    m.bindTooltip('<b>' + esc(f.properties.name) + '</b><br>' + esc(f.properties.industry_type || ''));
-    return m;
-  } });
+  const industryLayers = [];
+  activeRivers().forEach((river) => {
+    const data = state.data[river];
+    industryLayers.push(L.geoJSON(data.industries, { pointToLayer: (f, ll) => {
+      const m = L.marker(ll, { icon: industryIcon(f.properties) });
+      m.on('click', () => showIndustry(f.properties));
+      m.bindTooltip('<b>' + esc(f.properties.name) + '</b><br>' + esc(f.properties.industry_type || ''));
+      return m;
+    } }));
+  });
+  L_.industries = L.layerGroup(industryLayers);
   state.layers = L_;
   applyLayers();
 }
@@ -426,18 +518,20 @@ function updateLayerLegends() {
   el.innerHTML = '<div class="ll">' + (LAYER_LEGENDS[state.activeLayer] || '') + '</div>';
 }
 function updateLayerNote() {
-  const R = state.data[state.river];
-  if (!R) { $('#layerNote').textContent = ''; return; }
-  const counts = {
-    drains: plottedCount(R.drains), stps: plottedCount(R.stps), wq: plottedCount(R.wq),
-    towns: plottedCount(R.people), courses: R.courses.features.length, industries: R.industries.features.length,
-  };
+  const rivers = activeRivers().filter((r) => state.data[r]);
+  if (!rivers.length) { $('#layerNote').textContent = ''; return; }
+  const counts = { drains: 0, stps: 0, wq: 0, towns: 0, courses: 0, industries: 0 };
+  rivers.forEach((river) => {
+    const R = state.data[river];
+    counts.drains += plottedCount(R.drains); counts.stps += plottedCount(R.stps); counts.wq += plottedCount(R.wq);
+    counts.towns += plottedCount(R.people); counts.courses += R.courses.features.length; counts.industries += R.industries.features.length;
+  });
   $('#layerNote').textContent = state.activeLayer === 'all'
     ? counts.drains + ' drains · ' + counts.stps + ' plants · ' + counts.wq + ' stations · ' + counts.towns + ' towns on the map'
     : counts[state.activeLayer] + ' shown';
 }
 function renderLegend() {
-  const R = RIVERS[state.river];
+  const maxLoad = Math.max.apply(null, activeRivers().map((r) => RIVERS[r].maxDrainLoad));
   $('#legendPanel').innerHTML =
     '<h4>How to read the map</h4>' +
     '<div class="lg-row"><span class="swatch"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2.2C12 2.2 5.4 10.1 5.4 14.7a6.6 6.6 0 0 0 13.2 0C18.6 10.1 12 2.2 12 2.2Z" fill="#dc2626"/></svg></span><span><b>Drains</b> — droplet. Size = BOD load added. Colour = how bad: amber → red. Faded = load estimated, not measured. Green only for tapped (intercepted) drains. A drain is never green.</span></div>' +
@@ -447,7 +541,7 @@ function renderLegend() {
     '<div class="lg-row"><span class="swatch">◆</span><span><b>Industries</b> — diamond. Position approximate (town/locality level).</span></div>' +
     '<div class="legend-scale">' +
     [1, 10, 50, 260].map((v) => {
-      const s = Math.round(13 + 26 * Math.sqrt(Math.min(v, R.maxDrainLoad) / R.maxDrainLoad));
+      const s = Math.round(13 + 26 * Math.sqrt(Math.min(v, maxLoad) / maxLoad));
       return '<span class="sc"><svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24"><path d="M12 2.2C12 2.2 5.4 10.1 5.4 14.7a6.6 6.6 0 0 0 13.2 0C18.6 10.1 12 2.2 12 2.2Z" fill="#dc2626"/></svg><br>' + v + ' t/day</span>';
     }).join('') + '</div>' +
     '<p style="font-size:12.5px;color:var(--muted)">Reference circles: drain BOD load in tonnes per day. Zoom in: clusters break apart into single points. All plant locations are town centroids — no public source gives plant-site coordinates.</p>';
@@ -478,7 +572,7 @@ function explainerBOD() {
   return '<p class="note-box"><b>BOD</b> — Biochemical Oxygen Demand: the oxygen microbes need to break down the organic pollution in water. Higher BOD = more polluted. Bathing standard: 3 mg/l or less.</p>';
 }
 function showDrain(p) {
-  const R = RIVERS[state.river];
+  const R = RIVERS[p._river];
   const load = +p.bod_load_tpd;
   const measured = p.data_status === 'measured';
   const statusBadge = p.tapped === true ? '<span class="badge green">Tapped — intercepted</span>'
@@ -497,13 +591,13 @@ function showDrain(p) {
     '<div class="cell"><div class="k">BOD load added</div><div class="v">' + num(load) + ' <small>t/day</small></div></div>' +
     '<div class="cell"><div class="k">BOD concentration</div><div class="v">' + num(p.bod_mg_l) + ' <small>mg/l</small></div></div>' +
     '<div class="cell"><div class="k">COD</div><div class="v">' + num(p.cod_mg_l) + ' <small>mg/l</small></div></div></div>';
-  if (measured) html += '<div class="chart-title">Load vs the biggest drain on this river (' + num(R.maxDrainLoad) + ' t/day)</div>' + hbarRow('This drain', load, R.maxDrainLoad, '#dc2626', num(load) + ' t/day');
+  if (measured) html += '<div class="chart-title">Load vs the biggest drain on this river (' + num(R.maxDrainLoad) + ' t/day)</div>' + hbarRow('This drain', load, R.maxDrainLoad, '#dc2626', num(load) + ' t/day', 'This drain adds ' + num(load) + ' tonnes of BOD a day · biggest drain on the ' + R.label + ': ' + num(R.maxDrainLoad) + ' t/day');
   if (p.data_status === 'estimated') html += '<p class="flag">Estimated load — ' + esc(p.estimation_method || 'apportioned from the town\u2019s estimated sewage (population × 185 litres per person per day × 0.8), shared equally across the town\u2019s unmeasured drains.') + '</p>';
   if (p.data_status === 'unmeasured') html += '<p class="flag">Never measured — the CPCB drain report lists this drain with no flow and no load. Its pollution is unquantified.</p>';
   html += actionBox(
     p.tapped === true ? 'Keep the interception working and make sure the diverted sewage actually reaches a working treatment plant.'
       : 'Intercept and tap this drain into the sewer network, and treat the flow before it reaches the river.',
-    p.town + ' municipal body + ' + (RIVERS[state.river].stateAgency[p.state] || STATE_AGENCY_DEFAULT) + ' + State Pollution Control Board');
+    p.town + ' municipal body + ' + (R.stateAgency[p.state] || STATE_AGENCY_DEFAULT) + ' + State Pollution Control Board');
   html += explainerBOD();
   html += srcLine(p.source, p.as_of);
   openPanel(html);
@@ -519,17 +613,19 @@ function effluentBars(p) {
   let h = '<div class="chart-title">Outlet quality vs NGT metro-tier limits</div>';
   lim.forEach(([label, v, l, unit]) => {
     if (v == null || isNaN(v)) { h += '<div class="hbar-row"><span>' + label + '</span><span style="color:var(--muted);font-size:13px">not published</span><span></span></div>'; return; }
-    h += hbarRow(label + ' (limit ' + l + ')', Math.min(v, l * 3), l * 3, v > l ? '#dc2626' : '#16a34a', num(v) + ' ' + unit);
+    const verdict = v > l ? 'OVER the limit by ' + num(v - l) + ' ' + unit : 'within the limit';
+    h += hbarRow(label + ' (limit ' + l + ')', Math.min(v, l * 3), l * 3, v > l ? '#dc2626' : '#16a34a', num(v) + ' ' + unit,
+      label + ': ' + num(v) + ' ' + unit + ' at the outlet vs the NGT metro-tier limit of ' + l + ' ' + unit + ' — ' + verdict);
   });
   h += '<p class="chart-sub">No per-plant total nitrogen value is published anywhere.</p>';
   return h;
 }
 function showStp(p) {
-  const R = RIVERS[state.river];
+  const R = RIVERS[p._river];
   const isNew = p.is_new_plant === true;
   const util = p.utilisation_pct != null ? +p.utilisation_pct : (p.capacity_mld && p.utilised_mld != null ? (+p.utilised_mld / +p.capacity_mld) * 100 : null);
   let html = '<h2>' + esc(p.plant_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
-  const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (state.river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : 'only 3 of 115 plants on the Yamuna do.')
+  const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : 'only 3 of 115 plants on the Yamuna do.')
     : p.ngt_compliant === false ? 'Fails NGT norms' + (p.noncompliance_reason ? ' — ' + esc(p.noncompliance_reason) : '.') + ' Treated sewage that is still too dirty to meet the standard.'
     : 'Never assessed against NGT norms — its outlet quality is not publicly graded.';
   html += takeaway(take);
@@ -539,11 +635,12 @@ function showStp(p) {
     '<div class="cell"><div class="k">Actually treated</div><div class="v">' + num(p.utilised_mld, 0) + ' <small>MLD</small></div></div>' +
     '<div class="cell"><div class="k">Utilisation</div><div class="v">' + (util != null ? Math.round(util) + '<small>%</small>' : '—') + '</div></div>' +
     '<div class="cell"><div class="k">Meets MoEFCC 2017</div><div class="v" style="font-size:14px">' + (p.moefcc_compliant === true ? 'Yes' : p.moefcc_compliant === false ? 'No' : 'Not assessed') + '</div></div></div>';
-  if (util != null) html += hbarRow('Utilisation', Math.min(util, 100), 100, util < 50 ? '#dc2626' : util < 75 ? '#ea580c' : '#16a34a', Math.round(util) + '% of capacity');
+  if (util != null) html += hbarRow('Utilisation', Math.min(util, 100), 100, util < 50 ? '#dc2626' : util < 75 ? '#ea580c' : '#16a34a', Math.round(util) + '% of capacity',
+    'Utilisation: ' + Math.round(util) + '% of ' + num(p.capacity_mld, 0) + ' MLD capacity — ' + num(p.utilised_mld, 0) + ' MLD actually treated');
   if (p.effluent_bod_mg_l != null || p.effluent_cod_mg_l != null) html += effluentBars(p);
-  else if (state.river === 'ganga') html += '<p class="note-box">No effluent values published for this plant.</p>';
+  else if (p._river === 'ganga') html += '<p class="note-box">No effluent values published for this plant.</p>';
 
-  if (state.river === 'ganga') {
+  if (p._river === 'ganga') {
     /* ---- Ganga accountability (stp_accountability.csv fields) ---- */
     const opFlag = p.operator_name ? '' : ' <span class="badge grey">operator undisclosed</span>';
     const unconfirmed = (p.data_flags && /state-pattern|HAM-scope|unconfirmed/i.test(p.data_flags)) || p.operator_type === 'state-pattern';
@@ -602,21 +699,25 @@ function showWq(p) {
     '<div class="cell"><div class="k">DO — latest (' + esc(p.do_latest_year || '') + ')</div><div class="v">' + num(doV) + ' <small>mg/l</small></div></div>' +
     '<div class="cell"><div class="k">pH — latest</div><div class="v">' + num(p.ph_latest) + '</div></div>' +
     '<div class="cell"><div class="k">Faecal coliform — latest</div><div class="v" style="font-size:14px">' + num(p.fc_latest, 0) + ' <small>MPN/100 ml</small></div></div></div>';
-  if (!isNaN(bod)) html += '<div class="chart-title">BOD vs the 3 mg/l bathing standard</div>' + hbarRow('BOD', Math.min(bod, 12), 12, over ? '#dc2626' : '#16a34a', num(bod) + ' mg/l');
-  if (!isNaN(doV)) html += hbarRow('DO (fish need ≥ 5)', Math.min(doV, 10), 10, doV < 5 ? '#dc2626' : '#16a34a', num(doV) + ' mg/l');
+  if (!isNaN(bod)) html += '<div class="chart-title">BOD vs the 3 mg/l bathing standard</div>' + hbarRow('BOD', Math.min(bod, 12), 12, over ? '#dc2626' : '#16a34a', num(bod) + ' mg/l',
+    'BOD ' + num(bod) + ' mg/l vs the 3 mg/l bathing standard — ' + (over ? Math.round(bod / 3 * 10) / 10 + '× the limit' : 'within the limit'));
+  if (!isNaN(doV)) html += hbarRow('DO (fish need ≥ 5)', Math.min(doV, 10), 10, doV < 5 ? '#dc2626' : '#16a34a', num(doV) + ' mg/l',
+    'Dissolved oxygen ' + num(doV) + ' mg/l — fish need 5 mg/l or more, ' + (doV < 5 ? 'this stretch is below it' : 'this stretch is above it'));
   if (p.bod_earliest != null && p.bod_latest != null) {
     html += '<div class="chart-title">Change since ' + esc(p.bod_earliest_year) + '</div>' +
-      hbarRow('Then (' + p.bod_earliest_year + ')', +p.bod_earliest, Math.max(+p.bod_earliest, +p.bod_latest, 3), '#94a3b8', num(p.bod_earliest) + ' mg/l') +
-      hbarRow('Now (' + p.bod_latest_year + ')', +p.bod_latest, Math.max(+p.bod_earliest, +p.bod_latest, 3), over ? '#dc2626' : '#16a34a', num(p.bod_latest) + ' mg/l') +
+      hbarRow('Then (' + p.bod_earliest_year + ')', +p.bod_earliest, Math.max(+p.bod_earliest, +p.bod_latest, 3), '#94a3b8', num(p.bod_earliest) + ' mg/l',
+        'BOD in ' + p.bod_earliest_year + ': ' + num(p.bod_earliest) + ' mg/l') +
+      hbarRow('Now (' + p.bod_latest_year + ')', +p.bod_latest, Math.max(+p.bod_earliest, +p.bod_latest, 3), over ? '#dc2626' : '#16a34a', num(p.bod_latest) + ' mg/l',
+        'BOD in ' + p.bod_latest_year + ': ' + num(p.bod_latest) + ' mg/l — ' + esc(p.bod_trend || '')) +
       '<p class="chart-sub">Trend: <b>' + esc(p.bod_trend || '—') + '</b> (' + (p.bod_change_pct != null ? (+p.bod_change_pct > 0 ? '+' : '') + p.bod_change_pct + '%' : 'change not computed') + ')</p>';
   }
   {
-    const years = state.river === 'yamuna' ? [2021, 2022, 2023, 2024, 2025] : [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+    const years = p._river === 'yamuna' ? [2021, 2022, 2023, 2024, 2025] : [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
     const vals = years.map((y) => { const v = +p['bod_' + y]; return isNaN(v) ? null : v; });
     if (vals.some((v) => v != null)) {
-      html += '<div class="chart-title">BOD by year, ' + years[0] + '–' + years[years.length - 1] + '</div>' + sparkline(vals, '#dc2626') +
+      html += '<div class="chart-title">BOD by year, ' + years[0] + '–' + years[years.length - 1] + '</div>' + sparkline(vals, '#dc2626', years) +
         '<p class="chart-sub">' + years.map((y, i) => y + ': ' + (vals[i] == null ? '—' : num(vals[i]))).join(' · ') + ' mg/l.' +
-        (state.river === 'yamuna' ? ' No usable 2014–2020 series exists publicly.' : '') + '</p>';
+        (p._river === 'yamuna' ? ' No usable 2014–2020 series exists publicly.' : '') + ' Hover a dot for that year&rsquo;s reading.</p>';
     }
   }
   html += explainerBOD();
@@ -652,8 +753,9 @@ function showIndustry(p) {
 
 /* ============================== town flyout ============================== */
 function showTown(p) {
-  const t = townStats(p.town);
-  const anchor = state.river === 'ganga' && ANCHOR_TOWNS.includes(p.town);
+  const river = p._river;
+  const t = townStats(river, p.town);
+  const anchor = river === 'ganga' && ANCHOR_TOWNS.includes(p.town);
   const rr = anchor && state.religionRuling ? state.religionRuling[p.town] : null;
   let html = '<h2>' + esc(p.town) + '</h2><p class="sub">' + esc(p.state) + ' · Census 2011 town · ' + esc(p.population_basis || '') + '</p>';
   html += '<div class="folder-tabs" role="tablist">' +
@@ -666,15 +768,15 @@ function showTown(p) {
   const body = $('#folderBody');
   function renderTab(which) {
     document.querySelectorAll('.folder-tab').forEach((b) => b.classList.toggle('active', b.getAttribute('data-ftab') === which));
-    if (which === 'treat') body.innerHTML = townTabTreat(p, t);
-    else if (which === 'earn') body.innerHTML = townTabEarn(p, anchor);
+    if (which === 'treat') body.innerHTML = townTabTreat(p, t, river);
+    else if (which === 'earn') body.innerHTML = townTabEarn(p, anchor, river);
     else if (which === 'people') body.innerHTML = townTabPeople(p, anchor, rr);
     else body.innerHTML = townTabRules(p, anchor, rr);
   }
   document.querySelectorAll('.folder-tab').forEach((b) => b.addEventListener('click', () => renderTab(b.getAttribute('data-ftab'))));
   renderTab('treat');
 }
-function townTabTreat(p, t) {
+function townTabTreat(p, t, river) {
   const shortfall = Math.max(0, t.untapped - t.capacity);
   const shortfallPct = (t.untapped + t.capacity) > 0 ? Math.round((shortfall / (t.untapped + t.capacity)) * 100) : 0;
   let h = '<div class="kv">' +
@@ -683,20 +785,25 @@ function townTabTreat(p, t) {
     '<div class="cell"><div class="k">Treatment plants</div><div class="v">' + t.stps + ' <small>· ' + num(t.capacity, 0) + ' MLD capacity</small></div></div>' +
     '<div class="cell"><div class="k">Plants meeting NGT norms</div><div class="v">' + t.compliant + ' <small>of ' + t.assessed + ' assessed</small></div></div></div>';
   h += '<div class="chart-title">Untapped flow vs treatment capacity</div>';
-  h += hbarRow('Untapped drains', t.untapped, Math.max(t.untapped, t.capacity, 1), '#dc2626', num(t.untapped) + ' MLD');
-  h += hbarRow('Treatment capacity', t.capacity, Math.max(t.untapped, t.capacity, 1), '#2563eb', num(t.capacity, 0) + ' MLD');
+  h += hbarRow('Untapped drains', t.untapped, Math.max(t.untapped, t.capacity, 1), '#dc2626', num(t.untapped) + ' MLD',
+    'Untapped drains carry ' + num(t.untapped) + ' MLD straight into the river — no treatment at all');
+  h += hbarRow('Treatment capacity', t.capacity, Math.max(t.untapped, t.capacity, 1), '#2563eb', num(t.capacity, 0) + ' MLD',
+    'Treatment capacity: ' + num(t.capacity, 0) + ' MLD across ' + t.stps + ' plant' + (t.stps === 1 ? '' : 's'));
   h += '<div class="big-pct">' + shortfallPct + '%</div><div class="big-pct-label">shortfall — the share of the town&rsquo;s sewage flow with no treatment capacity behind it</div>';
   h += '<div class="chart-title">Plants vs NGT norms — one dot per plant</div><div class="dot-row">' +
     Array.from({ length: t.stps }, (_, i) => {
-      const st = state.data[state.river].stps.features.filter((f) => f.properties.town === p.town)[i];
+      const st = state.data[river].stps.features.filter((f) => f.properties.town === p.town)[i];
       const c = !st ? '#9ca3af' : st.properties.ngt_compliant === true ? '#16a34a' : st.properties.ngt_compliant === false ? '#dc2626' : '#9ca3af';
-      return '<span class="d" style="background:' + c + '" title="' + esc(st ? st.properties.plant_name : '') + '"></span>';
+      const status = !st ? 'unknown' : st.properties.ngt_compliant === true ? 'meets NGT norms' : st.properties.ngt_compliant === false ? 'fails NGT norms' : 'not assessed';
+      const tip = st ? st.properties.plant_name + ' — ' + num(st.properties.capacity_mld, 0) + ' MLD · ' + status + ' · tap to open its card' : 'Plant ' + (i + 1);
+      const open = st ? ' data-open="stp|' + river + '|' + esc(st.properties.plant_name) + '|' + esc(p.town) + '"' : '';
+      return '<span class="d" style="background:' + c + '" data-tip="' + esc(tip) + '"' + open + '></span>';
     }).join('') + '</div>';
-  h += '<p class="chart-sub">Green = meets NGT norms · red = fails · grey = not assessed.</p>';
+  h += '<p class="chart-sub">Green = meets NGT norms · red = fails · grey = not assessed. Tap a dot to open that plant&rsquo;s card.</p>';
   if (t.stps === 0) h += '<p class="note-box">No treatment plant is listed for this town in the CPCB inventory — all of its drain flow is untreated unless a neighbouring town&rsquo;s plant serves it.</p>';
   return h;
 }
-function townTabEarn(p, anchor) {
+function townTabEarn(p, anchor, river) {
   let lv = p.livelihoods;
   if (typeof lv === 'string' && lv.trim().startsWith('{')) { try { lv = JSON.parse(lv); } catch (e) { /* keep as plain text */ } }
   let h = '';
@@ -716,7 +823,7 @@ function townTabEarn(p, anchor) {
   } else {
     h += '<p>How people earn a living here has not been compiled for this town.</p>';
   }
-  if (!anchor && state.river === 'ganga') h += '<p class="note-box">Livelihood charts are compiled for the seven anchor towns; other towns show the district-level split where the Census record carries it.</p>';
+  if (!anchor && river === 'ganga') h += '<p class="note-box">Livelihood charts are compiled for the seven anchor towns; other towns show the district-level split where the Census record carries it.</p>';
   return h;
 }
 function townTabPeople(p, anchor, rr) {
@@ -729,7 +836,8 @@ function townTabPeople(p, anchor, rr) {
     h += '<div class="chart-title">Religion — ' + esc(rr.religion_basis) + '</div>';
     const max = Math.max.apply(null, rr.religion.map((r) => r[1]));
     rr.religion.forEach(([name, v]) => {
-      h += hbarRow(name, v, max, name === 'Hindu' ? '#ea580c' : name === 'Muslim' ? '#16a34a' : '#94a3b8', v.toFixed(2) + '%');
+      h += hbarRow(name, v, max, name === 'Hindu' ? '#ea580c' : name === 'Muslim' ? '#16a34a' : '#94a3b8', v.toFixed(2) + '%',
+        name + ': ' + v.toFixed(2) + '% of the district population (Census of India 2011)');
     });
     h += '<p class="chart-sub">District-level shares, Census of India 2011. The two large groups are shown prominently; small slices are grouped legibly.</p>';
   } else {
@@ -755,61 +863,149 @@ function townTabRules(p, anchor, rr) {
 }
 
 /* ============================== action list ============================== */
-function buildActionList() {
-  const R = RIVERS[state.river], data = state.data[state.river];
-  const agency = (st) => R.stateAgency[st] || STATE_AGENCY_DEFAULT;
-  const items = [];
-  // worst drains by measured BOD
-  const drains = data.drains.features
-    .filter((f) => f.properties.data_status === 'measured' && +f.properties.bod_load_tpd > 0)
-    .sort((a, b) => (+b.properties.bod_load_tpd) - (+a.properties.bod_load_tpd)).slice(0, 12);
-  drains.forEach((f) => {
-    const p = f.properties;
-    items.push({ kind: 'Drain', score: +p.bod_load_tpd,
-      title: p.name + ' — ' + p.town + ', ' + p.state,
-      fig: num(p.bod_load_tpd) + ' tonnes of BOD a day · ' + num(p.flow_mld) + ' MLD · ' + (p.tapped === true ? 'partially tapped' : 'untapped'),
-      what: 'Intercept and tap this drain into the sewer network and treat the flow before it reaches the river.',
-      who: p.town + ' municipal body · ' + agency(p.state) + ' · State Pollution Control Board' });
-  });
-  // worst failing STPs by capacity
-  const stps = data.stps.features
-    .filter((f) => f.properties.ngt_compliant === false)
-    .sort((a, b) => (+b.properties.capacity_mld || 0) - (+a.properties.capacity_mld || 0)).slice(0, 12);
-  stps.forEach((f) => {
-    const p = f.properties;
-    const worst = state.river === 'ganga' && p.effluent_bod_mg_l ? ' · outlet BOD ' + num(p.effluent_bod_mg_l) + ' mg/l (limit 10)' : '';
-    items.push({ kind: 'Treatment plant', score: +p.capacity_mld || 0,
-      title: p.plant_name + ' — ' + p.town + ', ' + p.state,
-      fig: num(p.capacity_mld, 0) + ' MLD capacity · fails NGT norms' + worst,
-      what: 'Bring the outlet within NGT norms — fix the failing parameter — and publish the plant\u2019s O&M spending.',
-      who: (p.operator_name || 'Plant operator') + ' · ' + agency(p.state) + ' · State Pollution Control Board enforces outlet norms set by CPCB' });
-  });
-  // towns with the biggest untreated gap
-  const towns = data.people.features
-    .map((f) => ({ town: f.properties.town, state: f.properties.state, gap: townShortfall(f.properties.town) }))
-    .filter((t) => t.gap > 0).sort((a, b) => b.gap - a.gap).slice(0, 6);
-  towns.forEach((t) => {
-    items.push({ kind: 'Town', score: t.gap,
-      title: t.town + ' — ' + t.state,
-      fig: num(t.gap) + ' MLD of sewage flow with no treatment capacity behind it',
-      what: 'Close the treatment gap: add treatment capacity and connect households to sewers so untreated flow stops reaching the river.',
-      who: t.town + ' municipal body · ' + agency(t.state) + ' · State Pollution Control Board' });
-  });
-  // rank: drains first by BOD, then plants, then towns — keep worst-first within each group,
-  // but interleave by a common "problem size" is not meaningful across units, so present grouped worst-first.
-  const ordered = items.slice(0, 30);
-  $('#actionIntro').textContent = state.river === 'ganga'
-    ? 'The worst problems on the Ganga, worst first — the biggest untapped drains, the biggest failing treatment plants, and the towns with the largest untreated gap. Each one says what must happen and who is responsible.'
-    : 'The worst problems on the Yamuna, worst first — the biggest untapped drains, the biggest failing treatment plants, and the towns with the largest untreated gap. Each one says what must happen and who is responsible.';
-  $('#actionList').innerHTML = ordered.map((it) =>
-    '<li><h3>' + esc(it.title) + '</h3><div class="fig">' + esc(it.kind) + ' · ' + esc(it.fig) + '</div>' +
-    '<p class="what"><b>What must happen:</b> ' + esc(it.what) + '</p>' +
-    '<p class="who"><b>Who is responsible:</b> ' + esc(it.who) + '</p></li>').join('');
+function findFeature(river, kind, key) {
+  const d = state.data[river];
+  if (!d) return null;
+  if (kind === 'drain') {
+    const [name, town] = key.split('|');
+    return d.drains.features.find((f) => f.properties.name === name && f.properties.town === town) || null;
+  }
+  if (kind === 'stp') {
+    const [name, town] = key.split('|');
+    return d.stps.features.find((f) => f.properties.plant_name === name && f.properties.town === town) || null;
+  }
+  if (kind === 'town') return d.people.features.find((f) => f.properties.town === key) || null;
+  if (kind === 'wq') return d.wq.features.find((f) => f.properties.station === key) || null;
+  return null;
 }
+function flashAt(latlng) {
+  const ring = L.circleMarker(latlng, { radius: 22, color: '#2563eb', weight: 3, fill: false, className: 'locate-ring', interactive: false });
+  ring.addTo(map);
+  setTimeout(() => { if (map.hasLayer(ring)) map.removeLayer(ring); }, 5000);
+}
+function openItemCard(kind, river, key) {
+  const f = findFeature(river, kind, key);
+  if (!f) return;
+  const p = f.properties;
+  if (kind === 'drain') showDrain(p);
+  else if (kind === 'stp') showStp(p);
+  else if (kind === 'town') showTown(p);
+  else if (kind === 'wq') showWq(p);
+}
+function locateActionItem(it) {
+  switchTab('map');
+  state.activeLayer = 'all';
+  applyLayers();
+  const f = findFeature(it.river, it.targetKind, it.targetKey);
+  let ll = null;
+  if (f && f.geometry) ll = [f.geometry.coordinates[1], f.geometry.coordinates[0]];
+  if (!ll && it.town) {
+    const tf = findFeature(it.river, 'town', it.town);
+    if (tf && tf.geometry) ll = [tf.geometry.coordinates[1], tf.geometry.coordinates[0]];
+  }
+  if (ll) {
+    map.flyTo(ll, 13, { duration: 1.2 });
+    flashAt(ll);
+  }
+  if (f) openItemCard(it.targetKind, it.river, it.targetKey);
+  else if (it.town) {
+    const tf = findFeature(it.river, 'town', it.town);
+    if (tf) showTown(tf.properties);
+  }
+}
+function buildActionList() {
+  const rivers = activeRivers();
+  const items = [];
+  // worst drains by measured BOD — merged across rivers, worst first
+  const allDrains = [];
+  rivers.forEach((river) => {
+    const R = RIVERS[river], data = state.data[river];
+    data.drains.features
+      .filter((f) => f.properties.data_status === 'measured' && +f.properties.bod_load_tpd > 0)
+      .forEach((f) => allDrains.push({ river, f }));
+  });
+  allDrains.sort((a, b) => (+b.f.properties.bod_load_tpd) - (+a.f.properties.bod_load_tpd)).slice(0, 12)
+    .forEach(({ river, f }) => {
+      const p = f.properties, R = RIVERS[river];
+      items.push({ kind: 'Drain', river, town: p.town, targetKind: 'drain', targetKey: p.name + '|' + p.town,
+        score: +p.bod_load_tpd,
+        title: p.name + ' — ' + p.town + ', ' + p.state,
+        fig: num(p.bod_load_tpd) + ' tonnes of BOD a day · ' + num(p.flow_mld) + ' MLD · ' + (p.tapped === true ? 'partially tapped' : 'untapped'),
+        barValue: +p.bod_load_tpd, barMax: 260.67, barLabel: num(p.bod_load_tpd) + ' t/day BOD',
+        what: 'Intercept and tap this drain into the sewer network and treat the flow before it reaches the river.',
+        who: p.town + ' municipal body · ' + (R.stateAgency[p.state] || STATE_AGENCY_DEFAULT) + ' · State Pollution Control Board' });
+    });
+  // worst failing STPs by capacity — merged across rivers
+  const allStps = [];
+  rivers.forEach((river) => {
+    const data = state.data[river];
+    data.stps.features.filter((f) => f.properties.ngt_compliant === false)
+      .forEach((f) => allStps.push({ river, f }));
+  });
+  allStps.sort((a, b) => (+b.f.properties.capacity_mld || 0) - (+a.f.properties.capacity_mld || 0)).slice(0, 12)
+    .forEach(({ river, f }) => {
+      const p = f.properties, R = RIVERS[river];
+      const worst = river === 'ganga' && p.effluent_bod_mg_l ? ' · outlet BOD ' + num(p.effluent_bod_mg_l) + ' mg/l (limit 10)' : '';
+      const maxCap = Math.max.apply(null, allStps.map((s) => +s.f.properties.capacity_mld || 0));
+      items.push({ kind: 'Treatment plant', river, town: p.town, targetKind: 'stp', targetKey: p.plant_name + '|' + p.town,
+        score: +p.capacity_mld || 0,
+        title: p.plant_name + ' — ' + p.town + ', ' + p.state,
+        fig: num(p.capacity_mld, 0) + ' MLD capacity · fails NGT norms' + worst,
+        barValue: +p.capacity_mld || 0, barMax: maxCap || 1, barLabel: num(p.capacity_mld, 0) + ' MLD capacity',
+        what: 'Bring the outlet within NGT norms — fix the failing parameter — and publish the plant\u2019s O&M spending.',
+        who: (p.operator_name || 'Plant operator') + ' · ' + (R.stateAgency[p.state] || STATE_AGENCY_DEFAULT) + ' · State Pollution Control Board enforces outlet norms set by CPCB' });
+    });
+  // towns with the biggest untreated gap — merged across rivers
+  const allTowns = [];
+  rivers.forEach((river) => {
+    const data = state.data[river];
+    data.people.features.forEach((f) => {
+      const gap = townShortfall(river, f.properties.town);
+      if (gap > 0) allTowns.push({ river, town: f.properties.town, state: f.properties.state, gap });
+    });
+  });
+  allTowns.sort((a, b) => b.gap - a.gap).slice(0, 6)
+    .forEach((t) => {
+      const R = RIVERS[t.river];
+      const maxGap = allTowns.length ? allTowns[0].gap : 1;
+      items.push({ kind: 'Town', river: t.river, town: t.town, targetKind: 'town', targetKey: t.town,
+        score: t.gap,
+        title: t.town + ' — ' + t.state,
+        fig: num(t.gap) + ' MLD of sewage flow with no treatment capacity behind it',
+        barValue: t.gap, barMax: maxGap, barLabel: num(t.gap) + ' MLD untreated gap',
+        what: 'Close the treatment gap: add treatment capacity and connect households to sewers so untreated flow stops reaching the river.',
+        who: t.town + ' municipal body · ' + (R.stateAgency[t.state] || STATE_AGENCY_DEFAULT) + ' · State Pollution Control Board' });
+    });
+  const ordered = items.slice(0, 30);
+  state.actionItems = ordered;
+  const scope = state.riverFilter === 'all' ? 'both rivers' : 'the ' + RIVERS[state.riverFilter].label;
+  $('#actionIntro').textContent = 'The worst problems on ' + scope + ', worst first — the biggest untapped drains, the biggest failing treatment plants, and the towns with the largest untreated gap. Each one says what must happen and who is responsible. Tap any row to fly the map to it.';
+  $('#actionList').innerHTML = ordered.map((it, i) => {
+    const bw = it.barMax > 0 ? Math.max(2, Math.min(100, (it.barValue / it.barMax) * 100)) : 0;
+    return '<li data-act="' + i + '" tabindex="0"><h3>' + esc(it.title) + '</h3>' +
+      '<div class="where"><b>' + esc(riverLabel(it.river)) + '</b> · ' + esc(it.town) + ' · ' + esc(it.kind) + '</div>' +
+      '<div class="fig">' + esc(it.fig) + '</div>' +
+      '<div class="action-bar"><div class="hbar-track"><div class="hbar-fill" style="width:' + bw + '%;background:#dc2626" data-tip="' + esc(it.barLabel + ' — ' + it.kind + ' in ' + it.town + ', ' + riverLabel(it.river)) + '"></div></div></div>' +
+      '<p class="what"><b>What must happen:</b> ' + esc(it.what) + '</p>' +
+      '<p class="who"><b>Who is responsible:</b> ' + esc(it.who) + '</p>' +
+      '<button class="locate-btn" type="button">⌖ Show on map</button></li>';
+  }).join('');
+}
+$('#actionList').addEventListener('click', (e) => {
+  const li = e.target.closest ? e.target.closest('li[data-act]') : null;
+  if (!li || !state.actionItems) return;
+  locateActionItem(state.actionItems[+li.getAttribute('data-act')]);
+});
+$('#actionList').addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter') return;
+  const li = e.target.closest ? e.target.closest('li[data-act]') : null;
+  if (!li || !state.actionItems) return;
+  locateActionItem(state.actionItems[+li.getAttribute('data-act')]);
+});
 
 /* ============================== data tab ============================== */
-function renderDataTab() {
-  const river = state.river, data = state.data[river];
+function renderDataTabSingle(river) {
+  const data = state.data[river];
   const kpi = $('#kpiGrid'), R = RIVERS[river];
   if (river === 'ganga') {
     kpi.innerHTML =
@@ -894,42 +1090,178 @@ function renderDataTab() {
     ? [['drains.geojson', 'Drains — 609 records'], ['drains.csv', 'Drains — CSV'], ['stp_accountability.geojson', 'Treatment plants with accountability — 151 records'], ['stp_accountability.csv', 'Treatment plants with accountability — CSV'], ['water_quality.geojson', 'Water-quality stations — 115 records'], ['people.geojson', 'Towns — 493 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 20 lines'], ['industries.geojson', 'Industries — 25 records'], ['standards_comparison.csv', 'Standards comparison — India vs EU/US/WHO'], ['population.json', 'Corridor population method + totals']]
     : [['drains.geojson', 'Drains — 50 records'], ['drains.csv', 'Drains — CSV'], ['stps.geojson', 'Treatment plants — 115 records'], ['stps.csv', 'Treatment plants — CSV'], ['stp_budgets.csv', 'Plant budgets — 115 rows'], ['water_quality.geojson', 'Water-quality stations — 35 records'], ['people.geojson', 'Towns — 45 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 2 lines'], ['industries.geojson', 'Industries — 4 plotted clusters'], ['population.json', 'Corridor population method + totals']];
   dl.innerHTML = files.map(([f, label]) => '<li><a href="data/' + river + '/' + f + '" download>' + esc(label) + '</a> <span style="color:var(--muted)">(' + f + ')</span></li>').join('');
+}
+function renderDataTab() {
+  if (state.riverFilter !== 'all') {
+    renderDataTabSingle(state.riverFilter);
+  } else {
+    // combined view: render each river's sections, capture them, compose with headings
+    const grab = {};
+    ['kpiGrid', 'findingsText', 'accountabilityText', 'methodText', 'sourceList', 'gapsList', 'downloadList'].forEach((id) => { grab[id] = {}; });
+    ['ganga', 'yamuna'].forEach((river) => {
+      renderDataTabSingle(river);
+      Object.keys(grab).forEach((id) => { grab[id][river] = document.getElementById(id).innerHTML; });
+    });
+    $('#kpiGrid').innerHTML =
+      '<div class="kpi"><div class="n"><span data-count="659" data-dec="0">659</span></div><div class="l">drains listed by CPCB</div><div class="s">609 Ganga + 50 Yamuna · 412 measured · 66 estimated · 181 never measured</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="943.59" data-dec="2">943.59</span> t/day</div><div class="l">measured BOD load into both rivers</div><div class="s">585.17 Ganga + 358.42 Yamuna</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="22" data-dec="0">22</span> of 260</div><div class="l">treatment plants meet NGT norms</div><div class="s">19 Ganga + 3 Yamuna · 209 fail · 29 not assessed</div></div>' +
+      '<div class="kpi"><div class="n">108–118M</div><div class="l">people in the 10 km corridors (2020)</div><div class="s">Ganga 74–81M + Yamuna 34.3–36.6M — ranges, not one number</div></div>' +
+      '<div class="kpi"><div class="n">₹7,466 cr</div><div class="l">verified sanctioned build cost — Ganga</div><div class="s">across 60 distinct projects · funds released/utilised disclosed for 0 of 145 plants</div></div>' +
+      '<div class="kpi"><div class="n">77 of 115</div><div class="l">Yamuna plants disclose no budget at all</div><div class="s">only 2 fully disclosed · 36 partially</div></div>';
+    $('#findingsText').innerHTML = '<h4>Ganga</h4>' + grab.findingsText.ganga + '<h4>Yamuna</h4>' + grab.findingsText.yamuna;
+    $('#accountabilityText').innerHTML = '<h4>Ganga</h4>' + grab.accountabilityText.ganga + '<h4>Yamuna</h4>' + grab.accountabilityText.yamuna;
+    $('#methodText').innerHTML = '<h4>Ganga</h4>' + grab.methodText.ganga + '<h4>Yamuna</h4>' + grab.methodText.yamuna;
+    $('#sourceList').innerHTML = '<li><b>Ganga</b></li>' + grab.sourceList.ganga + '<li><b>Yamuna</b></li>' + grab.sourceList.yamuna;
+    $('#gapsList').innerHTML = '<li><b>Ganga</b></li>' + grab.gapsList.ganga + '<li><b>Yamuna</b></li>' + grab.gapsList.yamuna;
+    $('#downloadList').innerHTML = '<li><b>Ganga</b></li>' + grab.downloadList.ganga + '<li><b>Yamuna</b></li>' + grab.downloadList.yamuna;
+  }
+  // every KPI gets a hover tooltip with its full figure and source line
+  document.querySelectorAll('#kpiGrid .kpi').forEach((el) => {
+    const l = el.querySelector('.l'), s = el.querySelector('.s'), n = el.querySelector('.n');
+    if (l) el.setAttribute('data-tip', (n ? n.textContent.trim() + ' — ' : '') + l.textContent.trim() + (s ? ' · ' + s.textContent.trim() : ''));
+  });
   animateCountUps($('#dataView'));
 }
+/* Standards chart data — transcribed from data/ganga/standards_comparison.csv
+   and standards_NOTES.md (23 Nov 2026). No value invented: "No limit" means
+   the regime sets no cap for that parameter in the instrument compared.
+   NGT figures are the metro tier of a tiered table (Class I: BOD 20), not a
+   notified uniform rule. NH4-N 5 is NOT charted: it is a 2015 draft/programme
+   target, not an operative limit — the operative nutrient limit is TN 10. */
+const STD_REGIMES = [
+  { key: 'ngt', name: 'India — NGT 2019 (metro)', tag: 'metro tier', color: '#1f4e79' },
+  { key: 'moefcc', name: 'India — MoEFCC 2017', tag: 'notified rule', color: '#94a3b8' },
+  { key: 'eu91', name: 'EU 1991', tag: '91/271/EEC', color: '#2563eb' },
+  { key: 'eu24', name: 'EU recast 2024', tag: '(EU) 2024/3019', color: '#0ea5e9' },
+  { key: 'us', name: 'US EPA', tag: '40 CFR 133', color: '#65a30d' },
+  { key: 'who', name: 'WHO 2006', tag: 'reuse guidance', color: '#b45309' },
+];
+const STD_CHART = {
+  'BOD': { unit: 'mg/l', values: {
+    ngt: { v: 10, note: 'Metro tier of the tiered table. Class I towns: 20. Not a notified uniform rule.' },
+    moefcc: { v: 20, note: 'Metro cities and state capitals: 20; elsewhere 30. The binding notified rule.' },
+    eu91: { v: 25, note: '25 mg/l with 70–90% removal.' },
+    eu24: { v: 25, note: 'Unchanged from 1991.' },
+    us: { v: 30, note: '30-day average 30; 7-day 45; ≥85% removal.' },
+    who: { v: null, note: 'No discharge limit — WHO regulates reuse risk, not river discharge.' } } },
+  'COD': { unit: 'mg/l', values: {
+    ngt: { v: 50, note: 'Strictest COD limit in the comparison.' },
+    moefcc: { v: null, note: 'No COD limit at all — the largest single gap between the two Indian instruments.' },
+    eu91: { v: 125, note: '125 mg/l with 75% reduction.' },
+    eu24: { v: 125, note: 'Unchanged; TOC 37 mg/l as an alternative measurand.' },
+    us: { v: null, note: 'No COD limit in 40 CFR 133.' },
+    who: { v: null, note: 'No discharge limit.' } } },
+  'TSS': { unit: 'mg/l', values: {
+    ngt: { v: 20, note: 'Metro tier. Class I: 30; other tiers 50.' },
+    moefcc: { v: 50, note: 'Metro: 50; elsewhere 100 — the loosest value in the whole comparison.' },
+    eu91: { v: 35, note: '35 mg/l with 90% reduction.' },
+    eu24: { v: 35, note: 'Unchanged; requirement optional per Annex I Note 3.' },
+    us: { v: 30, note: '30-day average 30; 7-day 45; ≥85% removal.' },
+    who: { v: null, note: 'No discharge limit.' } } },
+  'Total nitrogen': { unit: 'mg/l', values: {
+    ngt: { v: 10, note: 'Metro tier. Class I: 15; other tiers no TN limit. The operative nutrient limit.' },
+    moefcc: { v: null, note: 'No TN limit.' },
+    eu91: { v: 15, note: '15 mg/l (10,000–100,000 p.e.); 10 above 100,000 p.e. — sensitive areas only.' },
+    eu24: { v: 10, note: '10 mg/l (10,000–150,000 p.e.); 8 mg/l above 150,000 p.e. — now stricter than India for large plants.' },
+    us: { v: null, note: 'No federal TN limit — nutrients only via permit-specific water-quality limits.' },
+    who: { v: null, note: 'No discharge limit — nutrients treated as an irrigation resource.' } } },
+  'Total phosphorus': { unit: 'mg/l', values: {
+    ngt: { v: 1.0, note: 'Metro tier, qualified "(for discharge into ponds, lakes)".' },
+    moefcc: { v: null, note: 'No TP limit.' },
+    eu91: { v: 2, note: '2 mg/l (10,000–100,000 p.e.); 1 above 100,000 p.e. — sensitive areas only.' },
+    eu24: { v: 0.7, note: '0.7 mg/l (10,000–150,000 p.e.); 0.5 above 150,000 p.e. — now 2× stricter than India.' },
+    us: { v: null, note: 'No federal TP limit.' },
+    who: { v: null, note: 'No discharge limit.' } } },
+  'Faecal coliform': { unit: 'MPN/100 ml', values: {
+    ngt: { v: 100, note: 'Desirable 100; permissible 230 MPN/100 ml — the strictest pathogen number in the comparison.' },
+    moefcc: { v: 1000, note: 'Less than 1,000 MPN/100 ml anywhere in the country.' },
+    eu91: { v: null, note: 'No pathogen limit in the UWWTD itself.' },
+    eu24: { v: null, note: 'No pathogen limit in the UWWTD itself.' },
+    us: { v: null, note: 'No limit in Part 133. Ambient E. coli GM 126 is a different metric — not comparable.' },
+    who: { v: null, note: 'No faecal-coliform discharge limit; reuse guidance E. coli ≤1,000/100 ml.' } } },
+  'pH': { unit: 'pH units', ranges: {
+    ngt: { lo: 5.5, hi: 9.0, note: 'Widest range — the most permissive lower bound of any regime that sets one.' },
+    moefcc: { lo: 6.5, hi: 9.0, note: '6.5–9.0 anywhere in the country.' },
+    eu91: { lo: null, note: 'No pH limit in the UWWTD.' },
+    eu24: { lo: null, note: 'No pH limit in the recast.' },
+    us: { lo: 6.0, hi: 9.0, note: '6.0–9.0.' },
+    who: { lo: null, note: 'No pH limit.' } } },
+};
+function renderStdChart(param) {
+  const P = STD_CHART[param];
+  const chart = $('#stdChart');
+  const isRange = !!P.ranges;
+  const max = isRange ? 14 : Math.max.apply(null, STD_REGIMES.map((r) => (P.values[r.key].v == null ? 0 : P.values[r.key].v)));
+  chart.innerHTML = '<div class="chart-title">' + esc(param) + ' — discharge limits (' + esc(P.unit) + ') · ' +
+    (isRange ? 'allowed range — wider = more permissive' : 'lower is stricter') + '</div>' +
+    STD_REGIMES.map((reg) => {
+      const entry = isRange ? P.ranges[reg.key] : P.values[reg.key];
+      const hasVal = isRange ? entry.lo != null : entry.v != null;
+      const valText = !hasVal ? '—' : isRange ? entry.lo + '–' + entry.hi : num(entry.v) + ' ' + P.unit;
+      const tip = reg.name + ': ' + (hasVal ? valText : 'no limit set') + ' — ' + entry.note;
+      if (!hasVal) {
+        return '<div class="std-row"><div class="std-regime">' + esc(reg.name) + '<span class="tag">' + esc(reg.tag) + '</span></div>' +
+          '<div class="std-track" style="background:transparent"><span class="std-nolimit" data-tip="' + esc(tip) + '">No limit set</span></div>' +
+          '<div class="std-val std-nolimit">—</div></div>';
+      }
+      const left = isRange ? (entry.lo / 14 * 100) : 0;
+      const width = isRange ? ((entry.hi - entry.lo) / 14 * 100) : (entry.v / max * 100);
+      return '<div class="std-row"><div class="std-regime">' + esc(reg.name) + '<span class="tag">' + esc(reg.tag) + '</span></div>' +
+        '<div class="std-track"><div class="std-fill" style="width:0;left:' + left.toFixed(1) + '%;background:' + reg.color + '" data-w="' + width.toFixed(1) + '" data-l="' + left.toFixed(1) + '" data-tip="' + esc(tip) + '"></div></div>' +
+        '<div class="std-val">' + esc(valText) + '</div></div>';
+    }).join('');
+  // animate bars from zero width (smooth transition on parameter switch)
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    chart.querySelectorAll('.std-fill').forEach((el) => {
+      el.style.width = el.getAttribute('data-w') + '%';
+      el.style.left = el.getAttribute('data-l') + '%';
+    });
+  }));
+}
 async function renderStandards() {
-  if (state.standards) return;
-  try {
-    const rows = parseCSV(await fetchText('data/ganga/standards_comparison.csv'));
-    state.standards = rows;
-    const cols = [['parameter', 'Parameter'], ['india_ngt_2019', 'India — NGT 2019'], ['india_moefcc_2017', 'India — MoEFCC 2017'],
-      ['eu_uwwtd_1991', 'EU 1991'], ['eu_recas_2024', 'EU recast 2024'], ['us_epa_secondary', 'US EPA'], ['who_2006', 'WHO 2006']];
-    $('#stdTable').innerHTML = '<thead><tr>' + cols.map(([k, l]) => '<th>' + l + '</th>').join('') + '</tr></thead><tbody>' +
-      rows.map((r) => '<tr>' + cols.map(([k]) => '<td>' + esc(r[k] || '—') + '</td>').join('') + '</tr>').join('') + '</tbody>';
-  } catch (e) {
-    $('#stdTable').innerHTML = '<tbody><tr><td>Standards table could not be loaded. <a href="data/ganga/standards_comparison.csv" download>Download the CSV</a>.</td></tr></tbody>';
+  if (!state.standards) {
+    try {
+      const rows = parseCSV(await fetchText('data/ganga/standards_comparison.csv'));
+      state.standards = rows;
+      const cols = [['parameter', 'Parameter'], ['india_ngt_2019', 'India — NGT 2019'], ['india_moefcc_2017', 'India — MoEFCC 2017'],
+        ['eu_uwwtd_1991', 'EU 1991'], ['eu_recas_2024', 'EU recast 2024'], ['us_epa_secondary', 'US EPA'], ['who_2006', 'WHO 2006']];
+      $('#stdTable').innerHTML = '<thead><tr>' + cols.map(([k, l]) => '<th>' + l + '</th>').join('') + '</tr></thead><tbody>' +
+        rows.map((r) => '<tr>' + cols.map(([k]) => '<td>' + esc(r[k] || '—') + '</td>').join('') + '</tr>').join('') + '</tbody>';
+    } catch (e) {
+      $('#stdTable').innerHTML = '<tbody><tr><td>Standards table could not be loaded. <a href="data/ganga/standards_comparison.csv" download>Download the CSV</a>.</td></tr></tbody>';
+    }
   }
+  const params = Object.keys(STD_CHART);
+  $('#stdParams').innerHTML = params.map((p) => '<button class="std-param-btn' + (p === state.stdParam ? ' active' : '') + '" data-param="' + esc(p) + '" type="button">' + esc(p) + '</button>').join('');
+  $('#stdParams').querySelectorAll('.std-param-btn').forEach((b) => b.addEventListener('click', () => {
+    state.stdParam = b.getAttribute('data-param');
+    document.querySelectorAll('.std-param-btn').forEach((x) => x.classList.toggle('active', x === b));
+    renderStdChart(state.stdParam);
+  }));
+  renderStdChart(state.stdParam);
 }
 
-/* ============================== search / tabs / river switch ============================== */
+/* ============================== search / tabs / river filter ============================== */
 function renderSearchList() {
-  const data = state.data[state.river];
-  const towns = data.people.features.map((f) => f.properties).filter((p) => p.town)
-    .sort((a, b) => (b.population_2011 || 0) - (a.population_2011 || 0));
-  $('#townList').innerHTML = towns.map((p) => '<option value="' + esc(p.town) + '">' + esc(p.state) + ' · pop. ' + num0(p.population_2011) + '</option>').join('');
+  const towns = [];
+  activeRivers().forEach((river) => {
+    state.data[river].people.features.map((f) => f.properties).filter((p) => p.town)
+      .forEach((p) => towns.push({ name: p.town + ' · ' + riverLabel(river), river, state: p.state, pop: p.population_2011 || 0 }));
+  });
+  towns.sort((a, b) => b.pop - a.pop);
+  $('#townList').innerHTML = towns.map((t) => '<option value="' + esc(t.name) + '">' + esc(t.state) + ' · pop. ' + num0(t.pop) + '</option>').join('');
 }
 $('#townSearch').addEventListener('change', () => {
-  const name = $('#townSearch').value.trim();
-  const p = state.townByName[name];
-  if (!p) return;
-  const data = state.data[state.river];
-  const feat = data.people.features.find((f) => f.properties.town === name);
+  const key = $('#townSearch').value.trim();
+  const entry = state.townIndex[key];
+  if (!entry) return;
+  const data = state.data[entry.river];
+  const feat = data.people.features.find((f) => f.properties.town === entry.props.town);
   if (feat && feat.geometry) map.flyTo([feat.geometry.coordinates[1], feat.geometry.coordinates[0]], 11, { duration: 1.2 });
-  showTown(p);
+  showTown(entry.props);
 });
-$('#wholeRiver').addEventListener('click', () => {
-  const R = RIVERS[state.river];
-  map.flyTo(R.center, R.zoom, { duration: 1 });
-});
+$('#wholeRiver').addEventListener('click', () => fitScope());
 function switchTab(name) {
   ['map', 'action', 'data'].forEach((t) => {
     $('#tab' + t[0].toUpperCase() + t.slice(1)).classList.toggle('active', t === name);
@@ -946,44 +1278,61 @@ $('#shortcomingsOnly').addEventListener('change', (e) => {
   buildLayers();
 });
 function updateHeaderCounts() {
-  const data = state.data[state.river];
-  const line = state.river === 'ganga'
-    ? plottedCount(data.drains) + ' drains · ' + plottedCount(data.stps) + ' of 145 plants (+6 new, no location) · ' +
-      plottedCount(data.wq) + ' of ' + data.wq.features.length + ' stations · ' + plottedCount(data.people) + ' towns · ' +
-      data.courses.features.length + ' drain courses · ' + data.industries.features.length + ' industries'
-    : plottedCount(data.drains) + ' drains · ' + plottedCount(data.stps) + ' plants · ' + plottedCount(data.wq) + ' stations · ' +
-      plottedCount(data.people) + ' towns · ' + data.courses.features.length + ' drain courses · ' + data.industries.features.length + ' industries';
+  const rivers = activeRivers();
+  let drains = 0, stps = 0, stpsTotal = 0, wq = 0, wqTotal = 0, towns = 0, courses = 0, ind = 0, newNote = '';
+  rivers.forEach((river) => {
+    const data = state.data[river];
+    drains += plottedCount(data.drains);
+    stps += plottedCount(data.stps);
+    stpsTotal += river === 'ganga' ? 145 : data.stps.features.length;
+    wq += plottedCount(data.wq);
+    wqTotal += data.wq.features.length;
+    towns += plottedCount(data.people);
+    courses += data.courses.features.length;
+    ind += data.industries.features.length;
+    if (river === 'ganga') newNote = ' (+6 new, no location)';
+  });
+  const line = drains + ' drains · ' + stps + ' of ' + stpsTotal + ' plants' + newNote + ' · ' +
+    wq + ' of ' + wqTotal + ' stations · ' + towns + ' towns · ' +
+    courses + ' drain courses · ' + ind + ' industries';
   $('#headerCounts').textContent = line + ' — records with a published location, placed on the map';
 }
-async function switchRiver(river) {
-  state.river = river;
-  $('#btnGanga').classList.toggle('active', river === 'ganga');
-  $('#btnYamuna').classList.toggle('active', river === 'yamuna');
+async function setRiverFilter(filter) {
+  state.riverFilter = filter;
+  const sel = $('#riverFilter');
+  if (sel) sel.value = filter;
   $('#detailPanel').hidden = true;
   $('#mapLoading').hidden = false;
-  $('#mapLoading').textContent = 'Loading ' + RIVERS[river].label + ' data…';
+  $('#mapLoading').textContent = 'Loading ' + (filter === 'all' ? 'all rivers' : RIVERS[filter].label) + ' data…';
   try {
-    await loadRiverData(river);
-    buildLayers();
-    renderSearchList();
-    updateHeaderCounts();
-    renderDataTab();
-    buildActionList();
-    const R = RIVERS[river];
-    map.flyTo(R.center, R.zoom, { duration: 1 });
+    await Promise.all(activeRivers().map((r) => loadRiverData(r)));
   } catch (e) {
-    $('#mapLoading').textContent = 'Could not load ' + RIVERS[river].label + ' data (' + e.message + '). Check the data/ folder is served with the page.';
-    $('#mapLoading').hidden = false;
+    $('#mapLoading').textContent = 'Could not load river data (' + e.message + '). Check the data/ folder is served with the page.';
     return;
   }
   $('#mapLoading').hidden = true;
+  applyRiverScope();
 }
-$('#btnGanga').addEventListener('click', () => { if (state.river !== 'ganga') switchRiver('ganga'); });
-$('#btnYamuna').addEventListener('click', () => { if (state.river !== 'yamuna') switchRiver('yamuna'); });
+function applyRiverScope() {
+  buildLayers();
+  renderSearchList();
+  updateHeaderCounts();
+  renderDataTab();
+  buildActionList();
+  fitScope();
+}
+function fitScope() {
+  const bounds = L.latLngBounds();
+  activeRivers().forEach((river) => {
+    state.data[river].drains.features.forEach((f) => bounds.extend([f.geometry.coordinates[1], f.geometry.coordinates[0]]));
+  });
+  if (bounds.isValid()) map.fitBounds(bounds.pad(0.08));
+}
+$('#riverFilter').addEventListener('change', (e) => setRiverFilter(e.target.value));
 
 /* ============================== init ============================== */
 (async function init() {
   try { state.religionRuling = await fetchJSON('data/religion_ruling.json'); } catch (e) { state.religionRuling = {}; }
   renderStandards();
-  await switchRiver('ganga');
+  await setRiverFilter('all');
 })();
