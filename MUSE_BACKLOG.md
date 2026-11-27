@@ -153,12 +153,9 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Vercel Analytics script → CDN endpoint (vikas.singh.76,
-  2026-11-27): swap the analytics script in `index.html` from
-  `/_vercel/insights/script.js` to Vercel's official v2 CDN script
-  `https://cdn.vercel-insights.com/v1/script.js`, on branch
-  `vikas.singh.76/vercel-analytics-cdn`. Replicates the Vercel
-  bot's PR #5 (still a draft, so merged via this PR instead).
+- Multi-select layer chips (vikas.singh.76, 2026-11-27): layer
+  chips toggle on/off so any combination of layers can be shown,
+  on branch `vikas.singh.76/layer-multi-select`.
 
 ## Open questions for the user
 
@@ -257,3 +254,15 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   that separately). This replicates the Vercel bot's PR #5, which
   is still a draft and cannot be merged — this PR supersedes it.
   Branch `vikas.singh.76/vercel-analytics-cdn`.
+- 2026-11-27 — vikas.singh.76: Layer chips are now multi-select
+  (user: only "All layers" or one layer could be shown). The map
+  kept a single `activeLayer` string; it now keeps an
+  `activeLayers` list. Tapping a layer chip toggles just that
+  layer on/off (several chips can be active at once); "All layers"
+  selects all seven. The per-layer legend lines now show for each
+  selected layer (none when all are on, as before), and the count
+  note lists the selected layers ("609 drains · 145 plants
+  shown") or "No layers selected" when none are on. "Locate" from
+  the Action list still resets to all layers. No CSS change
+  needed — the existing `.chip.active` style already marks
+  selected chips. Branch `vikas.singh.76/layer-multi-select`.
