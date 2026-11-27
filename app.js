@@ -193,7 +193,9 @@ function animateCountUps(root) {
 }
 
 /* ============================== map + basemaps ============================== */
-const map = L.map('map', { zoomControl: true, attributionControl: true }).setView(RIVERS.ganga.center, RIVERS.ganga.zoom);
+const map = L.map('map', { zoomControl: false, attributionControl: true }).setView(RIVERS.ganga.center, RIVERS.ganga.zoom);
+// zoom buttons bottom-right — top-left sits under the control panel
+L.control.zoom({ position: 'bottomright' }).addTo(map);
 const OSM_ATTR = '© OpenStreetMap contributors';
 const ESRI_ATTR = 'Imagery © Esri, Maxar, Earthstar Geographics, and the GIS User Community';
 const ESRI_REF_ATTR = 'Esri, HERE, Garmin, © OpenStreetMap contributors';
