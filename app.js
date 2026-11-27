@@ -45,6 +45,7 @@ const state = {
   religionRuling: null,
   standards: null,
   stdParam: 'BOD',
+  userLoc: null,            // { lat, lng } once the user taps "Near me"
 };
 function activeRivers() { return state.riverFilter === 'all' ? Object.keys(RIVERS) : [state.riverFilter]; }
 function riverLabel(river) { return RIVERS[river].label; }
@@ -785,6 +786,13 @@ function showTown(p) {
   const anchor = river === 'ganga' && ANCHOR_TOWNS.includes(p.town);
   const rr = anchor && state.religionRuling ? state.religionRuling[p.town] : null;
   let html = '<h2>' + esc(p.town) + '</h2><p class="sub">' + esc(p.state) + ' · Census 2011 town · ' + esc(p.population_basis || '') + '</p>';
+  if (state.userLoc) {
+    const feat = state.data[river].people.features.find((f) => f.properties.town === p.town);
+    if (feat && feat.geometry) {
+      const d = haversineKm(state.userLoc.lat, state.userLoc.lng, feat.geometry.coordinates[1], feat.geometry.coordinates[0]);
+      html += '<p class="you-are">You are about ' + Math.round(d) + ' km from ' + esc(p.town) + '.</p>';
+    }
+  }
   html += '<div class="folder-tabs" role="tablist">' +
     '<button class="folder-tab active" data-ftab="treat" type="button">Treatment &amp; MLD</button>' +
     '<button class="folder-tab" data-ftab="earn" type="button">Earnings</button>' +
@@ -1330,6 +1338,48 @@ $('#townSearch').addEventListener('keydown', (e) => {
   flyToTown(matches[0]);
 });
 $('#townSearch').addEventListener('blur', () => { setTimeout(hideSuggest, 150); });
+
+/* ---- "Near me": use the browser location to find the nearest mapped town ---- */
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const R = 6371, dLa = (lat2 - lat1) * Math.PI / 180, dLo = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLa / 2) * Math.sin(dLa / 2) + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLo / 2) * Math.sin(dLo / 2);
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+function nearestTown(lat, lng) {
+  let best = null;
+  activeRivers().forEach((river) => {
+    state.data[river].people.features.forEach((f) => {
+      if (!f.geometry) return;
+      const d = haversineKm(lat, lng, f.geometry.coordinates[1], f.geometry.coordinates[0]);
+      if (!best || d < best.dist) best = { river, props: f.properties, dist: d };
+    });
+  });
+  return best;
+}
+function showLocateStatus(msg) {
+  const el = $('#locateStatus');
+  el.textContent = msg;
+  el.hidden = false;
+}
+$('#locateMe').addEventListener('click', () => {
+  if (!navigator.geolocation) { showLocateStatus('Your browser does not share location — search for your town above instead.'); return; }
+  showLocateStatus('Finding your location…');
+  navigator.geolocation.getCurrentPosition((pos) => {
+    const lat = pos.coords.latitude, lng = pos.coords.longitude;
+    state.userLoc = { lat, lng };
+    const best = nearestTown(lat, lng);
+    if (!best) { showLocateStatus('No mapped towns loaded yet — search for your town above instead.'); return; }
+    const km = Math.round(best.dist);
+    showLocateStatus(km > 500
+      ? 'You are far from these rivers — the nearest mapped town is ' + best.props.town + ' (' + riverLabel(best.river) + '), about ' + num0(km) + ' km away.'
+      : 'Nearest mapped town: ' + best.props.town + ' (' + riverLabel(best.river) + ') — about ' + km + ' km away.');
+    flyToTown({ river: best.river, props: best.props });
+  }, (err) => {
+    showLocateStatus(err.code === 1
+      ? 'Location access blocked — search for your town above instead.'
+      : 'Could not get your location — search for your town above instead.');
+  }, { timeout: 10000, maximumAge: 60000 });
+});
 $('#wholeRiver').addEventListener('click', () => fitScope());
 function switchTab(name) {
   ['map', 'action', 'data'].forEach((t) => {
