@@ -166,13 +166,3 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   held for a separate PR after this one. Next step: water-quality
   stations, then drains, then industries (user expanded scope to
   all locations).
-
-- 2026-11-27 — vikas.singh.76: Added Vercel Web Analytics to index.html
-  (one script, `/_vercel/insights/script.js`, cookieless). It measures
-  page views, unique visitors, top pages, referrers, countries and
-  browser/OS in the Vercel dashboard. Counts start only once Web
-  Analytics is enabled in the Vercel dashboard (project > Analytics)
-  and this change is merged and deployed — no backfill, past visits
-  cannot be recovered. It counts page loads, not tab switches (Map /
-  Action list / Data are tabs on one page). The dashboard step is
-  still to do; this PR only adds the script.
