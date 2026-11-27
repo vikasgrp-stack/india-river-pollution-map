@@ -120,3 +120,13 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   (14 commits on 2026-11-27, 5 rivers, README out of date, gaps
   listed above). Did not run or build the site locally. Other
   account (vikas.grp) is out of tokens until 2026-12-02 09:22 PT.
+
+- 2026-11-27 — vikas.singh.76: Added Vercel Web Analytics to index.html
+  (one script, `/_vercel/insights/script.js`, cookieless). It measures
+  page views, unique visitors, top pages, referrers, countries and
+  browser/OS in the Vercel dashboard. Counts start only once Web
+  Analytics is enabled in the Vercel dashboard (project > Analytics)
+  and this change is merged and deployed — no backfill, past visits
+  cannot be recovered. It counts page loads, not tab switches (Map /
+  Action list / Data are tabs on one page). The dashboard step is
+  still to do; this PR only adds the script.
