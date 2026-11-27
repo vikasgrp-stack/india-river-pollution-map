@@ -310,6 +310,17 @@ async function loadRiverData(river) {
     fetchJSON(d + '/' + F.river), fetchJSON(d + '/' + F.corridor), fetchJSON(d + '/' + F.population),
   ]);
   const data = { drains, stps, wq, people, courses, industries, riverGeo, corridor, population };
+  // normalise string booleans from the source GeoJSON ("True"/"False"/"")
+  // to real booleans/null — the files carry them as strings, while every
+  // downstream check uses strict === true / === false. Without this, no
+  // plant ever matches "fails NGT" (the action list lost all 12 STP rows)
+  // and no plant ever matches "meets NGT" (all markers render grey).
+  const normBool = (v) => v === 'True' ? true : v === 'False' ? false : v === '' ? null : v;
+  stps.features.forEach((f) => {
+    f.properties.ngt_compliant = normBool(f.properties.ngt_compliant);
+    f.properties.moefcc_compliant = normBool(f.properties.moefcc_compliant);
+  });
+  drains.features.forEach((f) => { f.properties.tapped = normBool(f.properties.tapped); });
   // stamp every plotted feature with its river id — cards and the action
   // list must know which river an item belongs to, whatever the filter is
   ['drains', 'stps', 'wq', 'people', 'courses', 'industries'].forEach((k) => {
