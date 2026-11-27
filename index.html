@@ -34,8 +34,10 @@
         </select>
       </div>
       <div class="control-row">
-        <input id="townSearch" type="search" list="townList" placeholder="Search a town — Kanpur, Varanasi, Patna…" autocomplete="off">
-        <datalist id="townList"></datalist>
+        <div class="search-wrap">
+          <input id="townSearch" type="search" placeholder="Search a town — Kanpur, Varanasi, Patna…" autocomplete="off">
+          <div id="townSuggest" class="town-suggest" hidden></div>
+        </div>
         <button id="wholeRiver" class="btn" type="button">Fit map</button>
       </div>
       <div class="control-row basemap-row">

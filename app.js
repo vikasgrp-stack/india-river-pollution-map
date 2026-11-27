@@ -412,12 +412,28 @@ function buildLayers() {
   const sc = L.markerClusterGroup({ iconCreateFunction: clusterIcon('#6d28d9'), disableClusteringAtZoom: 12, maxClusterRadius: 55 });
   activeRivers().forEach((river) => {
     const R = RIVERS[river], data = state.data[river];
+    // plants at one town share a centroid — spread duplicates on a tiny
+    // spiral (~20 m steps) so each marker, including a compliant plant
+    // hidden behind failing ones, can be tapped
+    const byCoord = {};
     data.stps.features.forEach((f) => {
-      if (!f.geometry || !shortcomingFilter('stp', f.properties)) return;
-      const m = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { icon: factoryIcon(f.properties, R.maxStpCap) });
-      m.on('click', () => showStp(f.properties));
-      m.bindTooltip('<b>' + esc(f.properties.plant_name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.capacity_mld, 0) + ' MLD');
-      sc.addLayer(m);
+      if (!f.geometry) return;
+      const k = f.geometry.coordinates[0] + ',' + f.geometry.coordinates[1];
+      (byCoord[k] = byCoord[k] || []).push(f);
+    });
+    Object.values(byCoord).forEach((group) => {
+      group.forEach((f, i) => {
+        if (!shortcomingFilter('stp', f.properties)) return;
+        let lat = f.geometry.coordinates[1], lng = f.geometry.coordinates[0];
+        if (group.length > 1) {
+          const a = i * 2.399, r = 0.00018 * (1 + Math.floor(i / 2) * 0.6);
+          lat += Math.sin(a) * r; lng += Math.cos(a) * r;
+        }
+        const m = L.marker([lat, lng], { icon: factoryIcon(f.properties, R.maxStpCap) });
+        m.on('click', () => showStp(f.properties));
+        m.bindTooltip('<b>' + esc(f.properties.plant_name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.capacity_mld, 0) + ' MLD');
+        sc.addLayer(m);
+      });
     });
   });
   L_.stps = sc;
@@ -1254,24 +1270,66 @@ async function renderStandards() {
 }
 
 /* ============================== search / tabs / river filter ============================== */
-function renderSearchList() {
-  const towns = [];
-  activeRivers().forEach((river) => {
-    state.data[river].people.features.map((f) => f.properties).filter((p) => p.town)
-      .forEach((p) => towns.push({ name: p.town + ' · ' + riverLabel(river), river, state: p.state, pop: p.population_2011 || 0 }));
-  });
-  towns.sort((a, b) => b.pop - a.pop);
-  $('#townList').innerHTML = towns.map((t) => '<option value="' + esc(t.name) + '">' + esc(t.state) + ' · pop. ' + num0(t.pop) + '</option>').join('');
-}
-$('#townSearch').addEventListener('change', () => {
-  const key = $('#townSearch').value.trim();
-  const entry = state.townIndex[key];
-  if (!entry) return;
+/* ---- town search: type a town name, pick a suggestion or press Enter ----
+   (the old datalist + exact "Town · River" lookup silently did nothing when
+   a user typed just "Kanpur" and hit Enter) */
+function flyToTown(entry) {
   const data = state.data[entry.river];
   const feat = data.people.features.find((f) => f.properties.town === entry.props.town);
   if (feat && feat.geometry) map.flyTo([feat.geometry.coordinates[1], feat.geometry.coordinates[0]], 11, { duration: 1.2 });
   showTown(entry.props);
+}
+function searchTowns(q) {
+  q = (q || '').trim().toLowerCase();
+  if (!q) return [];
+  const out = [];
+  Object.keys(state.townIndex).forEach((key) => {
+    const town = key.split(' · ')[0];
+    const entry = state.townIndex[key];
+    if (town.toLowerCase().indexOf(q) === -1) return;
+    out.push({ town, river: entry.river, props: entry.props,
+      starts: town.toLowerCase().indexOf(q) === 0, pop: entry.props.population_2011 || 0 });
+  });
+  out.sort((a, b) => (a.starts === b.starts ? b.pop - a.pop : a.starts ? -1 : 1));
+  return out.slice(0, 8);
+}
+function hideSuggest() { $('#townSuggest').hidden = true; }
+function renderSuggest(matches) {
+  const box = $('#townSuggest');
+  if (!matches.length) { box.hidden = true; box.innerHTML = ''; return; }
+  box.innerHTML = matches.map((m, i) => '<button type="button" class="town-suggest-item" data-i="' + i + '"><b>' + esc(m.town) + '</b> · ' + esc(riverLabel(m.river)) + '<span>' + esc(m.props.state || '') + (m.pop ? ' · pop. ' + num0(m.pop) : '') + '</span></button>').join('');
+  box.hidden = false;
+  box.querySelectorAll('.town-suggest-item').forEach((b) => b.addEventListener('click', () => {
+    const m = matches[+b.getAttribute('data-i')];
+    hideSuggest();
+    $('#townSearch').value = m.town + ' · ' + riverLabel(m.river);
+    flyToTown(m);
+  }));
+}
+$('#townSearch').addEventListener('input', () => {
+  renderSuggest(searchTowns($('#townSearch').value));
 });
+$('#townSearch').addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { hideSuggest(); return; }
+  if (e.key !== 'Enter') return;
+  const q = $('#townSearch').value.trim();
+  if (!q) return;
+  const matches = searchTowns(q);
+  if (!matches.length) {
+    const box = $('#townSuggest');
+    box.innerHTML = '<div class="town-suggest-empty">No town found for “' + esc(q) + '”. Try another spelling.</div>';
+    box.hidden = false;
+    return;
+  }
+  // exact town name first — Prayagraj sits on both rivers, so show both
+  // entries and let the user pick rather than guessing
+  const exact = matches.filter((m) => m.town.toLowerCase() === q.toLowerCase());
+  if (exact.length === 1) { hideSuggest(); flyToTown(exact[0]); return; }
+  if (exact.length > 1) { renderSuggest(exact); return; }
+  hideSuggest();
+  flyToTown(matches[0]);
+});
+$('#townSearch').addEventListener('blur', () => { setTimeout(hideSuggest, 150); });
 $('#wholeRiver').addEventListener('click', () => fitScope());
 function switchTab(name) {
   ['map', 'action', 'data'].forEach((t) => {
@@ -1326,7 +1384,6 @@ async function setRiverFilter(filter) {
 }
 function applyRiverScope() {
   buildLayers();
-  renderSearchList();
   updateHeaderCounts();
   renderDataTab();
   buildActionList();
