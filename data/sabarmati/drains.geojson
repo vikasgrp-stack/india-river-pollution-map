@@ -1,0 +1,368 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Outfall of old city area, Danilimda (D/S of Vasna Barrage)",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not stated (PRS, Apr 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5833917,
+     22.9966938
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "AMC storm water drain, Danilimda",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "30.00 MLD (PRS, Apr 2020)",
+    "flow_mld": 30.0,
+    "bod_load_tpd": 10.8,
+    "bod_mg_l": 360,
+    "cod_mg_l": "",
+    "data_status": "measured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati; Live Ahmedabad drone survey, Feb 2023 (BOD only)",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5833917,
+     22.9966938
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Pumping Station, Old Vasna area",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "76.00 MLD (PRS, Apr 2020)",
+    "flow_mld": 76.0,
+    "bod_load_tpd": 19.0,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5472413,
+     23.0020055
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Pumping Station, Old Pirana area",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "182.00 MLD (PRS, Apr 2020)",
+    "flow_mld": 182.0,
+    "bod_load_tpd": 45.5,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.557483,
+     22.9661748
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Outfall of new city area, Vasna (D/S of Vasna Barrage)",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not stated (PRS, Apr 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5472413,
+     23.0020055
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Wagha Kotar / Sukhadeshwar pumping station, Pethapur",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "55.30 MLD (PRS, Apr 2020)",
+    "flow_mld": 55.3,
+    "bod_load_tpd": 13.82,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6690097,
+     23.2658686
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Natural drain nala, Village Koteshwar",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "0.73 MLD (PRS, Apr 2020)",
+    "flow_mld": 0.73,
+    "bod_load_tpd": 0.18,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6135747,
+     23.0968937
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Underground pipeline at bank near Indira Bridge, Village Bhat",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "0.06 MLD (PRS, Apr 2020)",
+    "flow_mld": 0.06,
+    "bod_load_tpd": 0.01,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6329349,
+     23.1026771
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Underground pipeline near Indira Bridge, Village Bhat",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "2.16 MLD (PRS, Apr 2020)",
+    "flow_mld": 2.16,
+    "bod_load_tpd": 0.54,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6329349,
+     23.1026771
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Outfall of AUDA line, Village Nana Chiloda",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "0.43 MLD (PRS, Apr 2020)",
+    "flow_mld": 0.43,
+    "bod_load_tpd": 0.11,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6601339,
+     23.1074932
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Outfall of Village Nana Chiloda",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "source_type": "Mixed",
+    "river": "Sabarmati",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "6.48 MLD (PRS, Apr 2020)",
+    "flow_mld": 6.48,
+    "bod_load_tpd": 1.62,
+    "bod_mg_l": 250,
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 estimation method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018), PRS action plan for River Sabarmati",
+    "as_of": "2020-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6601339,
+     23.1074932
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Ahmedabad CETPs (7 plants, aggregate)",
+    "industry_type": "Common effluent treatment plants (aggregate)",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "drain_name": "Sabarmati (via MEGA pipeline / Danilimda-Behrampura industrial belt)",
+    "effluent_mld": 120.88,
+    "effluent_source": "Total consented/design capacity of 7 CETPs (Gujarat MPR Apr 2020); not a measured discharge",
+    "coord_status": "aggregate — plotted at the Ahmedabad town centroid; individual CETP locations not published",
+    "source_name": "Gujarat Monthly Progress Report, Apr 2020 (NGT OA 673/2018)",
+    "source_url": "",
+    "as_of": "2020-04",
+    "notes": "1,351 industries in the Danilimda-Behrampura belt (1,066 CETP members, 285 with individual ETPs). Permanent solution: deep-sea disposal pipeline, Ahmedabad 300 MLD, Rs 1,478 crore (GR 26/11/2019, GWIL executing). CETP effluent is a consented capacity figure, never a measurement, and is not added to any drain load."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  }
+ ]
+}

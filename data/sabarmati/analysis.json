@@ -1,0 +1,192 @@
+{
+ "river": {
+  "name": "Sabarmati",
+  "osm_relation": 7717294,
+  "centreline_length_km": 383.1,
+  "from": "Aravalli Hills near Tepur village, Udaipur district, Rajasthan (73.3049, 24.5833)",
+  "to": "Gulf of Khambhat, Arabian Sea (72.3939, 22.2713)",
+  "corridor_buffer_km": 10,
+  "buffer_area_km2": 6765
+ },
+ "drains": {
+  "count": 11,
+  "by_data_status": {
+   "unmeasured": 2,
+   "measured": 1,
+   "estimated": 8
+  },
+  "measured": {
+   "count": 1,
+   "flow_mld": 30.0,
+   "bod_tpd": 10.8
+  },
+  "estimated": {
+   "count": 8,
+   "flow_mld": 323.16,
+   "bod_tpd": 80.78
+  },
+  "unmeasured": {
+   "count": 2,
+   "flow_mld": 0.0,
+   "bod_tpd": 0.0
+  },
+  "note": "Measured and estimated totals are separate and are never summed into a single \"total pollution\" figure.",
+  "bod_tpd_by_state_measured": {
+   "Gujarat": 10.8
+  },
+  "flow_mld_by_state_measured": {
+   "Gujarat": 30.0
+  },
+  "tapped_status": {
+   "Untapped": 11
+  },
+  "top_10_by_bod_tpd": [
+   {
+    "drain": "Pumping Station, Old Pirana area",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "bod_tpd": 45.5,
+    "flow_mld": 182.0,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Pumping Station, Old Vasna area",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "bod_tpd": 19.0,
+    "flow_mld": 76.0,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Wagha Kotar / Sukhadeshwar pumping station, Pethapur",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "bod_tpd": 13.82,
+    "flow_mld": 55.3,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "AMC storm water drain, Danilimda",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "bod_tpd": 10.8,
+    "flow_mld": 30.0,
+    "data_status": "measured"
+   },
+   {
+    "drain": "Outfall of Village Nana Chiloda",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "bod_tpd": 1.62,
+    "flow_mld": 6.48,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Underground pipeline near Indira Bridge, Village Bhat",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "bod_tpd": 0.54,
+    "flow_mld": 2.16,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Natural drain nala, Village Koteshwar",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "bod_tpd": 0.18,
+    "flow_mld": 0.73,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Outfall of AUDA line, Village Nana Chiloda",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "bod_tpd": 0.11,
+    "flow_mld": 0.43,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Underground pipeline at bank near Indira Bridge, Village Bhat",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "bod_tpd": 0.01,
+    "flow_mld": 0.06,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Outfall of old city area, Danilimda (D/S of Vasna Barrage)",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   }
+  ],
+  "top_towns_by_bod_tpd_measured": [
+   {
+    "town": "Ahmedabad",
+    "bod_tpd": 10.8
+   }
+  ]
+ },
+ "stps": {
+  "count": 24,
+  "by_state": {
+   "Gujarat": 24
+  },
+  "capacity_mld_total": 1324.61,
+  "operational_status": {
+   "operational": 23,
+   "not in operation": 1
+  },
+  "utilised_mld_known_plants": 22,
+  "utilised_mld_total": 991.0,
+  "utilised_mld_unknown_plants": 2,
+  "utilised_mld_assessed_capacity": 1069.61,
+  "utilisation_pct_of_assessed": 92.7,
+  "ngt_compliant": 0,
+  "ngt_non_compliant": 3,
+  "ngt_compliance_null": 21,
+  "moefcc_compliant": 9,
+  "moefcc_non_compliant": 3,
+  "moefcc_compliance_null": 12,
+  "budgets": {
+   "undisclosed": 24,
+   "disclosed": 0,
+   "partially disclosed": 0
+  },
+  "note": "Compliance is mapped from the Gujarat MPR Apr 2021 single \"Compliance / Non Compliance\" flag: \"Non Compliance\" means the plant fails the consent standards (BOD 20 mg/l, i.e. the MoEFCC 2017 norm), so it fails both NGT and MoEFCC. \"Compliance\" means it meets the consent standard, so it meets MoEFCC; NGT compliance (BOD 10 mg/l) cannot be inferred from a consent flag and is left null. The Mar 2021 flags are contradicted by the Gujarat High Court / GPCB findings of 2024 (9 of 14 Ahmedabad STPs not meeting standards); the MPR vintage is stated on every plant."
+ },
+ "water_quality": {
+  "stations": 10,
+  "bod_trend": {
+   "stable": 5,
+   "improving": 4,
+   "worsening": 1
+  },
+  "series_years": "2018, 2020, 2023",
+  "note": "Series years are not like-for-like: 2018 = CPCB polluted-stretch maxima as reproduced by CSE; 2020 = single Apr 2020 samples (COVID lockdown month) from the Gujarat MPR; 2023 = GPCB Annual Report 2022-23 yearly averages. Trends are indicative only. Faecal coliform was measured only in Apr 2020. No station has a continuous annual series."
+ },
+ "people": {
+  "towns": 12,
+  "towns_with_population_2011": 11,
+  "towns_with_mla": 12,
+  "summed_town_population_2011": 6209009,
+  "note": "The summed town population is NOT the corridor population; see population below."
+ },
+ "population": {
+  "corridor_10km_ghsl_2020": 9420107,
+  "corridor_10km_worldpop_2020": null,
+  "worldpop_status": "pending: remote /vsicurl read failed (Range downloading not supported by this server!); full India file still downloading in work/worldpop_ind_2020.tif (163647488 of 1,650,056,866 bytes); re-run this script once the download completes",
+  "buffer_area_km2": 6765,
+  "cells_in_buffer_ghsl": 8521
+ },
+ "industries": {
+  "rows": 1,
+  "note": "One aggregate row: the 7 CETPs in Ahmedabad, total consented/design capacity 120.88 MLD (Gujarat MPR Apr 2020). Individual CETP capacities and coordinates are not published. Effluent figures are consented capacities, never measurements, and are not added to any drain load."
+ },
+ "drain_courses": {
+  "rows": 0,
+  "note": "No drain course geometry is published for any Sabarmati drain; no OSM way carries a named Sabarmati drain course."
+ }
+}

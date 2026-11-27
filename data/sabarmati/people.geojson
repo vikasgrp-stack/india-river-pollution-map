@@ -1,0 +1,401 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "population_2011": 5577940,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": 505.0,
+    "population_density_per_sqkm": 11045,
+    "literacy_pct": 88.29,
+    "sex_ratio": 898,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Textiles, trade, diamond and chemical industries, services; the riverfront economy.\"}",
+    "mla_name": "Amit Shah",
+    "mla_party": "BJP",
+    "constituency": "Ellisbridge",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) Gujarat 2022 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Ahmedabad has 21 assembly seats; Ellisbridge is the city-centre seat used here.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5713889,
+     23.0225
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "population_2011": 292797,
+    "population_basis": "Census of India 2011, District Census Handbook Gandhinagar (Gandhinagar NA + OG)",
+    "area_km2": 326.0,
+    "population_density_per_sqkm": 896,
+    "literacy_pct": 90.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"State capital; government, education and services.\"}",
+    "mla_name": "Ritaben Ketankumar Patel",
+    "mla_party": "BJP",
+    "constituency": "Gandhinagar North",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia, Gandhinagar North Assembly constituency (ECI results); absent from the MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.65,
+     23.223
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kheroj",
+    "state": "Gujarat",
+    "population_2011": 1244,
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Farming village in the Aravalli foothills.\"}",
+    "mla_name": "Dr. Tushar Amarsinh Chaudhary",
+    "mla_party": "INC",
+    "constituency": "Khedbrahma",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia, Khedbrahma Assembly constituency (ECI results); absent from the MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Village directory coordinates (mapsofindia.com); 0.51 km from the river centreline",
+    "notes": "Kheroj village, Khedbrahma taluka, Sabarkantha; Census village code 509796.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.01388,
+     24.22971
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mahudi",
+    "state": "Gujarat",
+    "population_2011": 5343,
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 71.46,
+    "sex_ratio": 904,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Farming village; Jain pilgrimage centre (Mahudi Jain Temple).\"}",
+    "mla_name": "Jayantibhai Somabhai Patel",
+    "mla_party": "BJP",
+    "constituency": "Mansa",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) Gujarat 2022 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates (Mahudi Jain Temple)",
+    "notes": "",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.7833333,
+     23.4933333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Chiloda",
+    "state": "Gujarat",
+    "population_2011": "",
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Farming village on the Gandhinagar-Ahmedabad fringe.\"}",
+    "mla_name": "Alpesh Khodaji Thakor",
+    "mla_party": "BJP",
+    "constituency": "Gandhinagar South",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) Gujarat 2022 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Mota Chiloda village",
+    "notes": "Mota Chiloda village, Gandhinagar taluka; listed in the Gandhinagar South segment list. No published Census 2011 population found for this village.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.7304581,
+     23.2266778
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Prantij",
+    "state": "Gujarat",
+    "population_2011": 23596,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": 20.43,
+    "population_density_per_sqkm": 1155,
+    "literacy_pct": "",
+    "sex_ratio": 951,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture and trade.\"}",
+    "mla_name": "Gajendrasinh Udesinh Parmar",
+    "mla_party": "BJP",
+    "constituency": "Prantij",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) Gujarat 2022 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.85718,
+     23.43842
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Miroli",
+    "state": "Gujarat",
+    "population_2011": 3257,
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 65.86,
+    "sex_ratio": 928,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Farming village.\"}",
+    "mla_name": "Babubhai Jamnadas Patel",
+    "mla_party": "BJP",
+    "constituency": "Daskroi",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia, Daskroi Assembly constituency (ECI results); absent from the MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim geocode of Miroli village",
+    "notes": "",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.519433,
+     22.8740431
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Dholka",
+    "state": "Gujarat",
+    "population_2011": 80945,
+    "population_basis": "Census of India 2011, Dholka (M + OG)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 72.21,
+    "sex_ratio": 932,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Market town; agriculture, trade and small industry.\"}",
+    "mla_name": "Kiritsinh Sardarsang Dabhi",
+    "mla_party": "BJP",
+    "constituency": "Dholka",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia, Dholka Assembly constituency (ECI results); absent from the MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Wikipedia infobox figure 250,000 is the Dholka taluka total, not the town; town (M + OG) is 80,945.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.4419444,
+     22.7288889
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Vautha",
+    "state": "Gujarat",
+    "population_2011": 2056,
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Farming village; annual Vautha cattle and cultural fair.\"}",
+    "mla_name": "Kiritsinh Sardarsang Dabhi",
+    "mla_party": "BJP",
+    "constituency": "Dholka",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia, Dholka Assembly constituency (ECI results); absent from the MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates (Vautha fair)",
+    "notes": "Vautha village, Dholka taluka; famous for the annual Vautha fair at the Sabarmati-Vatrak confluence.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5367272,
+     22.6593623
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Himmatnagar",
+    "state": "Gujarat",
+    "population_2011": 81137,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 87.15,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Market town; ceramics and tiles, agriculture trade.\"}",
+    "mla_name": "Vinendrasinh Dilipsinh Zala",
+    "mla_party": "BJP",
+    "constituency": "Himatnagar",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) Gujarat 2022 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates (Himatnagar)",
+    "notes": "Tier 2. Tier 2: 12.2 km outside the 10 km buffer, but the Himmatnagar STP (17.51 MLD) is in the dataset; the town sits on the Hathmati, a left-bank tributary of the Sabarmati.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.95,
+     23.6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sanand",
+    "state": "Gujarat",
+    "population_2011": 41530,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 72.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Industrial town (automobile plants) and agriculture.\"}",
+    "mla_name": "Kanubhai Karamshibhai Patel",
+    "mla_party": "BJP",
+    "constituency": "Sanand",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) Gujarat 2022 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2. Tier 2: 14.9 km outside the buffer; the Sanand STP (20.50 MLD, utilised 0 MLD in Mar 2021) is in the CPCB inventory. Its discharge path to the Sabarmati is not published.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.38,
+     22.98
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Khambhat",
+    "state": "Gujarat",
+    "population_2011": 99164,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": 73.0,
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Sabarmati towns; see people_NOTES.md.\", \"plain_language\": \"Port town on the Gulf of Khambhat; fishing, salt, trade.\"}",
+    "mla_name": "Chiragkumar Arvindbhai Patel",
+    "mla_party": "BJP",
+    "constituency": "Khambhat",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia, Khambhat Assembly constituency (ECI results); absent from the MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates (Khambhāt)",
+    "notes": "Tier 2. Tier 2: river-mouth town on the Gulf of Khambhat, 22.7 km from the end of the OSM centreline; no STP or drain row for Khambhat. MLA won the seat for INC in 2022, resigned Dec 2023, joined the BJP and won the 2024 by-election on a BJP ticket.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.62,
+     22.3
+    ]
+   }
+  }
+ ]
+}

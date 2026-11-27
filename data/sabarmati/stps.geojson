@@ -1,0 +1,677 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-001",
+    "plant_name": "Pirana 60 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "ASP",
+    "capacity_mld": 60,
+    "operational_status": "operational",
+    "utilised_mld": 60,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-002",
+    "plant_name": "Old Pirana 106 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "UASB",
+    "capacity_mld": 106,
+    "operational_status": "operational",
+    "utilised_mld": 106,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-003",
+    "plant_name": "Pirana 180 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "ASP",
+    "capacity_mld": 180,
+    "operational_status": "operational",
+    "utilised_mld": 180,
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-004",
+    "plant_name": "Vasna 126 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "UASB",
+    "capacity_mld": 126,
+    "operational_status": "operational",
+    "utilised_mld": 126,
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-005",
+    "plant_name": "Vasna 35 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "ASP",
+    "capacity_mld": 35,
+    "operational_status": "operational",
+    "utilised_mld": 35,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-006",
+    "plant_name": "Vasna 240 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "ASP",
+    "capacity_mld": 240,
+    "operational_status": "operational",
+    "utilised_mld": 235,
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-007",
+    "plant_name": "Vinzol 70 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "ASP",
+    "capacity_mld": 70,
+    "operational_status": "operational",
+    "utilised_mld": 70,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-008",
+    "plant_name": "Vasna 48 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 48,
+    "operational_status": "operational",
+    "utilised_mld": 48,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-009",
+    "plant_name": "Jalvihar Vadaj 60 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 60,
+    "operational_status": "operational",
+    "utilised_mld": 55,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021); CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-010",
+    "plant_name": "Vinzol 35 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 35,
+    "operational_status": "operational",
+    "utilised_mld": 22,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021); CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-011",
+    "plant_name": "Arvind Mill 8 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "",
+    "capacity_mld": 8,
+    "operational_status": "operational",
+    "utilised_mld": 8,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-012",
+    "plant_name": "Rasala 1 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "MBBR",
+    "capacity_mld": 1,
+    "operational_status": "not in operation",
+    "utilised_mld": 1,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-013",
+    "plant_name": "Vastrapur Lake 0.5 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "MBBR",
+    "capacity_mld": 0.5,
+    "operational_status": "operational",
+    "utilised_mld": 0.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-014",
+    "plant_name": "VS Hospital 1 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "MBR",
+    "capacity_mld": 1,
+    "operational_status": "operational",
+    "utilised_mld": 1,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-015",
+    "plant_name": "Nikol 0.5 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "Electro Oxidation",
+    "capacity_mld": 0.5,
+    "operational_status": "operational",
+    "utilised_mld": 0.5,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-016",
+    "plant_name": "Shahpur Shankar Bhavan 25 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 25,
+    "operational_status": "operational",
+    "utilised_mld": 17,
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021); CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-017",
+    "plant_name": "Lambha 5 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 5,
+    "operational_status": "operational",
+    "utilised_mld": 2,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-018",
+    "plant_name": "Naroda AUDA 7 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "",
+    "capacity_mld": 7,
+    "operational_status": "operational",
+    "utilised_mld": 7,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-019",
+    "plant_name": "Vinzol 100 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "",
+    "capacity_mld": 100,
+    "operational_status": "operational",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-020",
+    "plant_name": "Pirana 155 MLD",
+    "town": "Ahmedabad",
+    "state": "Gujarat",
+    "technology": "",
+    "capacity_mld": 155,
+    "operational_status": "operational",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ahmedabad, Gujarat, 380001, India",
+    "source": "Gujarat Monthly Progress Report, Apr 2021, Annexure-I(A) (status Mar 2021)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.5800568,
+     23.0215374
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-021",
+    "plant_name": "Sargasan 10 MLD",
+    "town": "Gandhinagar",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 10,
+    "operational_status": "operational",
+    "utilised_mld": 3,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Gandhinagar, Gandhinagar Taluka, Gandhinagar, Gujarat, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.6492267,
+     23.2232877
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-022",
+    "plant_name": "Himmatnagar 17.51 MLD",
+    "town": "Himmatnagar",
+    "state": "Gujarat",
+    "technology": "ASP",
+    "capacity_mld": 17.51,
+    "operational_status": "operational",
+    "utilised_mld": 6,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Himmatnagar Junction, Station Road, Himatnagar, Himatnagar Taluka, Sabarkantha, Gujarat, 383001, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.96025,
+     23.5919297
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-023",
+    "plant_name": "Dholka 13.60 MLD",
+    "town": "Dholka",
+    "state": "Gujarat",
+    "technology": "SBR",
+    "capacity_mld": 13.6,
+    "operational_status": "operational",
+    "utilised_mld": 8,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Dholka, Dholka Taluka, Ahmedabad, Gujarat, 382225, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.4411863,
+     22.726607
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-GJ-024",
+    "plant_name": "Sanand 20.50 MLD",
+    "town": "Sanand",
+    "state": "Gujarat",
+    "technology": "Extended Aeration",
+    "capacity_mld": 20.5,
+    "operational_status": "operational",
+    "utilised_mld": 0,
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Sanand, SH135, Sanand, Sanand Taluka, Ahmedabad, Gujarat, 382110, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, Mar 2021 (Gujarat)",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     72.3851475,
+     23.0238876
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "corridor": {
+  "buffer_km": 10,
+  "total": 9420107,
+  "method": "10 km buffer (Lambert Azimuthal Equal-Area, centred 72.7518E/23.4424N) around the Sabarmati centreline: OSM relation 7717294 (Aravalli Hills, Udaipur district, Rajasthan to the Gulf of Khambhat, 383.1 km). GHSL GHS-POP R2023A 2020 epoch, 30 arc-second grid, clipped by cell centre inside the buffer; cell values summed.",
+  "raster": "GHSL GHS-POP R2023A, epoch 2020, 30 arc-second (4326_30ss), JRC open-data server / AWS mirror s3://jrc-ghsl",
+  "vintage": "2020",
+  "status": "computed",
+  "buffer_area_km2": 6765,
+  "centreline_length_km": 383.1,
+  "cells_in_buffer": 8521,
+  "cross_check_worldpop_2020_100m_unadj": {
+   "total": null,
+   "status": "pending: remote /vsicurl read failed (Range downloading not supported by this server!); full India file still downloading in work/worldpop_ind_2020.tif (163647488 of 1,650,056,866 bytes); re-run this script once the download completes",
+   "raster": "WorldPop India 2020, 100 m, UN-adjusted (ind_ppp_2020_UNadj.tif), CC-BY-4.0",
+   "cells_in_buffer": null
+  }
+ },
+ "towns": [
+  {
+   "town": "Ahmedabad",
+   "state": "Gujarat",
+   "population_2011": 5577940,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Ahmedabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gandhinagar",
+   "state": "Gujarat",
+   "population_2011": 292797,
+   "basis": "Census of India 2011, District Census Handbook Gandhinagar (Gandhinagar NA + OG)",
+   "source": "Wikipedia 'Gandhinagar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kheroj",
+   "state": "Gujarat",
+   "population_2011": 1244,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Kheroj', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mahudi",
+   "state": "Gujarat",
+   "population_2011": 5343,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Mahudi', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Chiloda",
+   "state": "Gujarat",
+   "population_2011": null,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Prantij",
+   "state": "Gujarat",
+   "population_2011": 23596,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Prantij', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Miroli",
+   "state": "Gujarat",
+   "population_2011": 3257,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Miroli', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Dholka",
+   "state": "Gujarat",
+   "population_2011": 80945,
+   "basis": "Census of India 2011, Dholka (M + OG)",
+   "source": "Wikipedia 'Dholka', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Vautha",
+   "state": "Gujarat",
+   "population_2011": 2056,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Vautha', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Himmatnagar",
+   "state": "Gujarat",
+   "population_2011": 81137,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Himmatnagar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sanand",
+   "state": "Gujarat",
+   "population_2011": 41530,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Sanand', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Khambhat",
+   "state": "Gujarat",
+   "population_2011": 99164,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Khambhat', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  }
+ ]
+}
