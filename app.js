@@ -539,7 +539,7 @@ const LAYER_DEFS = [
   { key: 'corridor', label: '10 km corridor', color: '#3b82f6' },
 ];
 const LAYER_LEGENDS = {
-  drains: '<b>Drains</b> · size = BOD load · amber → red, worse with size · faded = estimated load · green = tapped only · a drain is never green',
+  drains: '<b>Drains</b> · size = BOD load · amber → red = worse · faded = estimated · green = tapped',
   stps: '<b>Plants</b> · size = capacity (MLD) · green meets NGT norms · red fails · grey not assessed',
   wq: '<b>Water quality</b> · colour = latest BOD vs the 3 mg/l bathing limit · green within · red over · grey no reading',
   towns: '<b>Towns</b> · size = population (2011) · tap for people &amp; MLA',
@@ -576,19 +576,38 @@ function updateLayerNote() {
 }
 function renderLegend() {
   const maxLoad = Math.max.apply(null, activeRivers().map((r) => RIVERS[r].maxDrainLoad));
+  const drop = (fill, size, op) => '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24"><path d="M12 2.2C12 2.2 5.4 10.1 5.4 14.7a6.6 6.6 0 0 0 13.2 0C18.6 10.1 12 2.2 12 2.2Z" fill="' + fill + '"' + (op ? ' fill-opacity="' + op + '"' : '') + '/></svg>';
+  const tank = (fill, size) => '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="' + fill + '"/><circle cx="12" cy="12" r="6.1" fill="#fff" fill-opacity="0.3"/><line x1="12" y1="12" x2="12" y2="3.4" stroke="#fff" stroke-width="1.7"/><circle cx="12" cy="12" r="1.7" fill="#fff"/></svg>';
+  const dot = (fill, size) => '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="' + fill + '"/></svg>';
   $('#legendPanel').innerHTML =
     '<h4>How to read the map</h4>' +
-    '<div class="lg-row"><span class="swatch"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2.2C12 2.2 5.4 10.1 5.4 14.7a6.6 6.6 0 0 0 13.2 0C18.6 10.1 12 2.2 12 2.2Z" fill="#dc2626"/></svg></span><span><b>Drains</b> — droplet. Size = BOD load added. Colour = how bad: amber → red. Faded = load estimated, not measured. Green only for tapped (intercepted) drains. A drain is never green.</span></div>' +
-    '<div class="lg-row"><span class="swatch"><svg width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.4" fill="#6d28d9"/><circle cx="12" cy="12" r="6.1" fill="#fff" fill-opacity="0.3"/><line x1="12" y1="12" x2="12" y2="3.4" stroke="#fff" stroke-width="1.7"/><circle cx="12" cy="12" r="1.7" fill="#fff"/></svg></span><span><b>Treatment plants</b> — round tank. Size = capacity in MLD. Green meets NGT norms · red fails · grey not assessed.</span></div>' +
-    '<div class="lg-row"><span class="swatch">●</span><span><b>Water quality</b> — colour = latest BOD vs the 3 mg/l bathing limit.</span></div>' +
-    '<div class="lg-row"><span class="swatch">●</span><span><b>Towns</b> — size = population (2011). Tap for people &amp; MLA.</span></div>' +
-    '<div class="lg-row"><span class="swatch">◆</span><span><b>Industries</b> — diamond. Position approximate (town/locality level).</span></div>' +
+    '<div class="lg-row"><span class="swatch">' + drop('#dc2626', 20) + '</span><span><b>Drains</b><span class="lg-minis">' +
+    '<span class="lg-mini">' + drop('#f59e0b', 14) + '<i>low load</i></span>' +
+    '<span class="lg-mini">' + drop('#dc2626', 22) + '<i>high load</i></span>' +
+    '<span class="lg-mini">' + drop('#dc2626', 18, 0.35) + '<i>estimated</i></span>' +
+    '<span class="lg-mini">' + drop('#16a34a', 18) + '<i>tapped</i></span></span>' +
+    '<span class="lg-cap">Size = BOD load &middot; green = tapped, never &ldquo;clean&rdquo;</span></span></div>' +
+    '<div class="lg-row"><span class="swatch">' + tank('#9ca3af', 20) + '</span><span><b>Treatment plants</b><span class="lg-minis">' +
+    '<span class="lg-mini">' + tank('#16a34a', 20) + '<i>meets NGT</i></span>' +
+    '<span class="lg-mini">' + tank('#dc2626', 20) + '<i>fails</i></span>' +
+    '<span class="lg-mini">' + tank('#9ca3af', 20) + '<i>not assessed</i></span></span>' +
+    '<span class="lg-cap">Size = capacity (MLD)</span></span></div>' +
+    '<div class="lg-row"><span class="swatch">' + dot('#16a34a', 18) + '</span><span><b>Water quality</b><span class="lg-minis">' +
+    '<span class="lg-mini">' + dot('#16a34a', 16) + '<i>within 3 mg/l</i></span>' +
+    '<span class="lg-mini">' + dot('#dc2626', 16) + '<i>over limit</i></span>' +
+    '<span class="lg-mini">' + dot('#9ca3af', 16) + '<i>no reading</i></span></span>' +
+    '<span class="lg-cap">Latest BOD vs the 3 mg/l bathing limit</span></span></div>' +
+    '<div class="lg-row"><span class="swatch">' + dot('#2563eb', 18) + '</span><span><b>Towns</b><span class="lg-minis">' +
+    '<span class="lg-mini">' + dot('#2563eb', 10) + '<i>small</i></span>' +
+    '<span class="lg-mini">' + dot('#2563eb', 22) + '<i>large</i></span></span>' +
+    '<span class="lg-cap">Size = population (2011) &middot; tap for people &amp; MLA</span></span></div>' +
+    '<div class="lg-row"><span class="swatch">◆</span><span><b>Industries</b> &mdash; diamond, position approximate</span></div>' +
     '<div class="legend-scale">' +
     [1, 10, 50, 260].map((v) => {
       const s = Math.round(13 + 26 * Math.sqrt(Math.min(v, maxLoad) / maxLoad));
-      return '<span class="sc"><svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24"><path d="M12 2.2C12 2.2 5.4 10.1 5.4 14.7a6.6 6.6 0 0 0 13.2 0C18.6 10.1 12 2.2 12 2.2Z" fill="#dc2626"/></svg><br>' + v + ' t/day</span>';
+      return '<span class="sc">' + drop('#dc2626', s) + '<br>' + v + ' t/day</span>';
     }).join('') + '</div>' +
-    '<p style="font-size:12.5px;color:var(--muted)">Reference circles: drain BOD load in tonnes per day. Zoom in: clusters break apart into single points. All plant locations are town centroids — no public source gives plant-site coordinates.</p>';
+    '<p style="font-size:12px;color:var(--muted);margin:4px 0 0">Drain load, tonnes per day. Zoom in: clusters split into single points. Plant locations are town centroids &mdash; no public source gives plant-site coordinates.</p>';
 }
 $('#legendBtn').addEventListener('click', () => {
   const p = $('#legendPanel');
