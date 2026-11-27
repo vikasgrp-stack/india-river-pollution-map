@@ -43,7 +43,10 @@ number.
 Rivers live (5), all added 2026-11-27 in 14 commits, last commit
 `6352a7bf` — Godavari:
 - Ganga — 609 drains, 145 STPs (+6 commissioned 2024-2026),
-  115 water-quality stations, 493 towns
+  115 water-quality stations, 493 towns. STP locations: 33 of 151
+  plants now satellite-verified (Prayagraj, Varanasi, Kanpur, Patna,
+  Haridwar) on branch `vikas.singh.76/ganga-stp-locations`, PR open,
+  not yet merged (2026-11-27, vikas.singh.76).
 - Yamuna — 50 drains, 115 STPs, 35 stations, 45 towns
 - Sabarmati — added 2026-11-27; counts not in README, verify in
   `data/sabarmati/analysis.json`
@@ -55,6 +58,15 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 ## Backlog
 
 ### P0 — do first
+- [x] Fix Ganga STP locations: satellite-verify the plants that were
+  plotted at town centroids. Done 2026-11-27 by vikas.singh.76 —
+  33 plants located on 24 sites (Prayagraj 8, Varanasi 6, Kanpur 6,
+  Patna 8, Haridwar 5), 2 unconfirmed (Phaphamau 14 MLD, Jhunsi
+  16 MLD — left at town-centroid, no coordinate invented). Branch
+  `vikas.singh.76/ganga-stp-locations`, PR open, not merged.
+  Files: `data/ganga/stp_accountability.geojson` +
+  `data/ganga/stp_accountability.csv`, `coord_accuracy` set to
+  `satellite-verified` with `coord_source` + `coord_confidence`.
 - [ ] Update README.md to 5 rivers with counts for each. It still says
   Ganga + Yamuna only. — unclaimed
 - [ ] Verify the live Vercel site loads all 5 rivers, the Data tab,
@@ -63,6 +75,23 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   booleans "True"/"False"/"", every row has `source` + `as_of`,
   row counts match `analysis.json`. This bug already bit once
   (action list lost 12 STP rows). — unclaimed
+
+### P1 — location audit, all layers (user expanded scope 2026-11-27:
+  fix all locations, not just STPs)
+- [ ] Water-quality stations (Ganga first): 115 features, 110 Point,
+  5 null geometry, 68 distinct coords. Stations are geocoded to a
+  place name, not the exact river station. Verify against the river
+  / ghat / bridge named in the source. — unclaimed
+- [ ] Drains (Ganga): 609 Point, 603 distinct coords, no
+  `coord_accuracy` field. Audit whether each point is a true outfall
+  or a town offset. — unclaimed
+- [ ] Industries (Ganga): 25 Point, `coord_status` = approximate,
+  plotted at town / in an area. Find exact sites where published. — unclaimed
+- [ ] Nashik / Godavari STPs: 15 plants on 5 sites already
+  satellite-verified 2026-11-27 by vikas.singh.76 (Tapovan,
+  Chehedi, Panchak, Agar Takali, Gangapur — see
+  `STP-location-corrections.md` in the working notes, not in the
+  repo yet). Apply on a branch + PR after the Ganga PR merges. — unclaimed
 
 ### P1 — data gaps
 - [ ] Godavari: no CPCB drain inventory. 95 of 97 drains unmeasured.
@@ -104,7 +133,9 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-(none — claim a task here with your identifier and date)
+- Ganga STP locations (vikas.singh.76, 2026-11-27): corrections done
+  and in PR from branch `vikas.singh.76/ganga-stp-locations` — do not
+  start a second STP-location edit until that PR merges.
 
 ## Open questions for the user
 
@@ -120,3 +151,18 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   (14 commits on 2026-11-27, 5 rivers, README out of date, gaps
   listed above). Did not run or build the site locally. Other
   account (vikas.grp) is out of tokens until 2026-12-02 09:22 PT.
+- 2026-11-27 — vikas.singh.76: Fixed Ganga STP locations (user: Ganga
+  first). Satellite-verified 33 plants on 24 sites — Prayagraj 8,
+  Varanasi 6, Kanpur 6, Patna 8, Haridwar 5 — in
+  `data/ganga/stp_accountability.geojson` + `.csv`, in lockstep,
+  `coord_accuracy` = `satellite-verified`, with `coord_source` and
+  `coord_confidence` (HIGH/MEDIUM). 2 unconfirmed, no coordinate
+  invented: Phaphamau 14 MLD, Jhunsi 16 MLD (left at town-centroid).
+  Dinapur uses satellite centre 25.3472, 83.0470 (Google pins are
+  400-900 m off); Kankarbagh 30 MLD sits at the Pahari site per NMCG
+  (MEDIUM); Sarai 18 MLD is MEDIUM (could be a leachate unit).
+  Branch `vikas.singh.76/ganga-stp-locations`, PR open, not merged.
+  Nashik/Godavari corrections (5 sites) verified the same day but
+  held for a separate PR after this one. Next step: water-quality
+  stations, then drains, then industries (user expanded scope to
+  all locations).
