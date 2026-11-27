@@ -90,8 +90,8 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   plotted at town / in an area. Find exact sites where published. — unclaimed
 - [x] Nashik / Godavari STPs: satellite-verified 2026-11-27 by
   vikas.singh.76 and applied in this PR with the Nagpur plants
-  (branch `vikas.singh.76/godavari-stp-locations`, PR open, not
-  merged). Nashik: 10 of 15 plants moved, on 5 sites (Tapovan,
+  (branch `vikas.singh.76/godavari-stp-locations`, PR #3 merged
+  2026-11-27, merge commit `a8b69d2b`). Nashik: 10 of 15 plants moved, on 5 sites (Tapovan,
   Chehedi, Panchak, Agar Takali, Gangapur). NOT moved: Pimpalgaon
   Baswant 32 MLD (never verified, no site found) and the 4 Kumbh
   2027 plants (Tapovan 180, Agartakli 97, Chehedi 64, Panchak 75 —
@@ -127,6 +127,16 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   COVERAGE_AND_GAPS.md). — unclaimed
 
 ### P2 — polish
+- [x] Detail cards: prominent type label at the top of every card
+  (Drain / Sewage treatment plant / Water-quality monitoring
+  station / Drain course / Industry / Town) with a one-line
+  plain-English description, plus an accurate STP location line
+  (satellite-verified vs town centroid) and corrected
+  town-centroid copy for Ganga + Godavari. Done 2026-11-27 by
+  vikas.singh.76 — branch `vikas.singh.76/detail-type-label`,
+  PR open, not merged. Yamuna / Sabarmati / Cauvery copy untouched
+  (still true). Known follow-up, not fixed here: the header count
+  "146 of 145 plants" inconsistency noted in the live test.
 - [ ] Add a LICENSE and a short contributing note for this file. — unclaimed
 - [ ] Check performance and mobile: app.js is ~136 KB, repo ~6.7 MB;
   test load on a phone and on a slow connection. — unclaimed
@@ -142,10 +152,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Godavari STP locations (vikas.singh.76, 2026-11-27): Nashik +
-  Nagpur corrections done and in PR from branch
-  `vikas.singh.76/godavari-stp-locations` — do not start a second
-  STP-location edit until that PR merges. Ganga PR #1 is merged.
+- Detail-card type labels (vikas.singh.76, 2026-11-27): prominent
+  type chip on every detail card + accurate STP location line +
+  Ganga/Godavari town-centroid copy fixes, on branch
+  `vikas.singh.76/detail-type-label` — PR open, not merged.
+  Godavari STP PR #3 is merged (merge commit `a8b69d2b`), so no
+  second STP-location edit is blocked by it any more.
 
 ## Open questions for the user
 
@@ -198,4 +210,36 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   total, but only 10 Nashik + 5 Nagpur plants match a verified site,
   so 15 moved — the rest stay at town-centroid, no coordinate
   invented. Distinct Godavari STP coords 63 -> 73. Branch
-  `vikas.singh.76/godavari-stp-locations`, PR open, not merged.
+  `vikas.singh.76/godavari-stp-locations`, PR #3 merged 2026-11-27
+  (merge commit `a8b69d2b`).
+- 2026-11-27 — vikas.singh.76: Vercel Web Analytics added (user
+  asked for unique-user / visit counts). One script in `index.html`
+  only (+5 lines, `window.va` stub + `<script defer
+  src="/_vercel/insights/script.js">`); no other tracker. Branch
+  `vikas.singh.76/vercel-analytics`, PR #2 merged 2026-11-27
+  (merge commit `21231810`). The script does nothing until Web
+  Analytics is enabled in the Vercel dashboard (project >
+  Analytics) — user still needs to do that step. Counts start from
+  enablement, no backfill. Dashboard shows country only (per
+  Vercel docs), no per-visitor list, no IP stored.
+- 2026-11-27 — vikas.singh.76: Detail cards now say what they are.
+  Every card opens with a prominent type chip (Drain / Sewage
+  treatment plant / Water-quality monitoring station / Drain
+  course / Industry / Town, each with its own colour and a
+  one-line plain-English description), implemented in `app.js`
+  (`typeChip()` in all six `show*` functions) with a new
+  `.type-chip` style in `styles.css`. The STP card footer that
+  falsely claimed all plant locations are town centroids is
+  replaced by a location line driven by `coord_accuracy`:
+  satellite-verified plants show a green badge + confidence +
+  coordinates; the rest show a grey "Town centroid — approximate
+  location" badge. Coordinates come from `latitude`/`longitude`
+  (Ganga) or are wired through from the feature geometry as
+  `_lat`/`_lon` at both call sites (Godavari properties carry no
+  lat/lon). No coordinates invented — unverified plants keep
+  town-centroid. Legend note and Ganga + Godavari Data-tab copy
+  corrected to the truth (33 of 151 Ganga, 15 of 149 Godavari
+  satellite-verified); Yamuna / Sabarmati / Cauvery copy untouched.
+  Branch `vikas.singh.76/detail-type-label`, PR open, not merged.
+  Known follow-up, not fixed here: the "146 of 145 plants"
+  header-count inconsistency noted in the live test.
