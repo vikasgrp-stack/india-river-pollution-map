@@ -1,0 +1,1405 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      77.69936,
+      28.9726
+     ],
+     [
+      77.74784,
+      28.93396
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Slaughter House/Odean Nallah",
+    "town": "Meerut",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 260.67,
+    "flow_mld": 734.28,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Kali East",
+    "course_status": "mapped",
+    "course_length_km": 6.38,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM unnamed drain ways (2 segments sharing an endpoint), verified against Esri satellite imagery 2026-11-23",
+    "notes": "Chain runs NW Meerut (77.699, 28.973) SE to the CPCB outfall; the two segments share an endpoint. A parallel unnamed canal ~0.5-1 km east, ending at the Kali Nadi, is a possible alternate lower reach - the two parallel channels cannot be told apart in OSM (both unnamed). Satellite imagery shows one clear diagonal channel on this alignment."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      77.70593,
+      28.99517
+     ],
+     [
+      77.71085,
+      28.99395
+     ],
+     [
+      77.71704,
+      28.98441
+     ],
+     [
+      77.73343,
+      28.96955
+     ],
+     [
+      77.73425,
+      28.96478
+     ],
+     [
+      77.75124,
+      28.94259
+     ],
+     [
+      77.75571,
+      28.93564
+     ],
+     [
+      77.75674,
+      28.93151
+     ],
+     [
+      77.75366,
+      28.93871
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Abu Nalla-2",
+    "town": "Meerut",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 37.63,
+    "flow_mld": 376.32,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Kali East",
+    "course_status": "mapped",
+    "course_length_km": 9.73,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Two unnamed OSM canal ways chained end-to-end (5.3 + 3.6 km), gap 10 m. Course runs W-E through Meerut to the Kali East."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.26728,
+      22.60422
+     ],
+     [
+      88.26761,
+      22.59039
+     ],
+     [
+      88.26948,
+      22.58222
+     ],
+     [
+      88.28105,
+      22.56559
+     ],
+     [
+      88.28002,
+      22.56163
+     ],
+     [
+      88.27771,
+      22.55835
+     ],
+     [
+      88.27986,
+      22.56179
+     ],
+     [
+      88.28081,
+      22.56564
+     ],
+     [
+      88.27796,
+      22.55879
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Nazerganj Khal",
+    "town": "Howrah",
+    "state": "West Bengal",
+    "bod_load_tpd": 21.54,
+    "flow_mld": 1472.47,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 7.25,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Single unnamed OSM canal way (6.5 km) from Howrah to the Hooghly; gap to outfall 17 m."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.30918,
+      22.86265
+     ],
+     [
+      88.31189,
+      22.85425
+     ],
+     [
+      88.3151,
+      22.84957
+     ],
+     [
+      88.31566,
+      22.84312
+     ],
+     [
+      88.32201,
+      22.8257
+     ],
+     [
+      88.32215,
+      22.81894
+     ],
+     [
+      88.32641,
+      22.81247
+     ],
+     [
+      88.33333,
+      22.80471
+     ],
+     [
+      88.33676,
+      22.80469
+     ],
+     [
+      88.34134,
+      22.80883
+     ],
+     [
+      88.34564,
+      22.80887
+     ],
+     [
+      88.34889,
+      22.80861
+     ],
+     [
+      88.35651,
+      22.80446
+     ],
+     [
+      88.35149,
+      22.80728
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "DVC Canal",
+    "town": "Champdani",
+    "state": "West Bengal",
+    "bod_load_tpd": 12.28,
+    "flow_mld": 332.0,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 10.36,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Named OSM way 'DVC Canal' (canal, 9.8 km) - the only named canal among the top 20. Gap to outfall 48 m."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.298,
+      22.53953
+     ],
+     [
+      88.29927,
+      22.54618
+     ],
+     [
+      88.29367,
+      22.55222
+     ],
+     [
+      88.28934,
+      22.54808
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Dhanketikhal Garden Reach",
+    "town": "Kolkata",
+    "state": "West Bengal",
+    "bod_load_tpd": 8.44,
+    "flow_mld": 88.86,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 2.28,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Single unnamed OSM canal way (1.7 km); 640 m straight gap bridged between the way and the CPCB outfall."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      79.41664,
+      28.42554
+     ],
+     [
+      79.41697,
+      28.4238
+     ],
+     [
+      79.41525,
+      28.42141
+     ],
+     [
+      79.41729,
+      28.42073
+     ],
+     [
+      79.41725,
+      28.41948
+     ],
+     [
+      79.41355,
+      28.41987
+     ],
+     [
+      79.41305,
+      28.42121
+     ],
+     [
+      79.41087,
+      28.4205
+     ],
+     [
+      79.41115,
+      28.42187
+     ],
+     [
+      79.40957,
+      28.42237
+     ],
+     [
+      79.40704,
+      28.42081
+     ],
+     [
+      79.40558,
+      28.41756
+     ],
+     [
+      79.40704,
+      28.4164
+     ],
+     [
+      79.40732,
+      28.41789
+     ],
+     [
+      79.40851,
+      28.41816
+     ],
+     [
+      79.40998,
+      28.41505
+     ],
+     [
+      79.40843,
+      28.41531
+     ],
+     [
+      79.40805,
+      28.41386
+     ],
+     [
+      79.40707,
+      28.41424
+     ],
+     [
+      79.40664,
+      28.41316
+     ],
+     [
+      79.4049,
+      28.41286
+     ],
+     [
+      79.40565,
+      28.41052
+     ],
+     [
+      79.4012,
+      28.40831
+     ],
+     [
+      79.40306,
+      28.40443
+     ],
+     [
+      79.40181,
+      28.4026
+     ],
+     [
+      79.40348,
+      28.40169
+     ],
+     [
+      79.40153,
+      28.39977
+     ],
+     [
+      79.40215,
+      28.39682
+     ],
+     [
+      79.40027,
+      28.39588
+     ],
+     [
+      79.39955,
+      28.39783
+     ],
+     [
+      79.39802,
+      28.39723
+     ],
+     [
+      79.39711,
+      28.39478
+     ],
+     [
+      79.39336,
+      28.39123
+     ],
+     [
+      79.39358,
+      28.39033
+     ],
+     [
+      79.39462,
+      28.39052
+     ],
+     [
+      79.39463,
+      28.39116
+     ],
+     [
+      79.39542,
+      28.39046
+     ],
+     [
+      79.39363,
+      28.3895
+     ],
+     [
+      79.39113,
+      28.38992
+     ],
+     [
+      79.39068,
+      28.38879
+     ],
+     [
+      79.38958,
+      28.3886
+     ],
+     [
+      79.38961,
+      28.38558
+     ],
+     [
+      79.39105,
+      28.38383
+     ],
+     [
+      79.38763,
+      28.38349
+     ],
+     [
+      79.38761,
+      28.3815
+     ],
+     [
+      79.39025,
+      28.37881
+     ],
+     [
+      79.39094,
+      28.37861
+     ],
+     [
+      79.39145,
+      28.37957
+     ],
+     [
+      79.39316,
+      28.38015
+     ],
+     [
+      79.39593,
+      28.37678
+     ],
+     [
+      79.39806,
+      28.37672
+     ],
+     [
+      79.39796,
+      28.37812
+     ],
+     [
+      79.39926,
+      28.37864
+     ],
+     [
+      79.40076,
+      28.37634
+     ],
+     [
+      79.40324,
+      28.37709
+     ],
+     [
+      79.40423,
+      28.37588
+     ],
+     [
+      79.40472,
+      28.37681
+     ],
+     [
+      79.40608,
+      28.37731
+     ],
+     [
+      79.406,
+      28.37417
+     ],
+     [
+      79.40499,
+      28.37326
+     ],
+     [
+      79.40369,
+      28.3736
+     ],
+     [
+      79.40517,
+      28.37194
+     ],
+     [
+      79.40117,
+      28.37381
+     ],
+     [
+      79.40098,
+      28.37041
+     ],
+     [
+      79.3993,
+      28.37032
+     ],
+     [
+      79.39779,
+      28.36753
+     ],
+     [
+      79.39277,
+      28.36955
+     ],
+     [
+      79.3892,
+      28.36813
+     ],
+     [
+      79.38934,
+      28.36673
+     ],
+     [
+      79.39075,
+      28.36652
+     ],
+     [
+      79.38994,
+      28.36278
+     ],
+     [
+      79.38846,
+      28.3623
+     ],
+     [
+      79.38915,
+      28.3604
+     ],
+     [
+      79.38489,
+      28.35728
+     ],
+     [
+      79.38343,
+      28.35787
+     ],
+     [
+      79.38348,
+      28.35642
+     ],
+     [
+      79.38191,
+      28.35522
+     ],
+     [
+      79.37829,
+      28.34963
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Devraniya River/ Drain",
+    "town": "Bareilly",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 8.36,
+    "flow_mld": 62.83,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ramganga",
+    "course_status": "mapped",
+    "course_length_km": 18.83,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM unnamed waterway=river ways (Devraniya River itself; unnamed in OSM)",
+    "notes": "The two river ways join end-to-end (18.4 km + 6.7 km). The line is truncated at the CPCB outfall point; the river continues SW past it to the Ramganga."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      79.04192,
+      28.81216
+     ],
+     [
+      79.04987,
+      28.81063
+     ],
+     [
+      79.05212,
+      28.80845
+     ],
+     [
+      79.05317,
+      28.80435
+     ],
+     [
+      79.04888,
+      28.78497
+     ],
+     [
+      79.04249,
+      28.76627
+     ],
+     [
+      79.04137,
+      28.76522
+     ],
+     [
+      79.03903,
+      28.76476
+     ],
+     [
+      79.03918,
+      28.75973
+     ],
+     [
+      79.04412,
+      28.75012
+     ],
+     [
+      79.02199,
+      28.75585
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Rampur Drain",
+    "town": "Rampur",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 7.5,
+    "flow_mld": 69.49,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Kosi",
+    "course_status": "mapped",
+    "course_length_km": 10.33,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Chain of unnamed OSM ditch ways (10.5 km) from Rampur town S to the outfall; 1.73 km straight gap bridged between the outfall and the first ditch segment."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.37271,
+      22.72113
+     ],
+     [
+      88.37347,
+      22.72192
+     ],
+     [
+      88.3714,
+      22.7227
+     ],
+     [
+      88.36999,
+      22.72493
+     ],
+     [
+      88.36458,
+      22.72629
+     ],
+     [
+      88.3556,
+      22.7141
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Bagh Khal, Rishra",
+    "town": "Konnagar and Rishra",
+    "state": "West Bengal",
+    "bod_load_tpd": 7.28,
+    "flow_mld": 95.52,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 2.85,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "OSM way named 'Nala' (river, 1.3 km); 1.64 km straight gap bridged to the outfall. NOTE: the same 'Nala' way is also used for Khardha Khal (#17) - the two khals share this mapped channel in OSM and cannot be separated from the map alone."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      77.79,
+      28.72
+     ],
+     [
+      77.787,
+      28.7
+     ],
+     [
+      77.78532,
+      28.68481
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Hapur drain",
+    "town": "Hapur",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 6.81,
+    "flow_mld": 49.7,
+    "tapped_status": "Untapped",
+    "source_type": "Domestic",
+    "river": "Kali East",
+    "course_status": "approximate",
+    "course_length_km": 3.94,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "Approximate straight line from Hapur town toward the CPCB outfall; no OSM waterway found within 2.9 km of the outfall",
+    "notes": "No channel for this drain is mapped in OSM near the outfall (nearest candidate waterway 2.9 km away). Line is a placeholder, not a surveyed course."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.38022,
+      22.59253
+     ],
+     [
+      88.38034,
+      22.59607
+     ],
+     [
+      88.37846,
+      22.60124
+     ],
+     [
+      88.37383,
+      22.60557
+     ],
+     [
+      88.36859,
+      22.60766
+     ],
+     [
+      88.36992,
+      22.60698
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Chitpur Ghat khal",
+    "town": "Kolkata",
+    "state": "West Bengal",
+    "bod_load_tpd": 6.05,
+    "flow_mld": 342.0,
+    "tapped_status": "Untapped",
+    "source_type": "Domestic",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 2.42,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Named OSM canals: Circular Canal (1.3 km) + Beliaghata Canal (1.0 km) chained end-to-end. Gap to outfall 26 m."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      78.78247,
+      28.8471
+     ],
+     [
+      78.77879,
+      28.84737
+     ],
+     [
+      78.78254,
+      28.84717
+     ],
+     [
+      78.78328,
+      28.84626
+     ],
+     [
+      78.78485,
+      28.84774
+     ],
+     [
+      78.78379,
+      28.84822
+     ],
+     [
+      78.7831,
+      28.84763
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Jhabbu ka Nala",
+    "town": "Moradabad",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 5.08,
+    "flow_mld": 60.52,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ramganga",
+    "course_status": "mapped",
+    "course_length_km": 1.28,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Fragmented unnamed OSM drain ways in Moradabad city centre (7 short segments, 1.5 km total, gaps up to ~0.5 km bridged straight). Upstream course beyond the city centre is not mapped in OSM."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.38741,
+      22.83925
+     ],
+     [
+      88.39683,
+      22.85282
+     ],
+     [
+      88.39954,
+      22.85527
+     ],
+     [
+      88.40026,
+      22.85726
+     ],
+     [
+      88.40158,
+      22.85862
+     ],
+     [
+      88.40321,
+      22.85845
+     ],
+     [
+      88.40631,
+      22.86266
+     ],
+     [
+      88.40874,
+      22.86334
+     ],
+     [
+      88.41056,
+      22.86808
+     ],
+     [
+      88.41656,
+      22.87854
+     ],
+     [
+      88.41926,
+      22.876
+     ],
+     [
+      88.41692,
+      22.87763
+     ],
+     [
+      88.4168,
+      22.87918
+     ],
+     [
+      88.41327,
+      22.88022
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Bhatpara open pucca drain",
+    "town": "Bhatpara",
+    "state": "West Bengal",
+    "bod_load_tpd": 5.0,
+    "flow_mld": 90.9,
+    "tapped_status": "Untapped",
+    "source_type": "Domestic",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 6.73,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Unnamed OSM stream (0.5 km) + drain (5.6 km) chained; gaps ~0.4 km bridged. Course runs S-N to the Hooghly."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.43446,
+      22.79286
+     ],
+     [
+      88.43287,
+      22.79217
+     ],
+     [
+      88.42616,
+      22.79525
+     ],
+     [
+      88.42563,
+      22.79432
+     ],
+     [
+      88.41709,
+      22.78992
+     ],
+     [
+      88.41282,
+      22.79124
+     ],
+     [
+      88.40939,
+      22.79061
+     ],
+     [
+      88.4078,
+      22.79113
+     ],
+     [
+      88.40609,
+      22.79012
+     ],
+     [
+      88.40376,
+      22.79125
+     ],
+     [
+      88.40123,
+      22.7907
+     ],
+     [
+      88.39859,
+      22.78807
+     ],
+     [
+      88.39568,
+      22.78833
+     ],
+     [
+      88.39088,
+      22.79247
+     ],
+     [
+      88.38705,
+      22.79141
+     ],
+     [
+      88.38293,
+      22.79555
+     ],
+     [
+      88.38057,
+      22.7958
+     ],
+     [
+      88.37936,
+      22.79792
+     ],
+     [
+      88.3771,
+      22.79823
+     ],
+     [
+      88.37777,
+      22.80115
+     ],
+     [
+      88.37622,
+      22.8026
+     ],
+     [
+      88.35993,
+      22.8067
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Ichapur Khal",
+    "town": "Ichapur",
+    "state": "West Bengal",
+    "bod_load_tpd": 4.98,
+    "flow_mld": 327.63,
+    "tapped_status": "Untapped",
+    "source_type": "Domestic",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 9.25,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Named OSM way 'Ichapur Canal' (stream, 2.1 km) + an unnamed stream way (7.6 km) chained end-to-end, gap 7 m."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      78.77753,
+      28.84649
+     ],
+     [
+      78.77879,
+      28.84737
+     ],
+     [
+      78.78142,
+      28.84662
+     ],
+     [
+      78.78379,
+      28.84822
+     ],
+     [
+      78.78254,
+      28.84717
+     ],
+     [
+      78.78328,
+      28.84626
+     ],
+     [
+      78.78485,
+      28.84774
+     ],
+     [
+      78.78334,
+      28.8463
+     ],
+     [
+      78.78626,
+      28.84432
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Nawabpura Drain-2",
+    "town": "Moradabad",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 4.86,
+    "flow_mld": 19.75,
+    "tapped_status": "Untapped",
+    "source_type": "Domestic",
+    "river": "Ramganga",
+    "course_status": "mapped",
+    "course_length_km": 1.81,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Fragmented unnamed OSM drain ways in Moradabad city centre (7 short segments, 1.8 km total, gaps up to ~0.36 km bridged). Same fragments as Jhabbu ka Nala (#11) - the two drains share mapped segments in OSM."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      77.76791,
+      28.64056
+     ],
+     [
+      77.77197,
+      28.64191
+     ],
+     [
+      77.77493,
+      28.6397
+     ],
+     [
+      77.77636,
+      28.64049
+     ],
+     [
+      77.78559,
+      28.63928
+     ],
+     [
+      77.79124,
+      28.63533
+     ],
+     [
+      77.80486,
+      28.63526
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Kadrabad drain",
+    "town": "Hapur, Modinagar",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 4.54,
+    "flow_mld": 63.02,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Kali East",
+    "course_status": "mapped",
+    "course_length_km": 3.91,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM unnamed river segments near the outfall (2.7 km lower reach)",
+    "notes": "PARTIAL: only the lower ~2.7 km near the outfall is mapped. The upper course toward Modinagar is not identified in OSM. A 21.9 km dead-straight canal from Modinagar to the Kali Nadi was REJECTED as the drain: satellite imagery shows it is a straight irrigation canal, and it joins the Kali 6.5 km north of the CPCB outfall."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      77.80058,
+      28.56934
+     ],
+     [
+      77.80319,
+      28.58982
+     ],
+     [
+      77.80285,
+      28.592
+     ],
+     [
+      77.80235,
+      28.59129
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Gulaothi Drain",
+    "town": "Gulaothi",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 4.18,
+    "flow_mld": 23.22,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Kali East",
+    "course_status": "mapped",
+    "course_length_km": 2.63,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Chain of unnamed OSM ditch ways (2.6 km); gap to outfall 69 m."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.37271,
+      22.72113
+     ],
+     [
+      88.37347,
+      22.72192
+     ],
+     [
+      88.3714,
+      22.7227
+     ],
+     [
+      88.36999,
+      22.72493
+     ],
+     [
+      88.36458,
+      22.72629
+     ],
+     [
+      88.36607,
+      22.72587
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Khardha Khal",
+    "town": "Khardha",
+    "state": "West Bengal",
+    "bod_load_tpd": 4.07,
+    "flow_mld": 158.37,
+    "tapped_status": "Untapped",
+    "source_type": "Domestic",
+    "river": "Ganga",
+    "course_status": "mapped",
+    "course_length_km": 1.37,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "OSM way named 'Nala' (river, 1.3 km); gap to outfall 12 m. See #8 note on the shared channel."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      80.18635,
+      26.55671
+     ],
+     [
+      80.19495,
+      26.54528
+     ],
+     [
+      80.2102,
+      26.52021
+     ],
+     [
+      80.24306,
+      26.47847
+     ],
+     [
+      80.2574,
+      26.46476
+     ],
+     [
+      80.2728,
+      26.45474
+     ],
+     [
+      80.27169,
+      26.4513
+     ],
+     [
+      80.27743,
+      26.44756
+     ],
+     [
+      80.28333,
+      26.43522
+     ],
+     [
+      80.28735,
+      26.4398
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Ganda Drain",
+    "town": "Kanpur",
+    "state": "Uttar Pradesh",
+    "bod_load_tpd": 4.07,
+    "flow_mld": 59.9,
+    "tapped_status": "Partially tapped",
+    "source_type": "Mixed",
+    "river": "Pandu",
+    "course_status": "mapped",
+    "course_length_km": 17.61,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM waterway ways (way-hopping chain)",
+    "notes": "Two unnamed OSM canal ways chained (2.2 km + 14.4 km) running NW-SE through Kanpur to the Pandu. IDENTITY CAVEAT: the 14.4 km segment is an unnamed canal - it matches the Ganda Drain's expected course (N Kanpur to the Pandu at the CPCB outfall) but could be an irrigation canal; no name in OSM confirms it."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      85.21329,
+      25.58132
+     ],
+     [
+      85.22,
+      25.57982
+     ],
+     [
+      85.23323,
+      25.57392
+     ],
+     [
+      85.23246,
+      25.5742
+     ],
+     [
+      85.228,
+      25.522
+     ],
+     [
+      85.242,
+      25.515
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "Badshahi Drain",
+    "town": "Patna",
+    "state": "Bihar",
+    "bod_load_tpd": 4.06,
+    "flow_mld": 168.96,
+    "tapped_status": "Partially tapped",
+    "source_type": "Mixed",
+    "river": "Punpun",
+    "course_status": "mapped",
+    "course_length_km": 9.68,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "OSM unnamed waterway=river way (8.1 km), visually confirmed on Esri satellite imagery; final ~2 km to the Punpun confluence traced approximately from the same imagery",
+    "notes": "OSM way is unnamed; identified as the Badshahi Nalla by position (passes 84 m from the CPCB outfall, flows S into the Punpun). The OSM way named 'Badshahi Nalla' 2.2 km west is a separate E-W channel and may be the upper reach - not joined (gap unbridged). CPCB point lies on the nala, ~7 km upstream of its Punpun confluence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      88.3251,
+      22.5736
+     ],
+     [
+      88.33,
+      22.572
+     ],
+     [
+      88.33516,
+      22.57117
+     ]
+    ]
+   },
+   "properties": {
+    "drain_name": "130- Foreshore Road Drain",
+    "town": "Howrah",
+    "state": "West Bengal",
+    "bod_load_tpd": 4.02,
+    "flow_mld": 46.7,
+    "tapped_status": "Untapped",
+    "source_type": "Mixed",
+    "river": "Ganga",
+    "course_status": "approximate",
+    "course_length_km": 1.07,
+    "source": "CPCB Pre-Monsoon 2023 (drain data); OpenStreetMap (course geometry, ODbL)",
+    "as_of": "2026-11-23",
+    "method": "Approximate straight line from Howrah toward the CPCB outfall; no OSM waterway at all in the 3 km extract",
+    "notes": "No channel for this drain is mapped in OSM. Line is a placeholder, not a surveyed course."
+   }
+  }
+ ]
+}

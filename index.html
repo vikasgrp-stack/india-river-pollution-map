@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganga &amp; Yamuna River Pollution Map</title>
+<meta name="description" content="Drains, treatment plants, water quality and people along the Ganga and Yamuna rivers — what flows in, what gets treated, and who is responsible.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="title-block">
+      <h1>Ganga &amp; Yamuna River Pollution Map</h1>
+      <p class="subtitle">Every drain that flows in, every treatment plant, every water-quality reading — and who is responsible. Government data only, with the source next to every number.</p>
+    </div>
+    <div class="river-switch" role="group" aria-label="River">
+      <span class="switch-label">River — both rivers are on this one page</span>
+      <div class="switch-buttons">
+        <button id="btnGanga" class="river-btn active" type="button">Ganga</button>
+        <button id="btnYamuna" class="river-btn" type="button">Yamuna</button>
+      </div>
+    </div>
+  </div>
+  <nav class="top-tabs" role="tablist" aria-label="Views">
+    <button id="tabMap" class="top-tab active" role="tab" type="button">Map</button>
+    <button id="tabAction" class="top-tab" role="tab" type="button">Action list — top priorities</button>
+    <button id="tabData" class="top-tab" role="tab" type="button">Data, charts &amp; sources</button>
+    <span class="header-counts" id="headerCounts"></span>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ MAP VIEW ============ -->
+  <section id="mapView" class="view">
+    <div id="map" aria-label="River pollution map"></div>
+
+    <div class="map-panel" id="controlPanel">
+      <div class="control-row">
+        <input id="townSearch" type="search" list="townList" placeholder="Search a town — Kanpur, Varanasi, Patna…" autocomplete="off">
+        <datalist id="townList"></datalist>
+        <button id="wholeRiver" class="btn" type="button">Whole river</button>
+      </div>
+      <div class="control-row basemap-row">
+        <span class="control-label">Basemap</span>
+        <div class="basemap-toggle" role="group" aria-label="Basemap">
+          <button id="bmStreets" class="bm-btn active" type="button">Streets</button>
+          <button id="bmSatellite" class="bm-btn" type="button">Satellite</button>
+        </div>
+        <span class="basemap-attr" id="basemapAttr">© OpenStreetMap contributors</span>
+      </div>
+      <div class="control-row layers-row">
+        <span class="control-label">Layers</span>
+        <div class="layer-chips" id="layerChips"></div>
+      </div>
+      <div class="control-row">
+        <label class="shortcomings"><input type="checkbox" id="shortcomingsOnly"> Shortcomings only</label>
+        <span class="layer-note" id="layerNote"></span>
+      </div>
+      <div class="layer-legends" id="layerLegends"></div>
+    </div>
+
+    <button id="legendBtn" class="legend-btn" type="button" aria-expanded="false">ⓘ Legend</button>
+    <div id="legendPanel" class="legend-panel" hidden></div>
+
+    <aside id="detailPanel" class="detail-panel" hidden aria-live="polite">
+      <button id="panelClose" class="panel-close" type="button" aria-label="Close panel">×</button>
+      <div id="panelContent"></div>
+    </aside>
+
+    <div id="mapLoading" class="map-loading">Loading river data…</div>
+  </section>
+
+  <!-- ============ ACTION LIST VIEW ============ -->
+  <section id="actionView" class="view" hidden>
+    <div class="page-wrap">
+      <h2>Action list — top 30 problems, worst first</h2>
+      <p class="page-intro" id="actionIntro"></p>
+      <ol class="action-list" id="actionList"></ol>
+    </div>
+  </section>
+
+  <!-- ============ DATA VIEW ============ -->
+  <section id="dataView" class="view" hidden>
+    <div class="page-wrap">
+      <h2>Data, charts &amp; sources</h2>
+
+      <div class="data-section" id="findingsSection">
+        <h3>What the data says</h3>
+        <div class="kpi-grid" id="kpiGrid"></div>
+        <div id="findingsText"></div>
+      </div>
+
+      <div class="data-section">
+        <h3>What do these terms mean?</h3>
+        <dl class="glossary">
+          <dt>BOD — Biochemical Oxygen Demand</dt>
+          <dd>The oxygen that microbes need to break down the organic pollution in water. Higher BOD means more polluted water. The bathing standard is 3 mg/l or less.</dd>
+          <dt>DO — Dissolved Oxygen</dt>
+          <dd>The oxygen dissolved in the water — the oxygen fish breathe. Higher is better; below about 5 mg/l, fish struggle. The bathing standard is 5 mg/l or more.</dd>
+          <dt>STP — Sewage Treatment Plant</dt>
+          <dd>A plant that treats sewage before it is released into the river. Its size is given in MLD (million litres per day). Its outlet water is judged against NGT (2019) and MoEFCC (2017) norms.</dd>
+          <dt>Water-quality station</dt>
+          <dd>A monitoring point, usually run by the CPCB, where river water is sampled regularly for BOD, DO, pH and faecal coliform.</dd>
+          <dt>MLD — million litres per day</dt>
+          <dd>The unit for flows: how much water a drain carries, or how much sewage a plant can treat, each day.</dd>
+          <dt>TPD — tonnes per day</dt>
+          <dd>The unit for pollution load: how many tonnes of BOD a drain adds to the river each day.</dd>
+          <dt>Tapped / untapped drain</dt>
+          <dd>A tapped drain is intercepted — its sewage is diverted into the sewer network and (in theory) to a treatment plant. An untapped drain flows straight into the river.</dd>
+          <dt>NGT norms</dt>
+          <dd>The discharge limits set by the National Green Tribunal in 2019 (metro tier: BOD 10 mg/l). The binding notified rule is the looser MoEFCC 2017 standard.</dd>
+        </dl>
+      </div>
+
+      <div class="data-section">
+        <h3>How Indian norms compare with the world</h3>
+        <p class="page-intro">On paper, India's NGT 2019 norms are among the strictest in the world for conventional pollutants — BOD 10 beats the EU's 25 and the US's 30. But the EU's 2024 recast has overtaken India on nutrients for large plants and is alone on micropollutants, producer responsibility and energy. And the notified MoEFCC 2017 rule is far looser than NGT 2019. Three corrections to the common story: the NGT "BOD 10" is the metro tier of a tiered table (Class I towns: BOD 20), not a notified uniform rule; the NH₄-N 5 figure is a 2015 draft/programme target, not an operative limit (the operative limit is total nitrogen 10); and no per-plant total nitrogen value is published anywhere.</p>
+        <div class="table-scroll"><table class="std-table" id="stdTable"></table></div>
+        <p class="fine-print">Source: standards comparison research, 23 Nov 2026 — NGT order 2019, MoEFCC GSR 1265(E) 2017, EU Directive 91/271/EEC and Regulation (EU) 2024/3019, US EPA 40 CFR 133, WHO 2006. Full notes in the downloadable file.</p>
+      </div>
+
+      <div class="data-section">
+        <h3>Accountability — what is known, and what is not</h3>
+        <div id="accountabilityText"></div>
+      </div>
+
+      <div class="data-section">
+        <h3>Methodology</h3>
+        <div id="methodText"></div>
+      </div>
+
+      <div class="data-section">
+        <h3>Sources</h3>
+        <ul class="source-list" id="sourceList"></ul>
+      </div>
+
+      <div class="data-section">
+        <h3>Download the data</h3>
+        <p class="page-intro">Every dataset behind this page, as published. CSV and GeoJSON — free to reuse with attribution.</p>
+        <ul class="download-list" id="downloadList"></ul>
+      </div>
+
+      <div class="data-section">
+        <h3>Gaps &amp; limitations — stated openly</h3>
+        <ul class="gaps-list" id="gapsList"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Built from government publications — CPCB, NMCG, Ganga Knowledge Portal, Census of India 2011, Election Commission of India, state pollution control boards. Non-government sources (GHSL, WorldPop, OpenStreetMap) are used only where no government equivalent exists and are labelled as such. Satellite imagery © Esri, Maxar, Earthstar Geographics, and the GIS User Community. Street map © OpenStreetMap contributors.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

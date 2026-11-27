@@ -1,0 +1,655 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.715,
+     28.965
+    ]
+   },
+   "properties": {
+    "name": "Al Faheem Meat Exports Pvt. Ltd.",
+    "industry_type": "slaughterhouse / meat processing",
+    "town": "Meerut",
+    "state": "Uttar Pradesh",
+    "drain_name": "Slaughter House/Odean Nallah",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.965,
+    "longitude": 77.715,
+    "coord_status": "approximate",
+    "source_name": "Allahabad High Court, Al Faheem Meat Exports vs State of UP (2006); Swarajya ground report (2019)",
+    "source_url": "https://indiankanoon.org/doc/286398/",
+    "as_of": "2026-11-23",
+    "notes": "Petitioner in the 2006 case over the old municipal slaughterhouse on Hapur Road, Meerut, whose waste went into the drains feeding the Kali Nadi. The old slaughterhouse was demolished in 2012; whether Al Faheem still operates at this site is NOT verified. Plotted in the Hapur Road area on the Odean course - exact plant site not published."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.5771,
+     28.8321
+    ]
+   },
+   "properties": {
+    "name": "Modi Distillery (Modi Industries Ltd)",
+    "industry_type": "distillery",
+    "town": "Modinagar",
+    "state": "Uttar Pradesh",
+    "drain_name": "Kadrabad drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.8321,
+    "longitude": 77.5771,
+    "coord_status": "approximate",
+    "source_name": "Supreme Court of India, UPPCB vs Modi Distillery (1987)",
+    "source_url": "https://indiankanoon.org/docfragment/885425/?big=2&formInput=streams",
+    "as_of": "2026-11-23",
+    "notes": "The judgment records the distillery discharging 'highly noxious and polluted trade effluents into the Kali River through the Kadrabad Drain'. 1987 case - current operating status NOT verified. Plotted at Modinagar town (exact plant site not published)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.58,
+     28.8321
+    ]
+   },
+   "properties": {
+    "name": "Modi Sugar Mill, Modinagar",
+    "industry_type": "sugar",
+    "town": "Modinagar",
+    "state": "Uttar Pradesh",
+    "drain_name": "Kadrabad drain",
+    "effluent_mld": 0.45,
+    "effluent_source": "UPPCB consented treated-effluent discharge limit (450 KLD), per NGT joint committee report 2022 - a permitted limit, not a measured discharge",
+    "latitude": 28.8321,
+    "longitude": 77.58,
+    "coord_status": "approximate",
+    "source_name": "National Green Tribunal OA 418/2021 & 447/2021, joint committee report (2022)",
+    "source_url": "https://www.greentribunal.gov.in/gen_pdf_test.php?filepath=L25ndF9kb2N1bWVudHMvbmd0L2Nhc2Vkb2Mvb3JkZXJzL0RFTEhJLzIwMjItMDctMjEvY291cnRzLzIvZGFpbHkvMTY1OTAwODc5MDY2MjA5NzU3MDYyZTI3NzE2ZjA2MzUucGRm",
+    "as_of": "2026-11-23",
+    "notes": "Sugar mill (5000 TCD), ETP capacity 1000 KLD. Discharge route into the Kadrabad Drain is NOT stated in the NGT report - linkage is by location (Modinagar, in the drain's catchment), not a published outfall map. Plotted at Modinagar town."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.574,
+     28.83
+    ]
+   },
+   "properties": {
+    "name": "Modinagar Paper Mills Ltd",
+    "industry_type": "paper",
+    "town": "Modinagar",
+    "state": "Uttar Pradesh",
+    "drain_name": "Kadrabad drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.83,
+    "longitude": 77.574,
+    "coord_status": "approximate",
+    "source_name": "ETP performance study, Modinagar Paper Mills Ltd (2016)",
+    "source_url": "https://www.slideshare.net/slideshow/modinagar-paper-mills-ltd1/64982533",
+    "as_of": "2026-11-23",
+    "notes": "Paper mill with ETP (2016 study: final discharge BOD 24 mg/l). Effluent volume not published. Discharge route into the Kadrabad Drain NOT stated - linkage by location (Modinagar catchment) only. Plotted at Modinagar town."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.8095,
+     28.8797
+    ]
+   },
+   "properties": {
+    "name": "Rana Sugar Ltd (Unit-3), Belwara, Manpur",
+    "industry_type": "sugar",
+    "town": "Moradabad",
+    "state": "Uttar Pradesh",
+    "drain_name": "Jhabbu ka Nala",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.8797,
+    "longitude": 78.8095,
+    "coord_status": "approximate",
+    "source_name": "UPPCB, Action Plan for Restoration of Polluted Stretch of River Ramganga, Moradabad to Kannauj",
+    "source_url": "https://docslib.org/download/5515325/action-plan-for-restoration-of-polluted-stretch-of-river-ramganga-from-moradabad-to-kannauj",
+    "as_of": "2026-11-23",
+    "notes": "Named in the action plan (environmental compensation Rs 1.5 lakh imposed; prosecution initiated). The plan says the 121 catchment industries discharge through 12 drains but does not map unit to drain in the excerpt consulted - assigned to the traced Moradabad city drain by catchment, NOT confirmed. Plotted at Moradabad town (Belwara/Manpur site not published)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0199,
+     28.5706
+    ]
+   },
+   "properties": {
+    "name": "Rana Sugar Ltd (Unit-4), Karimganj, Shahabad",
+    "industry_type": "sugar",
+    "town": "Rampur",
+    "state": "Uttar Pradesh",
+    "drain_name": "Rampur Drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.5706,
+    "longitude": 79.0199,
+    "coord_status": "approximate",
+    "source_name": "UPPCB, Action Plan for Restoration of Polluted Stretch of River Ramganga, Moradabad to Kannauj",
+    "source_url": "https://docslib.org/download/5515325/action-plan-for-restoration-of-polluted-stretch-of-river-ramganga-from-moradabad-to-kannauj",
+    "as_of": "2026-11-23",
+    "notes": "Named in the action plan (environmental compensation Rs 1 lakh imposed). Same catchment caveat as Unit-3: unit-to-drain mapping not stated in the excerpt. Plotted at Shahabad, Rampur (Karimganj site not published)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.4,
+     26.4009
+    ]
+   },
+   "properties": {
+    "name": "Jajmau CETP (old, 36 MLD)",
+    "industry_type": "tannery (common effluent treatment plant)",
+    "town": "Kanpur",
+    "state": "Uttar Pradesh",
+    "drain_name": "",
+    "effluent_mld": 9.0,
+    "effluent_source": "Tannery share of the 36 MLD plant (9 MLD tannery + 27 MLD sewage), PIB 2017; UP Jal Jeevan Mission portal",
+    "latitude": 26.4009,
+    "longitude": 80.4,
+    "coord_status": "approximate",
+    "source_name": "PIB (CPCB GPI data, 2017); UP JJM / Namami Gange STP list; NGT OA 985/2019 (Jajmau tanneries)",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1483959&reg=3&lang=2",
+    "as_of": "2026-11-23",
+    "notes": "NOT on a traced drain: the Jajmau CETP discharges treated effluent directly to the Ganga. Included as basin context because it is the largest tannery cluster in the basin (~400 tanneries in ~7.4 sq km, UPPCB to NGT 2023). 9.0 MLD is the tannery wastewater share, not the plant's total flow (36 MLD incl. sewage). Plotted at Jajmau, Kanpur (exact plant site not published)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.403,
+     26.402
+    ]
+   },
+   "properties": {
+    "name": "Jajmau CETP (new, 20 MLD, tannery only)",
+    "industry_type": "tannery (common effluent treatment plant)",
+    "town": "Kanpur",
+    "state": "Uttar Pradesh",
+    "drain_name": "",
+    "effluent_mld": 20.0,
+    "effluent_source": "Design capacity (20 MLD, tannery effluent only) - NOT a measured discharge",
+    "latitude": 26.402,
+    "longitude": 80.403,
+    "coord_status": "approximate",
+    "source_name": "PIB (2018 announcement, Rs 554 cr); NGT CPCB reply Jan 2025 (commissioned Aug 2024)",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1542910&reg=48&lang=2",
+    "as_of": "2026-11-23",
+    "notes": "NOT on a traced drain: discharges to the Ganga via a 25 km dedicated conveyance system. 20 MLD is design capacity. Plotted next to the old CETP at Jajmau (exact site not published)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.3715,
+     22.681
+    ]
+   },
+   "properties": {
+    "name": "Agarpara Jute Mills Ltd",
+    "industry_type": "jute",
+    "town": "Kamarhati",
+    "state": "West Bengal",
+    "drain_name": "",
+    "effluent_mld": 0.24,
+    "effluent_source": "WBPCB consent to operate (2024): max 240 KLD mixed wastewater to municipal drain after treatment - a permitted limit, not a measured discharge",
+    "latitude": 22.681,
+    "longitude": 88.3715,
+    "coord_status": "approximate",
+    "source_name": "West Bengal Pollution Control Board, Consent to Operate WBPCB/4390133/2023 (26 Nov 2024)",
+    "source_url": "https://ocmms.nic.in/OCMMS_NEW/download.action;jsessionid=222C3BE24369597C706550476DB841D3?applicationId=4390133&industryState=West+Bengal&industryType=CTO&industryFor=both",
+    "as_of": "2026-11-23",
+    "notes": "NOT on a traced drain: the CTO says discharge to 'Municipal Drain' without naming it; the mill is at 28 B.T. Road, Kamarhati, beside the traced Kamarhati Drain @ Jute Mill (rank 24, just outside the top 20) - the receiving drain is not confirmed, so drain_name is left blank. Plotted at Kamarhati town."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.9617,
+     29.2118
+    ]
+   },
+   "properties": {
+    "name": "Multiwal Pulp and Board Mills (P) Ltd",
+    "industry_type": "paper",
+    "town": "Kashipur",
+    "state": "Uttarakhand",
+    "drain_name": "Dhela River (untraced tributary)",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 29.2118,
+    "longitude": 78.9617,
+    "coord_status": "approximate",
+    "source_name": "NGT proceedings (Kashipur paper units); UPPCB Ramganga Action Plan (Kashipur paper cluster discharges via the Dhela)",
+    "source_url": "https://docslib.org/download/5515325/action-plan-for-restoration-of-polluted-stretch-of-river-ramganga-from-moradabad-to-kannauj",
+    "as_of": "2026-11-23",
+    "notes": "Paper mill, Bazpur Road, Kashipur. Discharges via the Dhela River into the Ramganga - the Dhela is NOT a traced drain, so drain_name records the tributary. Plotted at Kashipur town (exact plant site not published)."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.958,
+     29.209
+    ]
+   },
+   "properties": {
+    "name": "Cheema Papers Ltd",
+    "industry_type": "paper",
+    "town": "Kashipur",
+    "state": "Uttarakhand",
+    "drain_name": "Dhela River (untraced tributary)",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 29.209,
+    "longitude": 78.958,
+    "coord_status": "approximate",
+    "source_name": "NGT proceedings (Kashipur paper units); UPPCB Ramganga Action Plan",
+    "source_url": "https://docslib.org/download/5515325/action-plan-for-restoration-of-polluted-stretch-of-river-ramganga-from-moradabad-to-kannauj",
+    "as_of": "2026-11-23",
+    "notes": "Paper mill, 9 km stone Bazpur Road, Kashipur. Same Dhela caveat as Multiwal. Plotted at Kashipur town."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.965,
+     29.214
+    ]
+   },
+   "properties": {
+    "name": "Multiwal Duplex Pvt. Ltd",
+    "industry_type": "paper / duplex board",
+    "town": "Kashipur",
+    "state": "Uttarakhand",
+    "drain_name": "Dhela River (untraced tributary)",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 29.214,
+    "longitude": 78.965,
+    "coord_status": "approximate",
+    "source_name": "Uttarakhand EPPCB direction under s.33(A) Water Act (2018); NGT proceedings",
+    "source_url": "https://www.courtkutchehry.com/judgements/965093/ms-multiwal-duplex-pvt-ltd-vs-state-of-uttarakhand-anoth/",
+    "as_of": "2026-11-23",
+    "notes": "Duplex board unit (waste paper, 900 MT/month), Vill. Gangapur Gusain, Kundeshwari Road, Kashipur. Consent refused Dec 2017 for non-compliance. Same Dhela caveat. Plotted at Kashipur town."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.955,
+     29.215
+    ]
+   },
+   "properties": {
+    "name": "Kashi Vishwanath Textile Mill Ltd",
+    "industry_type": "textile",
+    "town": "Kashipur",
+    "state": "Uttarakhand",
+    "drain_name": "Dhela River (untraced tributary)",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 29.215,
+    "longitude": 78.955,
+    "coord_status": "approximate",
+    "source_name": "NGT proceedings (Kashipur industrial units list)",
+    "source_url": "https://www.casemine.com/search/in/samda%2Bkashipur%2Bdam",
+    "as_of": "2026-11-23",
+    "notes": "Textile mill, 5th km stone Ramnagar Road, Kashipur. Same Dhela caveat. Plotted at Kashipur town."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.73425,
+     28.96478
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Meerut",
+    "state": "Uttar Pradesh",
+    "drain_name": "Abu Nalla-2",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.96478,
+    "longitude": 77.73425,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.28002,
+     22.56163
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Howrah",
+    "state": "West Bengal",
+    "drain_name": "Nazerganj Khal",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 22.56163,
+    "longitude": 88.28002,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.33333,
+     22.80471
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Champdani",
+    "state": "West Bengal",
+    "drain_name": "DVC Canal",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 22.80471,
+    "longitude": 88.33333,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.29367,
+     22.55222
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Kolkata",
+    "state": "West Bengal",
+    "drain_name": "Dhanketikhal Garden Reach",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 22.55222,
+    "longitude": 88.29367,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.39068,
+     28.38879
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Bareilly",
+    "state": "Uttar Pradesh",
+    "drain_name": "Devraniya River/ Drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.38879,
+    "longitude": 79.39068,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.36999,
+     22.72493
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Konnagar and Rishra",
+    "state": "West Bengal",
+    "drain_name": "Bagh Khal, Rishra",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 22.72493,
+    "longitude": 88.36999,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.78254,
+     28.84717
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Moradabad",
+    "state": "Uttar Pradesh",
+    "drain_name": "Nawabpura Drain-2",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.84717,
+    "longitude": 78.78254,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.80285,
+     28.592
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Gulaothi",
+    "state": "Uttar Pradesh",
+    "drain_name": "Gulaothi Drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.592,
+    "longitude": 77.80285,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.2728,
+     26.45474
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Kanpur",
+    "state": "Uttar Pradesh",
+    "drain_name": "Ganda Drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 26.45474,
+    "longitude": 80.2728,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.23246,
+     25.5742
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Patna",
+    "state": "Bihar",
+    "drain_name": "Badshahi Drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 25.5742,
+    "longitude": 85.23246,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.33,
+     22.572
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 mixed industrial (CPCB: Mixed source)",
+    "industry_type": "mixed industrial",
+    "town": "Howrah",
+    "state": "West Bengal",
+    "drain_name": "130- Foreshore Road Drain",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 22.572,
+    "longitude": 88.33,
+    "coord_status": "approximate",
+    "source_name": "CPCB, Status of drains, Pre-Monsoon 2023",
+    "source_url": "https://ospcb.orsac.in/assets/pdf/water-quality-management/Drains-Pre-Monsoon-2023.pdf",
+    "as_of": "2026-11-23",
+    "notes": "TYPE-ONLY marker: CPCB classifies this drain's pollution source as 'Mixed' (domestic + industrial), but no individual industry discharging into this drain is named in any public source consulted. Plotted at the midpoint of the traced course - it marks the drain's mixed character, NOT a specific unit. Do not read it as a located factory."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.78328,
+     28.84626
+    ]
+   },
+   "properties": {
+    "name": "unnamed \u2014 brass and electroplating units (Moradabad cluster)",
+    "industry_type": "brass / electroplating",
+    "town": "Moradabad",
+    "state": "Uttar Pradesh",
+    "drain_name": "Jhabbu ka Nala",
+    "effluent_mld": null,
+    "effluent_source": null,
+    "latitude": 28.84626,
+    "longitude": 78.78328,
+    "coord_status": "approximate",
+    "source_name": "UPPCB Ramganga Action Plan; CPCB Pollution Assessment: River Ganga (2013)",
+    "source_url": "https://docslib.org/download/5515325/action-plan-for-restoration-of-polluted-stretch-of-river-ramganga-from-moradabad-to-kannauj",
+    "as_of": "2026-11-23",
+    "notes": "CLUSTER marker: Moradabad's brass, steel and electroplating units are documented as discharging via the city's drains into the Ramganga (UPPCB: 121 industries in the Moradabad/Rampur/Bareilly catchment; CPCB 2013). No single unit is tied to Jhabbu ka Nala by name in the sources consulted. Plotted at the midpoint of the traced course."
+   }
+  }
+ ]
+}

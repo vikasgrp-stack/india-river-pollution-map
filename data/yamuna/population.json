@@ -1,0 +1,381 @@
+{
+ "corridor": {
+  "buffer_km": 10,
+  "total": 36588118,
+  "method": "10 km buffer (Lambert Azimuthal Equal-Area, centred 78.7055E/27.6197N) around the Yamuna centreline: OSM relation 326077 (Yamunotri to Prayagraj confluence, 1,504.4 km). GHSL GHS-POP R2023A 2020 epoch, 30 arc-second grid, clipped by cell centre inside the buffer; cell values summed.",
+  "raster": "GHSL GHS-POP R2023A, epoch 2020, 30 arc-second (4326_30ss), JRC open-data server / AWS mirror s3://jrc-ghsl",
+  "vintage": "2020",
+  "status": "computed",
+  "buffer_area_km2": 23347,
+  "centreline_length_km": 1504.4,
+  "cells_in_buffer": 30772,
+  "cross_check_worldpop_2020_100m_unadj": {
+   "total": 34326101,
+   "status": "computed",
+   "raster": "WorldPop India 2020, 100 m, UN-adjusted (ind_ppp_2020_UNadj.tif), CC-BY-4.0",
+   "cells_in_buffer": 3077181
+  }
+ },
+ "towns": [
+  {
+   "town": "Agra",
+   "state": "Uttar Pradesh",
+   "population_2011": 1585704,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Agra', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Auraiya",
+   "state": "Uttar Pradesh",
+   "population_2011": 87736,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Auraiya', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Barkot",
+   "state": "Uttarakhand",
+   "population_2011": 6720,
+   "basis": "Census 2011 (citypopulation.de / censusindia2011.com)",
+   "source": "Wikipedia 'Barkot', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bateswar",
+   "state": "Uttar Pradesh",
+   "population_2011": null,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Dakpathar",
+   "state": "Uttarakhand",
+   "population_2011": 9547,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Dakpathar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Delhi",
+   "state": "Delhi",
+   "population_2011": 16787941,
+   "basis": "Census 2011 (NCT of Delhi)",
+   "source": "Wikipedia 'Delhi', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Etawah",
+   "state": "Uttar Pradesh",
+   "population_2011": 256838,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Etawah', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Faridabad",
+   "state": "Haryana",
+   "population_2011": 1414050,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Faridabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Firozabad",
+   "state": "Uttar Pradesh",
+   "population_2011": 603797,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Firozabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gokul",
+   "state": "Uttar Pradesh",
+   "population_2011": null,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Greater Noida",
+   "state": "Uttar Pradesh",
+   "population_2011": 107676,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Greater Noida', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Hamirpur",
+   "state": "Uttar Pradesh",
+   "population_2011": 35475,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Hamirpur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Hanuman Chatti",
+   "state": "Uttarakhand",
+   "population_2011": null,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kalpi",
+   "state": "Uttar Pradesh",
+   "population_2011": 51670,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Kalpi', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kalsi",
+   "state": "Uttarakhand",
+   "population_2011": null,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Loni",
+   "state": "Uttar Pradesh",
+   "population_2011": 516082,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Loni', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mathura",
+   "state": "Uttar Pradesh",
+   "population_2011": 441894,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Mathura', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Naugaon",
+   "state": "Uttarakhand",
+   "population_2011": null,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Noida",
+   "state": "Uttar Pradesh",
+   "population_2011": 637272,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Noida', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Paonta Sahib",
+   "state": "Himachal Pradesh",
+   "population_2011": 25183,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Paonta Sahib', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Prayagraj",
+   "state": "Uttar Pradesh",
+   "population_2011": 1112544,
+   "basis": "Wikipedia article Demographics section (Census 2011)",
+   "source": "Wikipedia 'Prayagraj', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Radaur",
+   "state": "Haryana",
+   "population_2011": 13690,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Radaur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Vikasnagar",
+   "state": "Uttarakhand",
+   "population_2011": 13927,
+   "basis": "Census 2011 (CEIC / censusindia2011.com)",
+   "source": "Wikipedia 'Vikasnagar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Vrindavan",
+   "state": "Uttar Pradesh",
+   "population_2011": 63005,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Vrindavan', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Yamunanagar",
+   "state": "Haryana",
+   "population_2011": 216628,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Yamunanagar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Yamunotri",
+   "state": "Uttarakhand",
+   "population_2011": null,
+   "basis": null,
+   "source": null,
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Panipat",
+   "state": "Haryana",
+   "population_2011": 294150,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Panipat', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sonipat",
+   "state": "Haryana",
+   "population_2011": 277053,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Sonipat', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Karnal",
+   "state": "Haryana",
+   "population_2011": 286974,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Karnal', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Jagadhri",
+   "state": "Haryana",
+   "population_2011": 124894,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Jagadhri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ghaziabad",
+   "state": "Uttar Pradesh",
+   "population_2011": 1729000,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Ghaziabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Palwal",
+   "state": "Haryana",
+   "population_2011": 131926,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Palwal', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Samalkha",
+   "state": "Haryana",
+   "population_2011": 40000,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Samalkha', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gannaur",
+   "state": "Haryana",
+   "population_2011": 35603,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Gannaur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Indri",
+   "state": "Haryana",
+   "population_2011": 17487,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Indri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gharaunda",
+   "state": "Haryana",
+   "population_2011": 30179,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Gharaunda', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Chhachhrauli",
+   "state": "Haryana",
+   "population_2011": 10533,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Chhachhrauli', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nilokheri",
+   "state": "Haryana",
+   "population_2011": 16405,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Nilokheri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Taraori",
+   "state": "Haryana",
+   "population_2011": 25945,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Taraori', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nissing",
+   "state": "Haryana",
+   "population_2011": 17438,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Nissing', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Asandh",
+   "state": "Haryana",
+   "population_2011": 27125,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Asandh', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gohana",
+   "state": "Haryana",
+   "population_2011": 65708,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Gohana', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kharkhoda",
+   "state": "Haryana",
+   "population_2011": 25051,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Kharkhoda', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ballabhgarh",
+   "state": "Haryana",
+   "population_2011": 214894,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Ballabhgarh', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Goverdhan",
+   "state": "Uttar Pradesh",
+   "population_2011": 22576,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Goverdhan', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  }
+ ]
+}

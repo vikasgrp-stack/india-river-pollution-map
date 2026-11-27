@@ -1,0 +1,185 @@
+{
+  "corridor": {
+    "buffer_km": 10,
+    "total": 81221324,
+    "method": "10 km buffer (Lambert Azimuthal Equal-Area, centred 83E/26N) around the Ganga centreline: OSM relation 1236345 (Ganga) ways west of 88.80E (Indian main stem Haridwar to Farakka, incl. braids) + OSM relation 1243337 (Hooghly) Farakka to Bay of Bengal. GHSL GHS-POP R2023A 2020 epoch, 30 arc-second grid, clipped by cell centre inside the buffer; cell values summed.",
+    "raster": "GHSL GHS-POP R2023A, epoch 2020, 30 arc-second (4326_30ss), tiles R6_C26/R6_C27/R7_C26/R7_C27/R7_C28, JRC open-data server",
+    "vintage": "2020",
+    "status": "computed",
+    "buffer_area_km2": 46308,
+    "centreline_length_km": 3131,
+    "cells_in_buffer": 60035,
+    "secondary_raw_relation_1236345_total": 62008423,
+    "secondary_note": "Buffer of OSM relation 1236345 as-is: includes the Padma stretch in Bangladesh and misses the lower Hooghly (Kolkata/Howrah). Given for transparency; the primary total is the app corridor.",
+    "cross_check_worldpop_2020_100m_unadj": {
+      "total": 74230320,
+      "status": "computed",
+      "raster": "WorldPop India 2020, 100 m, UN-adjusted (ind_ppp_2020_UNadj.tif), CC-BY-4.0"
+    }
+  },
+  "towns": [
+    {
+      "basis": "Town (Nagar Palika Parishad), Census 2011 provisional",
+      "population_2011": 102138,
+      "source": "Wikipedia 'Rishikesh', citing Census of India 2011",
+      "state": "Uttarakhand",
+      "town": "Rishikesh",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "City (Municipal Corporation), Census 2011",
+      "population_2011": 228832,
+      "source": "Wikipedia 'Haridwar', citing Census of India 2011",
+      "state": "Uttarakhand",
+      "town": "Haridwar",
+      "urban_agglomeration_2011": 310562
+    },
+    {
+      "basis": "Urban Agglomeration, Census 2011",
+      "population_2011": 115381,
+      "source": "Wikipedia 'Bijnor', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Bijnor",
+      "urban_agglomeration_2011": 115381
+    },
+    {
+      "basis": "Town (Nagar Palika Parishad), Census 2011; Farrukhabad-cum-Fatehgarh combined 276,581",
+      "population_2011": 275754,
+      "source": "Wikipedia 'Farrukhabad', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Farrukhabad",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "Town (Nagar Palika Parishad), Census 2011",
+      "population_2011": 84862,
+      "source": "Wikipedia 'Kannauj', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Kannauj",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "City (Municipal Corporation), Census 2011",
+      "population_2011": 2765348,
+      "source": "Census of India 2011, via census2011.co.in and Wikipedia 'Kanpur' (M Corp. 2,765,348; UA 2,920,067 provisional)",
+      "state": "Uttar Pradesh",
+      "town": "Kanpur",
+      "urban_agglomeration_2011": 2920067
+    },
+    {
+      "basis": "City (Municipal Corporation, pre-2020 limits), Census 2011; 1,536,218 lived within the expanded 2020 corporation limits (UA figure not verified in this pass)",
+      "population_2011": 1112544,
+      "source": "Wikipedia 'Prayagraj', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Prayagraj",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "Municipality, Census 2011",
+      "population_2011": 233691,
+      "source": "Wikipedia 'Mirzapur', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Mirzapur",
+      "urban_agglomeration_2011": 245817
+    },
+    {
+      "basis": "City (Municipal Corporation), Census 2011; MC + cantonment board combined 1,212,610",
+      "population_2011": 1198491,
+      "source": "Wikipedia 'Varanasi' and 'List of cities in India by population', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Varanasi",
+      "urban_agglomeration_2011": 1435113
+    },
+    {
+      "basis": "City, Census 2011",
+      "population_2011": 110587,
+      "source": "Wikipedia 'Ghazipur', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Ghazipur",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "Town (Nagar Palika Parishad), Census 2011",
+      "population_2011": 104424,
+      "source": "Wikipedia 'Ballia', citing Census of India 2011",
+      "state": "Uttar Pradesh",
+      "town": "Ballia",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "Town, Census 2011",
+      "population_2011": 102861,
+      "source": "Wikipedia 'Buxar', citing Census of India 2011",
+      "state": "Bihar",
+      "town": "Buxar",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "City (Municipal Corporation, pre-expansion limits), Census 2011",
+      "population_2011": 1684222,
+      "source": "Wikipedia 'Patna', citing Census of India 2011",
+      "state": "Bihar",
+      "town": "Patna",
+      "urban_agglomeration_2011": 2046652
+    },
+    {
+      "basis": "City (Municipal Corporation), Census 2011",
+      "population_2011": 213101,
+      "source": "Wikipedia 'Munger', citing Census of India 2011",
+      "state": "Bihar",
+      "town": "Munger",
+      "urban_agglomeration_2011": null
+    },
+    {
+      "basis": "City (Municipal Corporation), Census 2011",
+      "population_2011": 398138,
+      "source": "Wikipedia 'Bhagalpur' and 'List of cities in India by population', citing Census of India 2011",
+      "state": "Bihar",
+      "town": "Bhagalpur",
+      "urban_agglomeration_2011": 410210
+    },
+    {
+      "basis": "Town, Census 2011",
+      "population_2011": 88214,
+      "source": "Wikipedia 'Sahibganj', citing Census of India 2011 (town 88,214; UA 111,954 per infobox)",
+      "state": "Jharkhand",
+      "town": "Sahibganj",
+      "urban_agglomeration_2011": 111954
+    },
+    {
+      "basis": "Municipality (English Bazar), Census 2011",
+      "population_2011": 216083,
+      "source": "Wikipedia 'English Bazar', citing Census of India 2011",
+      "state": "West Bengal",
+      "town": "Malda (English Bazar)",
+      "urban_agglomeration_2011": 324237
+    },
+    {
+      "basis": "Municipality, Census 2011",
+      "population_2011": 195223,
+      "source": "Wikipedia 'Baharampur' and 'List of cities in India by population', citing Census of India 2011",
+      "state": "West Bengal",
+      "town": "Baharampur (Berhampore)",
+      "urban_agglomeration_2011": 305609
+    },
+    {
+      "basis": "City (Kolkata Municipal Corporation), Census 2011 final",
+      "population_2011": 4496694,
+      "source": "Wikipedia 'Kolkata', citing Census of India 2011",
+      "state": "West Bengal",
+      "town": "Kolkata",
+      "urban_agglomeration_2011": 14112536
+    },
+    {
+      "basis": "City (Howrah Municipal Corporation), Census 2011",
+      "population_2011": 1077075,
+      "source": "Wikipedia 'Howrah', citing Census of India 2011",
+      "state": "West Bengal",
+      "town": "Howrah",
+      "urban_agglomeration_2011": null
+    }
+  ],
+  "basin_context": {
+    "note": "Ganges basin >500 million people — whole basin, not corridor"
+  }
+}

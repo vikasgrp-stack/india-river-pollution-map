@@ -1,0 +1,3656 @@
+{
+ "type": "FeatureCollection",
+ "name": "Ganga water quality monitoring stations",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     84.757256,
+     25.58012
+    ]
+   },
+   "properties": {
+    "station_code": "10162",
+    "station": "U/s DORIGANJ, CHAPRA",
+    "state": "Bihar",
+    "bod_earliest": 2.1,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.57,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -25.2,
+    "bod_trend": "improving",
+    "do_latest": 8.08,
+    "do_latest_year": 2025,
+    "ph_latest": 7.67,
+    "ph_latest_year": 2025,
+    "fc_latest": 1584.12,
+    "fc_latest_year": 2025,
+    "fs_latest": 7.99,
+    "coord_source": "geocoded",
+    "geocode_place": "Koilwar, Bhojpur, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.536902,
+     25.458623
+    ]
+   },
+   "properties": {
+    "station_code": "4301",
+    "station": "BAKHYIYARPUR TAJPUR BRIDGE PATNA",
+    "state": "Bihar",
+    "bod_earliest": 1.7,
+    "bod_earliest_year": 2019,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -10.0,
+    "bod_trend": "improving",
+    "do_latest": 8.2,
+    "do_latest_year": 2025,
+    "ph_latest": 7.68,
+    "ph_latest_year": 2025,
+    "fc_latest": 3240.79,
+    "fc_latest_year": 2025,
+    "fs_latest": 13.19,
+    "coord_source": "geocoded",
+    "geocode_place": "Bakhtiyarpur, Bakhtiarpur, Patna, Bihar, 803212, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.922064,
+     25.395805
+    ]
+   },
+   "properties": {
+    "station_code": "3123",
+    "station": "BARAHIA",
+    "state": "Bihar",
+    "bod_earliest": 2.53,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.58,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -37.5,
+    "bod_trend": "improving",
+    "do_latest": 8.12,
+    "do_latest_year": 2025,
+    "ph_latest": 7.77,
+    "ph_latest_year": 2025,
+    "fc_latest": 2040.83,
+    "fc_latest_year": 2025,
+    "fs_latest": 14.4,
+    "coord_source": "geocoded",
+    "geocode_place": "Mokama, Mokameh, Patna, Bihar, 803303, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     84.109752,
+     25.504483
+    ]
+   },
+   "properties": {
+    "station_code": "2551",
+    "station": "BUXAR, RAMREKHAGHAT",
+    "state": "Bihar",
+    "bod_earliest": 2.7,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.83,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -32.2,
+    "bod_trend": "improving",
+    "do_latest": 7.91,
+    "do_latest_year": 2025,
+    "ph_latest": 7.72,
+    "ph_latest_year": 2025,
+    "fc_latest": 2581.22,
+    "fc_latest_year": 2025,
+    "fs_latest": 14.29,
+    "coord_source": "geocoded",
+    "geocode_place": "Buxar, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.130423,
+     25.286135
+    ]
+   },
+   "properties": {
+    "station_code": "3118",
+    "station": "D/S BHAGALPUR",
+    "state": "Bihar",
+    "bod_earliest": 2.41,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.77,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -26.6,
+    "bod_trend": "improving",
+    "do_latest": 7.58,
+    "do_latest_year": 2025,
+    "ph_latest": 7.61,
+    "ph_latest_year": 2025,
+    "fc_latest": 2582.08,
+    "fc_latest_year": 2025,
+    "fs_latest": 9.7,
+    "coord_source": "geocoded",
+    "geocode_place": "Bhagalpur, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     84.109752,
+     25.504483
+    ]
+   },
+   "properties": {
+    "station_code": "3113",
+    "station": "BUXAR D/S",
+    "state": "Bihar",
+    "bod_earliest": 2.23,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -31.4,
+    "bod_trend": "improving",
+    "do_latest": 8.02,
+    "do_latest_year": 2025,
+    "ph_latest": 7.68,
+    "ph_latest_year": 2025,
+    "fc_latest": 1478.71,
+    "fc_latest_year": 2025,
+    "fs_latest": 9.79,
+    "coord_source": "geocoded",
+    "geocode_place": "Buxar, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.090734,
+     25.644218
+    ]
+   },
+   "properties": {
+    "station_code": "1077",
+    "station": "KURJI AT DIGHA GHAT, U/S PATNA",
+    "state": "Bihar",
+    "bod_earliest": 2.34,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.45,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -38.0,
+    "bod_trend": "improving",
+    "do_latest": 7.99,
+    "do_latest_year": 2025,
+    "ph_latest": 7.73,
+    "ph_latest_year": 2025,
+    "fc_latest": 2600.29,
+    "fc_latest_year": 2025,
+    "fs_latest": 83.99,
+    "coord_source": "geocoded",
+    "geocode_place": "Digha, Danapur, Patna, Patna Rural, Patna, Bihar, 800018, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.132861,
+     25.61044
+    ]
+   },
+   "properties": {
+    "station_code": "2552",
+    "station": "NIT GHANDHI GHAT ( PATNA)",
+    "state": "Bihar",
+    "bod_earliest": 2.77,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.79,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -35.4,
+    "bod_trend": "improving",
+    "do_latest": 7.75,
+    "do_latest_year": 2025,
+    "ph_latest": 7.65,
+    "ph_latest_year": 2025,
+    "fc_latest": 4459.17,
+    "fc_latest_year": 2025,
+    "fs_latest": 9.93,
+    "coord_source": "geocoded",
+    "geocode_place": "NIT Patna, Buddha Marg, Danapur, Patna, Patna Rural, Patna, Bihar, 803210, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.123525,
+     25.609324
+    ]
+   },
+   "properties": {
+    "station_code": "10115",
+    "station": "GULBI GHAT (PATNA)",
+    "state": "Bihar",
+    "bod_earliest": 2.7,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.62,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -40.0,
+    "bod_trend": "improving",
+    "do_latest": 7.66,
+    "do_latest_year": 2025,
+    "ph_latest": 7.71,
+    "ph_latest_year": 2025,
+    "fc_latest": 3405.83,
+    "fc_latest_year": 2025,
+    "fs_latest": 10.42,
+    "coord_source": "geocoded",
+    "geocode_place": "Patna, Patna Rural, Patna, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.123525,
+     25.609324
+    ]
+   },
+   "properties": {
+    "station_code": "4297",
+    "station": "BIDUPUR ROAD BRIDGE, PATNA",
+    "state": "Bihar",
+    "bod_earliest": 1.76,
+    "bod_earliest_year": 2019,
+    "bod_latest": 1.63,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -7.4,
+    "bod_trend": "improving",
+    "do_latest": 7.93,
+    "do_latest_year": 2025,
+    "ph_latest": 7.81,
+    "ph_latest_year": 2025,
+    "fc_latest": 2565.83,
+    "fc_latest_year": 2025,
+    "fs_latest": 13.2,
+    "coord_source": "geocoded",
+    "geocode_place": "Patna, Patna Rural, Patna, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.309913,
+     25.508526
+    ]
+   },
+   "properties": {
+    "station_code": "2553",
+    "station": "FATUHA, A/c OF RIVER PUNPUN",
+    "state": "Bihar",
+    "bod_earliest": 2.29,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.68,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -26.6,
+    "bod_trend": "improving",
+    "do_latest": 7.59,
+    "do_latest_year": 2025,
+    "ph_latest": 7.73,
+    "ph_latest_year": 2025,
+    "fc_latest": 3700.87,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.81,
+    "coord_source": "geocoded",
+    "geocode_place": "Fatuha, Fatwah, Patna, Bihar, 803201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     84.775973,
+     25.921445
+    ]
+   },
+   "properties": {
+    "station_code": "10114",
+    "station": "DORIGANJ D/S (SARAN)",
+    "state": "Bihar",
+    "bod_earliest": 2.6,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -41.2,
+    "bod_trend": "improving",
+    "do_latest": 7.83,
+    "do_latest_year": 2025,
+    "ph_latest": 7.6,
+    "ph_latest_year": 2025,
+    "fc_latest": 1847.04,
+    "fc_latest_year": 2025,
+    "fs_latest": 8.64,
+    "coord_source": "geocoded",
+    "geocode_place": "Saran, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.123525,
+     25.609324
+    ]
+   },
+   "properties": {
+    "station_code": "3122",
+    "station": "MALSALAMI (PATNA)",
+    "state": "Bihar",
+    "bod_earliest": 2.49,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.59,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -36.1,
+    "bod_trend": "improving",
+    "do_latest": 7.77,
+    "do_latest_year": 2025,
+    "ph_latest": 7.7,
+    "ph_latest_year": 2025,
+    "fc_latest": 3934.17,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.46,
+    "coord_source": "geocoded",
+    "geocode_place": "Patna, Patna Rural, Patna, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.922064,
+     25.395805
+    ]
+   },
+   "properties": {
+    "station_code": "1815",
+    "station": "MOKAMA D/S",
+    "state": "Bihar",
+    "bod_earliest": 2.55,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.49,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -41.6,
+    "bod_trend": "improving",
+    "do_latest": 7.98,
+    "do_latest_year": 2025,
+    "ph_latest": 7.69,
+    "ph_latest_year": 2025,
+    "fc_latest": 2453.33,
+    "fc_latest_year": 2025,
+    "fs_latest": 16.03,
+    "coord_source": "geocoded",
+    "geocode_place": "Mokama, Mokameh, Patna, Bihar, 803303, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.922064,
+     25.395805
+    ]
+   },
+   "properties": {
+    "station_code": "1817",
+    "station": "U/S MOKAMA",
+    "state": "Bihar",
+    "bod_earliest": 2.3,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.52,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -33.9,
+    "bod_trend": "improving",
+    "do_latest": 8.08,
+    "do_latest_year": 2025,
+    "ph_latest": 7.69,
+    "ph_latest_year": 2025,
+    "fc_latest": 2124.25,
+    "fc_latest_year": 2025,
+    "fs_latest": 14.84,
+    "coord_source": "geocoded",
+    "geocode_place": "Mokama, Mokameh, Patna, Bihar, 803303, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     86.516148,
+     25.220286
+    ]
+   },
+   "properties": {
+    "station_code": "1818",
+    "station": "MUNGER D/S",
+    "state": "Bihar",
+    "bod_earliest": 2.39,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.56,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -34.7,
+    "bod_trend": "improving",
+    "do_latest": 7.91,
+    "do_latest_year": 2025,
+    "ph_latest": 7.68,
+    "ph_latest_year": 2025,
+    "fc_latest": 3359.96,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.38,
+    "coord_source": "geocoded",
+    "geocode_place": "Munger, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.123525,
+     25.609324
+    ]
+   },
+   "properties": {
+    "station_code": "1079",
+    "station": "PATNA D/S (GANGA BRIDGE)",
+    "state": "Bihar",
+    "bod_earliest": 2.71,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.7,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -37.3,
+    "bod_trend": "improving",
+    "do_latest": 7.83,
+    "do_latest_year": 2025,
+    "ph_latest": 7.77,
+    "ph_latest_year": 2025,
+    "fc_latest": 2769.58,
+    "fc_latest_year": 2025,
+    "fs_latest": 17.63,
+    "coord_source": "geocoded",
+    "geocode_place": "Patna, Patna Rural, Patna, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.130423,
+     25.286135
+    ]
+   },
+   "properties": {
+    "station_code": "1819",
+    "station": "BHAGALPUR",
+    "state": "Bihar",
+    "bod_earliest": 2.58,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.5,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -41.9,
+    "bod_trend": "improving",
+    "do_latest": 8.02,
+    "do_latest_year": 2025,
+    "ph_latest": 7.6,
+    "ph_latest_year": 2025,
+    "fc_latest": 2199.12,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.07,
+    "coord_source": "geocoded",
+    "geocode_place": "Bhagalpur, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.130423,
+     25.286135
+    ]
+   },
+   "properties": {
+    "station_code": "10138",
+    "station": "CHAMPANAGAR",
+    "state": "Bihar",
+    "bod_earliest": 2.33,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.59,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -31.8,
+    "bod_trend": "improving",
+    "do_latest": 7.88,
+    "do_latest_year": 2025,
+    "ph_latest": 7.6,
+    "ph_latest_year": 2025,
+    "fc_latest": 2263.27,
+    "fc_latest_year": 2025,
+    "fs_latest": 10.91,
+    "coord_source": "geocoded",
+    "geocode_place": "Bhagalpur, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     86.734991,
+     25.241497
+    ]
+   },
+   "properties": {
+    "station_code": "3117",
+    "station": "U/S SULTANGANJ",
+    "state": "Bihar",
+    "bod_earliest": 2.25,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.52,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -32.4,
+    "bod_trend": "improving",
+    "do_latest": 8.1,
+    "do_latest_year": 2025,
+    "ph_latest": 7.56,
+    "ph_latest_year": 2025,
+    "fc_latest": 2151.43,
+    "fc_latest_year": 2025,
+    "fs_latest": 6.63,
+    "coord_source": "geocoded",
+    "geocode_place": "Sultanganj, Bhagalpur - Munger Road, Sultanganj, Bhagalpur, Bihar, 812006, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.130423,
+     25.286135
+    ]
+   },
+   "properties": {
+    "station_code": "4398",
+    "station": "WATER INTAKE POINT, BHAGALPUR",
+    "state": "Bihar",
+    "bod_earliest": 1.76,
+    "bod_earliest_year": 2019,
+    "bod_latest": 1.65,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -6.3,
+    "bod_trend": "improving",
+    "do_latest": 7.58,
+    "do_latest_year": 2025,
+    "ph_latest": 7.55,
+    "ph_latest_year": 2025,
+    "fc_latest": 3790.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 9.62,
+    "coord_source": "geocoded",
+    "geocode_place": "Bhagalpur, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.862127,
+     25.451379
+    ]
+   },
+   "properties": {
+    "station_code": "1074",
+    "station": "BUXAR, CHAUSA KARMNASA",
+    "state": "Bihar",
+    "bod_earliest": 2.47,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.88,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -23.9,
+    "bod_trend": "improving",
+    "do_latest": 8.16,
+    "do_latest_year": 2025,
+    "ph_latest": 7.73,
+    "ph_latest_year": 2025,
+    "fc_latest": 1470.29,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.86,
+    "coord_source": "geocoded",
+    "geocode_place": "Chausa, Buxar, Bihar, 802114, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     86.734991,
+     25.241497
+    ]
+   },
+   "properties": {
+    "station_code": "2554",
+    "station": "SULTANGANJ (BHAGALPUR)",
+    "state": "Bihar",
+    "bod_earliest": 2.49,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.49,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -40.2,
+    "bod_trend": "improving",
+    "do_latest": 7.88,
+    "do_latest_year": 2025,
+    "ph_latest": 7.59,
+    "ph_latest_year": 2025,
+    "fc_latest": 2149.96,
+    "fc_latest_year": 2025,
+    "fs_latest": 7.92,
+    "coord_source": "geocoded",
+    "geocode_place": "Sultanganj, Bhagalpur - Munger Road, Sultanganj, Bhagalpur, Bihar, 812006, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.247598,
+     25.281489
+    ]
+   },
+   "properties": {
+    "station_code": "10143",
+    "station": "KAHALGAON D/S",
+    "state": "Bihar",
+    "bod_earliest": 2.42,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.64,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -32.2,
+    "bod_trend": "improving",
+    "do_latest": 7.99,
+    "do_latest_year": 2025,
+    "ph_latest": 7.61,
+    "ph_latest_year": 2025,
+    "fc_latest": 2229.13,
+    "fc_latest_year": 2025,
+    "fs_latest": 10.81,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga D/s near cremation ghat, Kahalgaon",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.700249,
+     25.450977
+    ]
+   },
+   "properties": {
+    "station_code": "10131",
+    "station": "D/S OF M/S NTPC BINDTOLA, BARH",
+    "state": "Bihar",
+    "bod_earliest": 2.13,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.65,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -22.5,
+    "bod_trend": "improving",
+    "do_latest": 7.91,
+    "do_latest_year": 2025,
+    "ph_latest": 7.75,
+    "ph_latest_year": 2025,
+    "fc_latest": 2207.04,
+    "fc_latest_year": 2025,
+    "fs_latest": 11.89,
+    "coord_source": "geocoded",
+    "geocode_place": "Barh, Patna, Bihar, 803213, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.047404,
+     25.63589
+    ]
+   },
+   "properties": {
+    "station_code": "3114",
+    "station": "DANAPUR, NEAR PIPAPUL",
+    "state": "Bihar",
+    "bod_earliest": 2.17,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -29.5,
+    "bod_trend": "improving",
+    "do_latest": 7.97,
+    "do_latest_year": 2025,
+    "ph_latest": 7.74,
+    "ph_latest_year": 2025,
+    "fc_latest": 2027.7,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.27,
+    "coord_source": "geocoded",
+    "geocode_place": "Danapur, Dinapur-Cum-Khagaul, Patna, Bihar, 801503, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.700249,
+     25.450977
+    ]
+   },
+   "properties": {
+    "station_code": "10130",
+    "station": "U/S OF M/S NTPC BARH",
+    "state": "Bihar",
+    "bod_earliest": 2.14,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.68,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -21.5,
+    "bod_trend": "improving",
+    "do_latest": 8.11,
+    "do_latest_year": 2025,
+    "ph_latest": 7.69,
+    "ph_latest_year": 2025,
+    "fc_latest": 2050.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 15.47,
+    "coord_source": "geocoded",
+    "geocode_place": "Barh, Patna, Bihar, 803213, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.283541,
+     25.26519
+    ]
+   },
+   "properties": {
+    "station_code": "1816",
+    "station": "KAHALGAON",
+    "state": "Bihar",
+    "bod_earliest": 2.69,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.7,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -36.8,
+    "bod_trend": "improving",
+    "do_latest": 8.12,
+    "do_latest_year": 2025,
+    "ph_latest": 7.6,
+    "ph_latest_year": 2025,
+    "fc_latest": 2074.26,
+    "fc_latest_year": 2025,
+    "fs_latest": 8.65,
+    "coord_source": "geocoded",
+    "geocode_place": "Kahalgaon, Bhagalpur, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     84.775973,
+     25.921445
+    ]
+   },
+   "properties": {
+    "station_code": "2564",
+    "station": "BALUGHAT, DORIGANJ, SARAN",
+    "state": "Bihar",
+    "bod_earliest": 2.45,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.64,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -33.1,
+    "bod_trend": "improving",
+    "do_latest": 7.88,
+    "do_latest_year": 2025,
+    "ph_latest": 7.69,
+    "ph_latest_year": 2025,
+    "fc_latest": 1423.62,
+    "fc_latest_year": 2025,
+    "fs_latest": 10.07,
+    "coord_source": "geocoded",
+    "geocode_place": "Saran, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.123525,
+     25.609324
+    ]
+   },
+   "properties": {
+    "station_code": "10122",
+    "station": "TRIVENI GHAT, B/c OF RIVER PUNPUN",
+    "state": "Bihar",
+    "bod_earliest": 2.47,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.6,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -35.2,
+    "bod_trend": "improving",
+    "do_latest": 7.9,
+    "do_latest_year": 2025,
+    "ph_latest": 7.78,
+    "ph_latest_year": 2025,
+    "fc_latest": 2154.58,
+    "fc_latest_year": 2025,
+    "fs_latest": 12.61,
+    "coord_source": "geocoded",
+    "geocode_place": "Patna, Patna Rural, Patna, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.900847,
+     25.51994
+    ]
+   },
+   "properties": {
+    "station_code": "10113",
+    "station": "U/S JAIL GHAT, BUXAR",
+    "state": "Bihar",
+    "bod_earliest": 2.03,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -24.6,
+    "bod_trend": "improving",
+    "do_latest": 7.99,
+    "do_latest_year": 2025,
+    "ph_latest": 7.7,
+    "ph_latest_year": 2025,
+    "fc_latest": 2112.17,
+    "fc_latest_year": 2025,
+    "fs_latest": 8.88,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga at U/s Jail Ghat, Buxar",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     86.516148,
+     25.220286
+    ]
+   },
+   "properties": {
+    "station_code": "3116",
+    "station": "U/S MUNGER",
+    "state": "Bihar",
+    "bod_earliest": 2.25,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -32.0,
+    "bod_trend": "improving",
+    "do_latest": 8.01,
+    "do_latest_year": 2025,
+    "ph_latest": 7.7,
+    "ph_latest_year": 2025,
+    "fc_latest": 2648.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 9.67,
+    "coord_source": "geocoded",
+    "geocode_place": "Munger, Bihar, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     85.700249,
+     25.450977
+    ]
+   },
+   "properties": {
+    "station_code": "3115",
+    "station": "BARH, NEAR UMANATH TEMPLE",
+    "state": "Bihar",
+    "bod_earliest": 2.12,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -27.8,
+    "bod_trend": "improving",
+    "do_latest": 8.11,
+    "do_latest_year": 2025,
+    "ph_latest": 7.69,
+    "ph_latest_year": 2025,
+    "fc_latest": 2640.54,
+    "fc_latest_year": 2025,
+    "fs_latest": 14.69,
+    "coord_source": "geocoded",
+    "geocode_place": "Barh, Patna, Bihar, 803213, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.838639,
+     25.054889
+    ]
+   },
+   "properties": {
+    "station_code": "1059",
+    "station": "RAJMAHAL",
+    "state": "Jharkhand",
+    "bod_earliest": 2.57,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.18,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -54.1,
+    "bod_trend": "improving",
+    "do_latest": 7.41,
+    "do_latest_year": 2025,
+    "ph_latest": 7.31,
+    "ph_latest_year": 2025,
+    "fc_latest": 144.18,
+    "fc_latest_year": 2025,
+    "fs_latest": 7.27,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga at Rajmahal",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.691764,
+     25.032044
+    ]
+   },
+   "properties": {
+    "station_code": "10145",
+    "station": "NEAR JANTA GHAT D/S",
+    "state": "Jharkhand",
+    "bod_earliest": 2.53,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.25,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -50.6,
+    "bod_trend": "improving",
+    "do_latest": 7.35,
+    "do_latest_year": 2025,
+    "ph_latest": 7.35,
+    "ph_latest_year": 2025,
+    "fc_latest": 138.71,
+    "fc_latest_year": 2025,
+    "fs_latest": 7.17,
+    "coord_source": "geocoded",
+    "geocode_place": "Sahibganj, Jharkhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.63183,
+     25.292498
+    ]
+   },
+   "properties": {
+    "station_code": "10144",
+    "station": "U/S NEAR LCT GHAT",
+    "state": "Jharkhand",
+    "bod_earliest": 2.57,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.27,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -50.6,
+    "bod_trend": "improving",
+    "do_latest": 7.33,
+    "do_latest_year": 2025,
+    "ph_latest": 7.38,
+    "ph_latest_year": 2025,
+    "fc_latest": 120.18,
+    "fc_latest_year": 2025,
+    "fs_latest": 6.41,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga U/s near LCT Ghat, Jharkhand",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.691764,
+     25.032044
+    ]
+   },
+   "properties": {
+    "station_code": "10146",
+    "station": "SANGI DALAN",
+    "state": "Jharkhand",
+    "bod_earliest": 2.6,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.17,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -55.0,
+    "bod_trend": "improving",
+    "do_latest": 7.3,
+    "do_latest_year": 2025,
+    "ph_latest": 7.38,
+    "ph_latest_year": 2025,
+    "fc_latest": 126.12,
+    "fc_latest_year": 2025,
+    "fs_latest": 7.16,
+    "coord_source": "geocoded",
+    "geocode_place": "Sahibganj, Jharkhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "station_code": "10152",
+    "station": "A/C GOMTI RIVER (BHUSAULA)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.35,
+    "bod_earliest_year": 2018,
+    "bod_latest": 3.12,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -6.9,
+    "bod_trend": "improving",
+    "do_latest": 7.68,
+    "do_latest_year": 2025,
+    "ph_latest": 8.04,
+    "ph_latest_year": 2025,
+    "fc_latest": 5591.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 2941.67,
+    "coord_source": "missing",
+    "geocode_place": null,
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "station_code": "10158",
+    "station": "A/C TAMAS RIVER (SIRSA)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.08,
+    "bod_earliest_year": 2018,
+    "bod_latest": 2.61,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -15.3,
+    "bod_trend": "improving",
+    "do_latest": 8.28,
+    "do_latest_year": 2025,
+    "ph_latest": 8.06,
+    "ph_latest_year": 2025,
+    "fc_latest": 2447.92,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "missing",
+    "geocode_place": null,
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.388953,
+     26.478904
+    ]
+   },
+   "properties": {
+    "station_code": "10154",
+    "station": "U/s SHUKLAGANJ",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.37,
+    "bod_earliest_year": 2017,
+    "bod_latest": 3.47,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 3.0,
+    "bod_trend": "stable",
+    "do_latest": 8.2,
+    "do_latest_year": 2025,
+    "ph_latest": 8.38,
+    "ph_latest_year": 2025,
+    "fc_latest": 3545.45,
+    "fc_latest_year": 2025,
+    "fs_latest": 6.01,
+    "coord_source": "geocoded",
+    "geocode_place": "Shuklaganj, Unnao, Uttar Pradesh, 209861, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.321759,
+     26.460914
+    ]
+   },
+   "properties": {
+    "station_code": "10156",
+    "station": "BATHING GHAT (GOLA GHAT)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.86,
+    "bod_earliest_year": 2017,
+    "bod_latest": 3.54,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -8.3,
+    "bod_trend": "improving",
+    "do_latest": 8.15,
+    "do_latest_year": 2025,
+    "ph_latest": 8.36,
+    "ph_latest_year": 2025,
+    "fc_latest": 3422.73,
+    "fc_latest_year": 2025,
+    "fs_latest": 47.39,
+    "coord_source": "geocoded",
+    "geocode_place": "Kanpur, Kanpur Nagar, Uttar Pradesh, 208012, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.400005,
+     26.400882
+    ]
+   },
+   "properties": {
+    "station_code": "10157",
+    "station": "BATHING GHAT (JAJMAU BRIDGE)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 4.9,
+    "bod_earliest_year": 2017,
+    "bod_latest": 3.65,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -25.5,
+    "bod_trend": "improving",
+    "do_latest": 8.01,
+    "do_latest_year": 2025,
+    "ph_latest": 8.33,
+    "ph_latest_year": 2025,
+    "fc_latest": 4822.73,
+    "fc_latest_year": 2025,
+    "fs_latest": 17.83,
+    "coord_source": "geocoded",
+    "geocode_place": "Jajmau, Kanpur, Kanpur Nagar, Uttar Pradesh, 208015, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.272229,
+     26.600809
+    ]
+   },
+   "properties": {
+    "station_code": "1146",
+    "station": "BITHOOR (KANPUR)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.97,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.31,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 11.4,
+    "bod_trend": "worsening",
+    "do_latest": 8.44,
+    "do_latest_year": 2025,
+    "ph_latest": 8.42,
+    "ph_latest_year": 2025,
+    "fc_latest": 2922.73,
+    "fc_latest_year": 2025,
+    "fs_latest": 3.23,
+    "coord_source": "geocoded",
+    "geocode_place": "Bithur, Kanpur, Kanpur Nagar, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     82.88354,
+     25.128193
+    ]
+   },
+   "properties": {
+    "station_code": "10153",
+    "station": "CHUNAR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.3,
+    "bod_earliest_year": 2018,
+    "bod_latest": 3.32,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.6,
+    "bod_trend": "stable",
+    "do_latest": 7.59,
+    "do_latest_year": 2025,
+    "ph_latest": 7.99,
+    "ph_latest_year": 2025,
+    "fc_latest": 5995.45,
+    "fc_latest_year": 2025,
+    "fs_latest": 2322.73,
+    "coord_source": "geocoded",
+    "geocode_place": "Chunar, Mirzapur, Uttar Pradesh, 231304, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.388953,
+     26.478904
+    ]
+   },
+   "properties": {
+    "station_code": "10155",
+    "station": "SHUKLAGANJ D/S",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.59,
+    "bod_earliest_year": 2017,
+    "bod_latest": 3.52,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -1.9,
+    "bod_trend": "stable",
+    "do_latest": 8.17,
+    "do_latest_year": 2025,
+    "ph_latest": 8.36,
+    "ph_latest_year": 2025,
+    "fc_latest": 3859.09,
+    "fc_latest_year": 2025,
+    "fs_latest": 5.53,
+    "coord_source": "geocoded",
+    "geocode_place": "Shuklaganj, Unnao, Uttar Pradesh, 209861, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.042876,
+     28.755262
+    ]
+   },
+   "properties": {
+    "station_code": "1062",
+    "station": "BRIJGHAT D/S, GHARMUKTESHWAR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.53,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.34,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -7.5,
+    "bod_trend": "improving",
+    "do_latest": 9.83,
+    "do_latest_year": 2025,
+    "ph_latest": 7.55,
+    "ph_latest_year": 2025,
+    "fc_latest": 607.92,
+    "fc_latest_year": 2025,
+    "fs_latest": 218.33,
+    "coord_source": "geocoded",
+    "geocode_place": "Garhmukteshwar, Hapur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.09357,
+     26.094097
+    ]
+   },
+   "properties": {
+    "station_code": "1147",
+    "station": "DALMAU (RAI BAREILLY)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.68,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.9,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -21.2,
+    "bod_trend": "improving",
+    "do_latest": 8.8,
+    "do_latest_year": 2025,
+    "ph_latest": 8.05,
+    "ph_latest_year": 2025,
+    "fc_latest": 1171.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 17.92,
+    "coord_source": "geocoded",
+    "geocode_place": "Dalmau, Raebareli, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.692795,
+     26.998667
+    ]
+   },
+   "properties": {
+    "station_code": "1066",
+    "station": "KANNAUJ D/S",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.23,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.37,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 4.3,
+    "bod_trend": "stable",
+    "do_latest": 8.33,
+    "do_latest_year": 2025,
+    "ph_latest": 8.38,
+    "ph_latest_year": 2025,
+    "fc_latest": 3500.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 4.06,
+    "coord_source": "geocoded",
+    "geocode_place": "Kannauj, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.489478,
+     27.4362
+    ]
+   },
+   "properties": {
+    "station_code": "10151",
+    "station": "FARRUKHABAD",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.49,
+    "bod_earliest_year": 2018,
+    "bod_latest": 2.95,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 18.5,
+    "bod_trend": "worsening",
+    "do_latest": 8.67,
+    "do_latest_year": 2025,
+    "ph_latest": 8.44,
+    "ph_latest_year": 2025,
+    "fc_latest": 2413.64,
+    "fc_latest_year": 2025,
+    "fs_latest": 3.45,
+    "coord_source": "geocoded",
+    "geocode_place": "Farrukhabad, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.869889,
+     27.953513
+    ]
+   },
+   "properties": {
+    "station_code": "2490",
+    "station": "KACHHLA GHAT (ALIGARH)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.15,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.38,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -35.8,
+    "bod_trend": "improving",
+    "do_latest": 9.7,
+    "do_latest_year": 2025,
+    "ph_latest": 7.8,
+    "ph_latest_year": 2025,
+    "fc_latest": 307.08,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Kachhla Halt, NH21, Budaun, Badaun, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.449357,
+     25.534246
+    ]
+   },
+   "properties": {
+    "station_code": "2487",
+    "station": "KADAGHAT (KAUSHAMBI)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.87,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.66,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -31.3,
+    "bod_trend": "improving",
+    "do_latest": 8.2,
+    "do_latest_year": 2025,
+    "ph_latest": 8.13,
+    "ph_latest_year": 2025,
+    "fc_latest": 2352.17,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Kaushambi, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.21863,
+     26.208677
+    ]
+   },
+   "properties": {
+    "station_code": "2498",
+    "station": "KALA KANKAR (PRATAPGARH)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.56,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.82,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -20.8,
+    "bod_trend": "improving",
+    "do_latest": 8.91,
+    "do_latest_year": 2025,
+    "ph_latest": 8.12,
+    "ph_latest_year": 2025,
+    "fc_latest": 1075.42,
+    "fc_latest_year": 2025,
+    "fs_latest": 15.67,
+    "coord_source": "geocoded",
+    "geocode_place": "Raebareli, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.692795,
+     26.998667
+    ]
+   },
+   "properties": {
+    "station_code": "1063",
+    "station": "U/S KANNAUJ (RAJGHAT)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.88,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.23,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 12.2,
+    "bod_trend": "worsening",
+    "do_latest": 8.48,
+    "do_latest_year": 2025,
+    "ph_latest": 8.41,
+    "ph_latest_year": 2025,
+    "fc_latest": 3036.36,
+    "fc_latest_year": 2025,
+    "fs_latest": 4.04,
+    "coord_source": "geocoded",
+    "geocode_place": "Kannauj, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.321759,
+     26.460914
+    ]
+   },
+   "properties": {
+    "station_code": "1068",
+    "station": "KANPUR D/S (JAJMAU PUMPING STATION)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 5.5,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.81,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -30.7,
+    "bod_trend": "improving",
+    "do_latest": 7.85,
+    "do_latest_year": 2025,
+    "ph_latest": 8.29,
+    "ph_latest_year": 2025,
+    "fc_latest": 47090.91,
+    "fc_latest_year": 2025,
+    "fs_latest": 62.29,
+    "coord_source": "geocoded",
+    "geocode_place": "Kanpur, Kanpur Nagar, Uttar Pradesh, 208012, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.321759,
+     26.460914
+    ]
+   },
+   "properties": {
+    "station_code": "1067",
+    "station": "U/S KANPUR (RANIGHAT)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.4,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.38,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -0.6,
+    "bod_trend": "stable",
+    "do_latest": 8.34,
+    "do_latest_year": 2025,
+    "ph_latest": 8.39,
+    "ph_latest_year": 2025,
+    "fc_latest": 3372.73,
+    "fc_latest_year": 2025,
+    "fs_latest": 4.84,
+    "coord_source": "geocoded",
+    "geocode_place": "Kanpur, Kanpur Nagar, Uttar Pradesh, 208012, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.040972,
+     29.373472
+    ]
+   },
+   "properties": {
+    "station_code": "10150",
+    "station": "MADHYA GANGA BARRAGE (BIJNOR)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 1.29,
+    "bod_earliest_year": 2018,
+    "bod_latest": 1.25,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -3.1,
+    "bod_trend": "stable",
+    "do_latest": 9.19,
+    "do_latest_year": 2025,
+    "ph_latest": 7.81,
+    "ph_latest_year": 2025,
+    "fc_latest": 429.17,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga at Bijnor (CPCB code 30006); = Madhya Ganga Barrage",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.385954,
+     28.19595
+    ]
+   },
+   "properties": {
+    "station_code": "1145",
+    "station": "NARORA (BULANDSAHAR)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.08,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.84,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -40.3,
+    "bod_trend": "improving",
+    "do_latest": 8.67,
+    "do_latest_year": 2025,
+    "ph_latest": 7.21,
+    "ph_latest_year": 2025,
+    "fc_latest": 837.92,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Narora, Debai, Bulandshahr, Uttar Pradesh, 202389, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.8338,
+     25.43813
+    ]
+   },
+   "properties": {
+    "station_code": "1046",
+    "station": "PRAYAGRAJ (RASOOLABAD)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.62,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.73,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -24.6,
+    "bod_trend": "improving",
+    "do_latest": 8.13,
+    "do_latest_year": 2025,
+    "ph_latest": 8.08,
+    "ph_latest_year": 2025,
+    "fc_latest": 1757.5,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Prayagraj, Allahabad, Prayagraj, Uttar Pradesh, 211001, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.8338,
+     25.43813
+    ]
+   },
+   "properties": {
+    "station_code": "1049",
+    "station": "PRAYAGRAJ D/S (SANGAM)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 4.16,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.8,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -32.7,
+    "bod_trend": "improving",
+    "do_latest": 8.04,
+    "do_latest_year": 2025,
+    "ph_latest": 8.1,
+    "ph_latest_year": 2025,
+    "fc_latest": 1969.57,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Prayagraj, Allahabad, Prayagraj, Uttar Pradesh, 211001, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.605361,
+     25.587222
+    ]
+   },
+   "properties": {
+    "station_code": "1073",
+    "station": "TARIGHAT (GHAZIPUR)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.93,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.73,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -5.1,
+    "bod_trend": "improving",
+    "do_latest": 7.1,
+    "do_latest_year": 2025,
+    "ph_latest": 7.84,
+    "ph_latest_year": 2025,
+    "fc_latest": 9437.5,
+    "fc_latest_year": 2025,
+    "fs_latest": 6016.67,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga at Tarighat, Ghazipur (CPCB code 30075)",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.042876,
+     28.755262
+    ]
+   },
+   "properties": {
+    "station_code": "10149",
+    "station": "U/S BRIJGHAT, GARHMUKTESHWAR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.26,
+    "bod_earliest_year": 2017,
+    "bod_latest": 2.16,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -4.4,
+    "bod_trend": "stable",
+    "do_latest": 10.01,
+    "do_latest_year": 2025,
+    "ph_latest": 7.51,
+    "ph_latest_year": 2025,
+    "fc_latest": 385.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 155.75,
+    "coord_source": "geocoded",
+    "geocode_place": "Garhmukteshwar, Hapur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.007629,
+     25.335649
+    ]
+   },
+   "properties": {
+    "station_code": "1071",
+    "station": "VARANASI D/S (MALVIYA BRIDGE)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 4.45,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.51,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -21.1,
+    "bod_trend": "improving",
+    "do_latest": 7.26,
+    "do_latest_year": 2025,
+    "ph_latest": 7.89,
+    "ph_latest_year": 2025,
+    "fc_latest": 7916.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 5708.33,
+    "coord_source": "geocoded",
+    "geocode_place": "Varanasi, Sadar, Varanasi, Uttar Pradesh, 221001, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.007629,
+     25.335649
+    ]
+   },
+   "properties": {
+    "station_code": "1070",
+    "station": "U/S VARANASI (VISHWA SUNDARI BRIDGE)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.87,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.5,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -12.9,
+    "bod_trend": "improving",
+    "do_latest": 8.1,
+    "do_latest_year": 2025,
+    "ph_latest": 8.15,
+    "ph_latest_year": 2025,
+    "fc_latest": 810.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 521.67,
+    "coord_source": "geocoded",
+    "geocode_place": "Varanasi, Sadar, Varanasi, Uttar Pradesh, 221001, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     84.121033,
+     25.874959
+    ]
+   },
+   "properties": {
+    "station_code": "5717",
+    "station": "BALLIA D/S AT BEYASI BALLIA BRIDGE",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.27,
+    "bod_earliest_year": 2025,
+    "bod_latest": 3.27,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 7.57,
+    "do_latest_year": 2025,
+    "ph_latest": 7.97,
+    "ph_latest_year": 2025,
+    "fc_latest": 5378.26,
+    "fc_latest_year": 2025,
+    "fs_latest": 5030.43,
+    "coord_source": "geocoded",
+    "geocode_place": "Ballia, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.267872,
+     28.357348
+    ]
+   },
+   "properties": {
+    "station_code": "2489",
+    "station": "ANOOPSHAHAR D/S",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.58,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.84,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -28.7,
+    "bod_trend": "improving",
+    "do_latest": 8.54,
+    "do_latest_year": 2025,
+    "ph_latest": 7.24,
+    "ph_latest_year": 2025,
+    "fc_latest": 712.08,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Anupshahr, Bulandshahr, Uttar Pradesh, 202390, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     82.628016,
+     24.93169
+    ]
+   },
+   "properties": {
+    "station_code": "2486",
+    "station": "D/S, MIRZAPUR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.61,
+    "bod_earliest_year": 2014,
+    "bod_latest": 3.63,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 39.1,
+    "bod_trend": "worsening",
+    "do_latest": 7.18,
+    "do_latest_year": 2025,
+    "ph_latest": 7.91,
+    "ph_latest_year": 2025,
+    "fc_latest": 7779.09,
+    "fc_latest_year": 2025,
+    "fs_latest": 2654.55,
+    "coord_source": "geocoded",
+    "geocode_place": "Mirzapur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.915455,
+     25.834802
+    ]
+   },
+   "properties": {
+    "station_code": "5712",
+    "station": "MATA GANGA BRIDGE , FATEHPUR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.79,
+    "bod_earliest_year": 2025,
+    "bod_latest": 2.79,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 8.92,
+    "do_latest_year": 2025,
+    "ph_latest": 8.03,
+    "ph_latest_year": 2025,
+    "fc_latest": 1048.75,
+    "fc_latest_year": 2025,
+    "fs_latest": 15.17,
+    "coord_source": "geocoded",
+    "geocode_place": "Fatehpur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.321759,
+     26.460914
+    ]
+   },
+   "properties": {
+    "station_code": "5710",
+    "station": "PURANA RAJAPUR, KANPUR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.66,
+    "bod_earliest_year": 2023,
+    "bod_latest": 3.5,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -4.4,
+    "bod_trend": "stable",
+    "do_latest": 8.2,
+    "do_latest_year": 2025,
+    "ph_latest": 8.35,
+    "ph_latest_year": 2025,
+    "fc_latest": 4031.82,
+    "fc_latest_year": 2025,
+    "fs_latest": 5.97,
+    "coord_source": "geocoded",
+    "geocode_place": "Kanpur, Kanpur Nagar, Uttar Pradesh, 208012, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.267872,
+     28.357348
+    ]
+   },
+   "properties": {
+    "station_code": "2488",
+    "station": "U/S ANOOPSHAHAR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.73,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.93,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -29.3,
+    "bod_trend": "improving",
+    "do_latest": 8.42,
+    "do_latest_year": 2025,
+    "ph_latest": 7.27,
+    "ph_latest_year": 2025,
+    "fc_latest": 513.33,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Anupshahr, Bulandshahr, Uttar Pradesh, 202390, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     82.628016,
+     24.93169
+    ]
+   },
+   "properties": {
+    "station_code": "2485",
+    "station": "U/S, VINDHYACHAL (MIRZAPUR)",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.46,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.6,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 5.7,
+    "bod_trend": "worsening",
+    "do_latest": 7.96,
+    "do_latest_year": 2025,
+    "ph_latest": 8.11,
+    "ph_latest_year": 2025,
+    "fc_latest": 870.43,
+    "fc_latest_year": 2025,
+    "fs_latest": 647.27,
+    "coord_source": "geocoded",
+    "geocode_place": "Mirzapur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.462741,
+     26.136867
+    ]
+   },
+   "properties": {
+    "station_code": "5711",
+    "station": "A/C PANDU RIVER, DEOMAI",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.55,
+    "bod_earliest_year": 2023,
+    "bod_latest": 2.84,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 11.4,
+    "bod_trend": "worsening",
+    "do_latest": 8.09,
+    "do_latest_year": 2025,
+    "ph_latest": 8.08,
+    "ph_latest_year": 2025,
+    "fc_latest": 2143.48,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "PHC,Deomai, SH46, Sarai Bakevar, Bindki, Fatehpur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.989876,
+     29.153937
+    ]
+   },
+   "properties": {
+    "station_code": "5707",
+    "station": "NANDAUR NEAR HASTINAPUR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 1.44,
+    "bod_earliest_year": 2024,
+    "bod_latest": 1.9,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 31.9,
+    "bod_trend": "worsening",
+    "do_latest": 8.75,
+    "do_latest_year": 2025,
+    "ph_latest": 7.32,
+    "ph_latest_year": 2025,
+    "fc_latest": 693.04,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Hastinapur, Mawana, Meerut, Uttar Pradesh, 250404, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "station_code": "5714",
+    "station": "B/C TAMSA RIVER AT PRACHIN SHIVALAYA DUMDUMA GHAT",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 2.7,
+    "bod_earliest_year": 2023,
+    "bod_latest": 2.68,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -0.7,
+    "bod_trend": "stable",
+    "do_latest": 8.15,
+    "do_latest_year": 2025,
+    "ph_latest": 8.09,
+    "ph_latest_year": 2025,
+    "fc_latest": 1702.92,
+    "fc_latest_year": 2025,
+    "fs_latest": null,
+    "coord_source": "missing",
+    "geocode_place": null,
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.343624,
+     28.795263
+    ]
+   },
+   "properties": {
+    "station_code": "5708",
+    "station": "TIGRI GANGA GHAT, AMROHA",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 1.41,
+    "bod_earliest_year": 2023,
+    "bod_latest": 1.35,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -4.3,
+    "bod_trend": "stable",
+    "do_latest": 8.97,
+    "do_latest_year": 2025,
+    "ph_latest": 7.87,
+    "ph_latest_year": 2025,
+    "fc_latest": 457.92,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Amroha, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "station_code": "5713",
+    "station": "DHEEMI, PRATAPGARH",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.18,
+    "bod_earliest_year": 2023,
+    "bod_latest": 2.7,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -15.1,
+    "bod_trend": "improving",
+    "do_latest": 9.13,
+    "do_latest_year": 2025,
+    "ph_latest": 8.09,
+    "ph_latest_year": 2025,
+    "fc_latest": 1019.58,
+    "fc_latest_year": 2025,
+    "fs_latest": 13.95,
+    "coord_source": "missing",
+    "geocode_place": null,
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.007629,
+     25.335649
+    ]
+   },
+   "properties": {
+    "station_code": "5715",
+    "station": "B/C GOMTI RIVER AT BALUA GHAT BRIDGE, VARANASI",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.62,
+    "bod_earliest_year": 2023,
+    "bod_latest": 3.32,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -8.3,
+    "bod_trend": "improving",
+    "do_latest": 7.45,
+    "do_latest_year": 2025,
+    "ph_latest": 7.98,
+    "ph_latest_year": 2025,
+    "fc_latest": 6521.74,
+    "fc_latest_year": 2025,
+    "fs_latest": 3579.17,
+    "coord_source": "geocoded",
+    "geocode_place": "Varanasi, Sadar, Varanasi, Uttar Pradesh, 221001, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "station_code": "5709",
+    "station": "NANAMAU GANGA BRIDGE,KANPUR",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.17,
+    "bod_earliest_year": 2023,
+    "bod_latest": 3.34,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 5.4,
+    "bod_trend": "worsening",
+    "do_latest": 8.33,
+    "do_latest_year": 2025,
+    "ph_latest": 8.38,
+    "ph_latest_year": 2025,
+    "fc_latest": 2804.76,
+    "fc_latest_year": 2025,
+    "fs_latest": 3.95,
+    "coord_source": "missing",
+    "geocode_place": null,
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     83.669471,
+     25.455088
+    ]
+   },
+   "properties": {
+    "station_code": "5716",
+    "station": "U/S GHAZIPUR, ZAMANIA",
+    "state": "Uttar Pradesh",
+    "bod_earliest": 3.2,
+    "bod_earliest_year": 2023,
+    "bod_latest": 2.93,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -8.4,
+    "bod_trend": "improving",
+    "do_latest": 7.92,
+    "do_latest_year": 2025,
+    "ph_latest": 8.12,
+    "ph_latest_year": 2025,
+    "fc_latest": 4391.3,
+    "fc_latest_year": 2025,
+    "fs_latest": 2191.3,
+    "coord_source": "geocoded",
+    "geocode_place": "Zamania, Ghazipur, Uttar Pradesh, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.598585,
+     30.146144
+    ]
+   },
+   "properties": {
+    "station_code": "1489",
+    "station": "ALAKNANDA A/C BHAGIRATHI, DEVPRAYAG",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.07,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -6.5,
+    "bod_trend": "improving",
+    "do_latest": 10.55,
+    "do_latest_year": 2025,
+    "ph_latest": 7.98,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Devprayag, Tehri Garhwal, Uttarakhand, 249301, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.036607,
+     30.491584
+    ]
+   },
+   "properties": {
+    "station_code": "1484",
+    "station": "ALAKNANDA B/C MANDAKINI, RUDRA PRAYAG",
+    "state": "Uttarakhand",
+    "bod_earliest": 0.7,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 42.9,
+    "bod_trend": "worsening",
+    "do_latest": 10.75,
+    "do_latest_year": 2025,
+    "ph_latest": 7.82,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rudraprayag, Uttarakhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.598585,
+     30.146144
+    ]
+   },
+   "properties": {
+    "station_code": "1487",
+    "station": "ALAKNANDA B/C BHAGIRATHI, DEVPRAYAG",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 10.5,
+    "do_latest_year": 2025,
+    "ph_latest": 7.93,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Devprayag, Tehri Garhwal, Uttarakhand, 249301, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.036607,
+     30.491584
+    ]
+   },
+   "properties": {
+    "station_code": "1486",
+    "station": "ALKANANDA A/C MANDAKINI, RUDRAPRAYAG",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 10.72,
+    "do_latest_year": 2025,
+    "ph_latest": 8.0,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rudraprayag, Uttarakhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.93987,
+     30.994368
+    ]
+   },
+   "properties": {
+    "station_code": "1491",
+    "station": "BAGIRATHI AT GANGOTRI",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 11.1,
+    "do_latest_year": 2025,
+    "ph_latest": 7.86,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Gangotri, Bhatwari, Uttarkashi, Uttarakhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.598585,
+     30.146144
+    ]
+   },
+   "properties": {
+    "station_code": "1488",
+    "station": "BHAGIRATHI B/C ALAKNANDA, DEVPRAYAG",
+    "state": "Uttarakhand",
+    "bod_earliest": 0.87,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 14.9,
+    "bod_trend": "worsening",
+    "do_latest": 10.57,
+    "do_latest_year": 2025,
+    "ph_latest": 8.03,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Devprayag, Tehri Garhwal, Uttarakhand, 249301, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.145298,
+     29.938447
+    ]
+   },
+   "properties": {
+    "station_code": "1061",
+    "station": "HARIDWAR D/S",
+    "state": "Uttarakhand",
+    "bod_earliest": 5.29,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.13,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -59.7,
+    "bod_trend": "improving",
+    "do_latest": 9.25,
+    "do_latest_year": 2025,
+    "ph_latest": 8.02,
+    "ph_latest_year": 2025,
+    "fc_latest": 144.75,
+    "fc_latest_year": 2025,
+    "fs_latest": 11.63,
+    "coord_source": "geocoded",
+    "geocode_place": "Haridwār, Hardwar, Haridwar, Uttarakhand, 249401, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.145298,
+     29.938447
+    ]
+   },
+   "properties": {
+    "station_code": "20050",
+    "station": "GANGA AT JAGJITPUR",
+    "state": "Uttarakhand",
+    "bod_earliest": 10.36,
+    "bod_earliest_year": 2018,
+    "bod_latest": 10.36,
+    "bod_latest_year": 2018,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 7.33,
+    "do_latest_year": 2022,
+    "ph_latest": 7.58,
+    "ph_latest_year": 2022,
+    "fc_latest": null,
+    "fc_latest_year": null,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Haridwār, Hardwar, Haridwar, Uttarakhand, 249401, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2022"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.145298,
+     29.938447
+    ]
+   },
+   "properties": {
+    "station_code": "20049",
+    "station": "GANGA AT LAKKAR GHAT - OXIDATION PONDS",
+    "state": "Uttarakhand",
+    "bod_earliest": 33.0,
+    "bod_earliest_year": 2018,
+    "bod_latest": 33.0,
+    "bod_latest_year": 2018,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 7.13,
+    "do_latest_year": 2022,
+    "ph_latest": 7.34,
+    "ph_latest_year": 2022,
+    "fc_latest": null,
+    "fc_latest_year": null,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Haridwār, Hardwar, Haridwar, Uttarakhand, 249401, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2022"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.291619,
+     30.108654
+    ]
+   },
+   "properties": {
+    "station_code": "1060",
+    "station": "U/S RISHIKESH",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.08,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -7.4,
+    "bod_trend": "improving",
+    "do_latest": 10.5,
+    "do_latest_year": 2025,
+    "ph_latest": 8.11,
+    "ph_latest_year": 2025,
+    "fc_latest": 32.88,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rishikesh, Dehradun, Uttarakhand, 249201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.291619,
+     30.108654
+    ]
+   },
+   "properties": {
+    "station_code": "20048",
+    "station": "GANGA AT SWARG ASHRAM-1",
+    "state": "Uttarakhand",
+    "bod_earliest": 10.07,
+    "bod_earliest_year": 2018,
+    "bod_latest": 10.07,
+    "bod_latest_year": 2018,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 7.15,
+    "do_latest_year": 2022,
+    "ph_latest": 7.34,
+    "ph_latest_year": 2022,
+    "fc_latest": null,
+    "fc_latest_year": null,
+    "fs_latest": null,
+    "coord_source": "geocoded",
+    "geocode_place": "Rishikesh, Dehradun, Uttarakhand, 249201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2022"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.890212,
+     29.86935
+    ]
+   },
+   "properties": {
+    "station_code": "2727",
+    "station": "ROORKEE D/S",
+    "state": "Uttarakhand",
+    "bod_earliest": 2.1,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.26,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 7.6,
+    "bod_trend": "worsening",
+    "do_latest": 9.3,
+    "do_latest_year": 2025,
+    "ph_latest": 7.99,
+    "ph_latest_year": 2025,
+    "fc_latest": 169.09,
+    "fc_latest_year": 2025,
+    "fs_latest": 13.03,
+    "coord_source": "geocoded",
+    "geocode_place": "Roorkee, Haridwar, Uttarakhand, 247667, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.209863,
+     30.032445
+    ]
+   },
+   "properties": {
+    "station_code": "2725",
+    "station": "A/C SONG, D/S RAIWALA",
+    "state": "Uttarakhand",
+    "bod_earliest": 5.2,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.18,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -77.3,
+    "bod_trend": "improving",
+    "do_latest": 9.35,
+    "do_latest_year": 2025,
+    "ph_latest": 7.91,
+    "ph_latest_year": 2025,
+    "fc_latest": 113.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 11.08,
+    "coord_source": "geocoded",
+    "geocode_place": "Raiwala Junction, NH34, Rāiwāla Bara, Rishikesh, Dehradun, Uttarakhand, 249202, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.036607,
+     30.491584
+    ]
+   },
+   "properties": {
+    "station_code": "1485",
+    "station": "MANDAKINI B/C ALAKNANDA, RUDRAPRAYAG",
+    "state": "Uttarakhand",
+    "bod_earliest": 0.73,
+    "bod_earliest_year": 2014,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 37.0,
+    "bod_trend": "worsening",
+    "do_latest": 10.88,
+    "do_latest_year": 2025,
+    "ph_latest": 7.93,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rudraprayag, Uttarakhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.493026,
+     30.74233
+    ]
+   },
+   "properties": {
+    "station_code": "5452",
+    "station": "RIVER ALAKNANDA AT BADRINATH",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2023,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 11.6,
+    "do_latest_year": 2025,
+    "ph_latest": 7.74,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Badrinath, Joshimath Tehsil, Chamoli, Uttarakhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.291619,
+     30.108654
+    ]
+   },
+   "properties": {
+    "station_code": "5776",
+    "station": "SWARG ASHRAM ,RISHIKESH",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2023,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 10.48,
+    "do_latest_year": 2025,
+    "ph_latest": 8.1,
+    "ph_latest_year": 2025,
+    "fc_latest": 38.25,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rishikesh, Dehradun, Uttarakhand, 249201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.145298,
+     29.938447
+    ]
+   },
+   "properties": {
+    "station_code": "5778",
+    "station": "BISHANPUR KUNDI, HARIDWAR",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.78,
+    "bod_earliest_year": 2023,
+    "bod_latest": 2.13,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 19.7,
+    "bod_trend": "worsening",
+    "do_latest": 9.29,
+    "do_latest_year": 2025,
+    "ph_latest": 7.92,
+    "ph_latest_year": 2025,
+    "fc_latest": 131.79,
+    "fc_latest_year": 2025,
+    "fs_latest": 10.54,
+    "coord_source": "geocoded",
+    "geocode_place": "Haridwār, Hardwar, Haridwar, Uttarakhand, 249401, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.291619,
+     30.108654
+    ]
+   },
+   "properties": {
+    "station_code": "5777",
+    "station": "VISTHAPHIT COLONY, RISHIKESH",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.29,
+    "bod_earliest_year": 2023,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -22.5,
+    "bod_trend": "improving",
+    "do_latest": 10.26,
+    "do_latest_year": 2025,
+    "ph_latest": 7.95,
+    "ph_latest_year": 2025,
+    "fc_latest": 38.58,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rishikesh, Dehradun, Uttarakhand, 249201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.145298,
+     29.938447
+    ]
+   },
+   "properties": {
+    "station_code": "3997",
+    "station": "U/S BINDUGHAT, HARIDWAR",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2018,
+    "bod_latest": 1.97,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 97.0,
+    "bod_trend": "worsening",
+    "do_latest": 9.32,
+    "do_latest_year": 2025,
+    "ph_latest": 8.01,
+    "ph_latest_year": 2025,
+    "fc_latest": 123.31,
+    "fc_latest_year": 2025,
+    "fs_latest": 9.95,
+    "coord_source": "geocoded",
+    "geocode_place": "Haridwār, Hardwar, Haridwar, Uttarakhand, 249401, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.066907,
+     30.733888
+    ]
+   },
+   "properties": {
+    "station_code": "5451",
+    "station": "RIVER MANDAKINI AT KEDARNATH",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2023,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 11.6,
+    "do_latest_year": 2025,
+    "ph_latest": 7.85,
+    "ph_latest_year": 2025,
+    "fc_latest": 1.8,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Kedarnath, Ukhimath, Rudraprayag, Uttarakhand, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.291619,
+     30.108654
+    ]
+   },
+   "properties": {
+    "station_code": "10147",
+    "station": "RISHIKESH D/S",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.0,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 0.0,
+    "bod_trend": "stable",
+    "do_latest": 10.47,
+    "do_latest_year": 2025,
+    "ph_latest": 7.92,
+    "ph_latest_year": 2025,
+    "fc_latest": 34.29,
+    "fc_latest_year": 2025,
+    "fs_latest": 1.8,
+    "coord_source": "geocoded",
+    "geocode_place": "Rishikesh, Dehradun, Uttarakhand, 249201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.170862,
+     29.956638
+    ]
+   },
+   "properties": {
+    "station_code": "10148",
+    "station": "HARKI PAURI GHAT",
+    "state": "Uttarakhand",
+    "bod_earliest": 1.0,
+    "bod_earliest_year": 2017,
+    "bod_latest": 1.9,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 90.0,
+    "bod_trend": "worsening",
+    "do_latest": 9.4,
+    "do_latest_year": 2025,
+    "ph_latest": 7.89,
+    "ph_latest_year": 2025,
+    "fc_latest": 139.62,
+    "fc_latest_year": 2025,
+    "fs_latest": 11.31,
+    "coord_source": "geocoded",
+    "geocode_place": "Har Ki Pauri, Haridwār, Hardwar, Haridwar, Uttarakhand, 249401, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.365799,
+     23.408668
+    ]
+   },
+   "properties": {
+    "station_code": "2511",
+    "station": "NABADIP,GHOSHPARA NEAR MONIPURGHAT",
+    "state": "West Bengal",
+    "bod_earliest": 3.33,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.55,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -23.4,
+    "bod_trend": "improving",
+    "do_latest": 7.06,
+    "do_latest_year": 2025,
+    "ph_latest": 7.23,
+    "ph_latest_year": 2025,
+    "fc_latest": 1845.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 264.33,
+    "coord_source": "geocoded",
+    "geocode_place": "Nabadwip, Nadia, West Bengal, 741302, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.251064,
+     24.104493
+    ]
+   },
+   "properties": {
+    "station_code": "1080",
+    "station": "BEHARAMPORE",
+    "state": "West Bengal",
+    "bod_earliest": 3.9,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.17,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -44.4,
+    "bod_trend": "improving",
+    "do_latest": 7.32,
+    "do_latest_year": 2025,
+    "ph_latest": 7.23,
+    "ph_latest_year": 2025,
+    "fc_latest": 6262.5,
+    "fc_latest_year": 2025,
+    "fs_latest": 478.33,
+    "coord_source": "geocoded",
+    "geocode_place": "Berhampore, Murshidabad, West Bengal, 742101, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.251064,
+     24.104493
+    ]
+   },
+   "properties": {
+    "station_code": "10160",
+    "station": "GORABAZAR, BEHRAMPORE",
+    "state": "West Bengal",
+    "bod_earliest": 2.63,
+    "bod_earliest_year": 2018,
+    "bod_latest": 2.15,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -18.3,
+    "bod_trend": "improving",
+    "do_latest": 7.4,
+    "do_latest_year": 2025,
+    "ph_latest": 7.19,
+    "ph_latest_year": 2025,
+    "fc_latest": 6208.33,
+    "fc_latest_year": 2025,
+    "fs_latest": 450.0,
+    "coord_source": "geocoded",
+    "geocode_place": "Berhampore, Murshidabad, West Bengal, 742101, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.243263,
+     24.100623
+    ]
+   },
+   "properties": {
+    "station_code": "10159",
+    "station": "KHAGRA, BEHARAMPORE",
+    "state": "West Bengal",
+    "bod_earliest": 2.71,
+    "bod_earliest_year": 2018,
+    "bod_latest": 2.14,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -21.0,
+    "bod_trend": "improving",
+    "do_latest": 7.39,
+    "do_latest_year": 2025,
+    "ph_latest": 7.21,
+    "ph_latest_year": 2025,
+    "fc_latest": 1191.25,
+    "fc_latest_year": 2025,
+    "fs_latest": 150.71,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga at Khagra, Beharampore",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.363895,
+     22.572646
+    ]
+   },
+   "properties": {
+    "station_code": "1053",
+    "station": "DAKSHINESHWAR",
+    "state": "West Bengal",
+    "bod_earliest": 4.15,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.62,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -36.9,
+    "bod_trend": "improving",
+    "do_latest": 6.42,
+    "do_latest_year": 2025,
+    "ph_latest": 7.4,
+    "ph_latest_year": 2025,
+    "fc_latest": 45458.33,
+    "fc_latest_year": 2025,
+    "fs_latest": 2497.08,
+    "coord_source": "geocoded",
+    "geocode_place": "Kolkata, Greater Kolkata, Kolkata, West Bengal, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.186222,
+     22.183389
+    ]
+   },
+   "properties": {
+    "station_code": "1469",
+    "station": "DIAMOND HARBOUR",
+    "state": "West Bengal",
+    "bod_earliest": 3.68,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.35,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -36.1,
+    "bod_trend": "improving",
+    "do_latest": 6.02,
+    "do_latest_year": 2025,
+    "ph_latest": 7.31,
+    "ph_latest_year": 2025,
+    "fc_latest": 1974.58,
+    "fc_latest_year": 2025,
+    "fs_latest": 392.42,
+    "coord_source": "cpcb_report",
+    "geocode_place": "Ganga at Diamond Harbour",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     87.912679,
+     24.765807
+    ]
+   },
+   "properties": {
+    "station_code": "5162",
+    "station": "FARAKKA, MUSHIDABAD",
+    "state": "West Bengal",
+    "bod_earliest": 2.28,
+    "bod_earliest_year": 2023,
+    "bod_latest": 2.25,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -1.3,
+    "bod_trend": "stable",
+    "do_latest": 7.35,
+    "do_latest_year": 2025,
+    "ph_latest": 7.3,
+    "ph_latest_year": 2025,
+    "fc_latest": 698.33,
+    "fc_latest_year": 2025,
+    "fs_latest": 101.46,
+    "coord_source": "geocoded",
+    "geocode_place": "Farakka, Murshidabad, West Bengal, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.363895,
+     22.572646
+    ]
+   },
+   "properties": {
+    "station_code": "1470",
+    "station": "GARDEN REACH",
+    "state": "West Bengal",
+    "bod_earliest": 3.2,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.67,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -16.6,
+    "bod_trend": "improving",
+    "do_latest": 6.15,
+    "do_latest_year": 2025,
+    "ph_latest": 7.41,
+    "ph_latest_year": 2025,
+    "fc_latest": 45625.0,
+    "fc_latest_year": 2025,
+    "fs_latest": 3208.33,
+    "coord_source": "geocoded",
+    "geocode_place": "Kolkata, Greater Kolkata, Kolkata, West Bengal, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.294211,
+     22.568579
+    ]
+   },
+   "properties": {
+    "station_code": "1471",
+    "station": "SHIVPUR (HOWRAH)",
+    "state": "West Bengal",
+    "bod_earliest": 3.59,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.63,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -26.7,
+    "bod_trend": "improving",
+    "do_latest": 6.17,
+    "do_latest_year": 2025,
+    "ph_latest": 7.33,
+    "ph_latest_year": 2025,
+    "fc_latest": 29541.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 1971.25,
+    "coord_source": "geocoded",
+    "geocode_place": "Shibpur, Haora, Greater Kolkata, Howrah, West Bengal, 711103, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.370275,
+     22.782629
+    ]
+   },
+   "properties": {
+    "station_code": "1054",
+    "station": "PALTA",
+    "state": "West Bengal",
+    "bod_earliest": 3.38,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.64,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -21.9,
+    "bod_trend": "improving",
+    "do_latest": 7.0,
+    "do_latest_year": 2025,
+    "ph_latest": 7.21,
+    "ph_latest_year": 2025,
+    "fc_latest": 6287.5,
+    "fc_latest_year": 2025,
+    "fs_latest": 455.0,
+    "coord_source": "geocoded",
+    "geocode_place": "Palta, Dr BR Ambedkar Road, Kaliani Bash, Palta, Barrackpore, Greater Kolkata, Barrackpur - I, North 24 Parganas, West Bengal, 743122, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.370275,
+     22.782629
+    ]
+   },
+   "properties": {
+    "station_code": "10161",
+    "station": "SHITALATALA, PALTA",
+    "state": "West Bengal",
+    "bod_earliest": 3.6,
+    "bod_earliest_year": 2018,
+    "bod_latest": 2.57,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -28.6,
+    "bod_trend": "improving",
+    "do_latest": 6.94,
+    "do_latest_year": 2025,
+    "ph_latest": 7.23,
+    "ph_latest_year": 2025,
+    "fc_latest": 6191.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 410.83,
+    "coord_source": "geocoded",
+    "geocode_place": "Palta, Dr BR Ambedkar Road, Kaliani Bash, Palta, Barrackpore, Greater Kolkata, Barrackpur - I, North 24 Parganas, West Bengal, 743122, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.137623,
+     22.071261
+    ]
+   },
+   "properties": {
+    "station_code": "1335",
+    "station": "PATIKALI",
+    "state": "West Bengal",
+    "bod_earliest": 1.64,
+    "bod_earliest_year": 2019,
+    "bod_latest": 1.92,
+    "bod_latest_year": 2025,
+    "bod_change_pct": 17.1,
+    "bod_trend": "worsening",
+    "do_latest": 6.32,
+    "do_latest_year": 2025,
+    "ph_latest": 7.81,
+    "ph_latest_year": 2025,
+    "fc_latest": 10983.33,
+    "fc_latest_year": 2025,
+    "fs_latest": 567.5,
+    "coord_source": "geocoded",
+    "geocode_place": "Durgachak, Haldia, Purba Medinipur, West Bengal, 721602, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.341667,
+     22.754995
+    ]
+   },
+   "properties": {
+    "station_code": "1472",
+    "station": "SERAMPORE",
+    "state": "West Bengal",
+    "bod_earliest": 3.15,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.6,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -17.5,
+    "bod_trend": "improving",
+    "do_latest": 7.0,
+    "do_latest_year": 2025,
+    "ph_latest": 7.21,
+    "ph_latest_year": 2025,
+    "fc_latest": 24616.67,
+    "fc_latest_year": 2025,
+    "fs_latest": 1223.33,
+    "coord_source": "geocoded",
+    "geocode_place": "Serampore, Greater Kolkata, Serampur Uttarpara, Hooghly, West Bengal, 712201, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.101111,
+     22.470032
+    ]
+   },
+   "properties": {
+    "station_code": "1052",
+    "station": "ULUBERIA",
+    "state": "West Bengal",
+    "bod_earliest": 3.35,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.62,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -21.8,
+    "bod_trend": "improving",
+    "do_latest": 5.97,
+    "do_latest_year": 2025,
+    "ph_latest": 7.27,
+    "ph_latest_year": 2025,
+    "fc_latest": 9408.33,
+    "fc_latest_year": 2025,
+    "fs_latest": 639.5,
+    "coord_source": "geocoded",
+    "geocode_place": "Uluberia, Greater Kolkata, Uluberia - I, Howrah, West Bengal, 711315, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     88.398261,
+     22.990303
+    ]
+   },
+   "properties": {
+    "station_code": "2506",
+    "station": "TRIBENI, NEAR BURNING GHAT",
+    "state": "West Bengal",
+    "bod_earliest": 2.79,
+    "bod_earliest_year": 2014,
+    "bod_latest": 2.53,
+    "bod_latest_year": 2025,
+    "bod_change_pct": -9.3,
+    "bod_trend": "improving",
+    "do_latest": 7.08,
+    "do_latest_year": 2025,
+    "ph_latest": 7.28,
+    "ph_latest_year": 2025,
+    "fc_latest": 1612.92,
+    "fc_latest_year": 2025,
+    "fs_latest": 226.17,
+    "coord_source": "geocoded",
+    "geocode_place": "Tribeni, Tribeni-Kuntighat Road, Shibpur, Bansberia, Greater Kolkata, Chinsurah - Magra, Hooghly, West Bengal, 712513, India",
+    "source": "Ganga Knowledge Portal gyanganga.ai",
+    "as_of": "2025"
+   }
+  }
+ ]
+}

@@ -1,0 +1,441 @@
+{
+ "Haridwar": {
+  "religion": [
+   [
+    "Hindu",
+    64.27
+   ],
+   [
+    "Muslim",
+    34.28
+   ],
+   [
+    "Sikh",
+    0.92
+   ],
+   [
+    "Christian",
+    0.26
+   ],
+   [
+    "Jain",
+    0.13
+   ],
+   [
+    "Buddhist",
+    0.04
+   ],
+   [
+    "Other & not stated",
+    0.1
+   ]
+  ],
+  "religion_basis": "Haridwar district, Census of India 2011",
+  "elections": [
+   [
+    2002,
+    "BJP",
+    "Madan Kaushik"
+   ],
+   [
+    2007,
+    "BJP",
+    "Madan Kaushik"
+   ],
+   [
+    2012,
+    "BJP",
+    "Madan Kaushik"
+   ],
+   [
+    2017,
+    "BJP",
+    "Madan Kaushik"
+   ],
+   [
+    2022,
+    "BJP",
+    "Madan Kaushik"
+   ]
+  ],
+  "constituency": "Haridwar",
+  "state_govt": "BJP since 2017 (CM Pushkar Singh Dhami since July 2021)"
+ },
+ "Kanpur": {
+  "religion": [
+   [
+    "Hindu",
+    82.78
+   ],
+   [
+    "Muslim",
+    15.73
+   ],
+   [
+    "Sikh",
+    0.65
+   ],
+   [
+    "Christian",
+    0.34
+   ],
+   [
+    "Jain",
+    0.12
+   ],
+   [
+    "Buddhist",
+    0.06
+   ],
+   [
+    "Other & not stated",
+    0.32
+   ]
+  ],
+  "religion_basis": "Kanpur Nagar district, Census of India 2011",
+  "elections": [
+   [
+    2002,
+    "BJP",
+    "Satish Mahana"
+   ],
+   [
+    2007,
+    "BJP",
+    "Satish Mahana"
+   ],
+   [
+    2012,
+    "BJP",
+    "Raghunandan Singh Bhadauria"
+   ],
+   [
+    2017,
+    "INC",
+    "Sohil Akhtar Ansari"
+   ],
+   [
+    2022,
+    "SP",
+    "Mohammad Hassan Roomi"
+   ]
+  ],
+  "constituency": "Kanpur Cantonment",
+  "state_govt": "BJP since 2017 (CM Yogi Adityanath since Mar 2017)"
+ },
+ "Prayagraj": {
+  "religion": [
+   [
+    "Hindu",
+    85.69
+   ],
+   [
+    "Muslim",
+    13.38
+   ],
+   [
+    "Christian",
+    0.23
+   ],
+   [
+    "Sikh",
+    0.07
+   ],
+   [
+    "Buddhist",
+    0.07
+   ],
+   [
+    "Jain",
+    0.04
+   ],
+   [
+    "Other & not stated",
+    0.52
+   ]
+  ],
+  "religion_basis": "Prayagraj district, Census of India 2011",
+  "elections": [
+   [
+    2002,
+    "BJP",
+    "Keshari Nath Tripathi"
+   ],
+   [
+    2007,
+    "BSP",
+    "Nand Gopal Gupta"
+   ],
+   [
+    2012,
+    "SP",
+    "Haji Parvej Ahmad"
+   ],
+   [
+    2017,
+    "BJP",
+    "Nand Gopal Gupta"
+   ],
+   [
+    2022,
+    "BJP",
+    "Nand Gopal Gupta"
+   ]
+  ],
+  "constituency": "Prayagraj South",
+  "state_govt": "BJP since 2017 (CM Yogi Adityanath since Mar 2017)"
+ },
+ "Varanasi": {
+  "religion": [
+   [
+    "Hindu",
+    84.52
+   ],
+   [
+    "Muslim",
+    14.88
+   ],
+   [
+    "Christian",
+    0.21
+   ],
+   [
+    "Sikh",
+    0.09
+   ],
+   [
+    "Jain",
+    0.05
+   ],
+   [
+    "Buddhist",
+    0.03
+   ],
+   [
+    "Other & not stated",
+    0.22
+   ]
+  ],
+  "religion_basis": "Varanasi district, Census of India 2011",
+  "elections": [
+   [
+    2002,
+    "BJP",
+    "Shyamdev Roy Chaudhari"
+   ],
+   [
+    2007,
+    "BJP",
+    "Shyamdev Roy Chaudhari"
+   ],
+   [
+    2012,
+    "BJP",
+    "Shyamdev Roy Chaudhari"
+   ],
+   [
+    2017,
+    "BJP",
+    "Neelkanth Tiwari"
+   ],
+   [
+    2022,
+    "BJP",
+    "Neelkanth Tiwari"
+   ]
+  ],
+  "constituency": "Varanasi South",
+  "state_govt": "BJP since 2017 (CM Yogi Adityanath since Mar 2017)"
+ },
+ "Patna": {
+  "religion": [
+   [
+    "Hindu",
+    91.74
+   ],
+   [
+    "Muslim",
+    7.54
+   ],
+   [
+    "Christian",
+    0.21
+   ],
+   [
+    "Sikh",
+    0.08
+   ],
+   [
+    "Jain",
+    0.04
+   ],
+   [
+    "Buddhist",
+    0.02
+   ],
+   [
+    "Other & not stated",
+    0.37
+   ]
+  ],
+  "religion_basis": "Patna district, Census of India 2011",
+  "elections": [
+   [
+    2005,
+    "BJP",
+    "Nand Kishore Yadav (Patna East, predecessor seat)"
+   ],
+   [
+    2010,
+    "BJP",
+    "Nand Kishore Yadav"
+   ],
+   [
+    2015,
+    "BJP",
+    "Nand Kishore Yadav"
+   ],
+   [
+    2020,
+    "BJP",
+    "Nand Kishore Yadav"
+   ],
+   [
+    2025,
+    "BJP",
+    "Ratnesh Kumar Kushwaha"
+   ]
+  ],
+  "constituency": "Patna Sahib",
+  "state_govt": "NDA since Nov 2025 (CM Samrat Choudhary, BJP, since 15 Apr 2026)"
+ },
+ "Bhagalpur": {
+  "religion": [
+   [
+    "Hindu",
+    81.9
+   ],
+   [
+    "Muslim",
+    17.68
+   ],
+   [
+    "Christian",
+    0.12
+   ],
+   [
+    "Jain",
+    0.03
+   ],
+   [
+    "Sikh",
+    0.01
+   ],
+   [
+    "Buddhist",
+    0.01
+   ],
+   [
+    "Other & not stated",
+    0.25
+   ]
+  ],
+  "religion_basis": "Bhagalpur district, Census of India 2011",
+  "elections": [
+   [
+    2005,
+    "BJP",
+    "Ashwini Kumar Choubey"
+   ],
+   [
+    2010,
+    "BJP",
+    "Ashwini Kumar Choubey"
+   ],
+   [
+    2015,
+    "INC",
+    "Ajeet Sharma"
+   ],
+   [
+    2020,
+    "INC",
+    "Ajit Sharma"
+   ],
+   [
+    2025,
+    "BJP",
+    "Rohit Pandey"
+   ]
+  ],
+  "constituency": "Bhagalpur",
+  "state_govt": "NDA since Nov 2025 (CM Samrat Choudhary, BJP, since 15 Apr 2026)"
+ },
+ "Kolkata": {
+  "religion": [
+   [
+    "Hindu",
+    76.51
+   ],
+   [
+    "Muslim",
+    20.6
+   ],
+   [
+    "Christian",
+    0.88
+   ],
+   [
+    "Jain",
+    0.47
+   ],
+   [
+    "Sikh",
+    0.31
+   ],
+   [
+    "Buddhist",
+    0.11
+   ],
+   [
+    "Other & not stated",
+    1.12
+   ]
+  ],
+  "religion_basis": "Kolkata district, Census of India 2011",
+  "elections": [
+   [
+    2001,
+    "AITC",
+    "Subrata Mukherjee"
+   ],
+   [
+    2006,
+    "AITC",
+    "Subrata Bakshi"
+   ],
+   [
+    2011,
+    "AITC",
+    "Sikha Chowdhury"
+   ],
+   [
+    2016,
+    "AITC",
+    "Nayna Bandyopadhyay"
+   ],
+   [
+    2021,
+    "AITC",
+    "Nayna Bandyopadhyay"
+   ],
+   [
+    2026,
+    "AITC",
+    "Nayna Bandyopadhyay"
+   ]
+  ],
+  "constituency": "Chowrangee",
+  "state_govt": "BJP since May 2026 (CM Suvendu Adhikari since 9 May 2026; first BJP govt in the state)"
+ }
+}

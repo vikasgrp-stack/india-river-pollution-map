@@ -1,0 +1,1490 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Agra",
+    "state": "Uttar Pradesh",
+    "population_2011": 1585704,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "121.00",
+    "population_density_per_sqkm": "13105.0",
+    "literacy_pct": "71.58",
+    "sex_ratio": 875,
+    "urban_pct": "45.81",
+    "rural_pct": "54.19",
+    "urban_rural_basis": "Agra district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Tourism (Taj Mahal), leather and footwear, agriculture.\"}",
+    "mla_name": "Yogendra Upadhyaya",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "AGRA SOUTH",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Agra city spans several ACs; the city-centre point is taken as Agra South (same point-based approach as Ganga: Prayagraj -> Allahabad South). Literacy is the Agra district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.02,
+     27.18
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Auraiya",
+    "state": "Uttar Pradesh",
+    "population_2011": 87736,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "9.00",
+    "population_density_per_sqkm": "9748.4",
+    "literacy_pct": "87.25",
+    "sex_ratio": 864,
+    "urban_pct": "16.98",
+    "rural_pct": "83.02",
+    "urban_rural_basis": "Auraiya district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and industry (petrochemicals).\"}",
+    "mla_name": "Gudiya Katheriya",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Auraiya",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia \"Auraiya Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Winner from Wikipedia AC article (MyNeta UP list has no Auraiya winner row). Sex ratio is the Auraiya district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.52,
+     26.47
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Barkot",
+    "state": "Uttarakhand",
+    "population_2011": 6720,
+    "population_basis": "Census 2011 (citypopulation.de / censusindia2011.com)",
+    "area_km2": "6.00",
+    "population_density_per_sqkm": "1120.0",
+    "literacy_pct": "84.50",
+    "sex_ratio": 958,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Uttarkashi district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism (Yamunotri route); hill agriculture and trade.\"}",
+    "mla_name": "Sanjay Dobhal",
+    "mla_party": "Independent",
+    "constituency": "YAMUNOTRI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttarakhand assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Barkot is in Yamunotri (Barkot) tehsil, Yamunotri AC. Wikipedia infobox figure 16,568 is not the 2011 town figure; Census 2011 Barkot (NP) = 6,720. Population 6,720 is the Barkot (NP) figure; the Wikipedia infobox figure 16,568 is not the 2011 town figure. Wikipedia infobox population is dated 2012, not 2011; see population_basis. Sex ratio is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2,
+     30.82
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bateswar",
+    "state": "Uttar Pradesh",
+    "population_2011": "",
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "71.58",
+    "sex_ratio": 868,
+    "urban_pct": "45.81",
+    "rural_pct": "54.19",
+    "urban_rural_basis": "Agra district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and religious tourism (Bateshwar fair).\"}",
+    "mla_name": "Rani Pakshalika Singh",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Bah",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia \"Bah Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Bateswar is in Bah tehsil; Bah AC extent is Bah Tehsil. Winner from Wikipedia AC article (MyNeta UP list has no Bah winner row). No town-level 2011 population in the Wikipedia article (Bateshwar page is about the hills/temples). Literacy is the Agra district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Agra district figure (Census 2011 via census2011.co.in), not a town figure. No standalone 2011 town population found; population left blank.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.543575,
+     26.935316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Dakpathar",
+    "state": "Uttarakhand",
+    "population_2011": 9547,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "84.25",
+    "sex_ratio": 902,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Dehradun district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Hydropower (Dakpathar barrage) and agriculture.\"}",
+    "mla_name": "Munna Singh Chauhan",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "VIKASNAGAR",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttarakhand assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Dakpathar is in Vikasnagar tehsil, Vikasnagar AC. Literacy is the Dehradun district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Dehradun district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.798865,
+     30.496855
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Delhi",
+    "state": "Delhi",
+    "population_2011": 16787941,
+    "population_basis": "Census 2011 (NCT of Delhi)",
+    "area_km2": "1484.00",
+    "population_density_per_sqkm": "11312.6",
+    "literacy_pct": "86.21",
+    "sex_ratio": 866,
+    "urban_pct": "97.50",
+    "rural_pct": "2.50",
+    "urban_rural_basis": "NCT of Delhi, Census 2011 (urban 16,368,899 of 16,787,941)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Government, services, trade and industry (National Capital Territory).\"}",
+    "mla_name": "",
+    "mla_party": "",
+    "constituency": "",
+    "mla_election_year": "",
+    "mla_source": "",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Single row for the whole National Capital Territory (population 16,787,941, Census 2011); the NCT has 70 assembly constituencies, so no single MLA is assigned. Literacy is the Delhi district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Delhi district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23,
+     28.61
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Etawah",
+    "state": "Uttar Pradesh",
+    "population_2011": 256838,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "82.89",
+    "sex_ratio": 870,
+    "urban_pct": "23.16",
+    "rural_pct": "76.84",
+    "urban_rural_basis": "Etawah district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade.\"}",
+    "mla_name": "Sarita",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "ETAWAH",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Sex ratio is the Etawah district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.03,
+     26.77
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Faridabad",
+    "state": "Haryana",
+    "population_2011": 1414050,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "204.00",
+    "population_density_per_sqkm": "6931.6",
+    "literacy_pct": "83.83",
+    "sex_ratio": 874,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Faridabad district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Manufacturing and industry; services.\"}",
+    "mla_name": "Vipul Goel",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "FARIDABAD",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3078,
+     28.4211
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Firozabad",
+    "state": "Uttar Pradesh",
+    "population_2011": 603797,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "35.49",
+    "population_density_per_sqkm": "17013.2",
+    "literacy_pct": "75.01",
+    "sex_ratio": 875,
+    "urban_pct": "33.35",
+    "rural_pct": "66.65",
+    "urban_rural_basis": "Firozabad district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Glass and bangle industry; agriculture.\"}",
+    "mla_name": "Manish Asija",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "FIROZABAD",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Wikipedia infobox population is dated 2011 census, not 2011; see population_basis. Sex ratio is the Firozabad district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.396101,
+     27.156617
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gokul",
+    "state": "Uttar Pradesh",
+    "population_2011": "",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "60.00",
+    "sex_ratio": 863,
+    "urban_pct": "29.68",
+    "rural_pct": "70.32",
+    "urban_rural_basis": "Mathura district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism and agriculture.\"}",
+    "mla_name": "Pooran Prakash",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Baldev",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia \"Baldev Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Gokul is in Baldev AC (confirmed in the Baldev AC article). Winner from Wikipedia AC article (MyNeta UP list has no Baldev winner row). Wikipedia infobox figure 4,041 is dated 2001; no verified 2011 town figure found. Wikipedia infobox population is dated 2001, not 2011; see population_basis. Sex ratio is the Mathura district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.72,
+     27.45
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Greater Noida",
+    "state": "Uttar Pradesh",
+    "population_2011": 107676,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "380.00",
+    "population_density_per_sqkm": "283.4",
+    "literacy_pct": "86.54",
+    "sex_ratio": 851,
+    "urban_pct": "59.12",
+    "rural_pct": "40.88",
+    "urban_rural_basis": "Gautam Buddha Nagar district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Manufacturing, IT, education and services.\"}",
+    "mla_name": "Tejpal Singh Nagar",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "DADRI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Greater Noida is in Dadri tehsil, Dadri AC. Sex ratio is the Gautam Buddha Nagar district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.51,
+     28.47
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Hamirpur",
+    "state": "Uttar Pradesh",
+    "population_2011": 35475,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "78.70",
+    "sex_ratio": 861,
+    "urban_pct": "19.00",
+    "rural_pct": "81.00",
+    "urban_rural_basis": "Hamirpur district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade.\"}",
+    "mla_name": "Dr. Manoj Kumar",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "HAMIRPUR",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Sex ratio is the Hamirpur district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.15,
+     25.95
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Hanuman Chatti",
+    "state": "Uttarakhand",
+    "population_2011": "",
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.81",
+    "sex_ratio": 958,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Uttarkashi district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism (Char Dham yatra route stop); seasonal services.\"}",
+    "mla_name": "Sanjay Dobhal",
+    "mla_party": "Independent",
+    "constituency": "YAMUNOTRI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttarakhand assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Yamunotri AC covers the Yamunotri tehsil towns. Small settlement on the Yamunotri route; no 2011 population figure found. Literacy is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure. No standalone 2011 town population found; population left blank.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.399557,
+     30.931169
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kalpi",
+    "state": "Uttar Pradesh",
+    "population_2011": 51670,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "73.75",
+    "sex_ratio": 865,
+    "urban_pct": "24.79",
+    "rural_pct": "75.21",
+    "urban_rural_basis": "Jalaun district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade.\"}",
+    "mla_name": "Vinod Chaturvedi",
+    "mla_party": "Samajwadi Party (SP)",
+    "constituency": "KALPI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Literacy is the Jalaun district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Jalaun district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.73,
+     26.12
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kalsi",
+    "state": "Uttarakhand",
+    "population_2011": "",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "84.25",
+    "sex_ratio": 902,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Dehradun district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and forestry; trade on the Dehradun–Chakrata road.\"}",
+    "mla_name": "Pritam Singh",
+    "mla_party": "Indian National Congress (INC)",
+    "constituency": "Chakrata",
+    "mla_election_year": 2022,
+    "mla_source": "Wikipedia \"Chakrata Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Kalsi is in Chakrata tehsil; Chakrata AC covers Chakrata tehsil. Winner from Wikipedia AC article (MyNeta Uttarakhand list has no Chakrata winner row). Wikipedia figure 47,239 is the Kalsi sub-district (tehsil), not the town; no town-level 2011 figure found. Literacy is the Dehradun district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Dehradun district figure (Census 2011 via census2011.co.in), not a town figure. No standalone 2011 town population found; population left blank.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.882812,
+     30.584919
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Loni",
+    "state": "Uttar Pradesh",
+    "population_2011": 516082,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.24",
+    "sex_ratio": 881,
+    "urban_pct": "67.00",
+    "rural_pct": "33.00",
+    "urban_rural_basis": "Ghaziabad district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Industry and agriculture.\"}",
+    "mla_name": "Nandkishor",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "LONI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Sex ratio is the Ghaziabad district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.28,
+     28.75
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mathura",
+    "state": "Uttar Pradesh",
+    "population_2011": 441894,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "39.00",
+    "population_density_per_sqkm": "11330.6",
+    "literacy_pct": "72.65",
+    "sex_ratio": 858,
+    "urban_pct": "29.68",
+    "rural_pct": "70.32",
+    "urban_rural_basis": "Mathura district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism, oil refinery, agriculture.\"}",
+    "mla_name": "Shrikant Sharma",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "MATHURA",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.673611,
+     27.4925
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Naugaon",
+    "state": "Uttarakhand",
+    "population_2011": "",
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.81",
+    "sex_ratio": 958,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Uttarkashi district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade on the Yamunotri route.\"}",
+    "mla_name": "Sanjay Dobhal",
+    "mla_party": "Independent",
+    "constituency": "YAMUNOTRI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttarakhand assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Naugaon is in Yamunotri (Barkot) tehsil, Yamunotri AC. No town-level 2011 population in the Wikipedia article. Literacy is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure. No standalone 2011 town population found; population left blank.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.140764,
+     30.789214
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Noida",
+    "state": "Uttar Pradesh",
+    "population_2011": 637272,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "203.00",
+    "population_density_per_sqkm": "3139.3",
+    "literacy_pct": "88.58",
+    "sex_ratio": 851,
+    "urban_pct": "59.12",
+    "rural_pct": "40.88",
+    "urban_rural_basis": "Gautam Buddha Nagar district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"IT and services, manufacturing.\"}",
+    "mla_name": "Pankaj Singh",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "NOIDA",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Sex ratio is the Gautam Buddha Nagar district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.32,
+     28.57
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Paonta Sahib",
+    "state": "Himachal Pradesh",
+    "population_2011": 25183,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "76.00",
+    "sex_ratio": 918,
+    "urban_pct": "10.79",
+    "rural_pct": "89.21",
+    "urban_rural_basis": "Sirmaur district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Industry (pharmaceuticals, cement, paper) and agriculture; Sikh pilgrimage centre.\"}",
+    "mla_name": "Sukh Ram",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "PAONTA SAHIB",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Himachal Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Sex ratio is the Sirmaur district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.624,
+     30.438
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "population_2011": 1112544,
+    "population_basis": "Wikipedia article Demographics section (Census 2011)",
+    "area_km2": "365.00",
+    "population_density_per_sqkm": "3048.1",
+    "literacy_pct": "90.21",
+    "sex_ratio": 901,
+    "urban_pct": "24.75",
+    "rural_pct": "75.25",
+    "urban_rural_basis": "Prayagraj district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Administration, education, pilgrimage tourism and agriculture.\"}",
+    "mla_name": "Nand Gopal Gupta (Nandi)",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "ALLAHABAD SOUTH",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Point-based choice (Ganga precedent): the city-centre point is taken as Allahabad South. Infobox figure 1,536,218 is a 2020-2011 hybrid, not the 2011 census figure; demographics section gives 1,112,544. Wikipedia infobox population is dated 2020–2011 hybrid, not 2011; see population_basis.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.846389,
+     25.435833
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Radaur",
+    "state": "Haryana",
+    "population_2011": 13690,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "78.90",
+    "sex_ratio": 877,
+    "urban_pct": "38.94",
+    "rural_pct": "61.06",
+    "urban_rural_basis": "Yamunanagar district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture, mainly sugarcane; small trade.\"}",
+    "mla_name": "Shyam Singh Rana",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "RADAUR",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Sex ratio is the Yamunanagar district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.15,
+     30.03
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Vikasnagar",
+    "state": "Uttarakhand",
+    "population_2011": 13927,
+    "population_basis": "Census 2011 (CEIC / censusindia2011.com)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "76.00",
+    "sex_ratio": 902,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Dehradun district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture, trade and small industry on the Dehradun plain.\"}",
+    "mla_name": "Munna Singh Chauhan",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "VIKASNAGAR",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttarakhand assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Wikipedia infobox figure 12,485 is the 2001 census; Census 2011 Vikasnagar (NPP) = 13,927. Population 13,927 is the Vikasnagar (NPP) figure; the tehsil population is 317,482. Wikipedia infobox population is dated 2001, not 2011; see population_basis. Sex ratio is the Dehradun district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.774,
+     30.468
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Vrindavan",
+    "state": "Uttar Pradesh",
+    "population_2011": 63005,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "73.70",
+    "sex_ratio": 812,
+    "urban_pct": "29.68",
+    "rural_pct": "70.32",
+    "urban_rural_basis": "Mathura district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism.\"}",
+    "mla_name": "Shrikant Sharma",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "MATHURA",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Vrindavan is in Mathura AC (article spells it Vrindaban).",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7,
+     27.58
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Yamunanagar",
+    "state": "Haryana",
+    "population_2011": 216628,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "77.99",
+    "sex_ratio": 877,
+    "urban_pct": "38.94",
+    "rural_pct": "61.06",
+    "urban_rural_basis": "Yamunanagar district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Paper, plywood, sugar and metal (brass) industry; agriculture.\"}",
+    "mla_name": "Ghanshyam Dass",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Yamunanagar",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia \"Yamunanagar Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Winner from Wikipedia AC article (MyNeta Haryana list has no Yamunanagar winner row). Literacy is the Yamunanagar district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Yamunanagar district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.288,
+     30.133
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Yamunotri",
+    "state": "Uttarakhand",
+    "population_2011": "",
+    "population_basis": "",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.81",
+    "sex_ratio": 958,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Uttarkashi district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism (Char Dham yatra); seasonal services around the shrine.\"}",
+    "mla_name": "Sanjay Dobhal",
+    "mla_party": "Independent",
+    "constituency": "YAMUNOTRI",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttarakhand assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Yamunotri AC covers the Yamunotri tehsil towns. Temple town; the Wikipedia article is about the temple/shrine, no 2011 population figure. Literacy is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Uttarkashi district figure (Census 2011 via census2011.co.in), not a town figure. No standalone 2011 town population found; population left blank.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.45,
+     31.01
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Panipat",
+    "state": "Haryana",
+    "population_2011": 294150,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.94",
+    "sex_ratio": 861,
+    "urban_pct": "46.05",
+    "rural_pct": "53.95",
+    "urban_rural_basis": "Panipat district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Textiles and handloom, oil refinery, agriculture.\"}",
+    "mla_name": "Parmod Kumar Vij",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "PANIPAT CITY",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 17.8 km outside the buffer, but Panipat Drain No. 6 (858.88 MLD, 61.84 TPD BOD) and 7 STPs discharge to the Yamuna. Literacy is the Panipat district figure (Census 2011 via census2011.co.in), not a town figure. Wikipedia infobox area 1268.0 sq km is the district area, not the town; area and density left blank.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.97,
+     29.3875
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sonipat",
+    "state": "Haryana",
+    "population_2011": 277053,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "181.00",
+    "population_density_per_sqkm": "1530.7",
+    "literacy_pct": "79.12",
+    "sex_ratio": 856,
+    "urban_pct": "22.17",
+    "rural_pct": "77.83",
+    "urban_rural_basis": "Sonipat district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Industry and agriculture on the Delhi border.\"}",
+    "mla_name": "Nikhil Madaan",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "SONIPAT",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 16.4 km outside the buffer, but Drain No. 6 (Sonipat) and 7 STPs discharge to the Yamuna. Literacy is the Sonipat district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Sonipat district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.022,
+     28.99
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Karnal",
+    "state": "Haryana",
+    "population_2011": 286974,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "87.00",
+    "population_density_per_sqkm": "3298.6",
+    "literacy_pct": "74.73",
+    "sex_ratio": 915,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture (basmati rice), dairy research (NDRI) and trade.\"}",
+    "mla_name": "Jagmohan Anand",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "KARNAL",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 15.2 km outside the buffer, but 9 STPs discharge to the Yamuna. Literacy is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.989,
+     29.686
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Jagadhri",
+    "state": "Haryana",
+    "population_2011": 124894,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "78.30",
+    "sex_ratio": 877,
+    "urban_pct": "38.94",
+    "rural_pct": "61.06",
+    "urban_rural_basis": "Yamunanagar district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Metal and brass work, paper; agriculture.\"}",
+    "mla_name": "Akram Khan",
+    "mla_party": "Indian National Congress (INC)",
+    "constituency": "JAGADHRI",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 11.6 km outside the buffer; twin city of Yamunanagar (in the corridor), shares its drainage and STPs. Wikipedia infobox population is dated 2001, not 2011; see population_basis. Sex ratio is the Yamunanagar district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.301,
+     30.168
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "population_2011": 1729000,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "210.00",
+    "population_density_per_sqkm": "8233.3",
+    "literacy_pct": "78.07",
+    "sex_ratio": 885,
+    "urban_pct": "67.00",
+    "rural_pct": "33.00",
+    "urban_rural_basis": "Ghaziabad district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Manufacturing and industry; services.\"}",
+    "mla_name": "Atul Garg",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "GHAZIABAD",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 17.6 km outside the buffer, but 10 STPs discharge to the Yamuna/Hindon system. Town literacy 98.81% in the article is implausible and not used; district literacy 78.07% (Census 2011) is used instead. Literacy is the Ghaziabad district figure (Census 2011 via census2011.co.in), not a town figure. Town literacy 98.81% in the Wikipedia article is implausible and not used; district literacy 78.07% used.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.42,
+     28.67
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Palwal",
+    "state": "Haryana",
+    "population_2011": 131926,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "69.32",
+    "sex_ratio": 880,
+    "urban_pct": "22.69",
+    "rural_pct": "77.31",
+    "urban_rural_basis": "Palwal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and industry.\"}",
+    "mla_name": "Gaurav Gautam",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "PALWAL",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 16.6 km outside the buffer, but Palwal STP (15 MLD) discharges to the Yamuna. Literacy is the Palwal district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Palwal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.329,
+     28.143
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Samalkha",
+    "state": "Haryana",
+    "population_2011": 40000,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "78.00",
+    "sex_ratio": 864,
+    "urban_pct": "46.05",
+    "rural_pct": "53.95",
+    "urban_rural_basis": "Panipat district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and foundry/small industry.\"}",
+    "mla_name": "Manmohan Bhadana",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "SAMALKHA",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 12.2 km outside the buffer; Samalkha STP discharges to the Yamuna. Sex ratio is the Panipat district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.02,
+     29.23
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gannaur",
+    "state": "Haryana",
+    "population_2011": 35603,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "76.12",
+    "sex_ratio": 856,
+    "urban_pct": "22.17",
+    "rural_pct": "77.83",
+    "urban_rural_basis": "Sonipat district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and industry on the Delhi–Panipat corridor.\"}",
+    "mla_name": "Devender Kadyan",
+    "mla_party": "Independent",
+    "constituency": "GANAUR",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 15.9 km outside the buffer; Gannaur STP discharges to the Yamuna. Wikipedia infobox population is dated 2011 census, not 2011; see population_basis. Sex ratio is the Sonipat district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0,
+     29.07
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Indri",
+    "state": "Haryana",
+    "population_2011": 17487,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "69.47",
+    "sex_ratio": 887,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture (rice, wheat) and trade.\"}",
+    "mla_name": "Ram Kumar Kashyap",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "INDRI",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 11.6 km outside the buffer; Indri STP discharges to the Yamuna. Sex ratio is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.07,
+     29.88
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gharaunda",
+    "state": "Haryana",
+    "population_2011": 30179,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "81.10",
+    "sex_ratio": 887,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and grain trade.\"}",
+    "mla_name": "Harvinder Kalyan",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Gharaunda",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia \"Gharaunda Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Winner from Wikipedia AC article (MyNeta Haryana list has no Gharaunda winner row). Tier 2: 13.9 km outside the buffer; Gharaunda STP discharges to the Yamuna. Wikipedia infobox population is dated 2001, not 2011; see population_basis. Sex ratio is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.97,
+     29.54
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Chhachhrauli",
+    "state": "Haryana",
+    "population_2011": 10533,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "6.73",
+    "population_density_per_sqkm": "1565.1",
+    "literacy_pct": "75.00",
+    "sex_ratio": 877,
+    "urban_pct": "38.94",
+    "rural_pct": "61.06",
+    "urban_rural_basis": "Yamunanagar district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture.\"}",
+    "mla_name": "Akram Khan",
+    "mla_party": "Indian National Congress (INC)",
+    "constituency": "JAGADHRI",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Chhachhrauli is in Jagadhri AC (confirmed in the Jagadhri AC article). Tier 2: 14.6 km outside the buffer; Chhachhrauli STP discharges to the Yamuna. Sex ratio is the Yamunanagar district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.37,
+     30.25
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nilokheri",
+    "state": "Haryana",
+    "population_2011": 16405,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "73.00",
+    "sex_ratio": 887,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and dairy.\"}",
+    "mla_name": "Bhagwan Das KabirPanthi",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Nilokheri",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia \"Nilokheri Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Winner from Wikipedia AC article (MyNeta Haryana list has no Nilokheri winner row). Tier 2: 25.3 km outside the buffer; Nilokheri STP discharges to the Yamuna. Sex ratio is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.92,
+     29.83
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Taraori",
+    "state": "Haryana",
+    "population_2011": 25945,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "62.00",
+    "sex_ratio": 887,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture (basmati) and grain trade.\"}",
+    "mla_name": "Bhagwan Das KabirPanthi",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Nilokheri",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia \"Nilokheri Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Taraori is in Nilokheri tehsil, Nilokheri AC. Winner from Wikipedia AC article. Tier 2: 21.4 km outside the buffer; Taraori STP discharges to the Yamuna. Sex ratio is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.94,
+     29.78
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nissing",
+    "state": "Haryana",
+    "population_2011": 17438,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "74.73",
+    "sex_ratio": 887,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture.\"}",
+    "mla_name": "Bhagwan Das KabirPanthi",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Nilokheri",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia \"Nilokheri Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Nissing is in Nilokheri tehsil, Nilokheri AC. Winner from Wikipedia AC article. Tier 2: 41.1 km outside the buffer; Nissing STP discharges to the Yamuna. Literacy is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure. Sex ratio is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.75,
+     29.69
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Asandh",
+    "state": "Haryana",
+    "population_2011": 27125,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "70.90",
+    "sex_ratio": 887,
+    "urban_pct": "26.00",
+    "rural_pct": "74.00",
+    "urban_rural_basis": "Karnal district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture.\"}",
+    "mla_name": "Yoginder Singh Rana",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "ASSANDH",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 41.9 km outside the buffer; Asandh STP discharges to the Yamuna. Sex ratio is the Karnal district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.72,
+     29.51
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gohana",
+    "state": "Haryana",
+    "population_2011": 65708,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "78.00",
+    "sex_ratio": 856,
+    "urban_pct": "22.17",
+    "rural_pct": "77.83",
+    "urban_rural_basis": "Sonipat district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and industry.\"}",
+    "mla_name": "Arvind Kumar Sharma",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "GOHANA",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 26.2 km outside the buffer; Gohana STP discharges to the Yamuna. Wikipedia infobox population is dated 2017, not 2011; see population_basis. Sex ratio is the Sonipat district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.9,
+     29.13
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kharkhoda",
+    "state": "Haryana",
+    "population_2011": 25051,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "89.00",
+    "sex_ratio": 856,
+    "urban_pct": "22.17",
+    "rural_pct": "77.83",
+    "urban_rural_basis": "Sonipat district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and industry.\"}",
+    "mla_name": "Pawan Kharkhoda",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "Kharkhoda",
+    "mla_election_year": 2024,
+    "mla_source": "Wikipedia \"Kharkhoda Assembly constituency\" article (current MLA in infobox), Nov 2026; constituency absent from the MyNeta winners table",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Winner from Wikipedia AC article (MyNeta Haryana list has no Kharkhoda winner row). Tier 2: 33.0 km outside the buffer; Kharkhoda STP discharges to the Yamuna. Sex ratio is the Sonipat district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.911561,
+     28.876681
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ballabhgarh",
+    "state": "Haryana",
+    "population_2011": 214894,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "81.70",
+    "sex_ratio": 850,
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "Faridabad district urban share not available in the district sources used; see people_NOTES.md",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Industry (Faridabad industrial area) and agriculture.\"}",
+    "mla_name": "Mool Chand Sharma",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "BALLABHGARH",
+    "mla_election_year": 2024,
+    "mla_source": "MyNeta (ADR) winners list, Haryana assembly election 2024",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 15.2 km outside the buffer; Gocchi Drain (Ballabhgarh) discharges to the Yamuna. Literacy is the Faridabad district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.325556,
+     28.342222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Goverdhan",
+    "state": "Uttar Pradesh",
+    "population_2011": 22576,
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "62.00",
+    "sex_ratio": 863,
+    "urban_pct": "29.68",
+    "rural_pct": "70.32",
+    "urban_rural_basis": "Mathura district, Census 2011 (urban share of district population)",
+    "livelihoods": "{\"basis\": \"Qualitative only, district-level. No worker-category (cultivator / agricultural labourer / household industry / other) split was available in the district sources used for the Yamuna towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage tourism (Govardhan parikrama) and agriculture.\"}",
+    "mla_name": "Meghshyam",
+    "mla_party": "Bharatiya Janata Party (BJP)",
+    "constituency": "GOVERDHAN",
+    "mla_election_year": 2022,
+    "mla_source": "MyNeta (ADR) winners list, Uttar Pradesh assembly election 2022",
+    "data_vintage": "2011",
+    "coord_source": "Wikipedia article coordinates (Nov 2026)",
+    "notes": "Tier 2: 23.6 km outside the buffer; Goverdhan STP (2.5 MLD) discharges to the Yamuna (NGT Table 3). Sex ratio is the Mathura district figure (Census 2011 via census2011.co.in), not a town figure.",
+    "featured": "False"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.47,
+     27.5
+    ]
+   }
+  }
+ ]
+}
