@@ -467,7 +467,9 @@ function buildLayers() {
           lat += Math.sin(a) * r; lng += Math.cos(a) * r;
         }
         const m = L.marker([lat, lng], { icon: stpIcon(f.properties, R.maxStpCap) });
-        m.on('click', () => showStp(f.properties));
+        /* Godavari properties carry no lat/lon — pass the geometry coords
+           through so the card can show the plant's actual location. */
+        m.on('click', () => showStp(Object.assign({}, f.properties, { _lat: f.geometry.coordinates[1], _lon: f.geometry.coordinates[0] })));
         m.bindTooltip('<b>' + esc(f.properties.plant_name) + '</b><br>' + esc(f.properties.town) + ' · ' + num(f.properties.capacity_mld, 0) + ' MLD');
         sc.addLayer(m);
       });
@@ -627,7 +629,7 @@ function renderLegend() {
       const s = Math.round(13 + 26 * Math.sqrt(Math.min(v, maxLoad) / maxLoad));
       return '<span class="sc">' + drop('#dc2626', s) + '<br>' + v + ' t/day</span>';
     }).join('') + '</div>' +
-    '<p style="font-size:12px;color:var(--muted);margin:4px 0 0">Drain load, tonnes per day. Zoom in: clusters split into single points. Plant locations are town centroids &mdash; no public source gives plant-site coordinates.</p>';
+    '<p style="font-size:12px;color:var(--muted);margin:4px 0 0">Drain load, tonnes per day. Zoom in: clusters split into single points. Plant locations: 33 of 151 Ganga plants and 15 of 149 Godavari plants are now plotted at their actual sites, verified on satellite imagery; the rest are town centroids.</p>';
 }
 $('#legendBtn').addEventListener('click', () => {
   const p = $('#legendPanel');
@@ -668,6 +670,29 @@ function actionBox(what, who) {
 function explainerBOD() {
   return '<p class="note-box"><b>BOD</b> — Biochemical Oxygen Demand: the oxygen microbes need to break down the organic pollution in water. Higher BOD = more polluted. Bathing standard: 3 mg/l or less.</p>';
 }
+/* Prominent type label at the top of every detail card, so the card always
+   says what kind of thing it is about (drain, STP, monitoring station...). */
+function typeChip(label, desc, color) {
+  return '<div class="type-chip" style="--chip:' + color + '"><span class="type-chip-label">' + esc(label) + '</span><span class="type-chip-desc">' + esc(desc) + '</span></div>';
+}
+/* Location line for an STP card, driven by coord_accuracy. Coordinates come
+   from latitude/longitude where the file carries them (Ganga) or from _lat/_lon
+   wired through from the feature geometry at the call site (Godavari, whose
+   properties carry no lat/lon). Never invents coordinates: no coords, no coords shown. */
+function stpLocationLine(p) {
+  const lat = p.latitude != null ? +p.latitude : (p._lat != null ? +p._lat : null);
+  const lon = p.longitude != null ? +p.longitude : (p._lon != null ? +p._lon : null);
+  const coords = (lat != null && lon != null && !isNaN(lat) && !isNaN(lon))
+    ? ' (' + lat.toFixed(4) + ', ' + lon.toFixed(4) + ')' : '';
+  if (p.coord_accuracy === 'satellite-verified') {
+    return '<p class="note-box"><span class="badge green">Satellite-verified location</span>' +
+      (p.coord_confidence ? ' <span class="badge grey">' + esc(p.coord_confidence) + ' confidence</span>' : '') +
+      '<br>This plant is plotted at its actual site, found on satellite imagery' + esc(coords) +
+      ', not at the town centre.</p>';
+  }
+  return '<p class="note-box"><span class="badge grey">Town centroid — approximate location</span>' +
+    '<br>This plant is plotted at the town centre — no plant-site coordinate has been verified yet.</p>';
+}
 function showDrain(p) {
   const R = RIVERS[p._river];
   const load = +p.bod_load_tpd;
@@ -680,7 +705,7 @@ function showDrain(p) {
     : load >= 50 ? 'One of the worst drains on this river — ' + num(load) + ' tonnes of BOD a day, ' + (p.tapped === true ? 'partly intercepted' : 'entirely untapped') + '.'
     : load >= 10 ? 'A large drain — ' + num(load) + ' tonnes of BOD a day into the river.'
     : 'A small drain by load — ' + num(load) + ' tonnes of BOD a day. Small, but still raw sewage: a drain is never green.';
-  let html = '<h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.source_type || '') + ' · ' + esc(p.river || '') + '</p>';
+  let html = typeChip('Drain', 'Carries sewage and wastewater into the river.', '#dc2626') + '<h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.source_type || '') + ' · ' + esc(p.river || '') + '</p>';
   html += takeaway(take);
   html += '<p>' + statusBadge + ' <span class="badge ' + (measured ? 'green' : p.data_status === 'estimated' ? 'amber' : 'grey') + '">' + esc(p.data_status || 'unknown') + '</span></p>';
   html += '<div class="kv">' +
@@ -721,7 +746,7 @@ function showStp(p) {
   const R = RIVERS[p._river];
   const isNew = p.is_new_plant === true;
   const util = p.utilisation_pct != null ? +p.utilisation_pct : (p.capacity_mld && p.utilised_mld != null ? (+p.utilised_mld / +p.capacity_mld) * 100 : null);
-  let html = '<h2>' + esc(p.plant_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
+  let html = typeChip('Sewage treatment plant', 'Treats sewage before it reaches the river.', '#6d28d9') + '<h2>' + esc(p.plant_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
   const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : p._river === 'yamuna' ? 'only 3 of 115 plants on the Yamuna do.' : p._river === 'sabarmati' ? 'the first on the Sabarmati to do so.' : p._river === 'cauvery' ? 'the first on the Cauvery to do so.' : 'one of only 3 plants on the Godavari that do — Shirdi (16 MLD), Pathanpura (45 MLD) and Rehmat Nagar (25 MLD).')
     : p.ngt_compliant === false ? 'Fails NGT norms' + (p.noncompliance_reason ? ' — ' + esc(p.noncompliance_reason) : '.') + ' Treated sewage that is still too dirty to meet the standard.'
     : 'Never assessed against NGT norms — its outlet quality is not publicly graded.';
@@ -790,13 +815,13 @@ function showStp(p) {
       'Plant operator under ' + (p.state === 'Delhi' ? 'Delhi Jal Board' : R.stateAgency[p.state] || STATE_AGENCY_DEFAULT) + ' · State Pollution Control Board enforces outlet norms set by CPCB');
     html += srcLine(p.source, p.as_of);
   }
-  html += '<p class="note-box">All plant locations on this map are town centroids — no public source gives plant-site coordinates.</p>';
+  html += stpLocationLine(p);
   openPanel(html);
 }
 function showWq(p) {
   const bod = +p.bod_latest, doV = +p.do_latest;
   const over = !isNaN(bod) && bod > 3;
-  let html = '<h2>' + esc(p.station) + '</h2><p class="sub">' + esc(p.state) + ' · water-quality station · ' + esc(p.source || 'Ganga Knowledge Portal') + '</p>';
+  let html = typeChip('Water-quality monitoring station', 'Where river water is sampled and tested.', '#0369a1') + '<h2>' + esc(p.station) + '</h2><p class="sub">' + esc(p.state) + ' · water-quality station · ' + esc(p.source || 'Ganga Knowledge Portal') + '</p>';
   html += takeaway(isNaN(bod) ? 'No recent BOD reading published for this station.'
     : over ? 'Latest BOD ' + num(bod) + ' mg/l — ' + Math.round(bod / 3 * 10) / 10 + '× the 3 mg/l bathing standard. This stretch is not safe for bathing.'
     : 'Latest BOD ' + num(bod) + ' mg/l — within the 3 mg/l bathing standard.');
@@ -832,7 +857,7 @@ function showWq(p) {
   openPanel(html);
 }
 function showCourse(p) {
-  let html = '<h2>' + esc(p.drain_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · drain course to the river</p>';
+  let html = typeChip('Drain course', 'The path this drain takes to the river.', '#b45309') + '<h2>' + esc(p.drain_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · drain course to the river</p>';
   html += takeaway('This drain runs ' + num(p.course_length_km) + ' km to the river, adding ' + num(p.bod_load_tpd) + ' tonnes of BOD a day — ' + (p.tapped_status === 'Tapped' ? 'intercepted' : 'untapped') + '.');
   html += '<div class="kv">' +
     '<div class="cell"><div class="k">Length</div><div class="v">' + num(p.course_length_km) + ' <small>km</small></div></div>' +
@@ -846,7 +871,7 @@ function showCourse(p) {
   openPanel(html);
 }
 function showIndustry(p) {
-  let html = '<h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.industry_type || '') + ' · ' + esc(p.town) + ' · ' + esc(p.state) + '</p>';
+  let html = typeChip('Industry', 'Industrial unit in the river catchment.', '#475569') + '<h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.industry_type || '') + ' · ' + esc(p.town) + ' · ' + esc(p.state) + '</p>';
   html += takeaway('Industry on the ' + esc(p.drain_name || 'river') + ' catchment. ' + (p.effluent_mld ? 'Consented/design effluent: ' + num(p.effluent_mld) + ' MLD.' : 'No effluent figure published for this unit.'));
   if (p.effluent_mld) html += '<div class="kv"><div class="cell"><div class="k">Effluent (consented/design)</div><div class="v">' + num(p.effluent_mld) + ' <small>MLD</small></div></div>' +
     '<div class="cell"><div class="k">Linked drain</div><div class="v" style="font-size:13px">' + esc(p.drain_name || 'catchment only') + '</div></div></div>';
@@ -863,7 +888,7 @@ function showTown(p) {
   const t = townStats(river, p.town);
   const anchor = river === 'ganga' && ANCHOR_TOWNS.includes(p.town);
   const rr = anchor && state.religionRuling ? state.religionRuling[p.town] : null;
-  let html = '<h2>' + esc(p.town) + '</h2><p class="sub">' + esc(p.state) + ' · Census 2011 town · ' + esc(p.population_basis || '') + '</p>';
+  let html = typeChip('Town', 'Town on the river corridor.', '#2563eb') + '<h2>' + esc(p.town) + '</h2><p class="sub">' + esc(p.state) + ' · Census 2011 town · ' + esc(p.population_basis || '') + '</p>';
   if (state.userLoc) {
     const feat = state.data[river].people.features.find((f) => f.properties.town === p.town);
     if (feat && feat.geometry) {
@@ -1001,7 +1026,7 @@ function openItemCard(kind, river, key) {
   if (!f) return;
   const p = f.properties;
   if (kind === 'drain') showDrain(p);
-  else if (kind === 'stp') showStp(p);
+  else if (kind === 'stp') showStp(Object.assign({}, p, { _lat: f.geometry ? f.geometry.coordinates[1] : null, _lon: f.geometry ? f.geometry.coordinates[0] : null }));
   else if (kind === 'town') showTown(p);
   else if (kind === 'wq') showWq(p);
 }
@@ -1138,7 +1163,7 @@ function renderDataTabSingle(river) {
       '<p>HAM concessions cover 18 plants / 918 MLD (34.8% of capacity), all with 15-year O&amp;M. The largest operator is KMDA (29 plants / 470 MLD). Kanpur&rsquo;s six plants sit with Kanpur River Management Pvt Ltd (Shapoorji Pallonji + SSG); Prayagraj&rsquo;s nine with Prayagraj Water Pvt Ltd.</p>';
     $('#methodText').innerHTML =
       '<p><b>Drains (609):</b> extracted from the CPCB report &ldquo;Status of drains, Pre-Monsoon 2023&rdquo; (437 main stem + 172 tributaries). Measured totals match the published CPCB figures (14,097.51 MLD flow; 585.17 TPD BOD). 63 drains were unmeasured in the report; their loads were estimated by apportioning each town&rsquo;s estimated sewage (population × 185 litres per person per day × 0.8) equally across that town&rsquo;s unmeasured drains — 1,861.68 MLD / 465.42 TPD across 64 drains — and every estimated value is labelled as estimated with the method. Note: the CPCB PDF itself could not be downloaded (its host returned errors), so extraction used a search-engine full-text copy of the PDF; re-check against the original when the host recovers.</p>' +
-      '<p><b>Treatment plants (145 + 6 new):</b> CPCB National Inventory of STPs (Mar 2021) plus NGRBA state reports 2022–23, joined to budgets, operators, O&amp;M and effluent measurements. All points are town centroids — no public source gives plant-site coordinates. Six plants commissioned or expanded in 2024–2026 are listed with no coordinates and are never plotted.</p>' +
+      '<p><b>Treatment plants (145 + 6 new):</b> CPCB National Inventory of STPs (Mar 2021) plus NGRBA state reports 2022–23, joined to budgets, operators, O&amp;M and effluent measurements. 33 of the 151 plants are now plotted at their actual sites, verified on satellite imagery (Prayagraj, Varanasi, Kanpur, Patna, Haridwar); the rest remain town centroids. Four of the six plants commissioned or expanded in 2024–2026 (Assi-BHU, Shuklaganj, North Barrackpore, Chakdah) are listed with no coordinates and are never plotted; the other two (Kankarbagh, Digha) now have satellite-verified sites.</p>' +
       '<p><b>Water quality (115 stations):</b> Ganga Knowledge Portal (gyanganga.ai), BOD/DO/pH series 2014–2025; 112 stations current to 2025. Five stations have no coordinates and are never plotted.</p>' +
       '<p><b>Population:</b> a 10 km buffer around the river centreline, summed from GHSL GHS-POP R2023A (2020) with a WorldPop 2020 cross-check — presented as a range (74–81 million). The &gt;500 million figure sometimes quoted is the whole Ganga basin, not the corridor, and is never used as the corridor figure. Town populations are Census of India 2011.</p>';
     $('#sourceList').innerHTML =
@@ -1153,7 +1178,7 @@ function renderDataTabSingle(river) {
       '<li>OpenStreetMap (river centrelines) — non-government, labelled as such</li>';
     $('#gapsList').innerHTML =
       '<li><b>63 drains unmeasured</b> in the CPCB report — their loads are estimated, not measured, and labelled so.</li>' +
-      '<li><b>No plant-site coordinates exist publicly</b> — all 145 plant points are town centroids; 7 plants (incl. the 6 commissioned 2024–2026) have no coordinates at all and are never plotted.</li>' +
+      '<li><b>Most plant points are still town centroids</b> — 33 of 151 plants are now plotted at their actual sites, verified on satellite imagery; 5 plants (incl. 4 commissioned 2024–2026) have no coordinates at all and are never plotted, and 2 more (Phaphamau, Jhunsi) could not be confirmed on satellite and stay at the town centroid.</li>' +
       '<li><b>5 water-quality stations</b> have no coordinates and are never plotted.</li>' +
       '<li><b>Funds released vs utilised: disclosed for 0 of 145 plants.</b> The money trail cannot be checked from public sources.</li>' +
       '<li><b>Annual O&amp;M disclosed for only 27 plants</b> (all in Uttar Pradesh); Bihar and Jharkhand publish no O&amp;M figure at all.</li>' +
@@ -1293,7 +1318,7 @@ function renderDataTabSingle(river) {
       '<p><b>Operators:</b> no operator is named except SCCL Rudrampur and AMC O&amp;M (Aurangabad).</p>';
     $('#methodText').innerHTML =
       '<p><b>Drains (97):</b> Maharashtra, Telangana and Andhra Pradesh Monthly Progress Reports plus the NEERI Nashik study (2013–14) — no CPCB drain inventory exists for the Godavari. One drain is measured (Nashik city nallas aggregate, 68 MLD × 125 mg/l BOD, NEERI 2014 = 8.5 TPD); one is estimated (Rajahmundry Nalla Channel, 55 MLD × 250 mg/l raw-sewage BOD, the same method as the Ganga estimates); 95 are unmeasured (named in an MPR, no published flow or BOD). Measured and estimated totals are always shown separately and never summed. Telangana MPRs count 83 more drains but never name or locate them, so they are not in this file.</p>' +
-      '<p><b>Treatment plants (149):</b> CPCB National Inventory of STPs, March 2021, Maharashtra MPR March 2026, Telangana MPRs (June 2020, June–August 2022) and AP MPR January 2025. Capacity 2,648.0 MLD (Maharashtra 70 plants, Telangana 76, Andhra Pradesh 3); operational 44, under construction 18, not in operation 7, proposed 80 (510.5 MLD). Utilisation known for 46 plants (1,053.95 MLD). NGT compliance is graded from per-plant effluent values in the Maharashtra MPR March 2026 annexure where published — but those values were not carried into the plant rows, so outlet-quality bars cannot be shown. All points are town centroids — no public source gives plant-site coordinates.</p>' +
+      '<p><b>Treatment plants (149):</b> CPCB National Inventory of STPs, March 2021, Maharashtra MPR March 2026, Telangana MPRs (June 2020, June–August 2022) and AP MPR January 2025. Capacity 2,648.0 MLD (Maharashtra 70 plants, Telangana 76, Andhra Pradesh 3); operational 44, under construction 18, not in operation 7, proposed 80 (510.5 MLD). Utilisation known for 46 plants (1,053.95 MLD). NGT compliance is graded from per-plant effluent values in the Maharashtra MPR March 2026 annexure where published — but those values were not carried into the plant rows, so outlet-quality bars cannot be shown. 15 of the 149 plants are now plotted at their actual sites, verified on satellite imagery (Nashik 10, Nagpur 5); the rest remain town centroids.</p>' +
       '<p><b>Water quality (86 stations):</b> snapshots, not a continuous series — 70 stations carry CPCB Polluted River Stretches 2022 maxima (2019–21, stored as 2021 values); Telangana stations have June–July 2021 monthly samples (the only two comparable points); Andhra Pradesh stations are single January 2025 values. No station has a continuous annual series. No Indravati/Sabari stations; no Chhattisgarh/Odisha MPR was obtained.</p>' +
       '<p><b>Population:</b> a 10 km buffer around the Godavari centreline (OSM relation 2826093, 1,511.3 km), summed from GHSL GHS-POP R2023A (2020) — 10.63 million — with a WorldPop 2020 cross-check of 10.56 million, only 0.6% apart. Town populations are Census of India 2011; all 87 towns have a verified figure.</p>';
     $('#sourceList').innerHTML =
@@ -1314,7 +1339,7 @@ function renderDataTabSingle(river) {
       '<li><b>Telangana STP status after 2022 is unknown</b> — the newest Telangana MPR is June–August 2022.</li>' +
       '<li><b>No drain courses;</b> no tributary centrelines drawn (main stem only); delta distributaries (Gautami/Vasishta) not drawn as separate lines.</li>' +
       '<li><b>Godavari towns have no religion shares, no 20-year ruling history and no urban/rural split</b> compiled — the flyout says so plainly; literacy is blank for 55 towns.</li>' +
-      '<li><b>All points are town centroids</b> — no public source gives plant-site or drain-site coordinates. River length is 1,511.3 km on the OSM centreline vs 1,465 km published — the OSM line follows meanders.</li>' +
+      '<li><b>Most plant points are still town centroids</b> — 15 of 149 plants are now plotted at their actual sites, verified on satellite imagery; drain points are all town centroids, no public source gives drain-site coordinates. River length is 1,511.3 km on the OSM centreline vs 1,465 km published — the OSM line follows meanders.</li>' +
       '<li><b>One conflict is unresolved:</b> the Nashik new-STP plan (MPR March 2026) vs the September 2026 Kumbh plan — only the Kumbh plan is recorded, to avoid double-counting ~210 MLD.</li>';
   }
   const dl = $('#downloadList');
