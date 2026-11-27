@@ -134,9 +134,10 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   (satellite-verified vs town centroid) and corrected
   town-centroid copy for Ganga + Godavari. Done 2026-11-27 by
   vikas.singh.76 — branch `vikas.singh.76/detail-type-label`,
-  PR open, not merged. Yamuna / Sabarmati / Cauvery copy untouched
-  (still true). Known follow-up, not fixed here: the header count
-  "146 of 145 plants" inconsistency noted in the live test.
+  PR #4 merged 2026-11-27 (merge commit `a3c972dc`). Yamuna /
+  Sabarmati / Cauvery copy untouched (still true). Known follow-up,
+  not fixed here: the header count "146 of 145 plants"
+  inconsistency noted in the live test.
 - [ ] Add a LICENSE and a short contributing note for this file. — unclaimed
 - [ ] Check performance and mobile: app.js is ~136 KB, repo ~6.7 MB;
   test load on a phone and on a slow connection. — unclaimed
@@ -152,12 +153,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Detail-card type labels (vikas.singh.76, 2026-11-27): prominent
-  type chip on every detail card + accurate STP location line +
-  Ganga/Godavari town-centroid copy fixes, on branch
-  `vikas.singh.76/detail-type-label` — PR open, not merged.
-  Godavari STP PR #3 is merged (merge commit `a8b69d2b`), so no
-  second STP-location edit is blocked by it any more.
+- Vercel Analytics script → CDN endpoint (vikas.singh.76,
+  2026-11-27): swap the analytics script in `index.html` from
+  `/_vercel/insights/script.js` to Vercel's official v2 CDN script
+  `https://cdn.vercel-insights.com/v1/script.js`, on branch
+  `vikas.singh.76/vercel-analytics-cdn`. Replicates the Vercel
+  bot's PR #5 (still a draft, so merged via this PR instead).
 
 ## Open questions for the user
 
@@ -183,11 +184,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Dinapur uses satellite centre 25.3472, 83.0470 (Google pins are
   400-900 m off); Kankarbagh 30 MLD sits at the Pahari site per NMCG
   (MEDIUM); Sarai 18 MLD is MEDIUM (could be a leachate unit).
-  Branch `vikas.singh.76/ganga-stp-locations`, PR open, not merged.
-  Nashik/Godavari corrections (5 sites) verified the same day but
-  held for a separate PR after this one. Next step: water-quality
-  stations, then drains, then industries (user expanded scope to
-  all locations).
+  Branch `vikas.singh.76/ganga-stp-locations`, PR #1 merged
+  2026-11-27 (merge commit `739023c1`). Nashik/Godavari
+  corrections (5 sites) verified the same day but held for a
+  separate PR after this one. Next step: water-quality stations,
+  then drains, then industries (user expanded scope to all
+  locations).
 - 2026-11-27 — vikas.singh.76: Fixed Godavari STP locations
   (Nashik + Nagpur), after Ganga PR #1 merged (merge commit
   `739023c1`). 15 plants moved to 10 sites in
@@ -240,6 +242,18 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   town-centroid. Legend note and Ganga + Godavari Data-tab copy
   corrected to the truth (33 of 151 Ganga, 15 of 149 Godavari
   satellite-verified); Yamuna / Sabarmati / Cauvery copy untouched.
-  Branch `vikas.singh.76/detail-type-label`, PR open, not merged.
-  Known follow-up, not fixed here: the "146 of 145 plants"
-  header-count inconsistency noted in the live test.
+  Branch `vikas.singh.76/detail-type-label`, PR #4 merged
+  2026-11-27 (merge commit `a3c972dc`). Known follow-up, not
+  fixed here: the "146 of 145 plants" header-count inconsistency
+  noted in the live test.
+- 2026-11-27 — vikas.singh.76: Analytics script switched to
+  Vercel's CDN endpoint. One line in `index.html`: the script src
+  goes from `/_vercel/insights/script.js` to
+  `https://cdn.vercel-insights.com/v1/script.js` (Vercel's official
+  v2 script, verified against Vercel's own docs and by fetching
+  the script). The old path 404s until Web Analytics is enabled
+  in the dashboard; the CDN script loads regardless. Data still
+  flows only after the dashboard enablement (user is handling
+  that separately). This replicates the Vercel bot's PR #5, which
+  is still a draft and cannot be merged — this PR supersedes it.
+  Branch `vikas.singh.76/vercel-analytics-cdn`.
