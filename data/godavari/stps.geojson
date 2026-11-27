@@ -1,0 +1,4177 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-001",
+    "plant_name": "Chehedi STP Ph-I 22 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "UASB",
+    "capacity_mld": "22",
+    "operational_status": "operational",
+    "utilised_mld": "22",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-002",
+    "plant_name": "Chehedi STP Ph-II 21 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "21",
+    "operational_status": "operational",
+    "utilised_mld": "21",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-003",
+    "plant_name": "Panchak STP Ph-I 7.5 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "7.5",
+    "operational_status": "operational",
+    "utilised_mld": "7.5",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-004",
+    "plant_name": "Panchak STP Ph-II 21 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "21",
+    "operational_status": "operational",
+    "utilised_mld": "21",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-005",
+    "plant_name": "Panchak STP Ph-III 32 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "UASB+MBBR",
+    "capacity_mld": "32",
+    "operational_status": "operational",
+    "utilised_mld": "32",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-006",
+    "plant_name": "Tapovan STP Ph-I 78 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "UASB+Extended Aeration",
+    "capacity_mld": "78",
+    "operational_status": "operational",
+    "utilised_mld": "78",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-007",
+    "plant_name": "Tapovan STP Ph-II 52 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "UASB+Extended Aeration",
+    "capacity_mld": "52",
+    "operational_status": "operational",
+    "utilised_mld": "52",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-008",
+    "plant_name": "Agar Takali STP Ph-I 70 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "70",
+    "operational_status": "operational",
+    "utilised_mld": "70",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-009",
+    "plant_name": "Agar Takali STP Ph-II 40 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "UASB+MBBR",
+    "capacity_mld": "40",
+    "operational_status": "operational",
+    "utilised_mld": "40",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-010",
+    "plant_name": "Gangapur STP 18 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "18",
+    "operational_status": "operational",
+    "utilised_mld": "18",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-011",
+    "plant_name": "Pimpalgaon Baswant STP 32 MLD",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "32",
+    "operational_status": "operational",
+    "utilised_mld": "32",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-012",
+    "plant_name": "Deolali STP 11 MLD",
+    "town": "Deolali",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "11",
+    "operational_status": "operational",
+    "utilised_mld": "6.5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Deolali, Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422400, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8319469,
+     19.9183943
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-013",
+    "plant_name": "Tryambakeshwar STP 1 MLD",
+    "town": "Trimbakeshwar",
+    "state": "Maharashtra",
+    "technology": "FAB",
+    "capacity_mld": "1",
+    "operational_status": "operational",
+    "utilised_mld": "1",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Trimbakeshwar Temple, Patil Gali, Trimbak, Trimbakeshwar Subdistrict, Nashik, Maharashtra, 422212, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.5307549,
+     19.9321202
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-014",
+    "plant_name": "Tryambakeshwar STP 4.5 MLD",
+    "town": "Trimbakeshwar",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "4.5",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Trimbakeshwar Temple, Patil Gali, Trimbak, Trimbakeshwar Subdistrict, Nashik, Maharashtra, 422212, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.5307549,
+     19.9321202
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-015",
+    "plant_name": "Shirdi STP 16 MLD",
+    "town": "Shirdi",
+    "state": "Maharashtra",
+    "technology": "UASB",
+    "capacity_mld": "16",
+    "operational_status": "operational",
+    "utilised_mld": "4.2",
+    "ngt_compliant": "True",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Shirdi, Rahta, Ahilyanagar District, Maharashtra, 423109, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.4754386,
+     19.7668121
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-016",
+    "plant_name": "Kanchanwadi STP 161 MLD",
+    "town": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "161",
+    "operational_status": "operational",
+    "utilised_mld": "70",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chhatrapati Sambhajinagar, Maharashtra, 431002, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.3390241,
+     19.877263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-017",
+    "plant_name": "Padegaon STP 10 MLD",
+    "town": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "10",
+    "operational_status": "operational",
+    "utilised_mld": "2.5",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chhatrapati Sambhajinagar, Maharashtra, 431002, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.3390241,
+     19.877263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-018",
+    "plant_name": "Salim Ali Lake STP 5 MLD",
+    "town": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "5",
+    "operational_status": "not in operation",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chhatrapati Sambhajinagar, Maharashtra, 431002, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.3390241,
+     19.877263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-019",
+    "plant_name": "Zalta STP 35 MLD",
+    "town": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "35",
+    "operational_status": "operational",
+    "utilised_mld": "7.5",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chhatrapati Sambhajinagar, Maharashtra, 431002, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.3390241,
+     19.877263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-020",
+    "plant_name": "Banewadi STP 10 MLD",
+    "town": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "10",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chhatrapati Sambhajinagar, Maharashtra, 431002, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.3390241,
+     19.877263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-021",
+    "plant_name": "Elichpur STP 30 MLD",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "30",
+    "operational_status": "operational",
+    "utilised_mld": "12",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nanded, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-022",
+    "plant_name": "Bondar STP 87 MLD",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "87",
+    "operational_status": "operational",
+    "utilised_mld": "35",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nanded, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-023",
+    "plant_name": "Sangvi STP 15 MLD",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "15",
+    "operational_status": "operational",
+    "utilised_mld": "10",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nanded, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-024",
+    "plant_name": "Dunkin STP (Chunal nallah) 10 MLD",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "technology": "MBBR",
+    "capacity_mld": "10",
+    "operational_status": "operational",
+    "utilised_mld": "5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nanded, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-025",
+    "plant_name": "Bhandewadi STP 200 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "200",
+    "operational_status": "operational",
+    "utilised_mld": "200",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-026",
+    "plant_name": "Bhandewadi STP 130 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "130",
+    "operational_status": "operational",
+    "utilised_mld": "130",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-027",
+    "plant_name": "Mankapur STP 5 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "MBBR",
+    "capacity_mld": "5",
+    "operational_status": "operational",
+    "utilised_mld": "5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-028",
+    "plant_name": "Mokshadham STP 5 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "MBBR",
+    "capacity_mld": "5",
+    "operational_status": "operational",
+    "utilised_mld": "5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-029",
+    "plant_name": "Kachimet STP 1 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBT",
+    "capacity_mld": "1",
+    "operational_status": "operational",
+    "utilised_mld": "1",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-030",
+    "plant_name": "Sonegaon STP 0.3 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "Phytorid bed Trickling Filter",
+    "capacity_mld": "0.3",
+    "operational_status": "operational",
+    "utilised_mld": "0.3",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-031",
+    "plant_name": "Hazari Pahad STP 4 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "4",
+    "operational_status": "operational",
+    "utilised_mld": "4",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-032",
+    "plant_name": "Somalwada-1 STP 20 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "20",
+    "operational_status": "operational",
+    "utilised_mld": "20",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-033",
+    "plant_name": "Somalwada-2 STP 20 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "20",
+    "operational_status": "operational",
+    "utilised_mld": "20",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-034",
+    "plant_name": "Ambazari STP 3.2 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "Phytorid bed Trickling Filter",
+    "capacity_mld": "3.2",
+    "operational_status": "operational",
+    "utilised_mld": "3.2",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-035",
+    "plant_name": "Dabha STP 5 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "5",
+    "operational_status": "operational",
+    "utilised_mld": "5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-036",
+    "plant_name": "Ittabhatti STP 10 MLD",
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "10",
+    "operational_status": "operational",
+    "utilised_mld": "10",
+    "ngt_compliant": "",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nagpur City, Nagpur Urban Taluka, Nagpur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0820556,
+     21.1498134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-037",
+    "plant_name": "Hinganghat STP 10 MLD",
+    "town": "Hinganghat",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "10",
+    "operational_status": "operational",
+    "utilised_mld": "6.25",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Hinganghat, Nagpur Adilabad Road, Hinganghat, Wardha, Maharashtra, 442300, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.8331636,
+     20.542611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-038",
+    "plant_name": "Hinganghat STP 3.5 MLD",
+    "town": "Hinganghat",
+    "state": "Maharashtra",
+    "technology": "ASP",
+    "capacity_mld": "3.5",
+    "operational_status": "operational",
+    "utilised_mld": "",
+    "ngt_compliant": "False",
+    "moefcc_compliant": "False",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Hinganghat, Nagpur Adilabad Road, Hinganghat, Wardha, Maharashtra, 442300, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.8331636,
+     20.542611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-049",
+    "plant_name": "Pathanpura STP 45 MLD",
+    "town": "Chandrapur",
+    "state": "Maharashtra",
+    "technology": "MBBR",
+    "capacity_mld": "45",
+    "operational_status": "operational",
+    "utilised_mld": "24",
+    "ngt_compliant": "True",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chandrapur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5045475,
+     20.0967555
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-050",
+    "plant_name": "Rehmat Nagar STP 25 MLD",
+    "town": "Chandrapur",
+    "state": "Maharashtra",
+    "technology": "MBBR",
+    "capacity_mld": "25",
+    "operational_status": "operational",
+    "utilised_mld": "22",
+    "ngt_compliant": "True",
+    "moefcc_compliant": "True",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chandrapur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5045475,
+     20.0967555
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-051",
+    "plant_name": "Azad Garden STP 0.5 MLD",
+    "town": "Chandrapur",
+    "state": "Maharashtra",
+    "technology": "MBBR",
+    "capacity_mld": "0.5",
+    "operational_status": "not in operation",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chandrapur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5045475,
+     20.0967555
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-052",
+    "plant_name": "Gadchiroli STP 11.5 MLD",
+    "town": "Gadchiroli",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "11.5",
+    "operational_status": "operational",
+    "utilised_mld": "5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Gadchiroli, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1622807,
+     19.7590704
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-053",
+    "plant_name": "Latur STP 32 MLD",
+    "town": "Latur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "32",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Latur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.7548997,
+     18.3553347
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-054",
+    "plant_name": "Latur STP 40 MLD",
+    "town": "Latur",
+    "state": "Maharashtra",
+    "technology": "SBR",
+    "capacity_mld": "40",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Latur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.7548997,
+     18.3553347
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-055",
+    "plant_name": "Kopargaon STP 13 MLD",
+    "town": "Kopargaon",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "13",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Kopargaon, Ahilyanagar District, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.4829123,
+     19.8370037
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-056",
+    "plant_name": "Paithan STP 8.8 MLD",
+    "town": "Paithan",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "8.8",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Paithan, Chhatrapati Sambhajinagar, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.4302638,
+     19.5835563
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-057",
+    "plant_name": "Gangakhed STP 10 MLD",
+    "town": "Gangakhed",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "10",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Gangakhed, Parbhani, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.7557068,
+     18.9130998
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-058",
+    "plant_name": "Parbhani Karegaon Road STP 2.5 MLD",
+    "town": "Parbhani",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "2.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Parbhani, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6026443,
+     19.2901981
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-059",
+    "plant_name": "Parbhani Vangi Road STP 18 MLD",
+    "town": "Parbhani",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "18",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Parbhani, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6026443,
+     19.2901981
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-060",
+    "plant_name": "Parbhani Agri. University STP 32 MLD",
+    "town": "Parbhani",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "32",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Parbhani, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6026443,
+     19.2901981
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-061",
+    "plant_name": "Beed STP 35 MLD",
+    "town": "Beed",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "35",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Beed, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.909784,
+     18.9918442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-062",
+    "plant_name": "Bhokar STP 6 MLD",
+    "town": "Bhokar",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhokar, Nanded, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.683399,
+     19.1948254
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-063",
+    "plant_name": "Mudkhed STP 4.5 MLD",
+    "town": "Mudkhed",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "4.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mudkhed, Nanded, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.501393,
+     19.1393504
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-064",
+    "plant_name": "Ardhapur STP 5.5 MLD",
+    "town": "Ardhapur",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "5.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ardhapur, Nanded, Maharashtra, 431704, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4149956,
+     19.269321
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-065",
+    "plant_name": "Wardha STP 10 MLD",
+    "town": "Wardha",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "10",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Wardha, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6131455,
+     20.8256231
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-066",
+    "plant_name": "Gondia STP 12 MLD",
+    "town": "Gondia",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "12",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Gondia City, Gondiya Taluka, Gondiya, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1962729,
+     21.455228
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-067",
+    "plant_name": "Bhandara STP 15 MLD",
+    "town": "Bhandara",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "15",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhandara, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.794509,
+     21.1225869
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-068",
+    "plant_name": "Pauni STP 7 MLD",
+    "town": "Pauni",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "7",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Pauni City, Pauni Taluka, Bhandara, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.6359627,
+     20.7926372
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-069",
+    "plant_name": "Mouda STP 1 MLD",
+    "town": "Mouda",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "1",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mouda by-pass, Mauda, Mauda Taluka, Nagpur, Maharashtra, 441104, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4138141,
+     21.147604
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-070",
+    "plant_name": "Kamptee STP 12.5 MLD",
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "12.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Kamptee, Kamptee Taluka, Nagpur, Maharashtra, 441404, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1964178,
+     21.2170645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-071",
+    "plant_name": "Ballarpur STP 7.5 MLD",
+    "town": "Ballarpur",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "7.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ballarpur, Ballarpur Taluka, Chandrapur, Maharashtra, 442701, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3480253,
+     19.8568413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-072",
+    "plant_name": "Ballarpur STP 8.5 MLD",
+    "town": "Ballarpur",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "8.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ballarpur, Ballarpur Taluka, Chandrapur, Maharashtra, 442701, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3480253,
+     19.8568413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-073",
+    "plant_name": "Bramhapuri STP 7 MLD",
+    "town": "Bramhapuri",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "7",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bramhapuri Town, Brahmapuri Taluka, Chandrapur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8585801,
+     20.608405
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-074",
+    "plant_name": "Rajura STP 5.5 MLD",
+    "town": "Rajura",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "5.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Rajura, Rajura Taluka, Chandrapur, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3657272,
+     19.7792814
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-075",
+    "plant_name": "Ghuggus STP 3.6 MLD",
+    "town": "Ghuggus",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "3.6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ghugus, Chandrapur Taluka, Chandrapur, Maharashtra, 442505, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1199701,
+     19.9433575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-076",
+    "plant_name": "Hingoli STP 15 MLD",
+    "town": "Hingoli",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "15",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Hingoli, Maharashtra, India",
+    "source": "Maharashtra Monthly Progress Report (NGT OA 673/2018), March 2026, STP summary table and detailed annexure (Sr. 94-243)",
+    "as_of": "2026-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1739432,
+     19.5431163
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-077",
+    "plant_name": "Tapovan STP 180 MLD (Kumbh 2027)",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "180",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-09",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "News reports on Kumbh 2027 Godavari rejuvenation programme (thenashikkumbh.com; kumbhmela.org.in), September 2026",
+    "as_of": "2026-09"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-078",
+    "plant_name": "Agartakli STP 97 MLD (Kumbh 2027)",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "97",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-09",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "News reports on Kumbh 2027 Godavari rejuvenation programme (thenashikkumbh.com; kumbhmela.org.in), September 2026",
+    "as_of": "2026-09"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-079",
+    "plant_name": "Chehedi STP 64 MLD (Kumbh 2027)",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "64",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-09",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "News reports on Kumbh 2027 Godavari rejuvenation programme (thenashikkumbh.com; kumbhmela.org.in), September 2026",
+    "as_of": "2026-09"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-MH-080",
+    "plant_name": "Panchak STP 75 MLD (Kumbh 2027)",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "technology": "",
+    "capacity_mld": "75",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-09",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nashik, Nashik Subdistrict, Nashik, Maharashtra, 422001, India",
+    "source": "News reports on Kumbh 2027 Godavari rejuvenation programme (thenashikkumbh.com; kumbhmela.org.in), September 2026",
+    "as_of": "2026-09"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-001",
+    "plant_name": "Karimnagar STP 38 MLD",
+    "town": "Karimnagar",
+    "state": "Telangana",
+    "technology": "MBBR",
+    "capacity_mld": "38",
+    "operational_status": "operational",
+    "utilised_mld": "2",
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Karimnagar, Karimnagar mandal, Karimnagar, Telangana, 505001, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1328042,
+     18.4348122
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-002",
+    "plant_name": "Nizamabad Dubba STP 31.5 MLD",
+    "town": "Nizamabad",
+    "state": "Telangana",
+    "technology": "MBBR",
+    "capacity_mld": "31.5",
+    "operational_status": "operational",
+    "utilised_mld": "6.5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nizamabad, Nizamabad South mandal, Nizamabad, Telangana, 503001, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.0978195,
+     18.6731912
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-003",
+    "plant_name": "Siddipet Yellamagutta STP 15 MLD",
+    "town": "Siddipet",
+    "state": "Telangana",
+    "technology": "MBBR",
+    "capacity_mld": "15",
+    "operational_status": "operational",
+    "utilised_mld": "2.5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Siddipet, Telangana, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.896113,
+     18.0055851
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-004",
+    "plant_name": "Siddipet Chintla Cheruvu STP 7.25 MLD",
+    "town": "Siddipet",
+    "state": "Telangana",
+    "technology": "MBBR",
+    "capacity_mld": "7.25",
+    "operational_status": "operational",
+    "utilised_mld": "5",
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Siddipet, Telangana, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.896113,
+     18.0055851
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-005",
+    "plant_name": "Siddipet Narsapur Cheruvu STP 11 MLD",
+    "town": "Siddipet",
+    "state": "Telangana",
+    "technology": "SBR",
+    "capacity_mld": "11",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Siddipet, Telangana, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.896113,
+     18.0055851
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-008",
+    "plant_name": "Ramagundam STP 4 MLD",
+    "town": "Ramagundam",
+    "state": "Telangana",
+    "technology": "OP",
+    "capacity_mld": "4",
+    "operational_status": "not in operation",
+    "utilised_mld": "0",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ramagundam, Ramagundam mandal, Peddapalli, Telangana, 505208, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4787848,
+     18.7615156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-009",
+    "plant_name": "Ramagundam Malkapur STP 14 MLD",
+    "town": "Ramagundam",
+    "state": "Telangana",
+    "technology": "OP",
+    "capacity_mld": "14",
+    "operational_status": "not in operation",
+    "utilised_mld": "0",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ramagundam, Ramagundam mandal, Peddapalli, Telangana, 505208, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4787848,
+     18.7615156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-010",
+    "plant_name": "Bhadrachalam STP 2 MLD",
+    "town": "Bhadrachalam",
+    "state": "Telangana",
+    "technology": "OP",
+    "capacity_mld": "2",
+    "operational_status": "not in operation",
+    "utilised_mld": "0",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhadrachalam, Bhadradri Kothagudem, Telangana, 507111, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.8940083,
+     17.6688019
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-011",
+    "plant_name": "Mancherial STP 4 MLD",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "technology": "OP",
+    "capacity_mld": "4",
+    "operational_status": "not in operation",
+    "utilised_mld": "0",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mancherial, Telangana, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Telangana annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-012",
+    "plant_name": "Mancherial STP 2.5 MLD",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "technology": "OP",
+    "capacity_mld": "2.5",
+    "operational_status": "not in operation",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2020-06",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June 2020",
+    "as_of": "2020-06"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-013",
+    "plant_name": "Kothagudem Rudrampur STP 1.5 MLD",
+    "town": "Kothagudem",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.5",
+    "operational_status": "operational",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-04",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhadrachalam Road, NH30, Kothagudem, Kothagudem mandal, Bhadradri Kothagudem, Telangana, 507101, India",
+    "source": "SCCL tender for O&M of 1.5 MLD STP, Rudrampur, Kothagudem (2026-27 and 2027-28)",
+    "as_of": "2026-04"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.6144535,
+     17.5512916
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-014",
+    "plant_name": "Warangal Reddypuram STP 100 MLD",
+    "town": "Warangal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "100",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Warangal, Warangal mandal, Warangal, Telangana, 506002, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5970954,
+     17.9820644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-015",
+    "plant_name": "Warangal Pragathinagar STP 15 MLD",
+    "town": "Warangal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "15",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Warangal, Warangal mandal, Warangal, Telangana, 506002, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5970954,
+     17.9820644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-016",
+    "plant_name": "Warangal Ursugutta STP 5 MLD",
+    "town": "Warangal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "5",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Warangal, Warangal mandal, Warangal, Telangana, 506002, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5970954,
+     17.9820644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-017",
+    "plant_name": "Sircilla Shanthinagar STP 19.1 MLD",
+    "town": "Sircilla",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "19.1",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Sircilla, Sircilla mandal, Rajanna Sircilla, Telangana, 505301, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.8085973,
+     18.3897573
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-018",
+    "plant_name": "Bellampally STP-1 8.5 MLD",
+    "town": "Bellampally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "8.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Government Ayurvedic Dispensary, Bellampally (NRHM), NH363, Bellampalli, Bellampalle mandal, Mancherial, Telangana, 504251, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.476587,
+     19.07529
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-019",
+    "plant_name": "Bellampally STP-2 4.5 MLD",
+    "town": "Bellampally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Government Ayurvedic Dispensary, Bellampally (NRHM), NH363, Bellampalli, Bellampalle mandal, Mancherial, Telangana, 504251, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.476587,
+     19.07529
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-020",
+    "plant_name": "Mandamarri STP-1 7 MLD",
+    "town": "Mandamarri",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "7",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mandamarri mandal, Mancherial, Telangana, 504301, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4877933,
+     18.9541568
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-021",
+    "plant_name": "Mandamarri STP-2 6 MLD",
+    "town": "Mandamarri",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mandamarri mandal, Mancherial, Telangana, 504301, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4877933,
+     18.9541568
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-022",
+    "plant_name": "Mandamarri STP-3 1 MLD",
+    "town": "Mandamarri",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mandamarri mandal, Mancherial, Telangana, 504301, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4877933,
+     18.9541568
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-023",
+    "plant_name": "Ramagundam STP-1 32 MLD",
+    "town": "Ramagundam",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "32",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ramagundam, Ramagundam mandal, Peddapalli, Telangana, 505208, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4787848,
+     18.7615156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-024",
+    "plant_name": "Ramagundam STP-2 9 MLD",
+    "town": "Ramagundam",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "9",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ramagundam, Ramagundam mandal, Peddapalli, Telangana, 505208, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4787848,
+     18.7615156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-025",
+    "plant_name": "Ramagundam STP-3 4 MLD",
+    "town": "Ramagundam",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Ramagundam, Ramagundam mandal, Peddapalli, Telangana, 505208, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4787848,
+     18.7615156
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-026",
+    "plant_name": "Jagtial STP-1 14.1 MLD",
+    "town": "Jagtial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "14.1",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Jagtial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.9150663,
+     18.821359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-027",
+    "plant_name": "Jagtial STP-2 4.9 MLD",
+    "town": "Jagtial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4.9",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Jagtial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.9150663,
+     18.821359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-028",
+    "plant_name": "Jagtial STP-3 0.6 MLD",
+    "town": "Jagtial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "0.6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Jagtial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.9150663,
+     18.821359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-029",
+    "plant_name": "Jagtial STP-4 0.56 MLD",
+    "town": "Jagtial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "0.56",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Jagtial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.9150663,
+     18.821359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-030",
+    "plant_name": "Metpally STP-1 4.3 MLD",
+    "town": "Metpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4.3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "TGSRTC Bus Depot , Metpally, Metpalli, Metpalli mandal, Jagtial, Telangana, 505325, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6335998,
+     18.8475412
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-031",
+    "plant_name": "Metpally STP-2 5.3 MLD",
+    "town": "Metpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "5.3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "TGSRTC Bus Depot , Metpally, Metpalli, Metpalli mandal, Jagtial, Telangana, 505325, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6335998,
+     18.8475412
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-032",
+    "plant_name": "Bhainsa STP-1 7.5 MLD",
+    "town": "Bhainsa",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "7.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhainsa, Bhainsa mandal, Nirmal, Telangana, 504103, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.9635656,
+     19.107085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-033",
+    "plant_name": "Bhainsa STP-2 2 MLD",
+    "town": "Bhainsa",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhainsa, Bhainsa mandal, Nirmal, Telangana, 504103, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.9635656,
+     19.107085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-034",
+    "plant_name": "Korutla STP-1 12.71 MLD",
+    "town": "Korutla",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "12.71",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Korutla, Korutla mandal, Jagtial, Telangana, 505326, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.7115693,
+     18.8257369
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-035",
+    "plant_name": "Manuguru STP-1 5 MLD",
+    "town": "Manuguru",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Manuguru, Manuguru mandal, Bhadradri Kothagudem, Telangana, 507117, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.8179917,
+     17.9383442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-036",
+    "plant_name": "Manuguru STP-2 1.2 MLD",
+    "town": "Manuguru",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Manuguru, Manuguru mandal, Bhadradri Kothagudem, Telangana, 507117, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.8179917,
+     17.9383442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-037",
+    "plant_name": "Armoor STP-1 4.1 MLD",
+    "town": "Armoor",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4.1",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Armoor, Armoor mandal, Nizamabad, Telangana, 503224, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2907202,
+     18.7904482
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-038",
+    "plant_name": "Armoor STP-2 6.5 MLD",
+    "town": "Armoor",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "6.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Armoor, Armoor mandal, Nizamabad, Telangana, 503224, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2907202,
+     18.7904482
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-039",
+    "plant_name": "Armoor STP-3 0.8 MLD",
+    "town": "Armoor",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "0.8",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Armoor, Armoor mandal, Nizamabad, Telangana, 503224, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.2907202,
+     18.7904482
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-040",
+    "plant_name": "Dharmapuri STP-1 2 MLD",
+    "town": "Dharmapuri",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Dharmapuri, Dharmapuri mandal, Jagtial, Telangana, 505425, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0954665,
+     18.9492756
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-041",
+    "plant_name": "Dharmapuri STP-2 1.7 MLD",
+    "town": "Dharmapuri",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.7",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Dharmapuri, Dharmapuri mandal, Jagtial, Telangana, 505425, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.0954665,
+     18.9492756
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-042",
+    "plant_name": "Chennur STP-1 3 MLD",
+    "town": "Chennur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chennur, Chennur mandal, Mancherial, Telangana, 504201, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7904908,
+     18.8555246
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-043",
+    "plant_name": "Chennur STP-2 2.5 MLD",
+    "town": "Chennur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Chennur, Chennur mandal, Mancherial, Telangana, 504201, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7904908,
+     18.8555246
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-044",
+    "plant_name": "Kyathanpally STP-1 4 MLD",
+    "town": "Kyathanpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Kurmapalli (Kyathanpalli-I), NH363, Ramakrishnapura, Mandamarri mandal, Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4525953,
+     18.9222384
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-045",
+    "plant_name": "Kyathanpally STP-2 3.2 MLD",
+    "town": "Kyathanpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3.2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Kurmapalli (Kyathanpalli-I), NH363, Ramakrishnapura, Mandamarri mandal, Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4525953,
+     18.9222384
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-046",
+    "plant_name": "Luxettipet STP-1 3 MLD",
+    "town": "Luxettipet",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Luxettipet mandal, Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.2328067,
+     18.9192283
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-047",
+    "plant_name": "Luxettipet STP-2 2 MLD",
+    "town": "Luxettipet",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Luxettipet mandal, Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.2328067,
+     18.9192283
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-048",
+    "plant_name": "Mancherial STP-1 7.5 MLD",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "7.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-049",
+    "plant_name": "Mancherial STP-2 3 MLD",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-050",
+    "plant_name": "Mancherial STP-3 3 MLD",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-051",
+    "plant_name": "Mancherial STP-4 3 MLD",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Mancherial, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-052",
+    "plant_name": "Naspur STP-1 8 MLD",
+    "town": "Naspur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "8",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Naspur, Naspur mandal, Mancherial, Telangana, 504302, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4999242,
+     18.873316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-053",
+    "plant_name": "Naspur STP-2 5 MLD",
+    "town": "Naspur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Naspur, Naspur mandal, Mancherial, Telangana, 504302, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4999242,
+     18.873316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-054",
+    "plant_name": "Naspur STP-3 5 MLD",
+    "town": "Naspur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Naspur, Naspur mandal, Mancherial, Telangana, 504302, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4999242,
+     18.873316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-055",
+    "plant_name": "Khanapur STP-1 3 MLD",
+    "town": "Khanapur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Khanapur, Khanapur mandal, Nirmal, Telangana, 504203, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6447209,
+     19.0442198
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-056",
+    "plant_name": "Khanapur STP-2 1.8 MLD",
+    "town": "Khanapur",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.8",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Khanapur, Khanapur mandal, Nirmal, Telangana, 504203, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6447209,
+     19.0442198
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-057",
+    "plant_name": "Nirmal STP-1 8.5 MLD",
+    "town": "Nirmal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "8.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nirmal, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.396609,
+     19.091521
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-058",
+    "plant_name": "Nirmal STP-2 6 MLD",
+    "town": "Nirmal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nirmal, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.396609,
+     19.091521
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-059",
+    "plant_name": "Nirmal STP-3 5.5 MLD",
+    "town": "Nirmal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "5.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Nirmal, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.396609,
+     19.091521
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-060",
+    "plant_name": "Manthani STP-1 2 MLD",
+    "town": "Manthani",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Manthani, Manthani mandal, Peddapalli, Telangana, 505184, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.665771,
+     18.6512469
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-061",
+    "plant_name": "Manthani STP-2 1.75 MLD",
+    "town": "Manthani",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.75",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Manthani, Manthani mandal, Peddapalli, Telangana, 505184, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.665771,
+     18.6512469
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-062",
+    "plant_name": "Palvancha STP-1 2 MLD",
+    "town": "Palvancha",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Palwancha, Palvancha mandal, Bhadradri Kothagudem, Telangana, 507115, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.7057072,
+     17.5976713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-063",
+    "plant_name": "Palvancha STP-2 2.8 MLD",
+    "town": "Palvancha",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2.8",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Palwancha, Palvancha mandal, Bhadradri Kothagudem, Telangana, 507115, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.7057072,
+     17.5976713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-064",
+    "plant_name": "Palvancha STP-3 9.3 MLD",
+    "town": "Palvancha",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "9.3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Palwancha, Palvancha mandal, Bhadradri Kothagudem, Telangana, 507115, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.7057072,
+     17.5976713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-065",
+    "plant_name": "Palvancha STP-4 2 MLD",
+    "town": "Palvancha",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Palwancha, Palvancha mandal, Bhadradri Kothagudem, Telangana, 507115, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.7057072,
+     17.5976713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-066",
+    "plant_name": "Huzurabad STP-1 4.75 MLD",
+    "town": "Huzurabad",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4.75",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Huzurabad, Huzurabad mandal, Karimnagar, Telangana, 505468, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3956971,
+     18.2018461
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-067",
+    "plant_name": "Huzurabad STP-2 1.7 MLD",
+    "town": "Huzurabad",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.7",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Huzurabad, Huzurabad mandal, Karimnagar, Telangana, 505468, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3956971,
+     18.2018461
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-068",
+    "plant_name": "Jammikunta STP-1 4.9 MLD",
+    "town": "Jammikunta",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4.9",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Jammikunta, Jammikunta mandal, Karimnagar, Telangana, 505122, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4739441,
+     18.2897332
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-069",
+    "plant_name": "Jammikunta STP-2 1.4 MLD",
+    "town": "Jammikunta",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.4",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Jammikunta, Jammikunta mandal, Karimnagar, Telangana, 505122, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4739441,
+     18.2897332
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-070",
+    "plant_name": "Parkal STP-1 4 MLD",
+    "town": "Parkal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "4",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Parkal, Parkal mandal, Hanumakonda, Telangana, 506164, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7010601,
+     18.1983314
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-071",
+    "plant_name": "Parkal STP-2 2.6 MLD",
+    "town": "Parkal",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2.6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Parkal, Parkal mandal, Hanumakonda, Telangana, 506164, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7010601,
+     18.1983314
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-072",
+    "plant_name": "Bhupalpally STP-1 6 MLD",
+    "town": "Bhupalpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "6",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhupalpally, Bhupalpally mandal, Jayashankar Bhupalapally, Telangana, 506169, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8684969,
+     18.4381466
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-073",
+    "plant_name": "Bhupalpally STP-2 2.2 MLD",
+    "town": "Bhupalpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "2.2",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhupalpally, Bhupalpally mandal, Jayashankar Bhupalapally, Telangana, 506169, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8684969,
+     18.4381466
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-074",
+    "plant_name": "Bhupalpally STP-3 0.63 MLD",
+    "town": "Bhupalpally",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "0.63",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Bhupalpally, Bhupalpally mandal, Jayashankar Bhupalapally, Telangana, 506169, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8684969,
+     18.4381466
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-075",
+    "plant_name": "Kothapalli STP-1 1.5 MLD",
+    "town": "Kothapalli",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Kothapalli, Kataram mandal, Jayashankar Bhupalapally, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8669147,
+     18.6644205
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-076",
+    "plant_name": "Kothapalli STP-2 1.1 MLD",
+    "town": "Kothapalli",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.1",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Kothapalli, Kataram mandal, Jayashankar Bhupalapally, Telangana, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8669147,
+     18.6644205
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-077",
+    "plant_name": "Sultanabad STP-1 3 MLD",
+    "town": "Sultanabad",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "3",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Sultanabad, Sultanabad mandal, Peddapalli, Telangana, 505185, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3192023,
+     18.5279573
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-TS-078",
+    "plant_name": "Sultanabad STP-2 1.5 MLD",
+    "town": "Sultanabad",
+    "state": "Telangana",
+    "technology": "",
+    "capacity_mld": "1.5",
+    "operational_status": "proposed",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2022-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Sultanabad, Sultanabad mandal, Peddapalli, Telangana, 505185, India",
+    "source": "Telangana Monthly Progress Report (NGT OA 673/2018), June-August 2022, Annexure-II/III",
+    "as_of": "2022-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3192023,
+     18.5279573
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-AP-001",
+    "plant_name": "Rajamahendravaram Hukumpet STP 30 MLD",
+    "town": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "technology": "UASB",
+    "capacity_mld": "30",
+    "operational_status": "operational",
+    "utilised_mld": "30",
+    "ngt_compliant": "",
+    "moefcc_compliant": "True",
+    "inspection_date": "2021-03",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Rajamahendravaram, Rajamahendravaram Urban Mandal, East Godavari District, Andhra Pradesh, 533101, India",
+    "source": "CPCB National Inventory of Sewage Treatment Plants, March 2021 (data as of 30.06.2020), Andhra Pradesh annexure",
+    "as_of": "2021-03"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7804732,
+     17.0050454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-AP-002",
+    "plant_name": "Rajamahendravaram Hukumpet New STP 50.6 MLD",
+    "town": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "technology": "",
+    "capacity_mld": "50.6",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-08",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Rajamahendravaram, Rajamahendravaram Urban Mandal, East Godavari District, Andhra Pradesh, 533101, India",
+    "source": "Lok Sabha Unstarred Question 3614, 03.04.2023; Water Digest, August 2026",
+    "as_of": "2026-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7804732,
+     17.0050454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "STP-AP-003",
+    "plant_name": "Rajamahendravaram Decentralised STPs 4.25 MLD (Bommuru-I, Torredu, Bommuru-II, Namavaram)",
+    "town": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "technology": "",
+    "capacity_mld": "4.25",
+    "operational_status": "under construction",
+    "utilised_mld": "",
+    "ngt_compliant": "",
+    "moefcc_compliant": "",
+    "inspection_date": "2026-11",
+    "data_status": "measured",
+    "coord_accuracy": "town-centroid",
+    "geocode_display_name": "Rajamahendravaram, Rajamahendravaram Urban Mandal, East Godavari District, Andhra Pradesh, 533101, India",
+    "source": "AMRUT approved projects list (accessed November 2026)",
+    "as_of": "2026-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7804732,
+     17.0050454
+    ]
+   }
+  }
+ ]
+}

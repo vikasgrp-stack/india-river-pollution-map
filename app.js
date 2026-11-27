@@ -47,6 +47,16 @@ const RIVERS = {
     maxDrainLoad: 53.75, maxStpCap: 150,
     stateAgency: {},
   },
+  godavari: {
+    label: 'Godavari',
+    dir: 'data/godavari',
+    files: { drains: 'drains.geojson', stps: 'stps.geojson', wq: 'water_quality.geojson',
+             people: 'people.geojson', courses: 'drain_courses.geojson', industries: 'industries.geojson',
+             river: 'godavari_river.geojson', corridor: 'godavari_corridor_buffer.geojson', population: 'population.json' },
+    center: [18.8, 78.1], zoom: 7,
+    maxDrainLoad: 13.75, maxStpCap: 200,
+    stateAgency: {},
+  },
 };
 const ANCHOR_TOWNS = ['Haridwar', 'Kanpur', 'Prayagraj', 'Varanasi', 'Patna', 'Bhagalpur', 'Kolkata'];
 const PARTY_COLORS = { 'BJP': '#f97316', 'SP': '#dc2626', 'INC': '#38bdf8', 'AITC': '#16a34a',
@@ -54,14 +64,14 @@ const PARTY_COLORS = { 'BJP': '#f97316', 'SP': '#dc2626', 'INC': '#38bdf8', 'AIT
 const STATE_AGENCY_DEFAULT = 'state executing agency + State Pollution Control Board';
 
 const state = {
-  riverFilter: 'all',   // 'all' | 'ganga' | 'yamuna' | 'sabarmati' | 'cauvery' — the map shows ALL rivers at once by default
+  riverFilter: 'all',   // 'all' | 'ganga' | 'yamuna' | 'sabarmati' | 'cauvery' | 'godavari' — the map shows ALL rivers at once by default
   basemap: 'streets',
   activeLayer: 'all',       // 'all' or one of: drains, stps, wq, towns, courses, industries, corridor
   shortcomingsOnly: false,
   data: {},                 // per-river cache: { drains, stps, wq, people, courses, industries, river, corridor, population }
   layers: {},               // leaflet layer objects for the current scope
   townIndex: {},            // "Town · River" -> { river, props }
-  stpBudgetById: {},        // yamuna + sabarmati + cauvery budgets
+  stpBudgetById: {},        // yamuna + sabarmati + cauvery + godavari budgets
   religionRuling: null,
   standards: null,
   stdParam: 'BOD',
@@ -369,7 +379,7 @@ async function loadRiverData(river) {
       }
     });
   } catch (e) { /* series stays latest-only */ }
-  if (river === 'yamuna' || river === 'sabarmati' || river === 'cauvery') {
+  if (river === 'yamuna' || river === 'sabarmati' || river === 'cauvery' || river === 'godavari') {
     const budgets = parseCSV(await fetchText(d + '/stp_budgets.csv'));
     budgets.forEach((b) => { state.stpBudgetById[b.stp_id] = b; });
   }
@@ -712,7 +722,7 @@ function showStp(p) {
   const isNew = p.is_new_plant === true;
   const util = p.utilisation_pct != null ? +p.utilisation_pct : (p.capacity_mld && p.utilised_mld != null ? (+p.utilised_mld / +p.capacity_mld) * 100 : null);
   let html = '<h2>' + esc(p.plant_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
-  const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : p._river === 'yamuna' ? 'only 3 of 115 plants on the Yamuna do.' : 'the first on the Sabarmati to do so.')
+  const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : p._river === 'yamuna' ? 'only 3 of 115 plants on the Yamuna do.' : p._river === 'sabarmati' ? 'the first on the Sabarmati to do so.' : p._river === 'cauvery' ? 'the first on the Cauvery to do so.' : 'one of only 3 plants on the Godavari that do — Shirdi (16 MLD), Pathanpura (45 MLD) and Rehmat Nagar (25 MLD).')
     : p.ngt_compliant === false ? 'Fails NGT norms' + (p.noncompliance_reason ? ' — ' + esc(p.noncompliance_reason) : '.') + ' Treated sewage that is still too dirty to meet the standard.'
     : 'Never assessed against NGT norms — its outlet quality is not publicly graded.';
   html += takeaway(take);
@@ -728,6 +738,7 @@ function showStp(p) {
   else if (p._river === 'ganga') html += '<p class="note-box">No effluent values published for this plant.</p>';
   else if (p._river === 'sabarmati') html += '<p class="note-box">No effluent values are published for Sabarmati plants — the one exception is Vasna 126 (outlet BOD 44.8 mg/l, World Bank ESIA). Compliance here is graded only from the March 2021 MPR flag.</p>';
   else if (p._river === 'cauvery') html += '<p class="note-box">No effluent values are published for any Cauvery plant — no per-plant outlet BOD is available, so NGT compliance cannot be shown for any of the 68 plants. This is a data limit, not a finding that plants fail. Compliance is graded only from the MPR &ldquo;Complied&rdquo; flag, which means the plant meets the consent standard (BOD 20 mg/l, MoEFCC 2017).</p>';
+  else if (p._river === 'godavari') html += '<p class="note-box">No per-plant total nitrogen or faecal coliform value is published anywhere, and 123 of the 149 plants have no effluent value at all — so the 3-meets-NGT count is partly a data limit. NGT compliance here was graded from the effluent values in the Maharashtra MPR March 2026 annexure where published; those values were not carried into the plant rows, so no outlet-quality bars can be shown.</p>';
 
   if (p._river === 'ganga') {
     /* ---- Ganga accountability (stp_accountability.csv fields) ---- */
@@ -770,6 +781,8 @@ function showStp(p) {
       ? 'None of the 24 Sabarmati plants discloses any budget figure — no sanctioned cost, funds released/utilised, contractor or award date is published for any of them. No party attribution (who built it / who manages it now) has been compiled for Sabarmati plants either — those lines are shown only for Ganga plants, never guessed.'
       : p._river === 'cauvery'
       ? 'None of the 68 Cauvery plants discloses any budget figure — no sanctioned cost, funds released/utilised, contractor or award date is published for any of them. No party attribution (who built it / who manages it now) has been compiled for Cauvery plants either — those lines are shown only for Ganga plants, never guessed.'
+      : p._river === 'godavari'
+      ? 'Only 6 of the 149 Godavari plants disclose a budget figure (₹516.26 crore across the six); 13 partially, 130 not at all. Funds released vs utilised are disclosed for 0 of 149 plants, and no annual O&amp;M figure is published anywhere. No party attribution (who built it / who manages it now) has been compiled for Godavari plants either — those lines are shown only for Ganga plants, never guessed.'
       : 'Only 2 of the 115 Yamuna plants fully disclose their budget, 36 partially, 77 not at all. No party attribution (who built it / who manages it now) has been compiled for Yamuna plants — those lines are shown only for Ganga plants, never guessed.') + '</p>';
     html += actionBox(
       p.ngt_compliant === false ? 'Bring the outlet within NGT norms and publish the plant\u2019s budget and O&M spending.'
@@ -805,12 +818,12 @@ function showWq(p) {
       '<p class="chart-sub">Trend: <b>' + esc(p.bod_trend || '—') + '</b> (' + (p.bod_change_pct != null ? (+p.bod_change_pct > 0 ? '+' : '') + p.bod_change_pct + '%' : 'change not computed') + ')</p>';
   }
   {
-    const years = p._river === 'yamuna' ? [2021, 2022, 2023, 2024, 2025] : p._river === 'sabarmati' ? [2018, 2020, 2023] : p._river === 'cauvery' ? [2009, 2022, 2023, 2025] : [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+    const years = p._river === 'yamuna' ? [2021, 2022, 2023, 2024, 2025] : p._river === 'sabarmati' ? [2018, 2020, 2023] : p._river === 'cauvery' ? [2009, 2022, 2023, 2025] : p._river === 'godavari' ? [2021, 2025] : [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
     const vals = years.map((y) => { const v = +p['bod_' + y]; return isNaN(v) ? null : v; });
     if (vals.some((v) => v != null)) {
       html += '<div class="chart-title">BOD by year, ' + years[0] + '–' + years[years.length - 1] + '</div>' + sparkline(vals, '#dc2626', years) +
         '<p class="chart-sub">' + years.map((y, i) => y + ': ' + (vals[i] == null ? '—' : num(vals[i]))).join(' · ') + ' mg/l.' +
-        (p._river === 'yamuna' ? ' No usable 2014–2020 series exists publicly.' : p._river === 'sabarmati' ? ' Three non-comparable snapshots: 2018 stretch maxima, 2020 lockdown-month samples, 2023 yearly averages — no continuous series.' : p._river === 'cauvery' ? ' Four non-comparable snapshots: 2009 CPCB values (Tamil Nadu stations only — shown in the &ldquo;Change since&rdquo; comparison; no per-year column exists for 2009), 2022 and 2023 KSPCB March samples, 2025 MPR single-month samples — no continuous series.' : '') + ' Hover a dot for that year&rsquo;s reading.</p>';
+        (p._river === 'yamuna' ? ' No usable 2014–2020 series exists publicly.' : p._river === 'sabarmati' ? ' Three non-comparable snapshots: 2018 stretch maxima, 2020 lockdown-month samples, 2023 yearly averages — no continuous series.' : p._river === 'cauvery' ? ' Four non-comparable snapshots: 2009 CPCB values (Tamil Nadu stations only — shown in the &ldquo;Change since&rdquo; comparison; no per-year column exists for 2009), 2022 and 2023 KSPCB March samples, 2025 MPR single-month samples — no continuous series.' : p._river === 'godavari' ? ' Two non-comparable snapshots: 2021 values are CPCB 2019–21 stretch maxima plus Telangana June–July 2021 monthly samples; 2025 values are Andhra Pradesh January 2025 single-month samples — no continuous series.' : '') + ' Hover a dot for that year&rsquo;s reading.</p>';
     }
   }
   html += explainerBOD();
@@ -1223,7 +1236,7 @@ function renderDataTabSingle(river) {
       '<li><b>No drain courses;</b> tributary (Khari / Meshwo) drains missing; no Rajasthan STPs.</li>' +
       '<li><b>Sabarmati towns have no religion shares, no 20-year ruling history and no livelihood splits</b> compiled — the flyout says so plainly.</li>' +
       '<li><b>All points are town centroids</b> — no public source gives plant-site or drain-site coordinates. River length is 383.1 km on the OSM centreline vs 371 km published (Government of Gujarat) — the OSM line runs longer, likely the estuary meander.</li>';
-  } else {
+  } else if (river === 'cauvery') {
     kpi.innerHTML =
       '<div class="kpi"><div class="n"><span data-count="14" data-dec="0">14</span></div><div class="l">drains listed</div><div class="s">0 measured · 12 estimated · 2 never measured</div></div>' +
       '<div class="kpi"><div class="n"><span data-count="66.75" data-dec="2">66.75</span> t/day</div><div class="l">estimated BOD load into the river</div><div class="s">0 measured — every drain is estimated or unmeasured; biggest is Vrishabhavathi (Bengaluru), 53.75 TPD, a 2017 estimate</div></div>' +
@@ -1263,6 +1276,46 @@ function renderDataTabSingle(river) {
       '<li><b>WorldPop cross-check pending.</b></li>' +
       '<li><b>Cauvery towns have no religion shares, no 20-year ruling history and no livelihood splits</b> compiled — the flyout says so plainly.</li>' +
       '<li><b>All points are town centroids</b> — no public source gives plant-site or drain-site coordinates. River length is 807.07 km on the OSM centreline; a ~2.1 km anabranch near Mysuru is excluded from the centreline.</li>';
+  } else {
+    kpi.innerHTML =
+      '<div class="kpi"><div class="n"><span data-count="97" data-dec="0">97</span></div><div class="l">drains listed</div><div class="s">1 measured · 1 estimated · 95 never measured</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="8.5" data-dec="1">8.5</span> t/day</div><div class="l">measured BOD load into the river</div><div class="s">one measured drain only (Nashik city nallas); estimated 13.75 t/day kept separate</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="3" data-dec="0">3</span> of 149</div><div class="l">treatment plants meet NGT norms</div><div class="s">23 fail · 123 not assessed · 20 meet MoEFCC 2017 — partly a data limit</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="74.7" data-dec="1">74.7</span>%</div><div class="l">plant utilisation</div><div class="s">1,053.95 of 1,410.25 MLD assessed capacity actually treated · Telangana only 13.8%</div></div>' +
+      '<div class="kpi"><div class="n">10.6M</div><div class="l">people in the 10 km corridor (2020)</div><div class="s">GHSL 10.63M vs WorldPop 10.56M — only 0.6% apart</div></div>' +
+      '<div class="kpi"><div class="n">6 of 149</div><div class="l">plants disclose any budget figure</div><div class="s">₹516.26 crore across the six · funds released/utilised: 0 of 149 · no O&amp;M figure anywhere</div></div>';
+    $('#findingsText').innerHTML =
+      '<p><b>Only 2 of 97 drains have a published flow.</b> The biggest single load is the Nalla Channel at Rajahmundry — 13.75 tonnes of BOD a day, estimated — and the only measured drain is Nashik&rsquo;s city nallas at 8.5 tonnes a day (NEERI, 2014). The other 95 drains are named in state reports but have no published flow or BOD at all.</p>' +
+      '<p><b>The worst station is Vasistha downstream of Narasapuram: BOD 58.0 mg/l</b> (2019–21 maximum). The worst stretch is the Maharashtra main stem, BOD up to 28.0 mg/l, Priority II. The lowest oxygen recorded is 1.6 mg/l in the Nakkavagu (June 2021).</p>' +
+      '<p><b>Only 3 of 149 plants meet NGT norms</b> (Shirdi 16, Pathanpura 45, Rehmat Nagar 25); 23 fail and 123 have never been assessed — no effluent value exists for them at all. All 12 Nagpur plants fail. 80 plants are still only proposed (510.5 MLD) and 18 under construction (714.25 MLD) — nearly half the 2,648 MLD capacity does not exist yet.</p>';
+    $('#accountabilityText').innerHTML =
+      '<p><b>Budgets:</b> only 6 of 149 plants disclose a budget figure (₹516.26 crore across the six); 13 partially, 130 not at all. <b>Funds released vs utilised are disclosed for 0 of 149 plants,</b> and no annual O&amp;M figure is published anywhere. Contractor named for 1 scheme only. <b>No party attribution</b> (who built each plant / who manages it now) has been compiled for Godavari plants; those lines appear only on Ganga plant cards.</p>' +
+      '<p><b>Operators:</b> no operator is named except SCCL Rudrampur and AMC O&amp;M (Aurangabad).</p>';
+    $('#methodText').innerHTML =
+      '<p><b>Drains (97):</b> Maharashtra, Telangana and Andhra Pradesh Monthly Progress Reports plus the NEERI Nashik study (2013–14) — no CPCB drain inventory exists for the Godavari. One drain is measured (Nashik city nallas aggregate, 68 MLD × 125 mg/l BOD, NEERI 2014 = 8.5 TPD); one is estimated (Rajahmundry Nalla Channel, 55 MLD × 250 mg/l raw-sewage BOD, the same method as the Ganga estimates); 95 are unmeasured (named in an MPR, no published flow or BOD). Measured and estimated totals are always shown separately and never summed. Telangana MPRs count 83 more drains but never name or locate them, so they are not in this file.</p>' +
+      '<p><b>Treatment plants (149):</b> CPCB National Inventory of STPs, March 2021, Maharashtra MPR March 2026, Telangana MPRs (June 2020, June–August 2022) and AP MPR January 2025. Capacity 2,648.0 MLD (Maharashtra 70 plants, Telangana 76, Andhra Pradesh 3); operational 44, under construction 18, not in operation 7, proposed 80 (510.5 MLD). Utilisation known for 46 plants (1,053.95 MLD). NGT compliance is graded from per-plant effluent values in the Maharashtra MPR March 2026 annexure where published — but those values were not carried into the plant rows, so outlet-quality bars cannot be shown. All points are town centroids — no public source gives plant-site coordinates.</p>' +
+      '<p><b>Water quality (86 stations):</b> snapshots, not a continuous series — 70 stations carry CPCB Polluted River Stretches 2022 maxima (2019–21, stored as 2021 values); Telangana stations have June–July 2021 monthly samples (the only two comparable points); Andhra Pradesh stations are single January 2025 values. No station has a continuous annual series. No Indravati/Sabari stations; no Chhattisgarh/Odisha MPR was obtained.</p>' +
+      '<p><b>Population:</b> a 10 km buffer around the Godavari centreline (OSM relation 2826093, 1,511.3 km), summed from GHSL GHS-POP R2023A (2020) — 10.63 million — with a WorldPop 2020 cross-check of 10.56 million, only 0.6% apart. Town populations are Census of India 2011; all 87 towns have a verified figure.</p>';
+    $('#sourceList').innerHTML =
+      '<li>CPCB — Polluted River Stretches, 2022 (water quality, stretch priorities)</li>' +
+      '<li>CPCB — National Inventory of Sewage Treatment Plants, March 2021 (plant list, capacities)</li>' +
+      '<li>Maharashtra Monthly Progress Reports, August 2020 + March 2026 (drains, STPs, effluent values)</li>' +
+      '<li>Telangana Monthly Progress Reports, February 2020 / July 2020 / June–September 2021 + NWMP monthly data (drains, STPs, water quality)</li>' +
+      '<li>Andhra Pradesh Monthly Progress Report, January 2025 (STPs, water quality)</li>' +
+      '<li>NEERI — Environmental Status of Godavari River (Nashik), 2013–14 (Nashik drain flows and BOD)</li>' +
+      '<li>Census of India 2011 (town populations); Election Commission of India / MyNeta (ADR) (MLAs)</li>' +
+      '<li>GHSL GHS-POP R2023A and WorldPop 2020 (corridor population — non-government, labelled as such)</li>' +
+      '<li>OpenStreetMap (river centreline, relation 2826093) — non-government, labelled as such</li>';
+    $('#gapsList').innerHTML =
+      '<li><b>Drains are the weakest layer</b> — 95 of 97 have no published flow or BOD. Telangana MPRs count 83 more drains but never name or locate them.</li>' +
+      '<li><b>No per-plant total nitrogen or faecal coliform value</b> is published anywhere; 123 of 149 plants have no effluent value at all.</li>' +
+      '<li><b>Budgets undisclosed for 130 of 149 plants;</b> funds released/utilised for 0 of 149; no O&amp;M figures; no operators named (except two).</li>' +
+      '<li><b>Water quality is snapshots, not a series;</b> no Indravati/Sabari stations; no Chhattisgarh/Odisha MPR obtained.</li>' +
+      '<li><b>Telangana STP status after 2022 is unknown</b> — the newest Telangana MPR is June–August 2022.</li>' +
+      '<li><b>No drain courses;</b> no tributary centrelines drawn (main stem only); delta distributaries (Gautami/Vasishta) not drawn as separate lines.</li>' +
+      '<li><b>Godavari towns have no religion shares, no 20-year ruling history and no urban/rural split</b> compiled — the flyout says so plainly; literacy is blank for 55 towns.</li>' +
+      '<li><b>All points are town centroids</b> — no public source gives plant-site or drain-site coordinates. River length is 1,511.3 km on the OSM centreline vs 1,465 km published — the OSM line follows meanders.</li>' +
+      '<li><b>One conflict is unresolved:</b> the Nashik new-STP plan (MPR March 2026) vs the September 2026 Kumbh plan — only the Kumbh plan is recorded, to avoid double-counting ~210 MLD.</li>';
   }
   const dl = $('#downloadList');
   const files = river === 'ganga'
@@ -1271,7 +1324,9 @@ function renderDataTabSingle(river) {
     ? [['drains.geojson', 'Drains — 50 records'], ['drains.csv', 'Drains — CSV'], ['stps.geojson', 'Treatment plants — 115 records'], ['stps.csv', 'Treatment plants — CSV'], ['stp_budgets.csv', 'Plant budgets — 115 rows'], ['water_quality.geojson', 'Water-quality stations — 35 records'], ['people.geojson', 'Towns — 45 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 2 lines'], ['industries.geojson', 'Industries — 4 plotted clusters'], ['population.json', 'Corridor population method + totals']]
     : river === 'sabarmati'
     ? [['drains.geojson', 'Drains — 11 records'], ['drains.csv', 'Drains — CSV'], ['stps.geojson', 'Treatment plants — 24 records'], ['stps.csv', 'Treatment plants — CSV'], ['stp_budgets.csv', 'Plant budgets — 24 rows'], ['water_quality.geojson', 'Water-quality stations — 10 records'], ['people.geojson', 'Towns — 12 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 0 lines'], ['industries.geojson', 'Industries — 1 aggregate row'], ['population.json', 'Corridor population method + totals']]
-    : [['drains.geojson', 'Drains — 14 records'], ['drains.csv', 'Drains — CSV'], ['stps.geojson', 'Treatment plants — 68 records'], ['stps.csv', 'Treatment plants — CSV'], ['stp_budgets.csv', 'Plant budgets — 68 rows'], ['water_quality.geojson', 'Water-quality stations — 22 records'], ['people.geojson', 'Towns — 41 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 0 lines'], ['industries.geojson', 'Industries — 8 aggregate rows'], ['population.json', 'Corridor population method + totals']];
+    : river === 'cauvery'
+    ? [['drains.geojson', 'Drains — 14 records'], ['drains.csv', 'Drains — CSV'], ['stps.geojson', 'Treatment plants — 68 records'], ['stps.csv', 'Treatment plants — CSV'], ['stp_budgets.csv', 'Plant budgets — 68 rows'], ['water_quality.geojson', 'Water-quality stations — 22 records'], ['people.geojson', 'Towns — 41 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 0 lines'], ['industries.geojson', 'Industries — 8 aggregate rows'], ['population.json', 'Corridor population method + totals']]
+    : [['drains.geojson', 'Drains — 97 records'], ['drains.csv', 'Drains — CSV'], ['stps.geojson', 'Treatment plants — 149 records'], ['stps.csv', 'Treatment plants — CSV'], ['stp_budgets.csv', 'Plant budgets — 149 rows'], ['water_quality.geojson', 'Water-quality stations — 86 records'], ['people.geojson', 'Towns — 87 records (Census 2011 + MLAs)'], ['drain_courses.geojson', 'Drain courses — 0 lines'], ['industries.geojson', 'Industries — 10 rows'], ['population.json', 'Corridor population method + totals']];
   dl.innerHTML = files.map(([f, label]) => '<li><a href="data/' + river + '/' + f + '" download>' + esc(label) + '</a> <span style="color:var(--muted)">(' + f + ')</span></li>').join('');
 }
 function renderDataTab() {
@@ -1281,23 +1336,23 @@ function renderDataTab() {
     // combined view: render each river's sections, capture them, compose with headings
     const grab = {};
     ['kpiGrid', 'findingsText', 'accountabilityText', 'methodText', 'sourceList', 'gapsList', 'downloadList'].forEach((id) => { grab[id] = {}; });
-    ['ganga', 'yamuna', 'sabarmati', 'cauvery'].forEach((river) => {
+    ['ganga', 'yamuna', 'sabarmati', 'cauvery', 'godavari'].forEach((river) => {
       renderDataTabSingle(river);
       Object.keys(grab).forEach((id) => { grab[id][river] = document.getElementById(id).innerHTML; });
     });
     $('#kpiGrid').innerHTML =
-      '<div class="kpi"><div class="n"><span data-count="684" data-dec="0">684</span></div><div class="l">drains listed by CPCB</div><div class="s">609 Ganga + 50 Yamuna + 11 Sabarmati + 14 Cauvery · 413 measured · 86 estimated · 185 never measured</div></div>' +
-      '<div class="kpi"><div class="n"><span data-count="954.39" data-dec="2">954.39</span> t/day</div><div class="l">measured BOD load into the rivers</div><div class="s">585.17 Ganga + 358.42 Yamuna + 10.8 Sabarmati · Cauvery: no measured drain</div></div>' +
-      '<div class="kpi"><div class="n"><span data-count="22" data-dec="0">22</span> of 352</div><div class="l">treatment plants meet NGT norms</div><div class="s">19 Ganga + 3 Yamuna + 0 Sabarmati + 0 Cauvery · 212 fail · 118 not assessed</div></div>' +
-      '<div class="kpi"><div class="n">127–136M</div><div class="l">people in the 10 km corridors (2020)</div><div class="s">Ganga 74–81M + Yamuna 34.3–36.6M + Sabarmati 9.4M + Cauvery 9.0M (GHSL only for both — WorldPop cross-check pending) — ranges, not one number</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="781" data-dec="0">781</span></div><div class="l">drains listed by CPCB</div><div class="s">609 Ganga + 50 Yamuna + 11 Sabarmati + 14 Cauvery + 97 Godavari · 414 measured · 87 estimated · 280 never measured</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="962.89" data-dec="2">962.89</span> t/day</div><div class="l">measured BOD load into the rivers</div><div class="s">585.17 Ganga + 358.42 Yamuna + 10.8 Sabarmati + 8.5 Godavari · Cauvery: no measured drain</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="25" data-dec="0">25</span> of 501</div><div class="l">treatment plants meet NGT norms</div><div class="s">19 Ganga + 3 Yamuna + 0 Sabarmati + 0 Cauvery + 3 Godavari · 235 fail · 241 not assessed</div></div>' +
+      '<div class="kpi"><div class="n">137–147M</div><div class="l">people in the 10 km corridors (2020)</div><div class="s">Ganga 74–81M + Yamuna 34.3–36.6M + Sabarmati 9.4M + Cauvery 9.0M + Godavari 10.6M — ranges, not one number (Sabarmati &amp; Cauvery GHSL only; Godavari GHSL 10.63M vs WorldPop 10.56M)</div></div>' +
       '<div class="kpi"><div class="n">₹7,466 cr</div><div class="l">verified sanctioned build cost — Ganga</div><div class="s">across 60 distinct projects · funds released/utilised disclosed for 0 of 145 plants</div></div>' +
       '<div class="kpi"><div class="n">77 of 115</div><div class="l">Yamuna plants disclose no budget at all</div><div class="s">only 2 fully disclosed · 36 partially</div></div>';
-    $('#findingsText').innerHTML = '<h4>Ganga</h4>' + grab.findingsText.ganga + '<h4>Yamuna</h4>' + grab.findingsText.yamuna + '<h4>Sabarmati</h4>' + grab.findingsText.sabarmati + '<h4>Cauvery</h4>' + grab.findingsText.cauvery;
-    $('#accountabilityText').innerHTML = '<h4>Ganga</h4>' + grab.accountabilityText.ganga + '<h4>Yamuna</h4>' + grab.accountabilityText.yamuna + '<h4>Sabarmati</h4>' + grab.accountabilityText.sabarmati + '<h4>Cauvery</h4>' + grab.accountabilityText.cauvery;
-    $('#methodText').innerHTML = '<h4>Ganga</h4>' + grab.methodText.ganga + '<h4>Yamuna</h4>' + grab.methodText.yamuna + '<h4>Sabarmati</h4>' + grab.methodText.sabarmati + '<h4>Cauvery</h4>' + grab.methodText.cauvery;
-    $('#sourceList').innerHTML = '<li><b>Ganga</b></li>' + grab.sourceList.ganga + '<li><b>Yamuna</b></li>' + grab.sourceList.yamuna + '<li><b>Sabarmati</b></li>' + grab.sourceList.sabarmati + '<li><b>Cauvery</b></li>' + grab.sourceList.cauvery;
-    $('#gapsList').innerHTML = '<li><b>Ganga</b></li>' + grab.gapsList.ganga + '<li><b>Yamuna</b></li>' + grab.gapsList.yamuna + '<li><b>Sabarmati</b></li>' + grab.gapsList.sabarmati + '<li><b>Cauvery</b></li>' + grab.gapsList.cauvery;
-    $('#downloadList').innerHTML = '<li><b>Ganga</b></li>' + grab.downloadList.ganga + '<li><b>Yamuna</b></li>' + grab.downloadList.yamuna + '<li><b>Sabarmati</b></li>' + grab.downloadList.sabarmati + '<li><b>Cauvery</b></li>' + grab.downloadList.cauvery;
+    $('#findingsText').innerHTML = '<h4>Ganga</h4>' + grab.findingsText.ganga + '<h4>Yamuna</h4>' + grab.findingsText.yamuna + '<h4>Sabarmati</h4>' + grab.findingsText.sabarmati + '<h4>Cauvery</h4>' + grab.findingsText.cauvery + '<h4>Godavari</h4>' + grab.findingsText.godavari;
+    $('#accountabilityText').innerHTML = '<h4>Ganga</h4>' + grab.accountabilityText.ganga + '<h4>Yamuna</h4>' + grab.accountabilityText.yamuna + '<h4>Sabarmati</h4>' + grab.accountabilityText.sabarmati + '<h4>Cauvery</h4>' + grab.accountabilityText.cauvery + '<h4>Godavari</h4>' + grab.accountabilityText.godavari;
+    $('#methodText').innerHTML = '<h4>Ganga</h4>' + grab.methodText.ganga + '<h4>Yamuna</h4>' + grab.methodText.yamuna + '<h4>Sabarmati</h4>' + grab.methodText.sabarmati + '<h4>Cauvery</h4>' + grab.methodText.cauvery + '<h4>Godavari</h4>' + grab.methodText.godavari;
+    $('#sourceList').innerHTML = '<li><b>Ganga</b></li>' + grab.sourceList.ganga + '<li><b>Yamuna</b></li>' + grab.sourceList.yamuna + '<li><b>Sabarmati</b></li>' + grab.sourceList.sabarmati + '<li><b>Cauvery</b></li>' + grab.sourceList.cauvery + '<li><b>Godavari</b></li>' + grab.sourceList.godavari;
+    $('#gapsList').innerHTML = '<li><b>Ganga</b></li>' + grab.gapsList.ganga + '<li><b>Yamuna</b></li>' + grab.gapsList.yamuna + '<li><b>Sabarmati</b></li>' + grab.gapsList.sabarmati + '<li><b>Cauvery</b></li>' + grab.gapsList.cauvery + '<li><b>Godavari</b></li>' + grab.gapsList.godavari;
+    $('#downloadList').innerHTML = '<li><b>Ganga</b></li>' + grab.downloadList.ganga + '<li><b>Yamuna</b></li>' + grab.downloadList.yamuna + '<li><b>Sabarmati</b></li>' + grab.downloadList.sabarmati + '<li><b>Cauvery</b></li>' + grab.downloadList.cauvery + '<li><b>Godavari</b></li>' + grab.downloadList.godavari;
   }
   // every KPI gets a hover tooltip with its full figure and source line
   document.querySelectorAll('#kpiGrid .kpi').forEach((el) => {

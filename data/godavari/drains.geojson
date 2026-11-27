@@ -1,0 +1,3206 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Gangapur / Bardan Phata nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "11.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7166847,
+     20.029986
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Someshwar 1 nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "6.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.723403,
+     20.029199
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Someshwar 2 nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.723403,
+     20.029199
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Chikhali nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "8.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Anandvalli nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "3.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7534974,
+     20.0123251
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Forest Nursery nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "60",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Asaram Bapu Ashram nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Chopda nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "8.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7689488,
+     20.006418
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Joshiwada nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Malharkhan nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhoi nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Saraswati nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "83.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kashimale Karyalay nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Jadhav Farm nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Panchak nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8492727,
+     19.9864534
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Pimpalpatti nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Pawar Wadi nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Gandharwadi nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kusumagraj Udyan nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Ramwadi (Lendi) nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "28.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7868394,
+     20.0107403
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Waghadi nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "8.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.810476,
+     20.0319314
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Aruna nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kevadiban nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kapila nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8182834,
+     20.0106823
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Manur nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Chunchale nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "21.6",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7280786,
+     19.9670162
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kutwat Nagar nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "14.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kamath Wada nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "19.2",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Torna nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "14.1",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhujbal Farms nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "13.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Indira Nagar nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "6.0",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7812185,
+     19.9734698
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bajarangwadi nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "49.2",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "MSEB nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Nasardi",
+    "group": "Nasardi",
+    "tapped": "",
+    "tapped_status": "",
+    "flow_raw": "Flow not published (NEERI Ch. 5, 2013-14)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "5.5",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 5 (2013-14)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Nashik city nallas - aggregate uncollected sewage",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "68 MLD (NEERI Ch. 3, 2014)",
+    "flow_mld": "68.0",
+    "bod_load_tpd": "8.5",
+    "bod_mg_l": "125",
+    "cod_mg_l": "",
+    "data_status": "measured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NEERI, Environmental Status of Godavari River (Nashik), Ch. 3 section 3.5.3 (2014)",
+    "as_of": "2014"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7902364,
+     20.0112475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local nallas",
+    "town": "Trimbakeshwar",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "True",
+    "tapped_status": "Intercepted",
+    "flow_raw": "Sewage generation 1.00 MLD; treatment capacity 1.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.5307549,
+     19.9321202
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local nallas",
+    "town": "Paithan",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generation 5.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.4302638,
+     19.5835563
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local nallas",
+    "town": "Gangakhed",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Sewage generation 1.50 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.7557068,
+     18.9130998
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Chunal nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhimghat East nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Shani Mandir nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Govardhan Ghat East nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Govardhan Ghat West nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Balgiri-1 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Balgiri-2 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Gadipura Harijan Wasti nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Gadipura Badi Dargha nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Gadipura Habib Talkiz nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Sidhhi Ghat nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Killa Center nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Killa East nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Burud Galli nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Naw Ghat nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Karbala nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Chouphala nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bilal Nagar nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kudbe Nagar nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhimghat West nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Laxmi Nagar Malli area-1 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Laxmi Nagar Malli area-2 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Laxmi Nagar Malli area-3 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Vasarni-1 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Vasarni-2 nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Saibaba Mandir nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Nawin Pul nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Vakaspur nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Vrundawan nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kamal Nagar nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kautha East nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kautha West nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Echo Development nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Vishnupuri-Asarjan nalla",
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 70.00 MLD; treatment capacity 132.00 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4832628,
+     19.0942729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Nalla Channel",
+    "town": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "source_type": "Mixed",
+    "river": "Godavari",
+    "group": "main stem",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "55 MLD (officials, May 2025)",
+    "flow_mld": "55.0",
+    "bod_load_tpd": "13.75",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "estimated",
+    "estimation_method": "Flow x 250 mg/l raw-sewage BOD (Ganga v1.1 method)",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Officials to AP Deputy CM, 25-26 May 2025 inspection at Chintalamma Ghat (reported Nation Press / Hi India / Window to News); Water Digest",
+    "as_of": "2025-05"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7804732,
+     17.0050454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Narasapuram town sewage outfall",
+    "town": "Narasapuram",
+    "state": "Andhra Pradesh",
+    "source_type": "Mixed",
+    "river": "Vasistha",
+    "group": "Vasistha",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not published (AP MPR Jan 2025 lists no drain inventory)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Andhra Pradesh Monthly Progress Report, Jan 2025 (NGT OA 673/2018)",
+    "as_of": "2025-01"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7014603,
+     16.4386399
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Rallavagu stream",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "source_type": "Mixed",
+    "river": "Rallavagu",
+    "group": "Rallavagu",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not published; Mancherial/Mandamarri sewage reported to run into Rallavagu (NGT petition, Nov 2026)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NGT petition by Aakula Sampath Kumar, Nov 2026 (reported Siasat / Newspoint / WaterChannel) - petitioner's claim, not a measurement",
+    "as_of": "2026-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Thollavagu stream",
+    "town": "Mancherial",
+    "state": "Telangana",
+    "source_type": "Mixed",
+    "river": "Thollavagu",
+    "group": "Thollavagu",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Flow not published; Mancherial/Mandamarri sewage reported to run into Thollavagu (NGT petition, Nov 2026)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "NGT petition by Aakula Sampath Kumar, Nov 2026 (reported Siasat / Newspoint / WaterChannel) - petitioner's claim, not a measurement",
+    "as_of": "2026-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5198096,
+     18.9812967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Siddheshwar Nalla",
+    "town": "Latur",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Manjira",
+    "group": "Manjira",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 30.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.7548997,
+     18.3553347
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Subhash Road nalla at Sathe Chowk, Sneha Nagar",
+    "town": "Beed",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Bindusara",
+    "group": "Bindusara",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 22.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.909784,
+     18.9918442
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Lendhi nalla",
+    "town": "Mehkar",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Penganga",
+    "group": "Penganga",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 3.77 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.6332656,
+     20.2546987
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Lendhi nalla",
+    "town": "Umarkhed",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Penganga",
+    "group": "Penganga",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 4.10 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.9140993,
+     19.5982171
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local nallas",
+    "town": "Tumsar",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wainganga",
+    "group": "Wainganga",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 5.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7500206,
+     21.3820399
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local nallas",
+    "town": "Bramhapuri",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wainganga",
+    "group": "Wainganga",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 3.50 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8585801,
+     20.608405
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhandara town drain from Sant Tukdoji Ward",
+    "town": "Bhandara",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wainganga",
+    "group": "Wainganga",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 5.50 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.794509,
+     21.1225869
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Pauni town drain",
+    "town": "Pauni",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wainganga",
+    "group": "Wainganga",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 1.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.6359627,
+     20.7926372
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Amal nalla (tail end, meeting Wardha near Sasti Opencast Mines)",
+    "town": "Chandrapur",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wardha",
+    "group": "Wardha",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 35.00 MLD; treatment capacity 70.50 MLD; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5045475,
+     20.0967555
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "BILT nalla (behind Ballarpur Opencast Mines)",
+    "town": "Ballarpur",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wardha",
+    "group": "Wardha",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 5.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3480253,
+     19.8568413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local nalla near crematorium",
+    "town": "Ballarpur",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wardha",
+    "group": "Wardha",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 5.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3480253,
+     19.8568413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kapangaon Nalla",
+    "town": "Rajura",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wardha",
+    "group": "Wardha",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 3.20 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3657272,
+     19.7792814
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "JN Road Nalla",
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Kanhan",
+    "group": "Kanhan",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 10.80 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1964178,
+     21.2170645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Ashok Nagar Nalla",
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Kanhan",
+    "group": "Kanhan",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 10.80 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1964178,
+     21.2170645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Lohiya Layout Nalla",
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Kanhan",
+    "group": "Kanhan",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 10.80 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1964178,
+     21.2170645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bagdor Nalla",
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Kanhan",
+    "group": "Kanhan",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 10.80 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1964178,
+     21.2170645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Other local nallas (2, unnamed)",
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Kanhan",
+    "group": "Kanhan",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 10.80 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.1964178,
+     21.2170645
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Local Nallas",
+    "town": "Kanhan Pimpri",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Kanhan",
+    "group": "Kanhan",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 8.00 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.2396426,
+     21.2290483
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Kawadghat drain (to Wena near Railway Bridge)",
+    "town": "Hinganghat",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wena",
+    "group": "Wena",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 6.25 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.8331636,
+     20.542611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Hinganghat town drain (from Ghat)",
+    "town": "Hinganghat",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Wena",
+    "group": "Wena",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 6.25 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.8331636,
+     20.542611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Bhagur Village Nalla",
+    "town": "Bhagur",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Darna",
+    "group": "Darna",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 0.74 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8336872,
+     19.8744978
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Sansari Nalla",
+    "town": "Sansari",
+    "state": "Maharashtra",
+    "source_type": "Mixed",
+    "river": "Darna",
+    "group": "Darna",
+    "tapped": "False",
+    "tapped_status": "Untapped",
+    "flow_raw": "Town sewage generation 0.42 MLD; treatment capacity 0; no per-drain flow published (MH MPR Aug 2020)",
+    "flow_mld": "",
+    "bod_load_tpd": "",
+    "bod_mg_l": "",
+    "cod_mg_l": "",
+    "data_status": "unmeasured",
+    "estimation_method": "",
+    "population_2011": "",
+    "population_source": "",
+    "bod_below_detection": "False",
+    "coords_corrected": "False",
+    "source": "Maharashtra Monthly Progress Report, Aug 2020 (NGT OA 673/2018), Annexure-I",
+    "as_of": "2020-08"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8383335,
+     19.9062577
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,2876 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Trimbakeshwar",
+    "state": "Maharashtra",
+    "population_2011": "12056",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "89.61",
+    "sex_ratio": "961",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage town; Trimbakeshwar Jyotirlinga temple, religious tourism and small trade.\"}",
+    "mla_name": "Hiraman Bhika Khoskar",
+    "mla_party": "NCP",
+    "constituency": "Igatpuri (ST)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: Godavari source town at the Brahmagiri foothills. Town name in the file is Trimbakeshwar; the Wikipedia article is 'Trimbak' (Trimbak MCI). Wikipedia geography section gives 19.56, 73.32, differing from the infobox 19.93, 73.53 used here. Sex ratio 961 derived from 51% male / 49% female in the 2011 Census text. Trimbakeshwar falls in the Igatpuri (ST) assembly constituency, not Nashik West.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.53,
+     19.93
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "population_2011": "1486053",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "267",
+    "population_density_per_sqkm": "5570",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Wine, grape and onion trade; industry (auto, engineering), pilgrimage (Kumbh Mela, Ramkund) and services.\"}",
+    "mla_name": "Devyani Suhas Pharande",
+    "mla_party": "BJP",
+    "constituency": "Nashik Central",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: largest city on the Godavari. Nashik has three assembly seats (Central, East, West); Nashik Central is the city-centre seat used here. Metro population 1,562,769 (2011) not used.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.7898,
+     19.9975
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kopargaon",
+    "state": "Maharashtra",
+    "population_2011": "65273",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "74.86",
+    "sex_ratio": "965",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Sugarcane farming and sugar industry; market town on the Godavari.\"}",
+    "mla_name": "Ashutosh Ashokrao Kale",
+    "mla_party": "NCP",
+    "constituency": "Kopargaon",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Taluka population 302,452 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.478,
+     19.885
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Shrirampur",
+    "state": "Maharashtra",
+    "population_2011": "89282",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "9.02",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.76",
+    "sex_ratio": "991",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Sugar industry and agriculture; market town.\"}",
+    "mla_name": "Hemant Bhujangrao Ogale",
+    "mla_party": "INC",
+    "constituency": "Shrirampur (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Shrirampur Assembly constituency (ECI results); IndiaVotes (ECI 2024 results); absent from the crawled MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Taluka population 287,500 is not the town figure. Shrirampur (SC) is a Scheduled Caste reserved seat.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.660339,
+     19.619548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Vaijapur",
+    "state": "Maharashtra",
+    "population_2011": "41296",
+    "population_basis": "Census of India 2011, Vaijapur (MCI) - census2011.co.in town page",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "72.72",
+    "sex_ratio": "944",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; gateway town to Marathwada, on the Narangi near the Godavari.\"}",
+    "mla_name": "Ramesh Nanasaheb Bornare",
+    "mla_party": "Shiv Sena",
+    "constituency": "Vaijapur",
+    "mla_election_year": "2024",
+    "mla_source": "IndiaVotes (ECI 2024 results); Wikipedia, Vaijapur Assembly constituency; absent from the crawled MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Wikipedia infobox figure 65,296 is wrong for the 2011 town (it matches no Census 2011 municipal figure); the MCI figure 41,296 is used. Vaijapur town sits on the Narangi river, a Godavari tributary just north of the main stem; the Godavari forms the southern boundary of Vaijapur tehsil.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.73,
+     19.92
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Paithan",
+    "state": "Maharashtra",
+    "population_2011": "41536",
+    "population_basis": "Census of India 2011, Paithan (MCI) - census2011.co.in town page",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "70.85",
+    "sex_ratio": "953",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Handloom (Paithani sarees), agriculture; historic town and pilgrimage centre on the Godavari.\"}",
+    "mla_name": "Vilas Sandipanrao Bhumre",
+    "mla_party": "Shiv Sena",
+    "constituency": "Paithan",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Wikipedia infobox figure 57,280 is wrong for the 2011 town; the MCI figure 41,536 is used. Taluka population 347,973 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.38,
+     19.48
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gangakhed",
+    "state": "Maharashtra",
+    "population_2011": "49891",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "10.16",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "66.62",
+    "sex_ratio": "952",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Sugar factory and agriculture; pilgrimage town (Sant Janabai birthplace) on the Godavari.\"}",
+    "mla_name": "Ratnakar Manikrao Gutte",
+    "mla_party": "Rashtriya Samaj Paksha",
+    "constituency": "Gangakhed",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Taluka population 202,867 is not the town figure. Literacy/sex ratio from census2011.co.in town page; the Wikipedia demographics section is 2001 only.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.75,
+     18.95
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nanded",
+    "state": "Maharashtra",
+    "population_2011": "550439",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "63.22",
+    "population_density_per_sqkm": "8707",
+    "literacy_pct": "87.4",
+    "sex_ratio": "924",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Trade, education and university, gurdwara pilgrimage (Hazur Sahib); services and agriculture trade.\"}",
+    "mla_name": "Anand Shankar Tidke",
+    "mla_party": "Shiv Sena",
+    "constituency": "Nanded South",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. City spans two assembly seats: Nanded South (old city, used here) and Nanded North (Waghala; MLA Balaji Devidasrao Kalyankar, Shiv Sena, 2024). Infobox population 550,439; article text gives 550,564 - the infobox figure is used. District population 3,361,292 is not the city figure.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.3,
+     19.15
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Dharmabad",
+    "state": "Maharashtra",
+    "population_2011": "33741",
+    "population_basis": "citypopulation.de (Census 2011), Dharmabad (MCI)",
+    "area_km2": "12.75",
+    "population_density_per_sqkm": "2646",
+    "literacy_pct": "75.38",
+    "sex_ratio": "994",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town on the Godavari near the Telangana border.\"}",
+    "mla_name": "Rajesh Sambhaji Pawar",
+    "mla_party": "BJP",
+    "constituency": "Naigaon",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia (Dharmabad railway station coordinates)",
+    "notes": "Tier 1. No separate Dharmabad assembly constituency exists - the town is in Naigaon AC, which comprises Umri, Dharmabad and Naigaon talukas. Taluka population 96,776 is not the town figure. Literacy/sex ratio from census2011.co.in town page.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.8494,
+     18.8884
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Basar",
+    "state": "Telangana",
+    "population_2011": "5865",
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "1045",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage village (Gnana Saraswati Temple); farming.\"}",
+    "mla_name": "Ram Rao Pawar",
+    "mla_party": "BJP",
+    "constituency": "Mudhole",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: small riverside pilgrimage village on the main stem (Saraswati temple). Wikipedia infobox figure 11,294 is a 2015 estimate, not Census 2011. Village code 570264, Mudhole mandal, Nirmal district. Also spelled Basara.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.95278,
+     18.88167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nizamabad",
+    "state": "Telangana",
+    "population_2011": "311152",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture trade (turmeric, rice), industry and services; district headquarters.\"}",
+    "mla_name": "Dhanpal Suryanarayana",
+    "mla_party": "BJP",
+    "constituency": "Nizamabad (Urban)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. District population 1,571,022 (new district) / 2,551,335 (old undivided district) is not the city figure. Wikipedia text coordinates 18.683, 78.100 differ slightly from the infobox 18.672, 78.094 used here.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.094,
+     18.672
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kaleshwaram",
+    "state": "Telangana",
+    "population_2011": "2335",
+    "population_basis": "Census of India 2011 (village directory) - mapsofindia village page",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage village at the Godavari-Pranahita confluence (Kaleshwara Mukteswara temple); farming.\"}",
+    "mla_name": "Duddilla Sridhar Babu",
+    "mla_party": "INC",
+    "constituency": "Manthani",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: Godavari-Pranahita confluence (Dakshina Triveni Sangamam). Coordinates: Wikipedia 18.81139, 79.90667 used; mapsofindia gives 18.7859, 79.8887 for the village point. Village population 2,335 (2011); the Kaleshwaram gram panchayat total is 3,017 including Majeedpalle (539) and Puskupalle (143). Mahadevpur mandal, Jayashankar Bhupalpally district. MLA name also spelled D. Sridhar Babu.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.90667,
+     18.81139
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mancherial",
+    "state": "Telangana",
+    "population_2011": "89935",
+    "population_basis": "Wikipedia infobox (Census 2011) - Mancherial (MCI)",
+    "area_km2": "39.04",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal-belt town (Singareni collieries), agriculture and trade.\"}",
+    "mla_name": "Kokkirala Premsagar Rao",
+    "mla_party": "INC",
+    "constituency": "Mancherial",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Wikipedia infobox figure 228,450 is an expanded-corporation figure, not the 2011 town; the MCI figure 89,935 is used. Mandal population 195,228 and district 807,037 are not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.444306,
+     18.871389
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ramagundam",
+    "state": "Telangana",
+    "population_2011": "229644",
+    "population_basis": "Wikipedia infobox (Census 2011) - Ramagundam (M Corp)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining (Singareni), NTPC thermal power and fertiliser; industrial city on the Godavari.\"}",
+    "mla_name": "Makkan Singh Raj Thakur",
+    "mla_party": "INC",
+    "constituency": "Ramagundam",
+    "mla_election_year": "2023",
+    "mla_source": "Wikipedia, Ramagundam Assembly constituency (ECI results); absent from the crawled MyNeta winners table",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Urban agglomeration 242,979; other compilations give 237,559-252,308 - the M Corp figure 229,644 is used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.475,
+     18.76389
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kothagudem",
+    "state": "Telangana",
+    "population_2011": "79819",
+    "population_basis": "Census of India 2011 - Kothagudem town (citypopulation.de)",
+    "area_km2": "16.1",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining (Singareni) and power; industrial town on the Godavari.\"}",
+    "mla_name": "Kunamneni Sambasiva Rao",
+    "mla_party": "CPI",
+    "constituency": "Kothagudem",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Wikipedia demographics figure 119,501 is the expanded municipal figure, not the 2011 town; the town figure 79,819 is used. Mandal population 188,191 and district 1,069,261 are not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.63,
+     17.55
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhadrachalam",
+    "state": "Telangana",
+    "population_2011": "50087",
+    "population_basis": "Census of India 2011 (census town)",
+    "area_km2": "12.0",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage town (Sri Sita Ramachandra Swamy temple); tourism and farming.\"}",
+    "mla_name": "Tellam Venkata Rao",
+    "mla_party": "BRS",
+    "constituency": "Bhadrachalam (ST)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Bhadrachalam (ST) is a Scheduled Tribe reserved seat.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.8826,
+     17.6669
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kunavaram",
+    "state": "Andhra Pradesh",
+    "population_2011": "4798",
+    "population_basis": "Census of India 2011 (village directory) - vill.co.in / Ladin Wikipedia",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Farming village at the Sabari-Godavari confluence.\"}",
+    "mla_name": "Miriyala Sirisha Devi",
+    "mla_party": "TDP",
+    "constituency": "Rampachodavaram (ST)",
+    "mla_election_year": "2024",
+    "mla_source": "ECI gazette notification No. 308/AP-LA/2024 (via Scribd); Wikipedia, Rampachodavaram Assembly constituency",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: village at the Sabari-Godavari confluence; Kunavaram mandal HQ. Mandal population 26,245 is not the village figure. Chintur and Kunavaram are separate rows (the task listed 'Chintur/Kunavaram'). Rampachodavaram (ST) mandal list includes Kunavaram mandal. The village is in Kunavaram mandal, Alluri Sitharama Raju district (2022 reorganisation; older sources say Khammam district).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.2667,
+     17.5833
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "population_2011": "341831",
+    "population_basis": "Wikipedia infobox (Census 2011) - city within 2011 boundaries",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "84.28",
+    "sex_ratio": "972",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Paper, textiles and trade; cultural centre and transport hub on the Godavari.\"}",
+    "mla_name": "Adireddy Srinivas",
+    "mla_party": "TDP",
+    "constituency": "Rajahmundry City",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Andhra Pradesh 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1. Expanded corporation figure 513,385 and metro 476,873 are not the 2011 city figure. City name officially Rajamahendravaram; Rajahmundry is the common name used here. Rajahmundry has two assembly seats (City and Rural); City is the city-centre seat used here.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7815,
+     17.0135
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Yanam",
+    "state": "Puducherry",
+    "population_2011": "55626",
+    "population_basis": "Census of India 2011 - Yanam municipality (town + 6 villages), Wikipedia",
+    "area_km2": "30.0",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "79.47",
+    "sex_ratio": "1038",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Fishing, aquaculture and small trade; former French enclave town at the Godavari mouth.\"}",
+    "mla_name": "Malladi Krishna Rao",
+    "mla_party": "AINRC",
+    "constituency": "Yanam",
+    "mla_election_year": "2026",
+    "mla_source": "ECI notification No. 308/PUDU-LA/2026 (CEO Puducherry); MyNeta Puducherry 2026 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: river-mouth town where the Godavari (Gautami branch) meets the Bay of Bengal. Yanam is in the Union Territory of Puducherry, NOT Andhra Pradesh - its MLA is elected to the Puducherry Assembly. The 2021 winner Gollapalli Srinivas Ashok (IND) was replaced in the May 2026 Puducherry election by Malladi Krishna Rao (AINRC, 19,863 votes, margin 4,568 over Gollapalli, now INC). Municipality population 55,626 includes the town (31,500) plus 6 villages; the municipality figure is used. NOTE: a May 2026 social-media post claims Gollapalli won a second term - contradicted by the ECI notification, the MyNeta 2026 winners list and IndiaVotes.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     82.21667,
+     16.73333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Antarvedi",
+    "state": "Andhra Pradesh",
+    "population_2011": "15605",
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "33.09",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "69.73",
+    "sex_ratio": "948",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage village (Lakshmi Narasimha Swamy temple) at the Godavari mouth; fishing and farming.\"}",
+    "mla_name": "Deva Varaprasad",
+    "mla_party": "Janasena Party",
+    "constituency": "Razole (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "ECI gazette notification No. 308/AP-LA/2024 (via Scribd); Wikipedia, 16th Andhra Pradesh Assembly",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 1: village at the Godavari mouth (Vasista branch) where the river meets the Bay of Bengal. Sakhinetipalle mandal, Konaseema district; village code 587858; area 3,309 ha. Sakhinetipalle mandal is in Razole (SC) constituency (Delimitation 2008).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7333,
+     16.3333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Karimnagar",
+    "state": "Telangana",
+    "population_2011": "289821",
+    "population_basis": "citypopulation.de (Census 2011), Karimnagar (M Corp + OG)",
+    "area_km2": "49.75",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "983",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Trade, education and services; granite and agriculture trade.\"}",
+    "mla_name": "Gangula Kamalakar",
+    "mla_party": "BRS",
+    "constituency": "Karimnagar",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Maneru river, a Godavari tributary; the Maneru joins the Godavari near Manthani. M Corp alone 261,185; UA 297,447; the M Corp + OG figure 289,821 is used. Wikipedia text figure '397,447' and old infobox '497,447' are errors.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.128806,
+     18.438611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Adilabad",
+    "state": "Telangana",
+    "population_2011": "117167",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "35.5",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture trade (cotton, soya) and timber; district headquarters on the Penganga.\"}",
+    "mla_name": "Payal Shanker",
+    "mla_party": "BJP",
+    "constituency": "Adilabad",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 candidate affidavit page (winner); Wikipedia, Adilabad Assembly constituency (ECI results)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Penganga river, a major Godavari tributary. UA 139,383; district population 708,972 is not the city figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.53,
+     19.67
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Hingoli",
+    "state": "Maharashtra",
+    "population_2011": "85103",
+    "population_basis": "District Census Handbook (Census 2011) - Hingoli town",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture trade and services; district headquarters in the Kayadhu/Purna basin.\"}",
+    "mla_name": "Tanaji Sakharamji Mutkule",
+    "mla_party": "BJP",
+    "constituency": "Hingoli",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Kayadhu river in the Purna basin. District population 1,177,345 and tehsil 269,546 are not the town figure. MyNeta spells the MLA's first name 'Tanhaji'.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.15,
+     19.7167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Parbhani",
+    "state": "Maharashtra",
+    "population_2011": "307170",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "57.6",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture trade (sorghum, cotton), education and services; district headquarters on the Purna.\"}",
+    "mla_name": "Rahul Vedprakash Patil",
+    "mla_party": "Shiv Sena (Uddhav Balasaheb Thackeray)",
+    "constituency": "Parbhani",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Purna river, a major Godavari tributary. District population 1,836,086 is not the city figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.78306,
+     19.25917
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Jalna",
+    "state": "Maharashtra",
+    "population_2011": "285577",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Steel and agriculture trade; district headquarters on the Kundalika (Purna system).\"}",
+    "mla_name": "Arjun Panditrao Khotkar",
+    "mla_party": "Shiv Sena",
+    "constituency": "Jalna",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Kundalika river, which joins the Purna system. District population 1,959,046 and tehsil 519,018 are not the city figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.8864,
+     19.841
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sangamner",
+    "state": "Maharashtra",
+    "population_2011": "65804",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Sugar industry, agriculture trade and education; market town on the Pravara.\"}",
+    "mla_name": "Amol Dhondiba Khatal",
+    "mla_party": "Shiv Sena",
+    "constituency": "Sangamner",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Pravara river, a major Godavari tributary. Khatal defeated long-time INC MLA Balasaheb Thorat in 2024.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.22,
+     19.57
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Shirdi",
+    "state": "Maharashtra",
+    "population_2011": "36004",
+    "population_basis": "Census of India 2011 - Shirdi (Nagar Panchayat)",
+    "area_km2": "12.98",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "920",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage town (Sai Baba temple); religious tourism, hotels and services.\"}",
+    "mla_name": "Radhakrishna Eknathrao Vikhe Patil",
+    "mla_party": "BJP",
+    "constituency": "Shirdi",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: pilgrimage town near the Pravara river. censusindia2011.com gives a conflicting 22,335 for Shirdi (NP); the 36,004 figure (Wikipedia/Census 2011, Nagar Panchayat) is used. Literacy ~70% is reported in older text and is not used here.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     74.48,
+     19.77
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sangareddy",
+    "state": "Telangana",
+    "population_2011": "72344",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "14.45",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "971",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture trade and services; district headquarters on the Manjira.\"}",
+    "mla_name": "Chinta Prabhakar",
+    "mla_party": "BRS",
+    "constituency": "Sangareddy",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Manjira river, a major Godavari tributary. District population 1,527,628 and mandal 154,578 are not the city figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.08194,
+     17.61194
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Medak",
+    "state": "Telangana",
+    "population_2011": "44255",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; historic town (Medak Cathedral, fort) on the Manjira.\"}",
+    "mla_name": "Mynampally Rohith",
+    "mla_party": "INC",
+    "constituency": "Medak",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Manjira river. District population 767,428 (new district) / 3,031,877 (old undivided Medak) is not the town figure. MLA name also spelled Mynampally Rohit Rao.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.263,
+     18.046
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sircilla",
+    "state": "Telangana",
+    "population_2011": "83186",
+    "population_basis": "citypopulation.de (Census 2011), Sircilla (M + OG)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Textile (powerloom) town; handloom weaving and agriculture trade on the Maneru.\"}",
+    "mla_name": "Kalvakuntla Taraka Rama Rao",
+    "mla_party": "BRS",
+    "constituency": "Sircilla",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Maneru river. Population figures conflict: M + OG 83,186 (citypopulation.de, Census 2011) is used; the municipality website gives 92,091 for the (expanded) municipal limits, core city 75,550, and Wikipedia 92,910 is likely a typo of 92,091. Mandal population 142,676 is not the town figure. Also spelled Siricilla.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.83,
+     18.38
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Jagdalpur",
+    "state": "Chhattisgarh",
+    "population_2011": "125463",
+    "population_basis": "Wikipedia infobox (Census 2011) - Jagdalpur (M Corp)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "75.31",
+    "sex_ratio": "961",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Trade, forest produce and tourism; district headquarters and gateway to Bastar, on the Indravati.\"}",
+    "mla_name": "Kiran Singh Deo",
+    "mla_party": "BJP",
+    "constituency": "Jagdalpur",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Chhattisgarh 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: on the Indravati river, a major Godavari tributary (joins the Godavari near Bhopalpatnam). Taluka population 239,808 is not the city figure; Wikipedia infobox metro figure 325,463 is a 2021 estimate. Mapsofindia gives a different village point (19.0796, 82.0043); the Wikipedia city coordinates are used. MyNeta lists the MLA as 'Kiran Deo'.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.92,
+     19.18
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Chintur",
+    "state": "Andhra Pradesh",
+    "population_2011": "3818",
+    "population_basis": "Census of India 2011 (village directory)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "1035",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Farming village and mandal HQ on the Sabari river.\"}",
+    "mla_name": "Miriyala Sirisha Devi",
+    "mla_party": "TDP",
+    "constituency": "Rampachodavaram (ST)",
+    "mla_election_year": "2024",
+    "mla_source": "ECI gazette notification No. 308/AP-LA/2024 (via Scribd); Wikipedia, Rampachodavaram Assembly constituency",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "aroundus.com (Chintur mandal HQ coordinates)",
+    "notes": "Tier 2: on the Sabari river, a major Godavari tributary; Chintur mandal HQ. Mandal (tehsil) population 40,725 is not the village figure. Village code 579197; Chintur mandal, Alluri Sitharama Raju district (formerly Khammam district). Coordinates are mandal-HQ coordinates from aroundus.com, not a Wikipedia article point - re-verify with Nominatim at build time if a tighter point is needed. Also spelled Chintoor.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.394,
+     17.745
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Warangal",
+    "state": "Telangana",
+    "population_2011": "615998",
+    "population_basis": "census2011.co.in (Census 2011), Warangal (M Corp)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Trade, education (Kakatiya University), granite and agriculture; historic Kakatiya capital.\"}",
+    "mla_name": "Naini Rajender Reddy",
+    "mla_party": "INC",
+    "constituency": "Warangal West",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: basin city - no major river flows through Warangal; its water comes via the Kakatiya Canal from the Sriram Sagar Project on the Godavari. Population figures conflict: M Corp 615,998 is used; City + OG 704,570; UA 753,438; expanded Greater Warangal corporation ~830,281 (the Wikipedia historical-table 2011 figure is the expanded area). City spans Warangal West (used here) and Warangal East (MLA Konda Surekha, INC, 2023).",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.5941,
+     17.9689
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kakinada",
+    "state": "Andhra Pradesh",
+    "population_2011": "384128",
+    "population_basis": "Wikipedia infobox (Census 2011)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only — no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Port city; fishing, seafood processing, fertiliser and trade at the Godavari delta.\"}",
+    "mla_name": "Vanamadi Venkateswara Rao",
+    "mla_party": "TDP",
+    "constituency": "Kakinada City",
+    "mla_election_year": "2024",
+    "mla_source": "ECI gazette notification No. 308/AP-LA/2024 (via Scribd)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: river-mouth/coastal city at the Godavari delta (Kakinada port, ~25 km from the river mouth at Yanam). Metro/UA 443,028; district population 2,092,374 is not the city figure. MLA name also styled Vanamadi Kondababu.",
+    "featured": "True"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     82.255,
+     16.96611
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ardhapur",
+    "state": "Maharashtra",
+    "population_2011": "26000",
+    "population_basis": "Census of India 2011 (village directory) - Ardhapur village",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "928",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and farm trade; village services.\"}",
+    "mla_name": "Chavan Sreejaya Ashokrao",
+    "mla_party": "BJP",
+    "constituency": "Bhokar",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (STP geocode cache)",
+    "notes": "Tier 2: STP/drains town on the Penganga tributary. Village figure (village code 544645); the Wikipedia infobox figure of 30,000 is rounded, not used. Tehsil population 109,332 is not the town figure. Ardhapur taluka is in Bhokar AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.4149956,
+     19.269321
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ballarpur",
+    "state": "Maharashtra",
+    "population_2011": "89452",
+    "population_basis": "Wikipedia infobox (Census 2011) - Ballarpur (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "78.39",
+    "sex_ratio": "950",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Paper mill town; coal mining and trade in the Chandrapur coal belt.\"}",
+    "mla_name": "Mungantiwar Sudhir Sacchidanand",
+    "mla_party": "BJP",
+    "constituency": "Ballarpur",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Wardha. Taluka population 134,540 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.35,
+     19.833
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Beed",
+    "state": "Maharashtra",
+    "population_2011": "146709",
+    "population_basis": "Wikipedia infobox (Census 2011) - Beed (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "941",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and sugar industry; trade and district services.\"}",
+    "mla_name": "Sandeep Ravindra Kshirsagar",
+    "mla_party": "NCP-Sharadchandra Pawar",
+    "constituency": "Beed",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large basin city on the Bindusara (Godavari tributary). Municipal Council figure; district population 2,585,049 is not the town figure. Area left blank: infobox 45 km2 conflicts with the council's 18.59 km2. MLA is the Sharad Pawar faction (MyNeta: NCP-Sharadchandra Pawar), distinct from NCP (Ajit Pawar faction).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.76,
+     18.99
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhagur",
+    "state": "Maharashtra",
+    "population_2011": "12353",
+    "population_basis": "Census of India 2011 - Bhagur (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "82.13",
+    "sex_ratio": "992",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Small municipal town; agriculture and trade near Deolali/Nashik.\"}",
+    "mla_name": "Ahire Saroj Babulal",
+    "mla_party": "NCP",
+    "constituency": "Deolali (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (drains geocode cache)",
+    "notes": "Tier 2: small municipal town near Nashik/Deolali. Real Census 2011 figure found, so the row is included. A mapsofindia pincode page giving 5,780 is a different code (551020 = Sansari CT), not Bhagur town. Bhagur and Sansari are in Deolali (SC) AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8336872,
+     19.8744978
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhandara",
+    "state": "Maharashtra",
+    "population_2011": "91845",
+    "population_basis": "Wikipedia infobox (Census 2011) - Bhandara (MCI)",
+    "area_km2": "16.84",
+    "population_density_per_sqkm": "5454",
+    "literacy_pct": "",
+    "sex_ratio": "979",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Brassware and rice milling; agriculture and trade.\"}",
+    "mla_name": "Bhondekar Narendra Bhojraj",
+    "mla_party": "Shiv Sena",
+    "constituency": "Bhandara (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Wainganga. Municipal Council figure; district population 1,200,334 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.65,
+     21.17
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhokar",
+    "state": "Maharashtra",
+    "population_2011": "32899",
+    "population_basis": "Wikipedia infobox (Census 2011) - Bhokar (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "70.12",
+    "sex_ratio": "923",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and farm trade; market town on the Nanded-Bhokar road.\"}",
+    "mla_name": "Chavan Sreejaya Ashokrao",
+    "mla_party": "BJP",
+    "constituency": "Bhokar",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Manar (Penganga tributary). Tehsil population 138,313 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.669392,
+     19.217803
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bramhapuri",
+    "state": "Maharashtra",
+    "population_2011": "36025",
+    "population_basis": "Wikipedia infobox (Census 2011) - Bramhapuri (MCI)",
+    "area_km2": "21.92",
+    "population_density_per_sqkm": "1643",
+    "literacy_pct": "81.52",
+    "sex_ratio": "996",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and forest produce; market town for the Chandrapur-Gadchiroli belt.\"}",
+    "mla_name": "Vijay Namdeorao Wadettiwar",
+    "mla_party": "INC",
+    "constituency": "Bramhapuri",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Wainganga. Spelling is Bramhapuri (STP/drains drafts), not Brahmapuri. Infobox coordinates used; the geography text gives 20.36, 79.51, which is a taluka point. Taluka population 166,165 is not the town figure. Density computed from infobox area; the infobox density of 2,400 conflicts and is not used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8644,
+     20.6068
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Chandrapur",
+    "state": "Maharashtra",
+    "population_2011": "320379",
+    "population_basis": "Wikipedia infobox (Census 2011) - Chandrapur (M Corp)",
+    "area_km2": "56.35",
+    "population_density_per_sqkm": "5686",
+    "literacy_pct": "",
+    "sex_ratio": "952",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining, thermal power and cement; trade and services.\"}",
+    "mla_name": "Jorgewar Kishor Gajanan",
+    "mla_party": "BJP",
+    "constituency": "Chandrapur (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Wardha/Irai. Municipal Corporation figure; the '518,000 urban area', tehsil 481,758 and district 2,204,307 figures are not the city figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.297,
+     19.95
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "population_2011": "1175116",
+    "population_basis": "Wikipedia infobox (Census 2011) - city / Municipal Corporation",
+    "area_km2": "141",
+    "population_density_per_sqkm": "8334",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Industry (auto, engineering), trade and services; education hub of Marathwada.\"}",
+    "mla_name": "Jaiswal Pradeep Shivnarayan",
+    "mla_party": "Shiv Sena",
+    "constituency": "Aurangabad Central",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Aurangabad Central Assembly constituency (ECI results)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (STP geocode cache)",
+    "notes": "Tier 2: large city on the Kham (Godavari tributary). City/Municipal Corporation figure; the metro figure 1,193,167 and the Maharashtra Directorate of Municipal Administration list figure 1,228,032 are not used. The city has three assembly seats; Aurangabad Central is the city-centre seat used here (East: Atul Save, BJP; West: Sanjay Shirsat, Shiv Sena). The seat is officially 'Chhatrapati Sambhajingar Central' but is recorded as Aurangabad Central as in MyNeta/Wikipedia. Spelling is Chhatrapati Sambhajinagar (STP/drains drafts), not Aurangabad.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     75.3390241,
+     19.877263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Deolali",
+    "state": "Maharashtra",
+    "population_2011": "54027",
+    "population_basis": "Wikipedia infobox (Census 2011) - Deolali (Cantonment Board)",
+    "area_km2": "53.03",
+    "population_density_per_sqkm": "1019",
+    "literacy_pct": "79.91",
+    "sex_ratio": "911",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Cantonment town; military establishments, trade and services.\"}",
+    "mla_name": "Ahire Saroj Babulal",
+    "mla_party": "NCP",
+    "constituency": "Deolali (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: cantonment town near Nashik. Cantonment Board figure; the censusindia2011.com city-page text figure of 12,353 is Bhagur's figure, not Deolali's.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.834,
+     19.951
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gadchiroli",
+    "state": "Maharashtra",
+    "population_2011": "54152",
+    "population_basis": "Wikipedia infobox (Census 2011) - Gadchiroli town",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Forest produce, bamboo and agriculture; district administration.\"}",
+    "mla_name": "Dr. Milind Ramji Narote",
+    "mla_party": "BJP",
+    "constituency": "Gadchiroli (ST)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large town on the Wainganga/Pranhita. Town figure; tehsil population 145,963 and district 1,072,942 are not the town figure. Town-article coordinates used; the district coordinates 20.18611, 80.00528 are not used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.0,
+     20.1
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Ghuggus",
+    "state": "Maharashtra",
+    "population_2011": "32654",
+    "population_basis": "Census of India 2011 - Ghugus (CT)",
+    "area_km2": "12.94",
+    "population_density_per_sqkm": "2523",
+    "literacy_pct": "77.43",
+    "sex_ratio": "923",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining town; agriculture around it.\"}",
+    "mla_name": "Jorgewar Kishor Gajanan",
+    "mla_party": "BJP",
+    "constituency": "Chandrapur (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Chandrapur, Maharashtra Assembly constituency (ECI results); MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: census town in the Chandrapur coal belt. Census spelling is Ghugus; the row uses Ghuggus as in the STP/drains drafts. The censusindia2011.com city-page text figure of 320,379 is Chandrapur's figure, not Ghugus's. Ghugus revenue circle is in Chandrapur (SC) AC (Wikipedia Chandrapur AC).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.13,
+     19.93
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Gondia",
+    "state": "Maharashtra",
+    "population_2011": "132813",
+    "population_basis": "List of cities in Maharashtra (Census 2011) - Gondia (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "997",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Rice and forest-produce trade; agriculture and small industry.\"}",
+    "mla_name": "Agrawal Vinod",
+    "mla_party": "BJP",
+    "constituency": "Gondia",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Wainganga. Figure 132,813 from the List of cities in Maharashtra (2001: 120,902); the infobox 132,821 and article text 132,889 conflict by a few people and are not used. District population 1,322,507 is not the town figure. Area left blank: only an approximate ~20 km2 (maharashtraonline) was found.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195,
+     21.4598
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Hinganghat",
+    "state": "Maharashtra",
+    "population_2011": "101805",
+    "population_basis": "Wikipedia infobox (Census 2011) - Hinganghat (MCI)",
+    "area_km2": "12.77",
+    "population_density_per_sqkm": "7972",
+    "literacy_pct": "84.07",
+    "sex_ratio": "936",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Cotton trade and ginning; agriculture and services.\"}",
+    "mla_name": "Samir Tryambakrao Kunawar",
+    "mla_party": "BJP",
+    "constituency": "Hinganghat",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Wardha. Tehsil population 224,017 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.83,
+     20.57
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kamptee",
+    "state": "Maharashtra",
+    "population_2011": "86793",
+    "population_basis": "Wikipedia infobox (Census 2011) - Kamptee (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "79.44",
+    "sex_ratio": "997",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Cantonment town; trade, services and agriculture.\"}",
+    "mla_name": "Chandrashekhar Krushnarao Bawankule",
+    "mla_party": "BJP",
+    "constituency": "Kamthi",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Kamthi Assembly constituency (ECI results)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Kanhan. Municipal Council figure; the cantonment population of 12,457 is a separate board and is excluded; taluka population 238,870 is not the town figure. Constituency is spelled Kamthi in MyNeta/Wikipedia; the town is spelled Kamptee as in the STP/drains drafts.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.2,
+     21.2333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kanhan Pimpri",
+    "state": "Maharashtra",
+    "population_2011": "22945",
+    "population_basis": "Census of India 2011 - Kanhan (Pipri) (CT)",
+    "area_km2": "5.02",
+    "population_density_per_sqkm": "4571",
+    "literacy_pct": "74.72",
+    "sex_ratio": "966",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal-mining belt town; agriculture and services near Kamptee.\"}",
+    "mla_name": "Dr Ashishrao Deshmukh",
+    "mla_party": "BJP",
+    "constituency": "Savner",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (Kanhan town point; Kanhan Pimpri CT has no separate geocode)",
+    "notes": "Tier 2: small town near Kamptee. Real Census 2011 figure found (Kanhan (Pipri) CT), so the row is included. The MPCB action-plan figure of 32,000 is a rounded estimate, not used. Coordinates are the Kanhan town point and are approximate for Kanhan Pimpri CT. Constituency is Savner (officially spelled Savner, formerly Saoner) per the 2008 delimitation: Savner AC = Saoner tahsil + Parseoni RIC in Ramtek tahsil, including Kanhan-Pipri; it is NOT Ramtek AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.2396426,
+     21.2290483
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Latur",
+    "state": "Maharashtra",
+    "population_2011": "382940",
+    "population_basis": "List of cities in Maharashtra (Census 2011) - Latur (M Corp)",
+    "area_km2": "117.78",
+    "population_density_per_sqkm": "3251",
+    "literacy_pct": "84.22",
+    "sex_ratio": "937",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Sugar, oilseed and pulse trade; agriculture, education and services.\"}",
+    "mla_name": "Amit Vilasrao Deshmukh",
+    "mla_party": "INC",
+    "constituency": "Latur City",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Latur City Assembly constituency (ECI results)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Manjira. Figure 382,940 from the List of cities in Maharashtra (2001: 299,985); the 382,754 figure (local-government table / district article / datameet CSV) is not used. The infobox figure of 266,955 is the old council area, and the metro figure of 300,000 is not the city figure. Area is the expanded corporation area. Latur City is the city seat; Latur Rural (Ramesh Kashiram Karad, BJP, 2024) is the surrounding seat.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.56,
+     18.4
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mehkar",
+    "state": "Maharashtra",
+    "population_2011": "45248",
+    "population_basis": "Wikipedia infobox (Census 2011) - Mehkar (MCI)",
+    "area_km2": "6.5",
+    "population_density_per_sqkm": "6961",
+    "literacy_pct": "75.1",
+    "sex_ratio": "944",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town on the Penganga plain.\"}",
+    "mla_name": "Kharat Siddharth Rambhau",
+    "mla_party": "Shiv Sena (Uddhav Balasaheb Thackeray)",
+    "constituency": "Mehkar (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Mehkar Assembly constituency (ECI results)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Penganga. Tehsil population 268,316 is not the town figure; the old Wikipedia text figure of 65,245 is wrong. MLA is the UBT faction of Shiv Sena.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.567,
+     20.15
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mouda",
+    "state": "Maharashtra",
+    "population_2011": "14606",
+    "population_basis": "Wikipedia infobox (Census 2011) - Mouda (CT)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "79.71",
+    "sex_ratio": "931",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture; thermal power plant nearby.\"}",
+    "mla_name": "Ashish Nandkishore Jaiswal (Vakil)",
+    "mla_party": "Shiv Sena",
+    "constituency": "Ramtek",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: census town on the Kanhan. Wikipedia spells the town Mauda. Tehsil population 139,776 is not the town figure. Mauda is in Ramtek AC (Ramtek AC Factbook village list).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4,
+     21.15
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mudkhed",
+    "state": "Maharashtra",
+    "population_2011": "23517",
+    "population_basis": "Wikipedia infobox (Census 2011) - Mudkhed (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "859",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; railway junction town.\"}",
+    "mla_name": "Chavan Sreejaya Ashokrao",
+    "mla_party": "BJP",
+    "constituency": "Bhokar",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari. Tehsil population 115,696 is not the town figure; the 'town ~25,000' figure is not used. Mudkhed taluka is in Bhokar AC (Bhokar AC = Ardhapur + Mudkhed + Bhokar tehsils), NOT Deglur AC (Deglur AC = Deglur + Biloli tehsils).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.503,
+     19.148
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nagpur",
+    "state": "Maharashtra",
+    "population_2011": "2405665",
+    "population_basis": "Wikipedia infobox (Census 2011) - Nagpur (M Corp)",
+    "area_km2": "227.36",
+    "population_density_per_sqkm": "10581",
+    "literacy_pct": "",
+    "sex_ratio": "963",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Orange trade and processing; industry, services, education and government - the Vidarbha hub.\"}",
+    "mla_name": "Datke Pravin Prabhakarrao",
+    "mla_party": "BJP",
+    "constituency": "Nagpur Central",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: largest city in the Godavari basin (Nag river, Nagpur's river, joins the Kanhan). Municipal Corporation figure; the urban agglomeration figure 2,497,870 and district figure 4,653,570 are not the city figure. The Wikipedia infobox currently mislabels 2,405,665 as 'Metro'. Area is the Nagpur City area of 227.36 km2 (Maharashtra Directorate of Municipal Administration lists 227.19 km2, close; citypopulation.de 217.6 km2 not used). The city has several assembly seats; Nagpur Central is the city-centre seat used here (South West: Devendra Fadnavis, BJP; North (SC): Nitin Raut, INC; East: Krishna Khopde, BJP).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.083,
+     21.15
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Pauni",
+    "state": "Maharashtra",
+    "population_2011": "22821",
+    "population_basis": "Wikipedia infobox (Census 2011) - Pauni (MCI)",
+    "area_km2": "8.53",
+    "population_density_per_sqkm": "2675",
+    "literacy_pct": "",
+    "sex_ratio": "982",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and handloom weaving; market town on the Wainganga.\"}",
+    "mla_name": "Nanabhau Falgunrao Patole",
+    "mla_party": "INC",
+    "constituency": "Sakoli",
+    "mla_election_year": "2024",
+    "mla_source": "Wikipedia, Sakoli Assembly constituency (ECI results)",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Wainganga. Taluka population 154,588 is not the town figure; the Wikipedia text '2001 pop 26,250' is stale/wrong. Pauni taluka is in Sakoli AC (onefivenine village records for Pauni taluka list Sakoli AC; the MLA field in some onefivenine records is stale and was not used).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.63,
+     20.78
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Rajura",
+    "state": "Maharashtra",
+    "population_2011": "29668",
+    "population_basis": "Wikipedia infobox (Census 2011) - Rajura (MCI)",
+    "area_km2": "2.93",
+    "population_density_per_sqkm": "10126",
+    "literacy_pct": "79.3",
+    "sex_ratio": "934",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining and agriculture; market town.\"}",
+    "mla_name": "Deorao Vithoba Bhongle",
+    "mla_party": "BJP",
+    "constituency": "Rajura",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Wardha. The Wikipedia infobox figure of 25,842 is the 2001 figure mislabelled as 2011 and is not used; tehsil population 138,408 is not the town figure. Literacy 79.3% is from censusindia2011.com; censusindia.co.in gives 88.1%, which conflicts and is not used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.3663,
+     19.7775
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sansari",
+    "state": "Maharashtra",
+    "population_2011": "5780",
+    "population_basis": "Census of India 2011 - Sansari (CT)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "79.67",
+    "sex_ratio": "927",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Small census town; agriculture and services near Deolali.\"}",
+    "mla_name": "Ahire Saroj Babulal",
+    "mla_party": "NCP",
+    "constituency": "Deolali (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (drains geocode cache)",
+    "notes": "Tier 2: small census town near Deolali. Real Census 2011 figure found (censusindia2011.com Nashik taluka list; khulee confirms 2,999 male / 2,781 female), so the row is included. Villageinfo.org gives 'No Data' for Sansari and is unreliable. Sansari is in Nashik taluka near Deolali; Deolali cantonment jurisdiction mentions 'Sansari gaon'. Bhagur's gram panchayat is Sansari per mapsofindia, but Sansari CT and Bhagur MCI are separate rows here. Sansari is in Deolali (SC) AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8383335,
+     19.9062577
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Tumsar",
+    "state": "Maharashtra",
+    "population_2011": "44869",
+    "population_basis": "Wikipedia infobox (Census 2011) - Tumsar (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "82.87",
+    "sex_ratio": "988",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Rice milling and agriculture; market town.\"}",
+    "mla_name": "Karemore Raju Manikrao",
+    "mla_party": "NCP",
+    "constituency": "Tumsar",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (drains geocode cache)",
+    "notes": "Tier 2: STP/drains town on the Wainganga. Tehsil population 226,108 is not the town figure.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7500206,
+     21.3820399
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Umarkhed",
+    "state": "Maharashtra",
+    "population_2011": "47458",
+    "population_basis": "Wikipedia infobox (Census 2011) - Umarkhed (MCI)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "88.27",
+    "sex_ratio": "956",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Cotton and agriculture; market town.\"}",
+    "mla_name": "Kisan Maroti Wankhede",
+    "mla_party": "BJP",
+    "constituency": "Umarkhed (SC)",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Penganga. Tehsil population 259,357 is not the town figure. Literacy 88.27% derived from citypopulation counts (36,145 literate of 40,950 aged 7+).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.7,
+     19.6
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Wardha",
+    "state": "Maharashtra",
+    "population_2011": "106444",
+    "population_basis": "Wikipedia infobox (Census 2011) - Wardha (MCI)",
+    "area_km2": "11.84",
+    "population_density_per_sqkm": "8990",
+    "literacy_pct": "",
+    "sex_ratio": "982",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Cotton and agriculture; education and services; Gandhian institutions (Sevagram).\"}",
+    "mla_name": "Dr. Pankaj Rajesh Bhoyar",
+    "mla_party": "BJP",
+    "constituency": "Wardha",
+    "mla_election_year": "2024",
+    "mla_source": "MyNeta (ADR) Maharashtra 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Wardha. Municipal Council figure; district population 1,300,774 is not the town figure. The censusindia2011.com city-page text figure of 19,759 is wrong. Infobox coordinates used; the geography text gives 20.75, 78.60.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.60556,
+     20.74167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Armoor",
+    "state": "Telangana",
+    "population_2011": "64023",
+    "population_basis": "citypopulation.de (Census 2011) - Armoor municipality",
+    "area_km2": "32.83",
+    "population_density_per_sqkm": "1950",
+    "literacy_pct": "",
+    "sex_ratio": "1033",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town on the Nizamabad-Adilabad road.\"}",
+    "mla_name": "Paidi Rakesh Reddy",
+    "mla_party": "BJP",
+    "constituency": "Armur",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Manjira. Municipality figure (khulee confirms 31,736 male / 32,787 female); mandal population 121,987 is not the town figure. Wikipedia 2024 figures (270,088 / 118,000 / 92,496) are projections, not used; the slideshare '~71,000' figure is not used. Sex ratio 1,033 derived from the male/female counts. Constituency is spelled Armur in MyNeta/Wikipedia; the town is spelled Armoor as in the STP/drains drafts.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.29,
+     18.79
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bellampally",
+    "state": "Telangana",
+    "population_2011": "55841",
+    "population_basis": "Wikipedia historical table (Census 2011) - Bellampally",
+    "area_km2": "35.06",
+    "population_density_per_sqkm": "1593",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining town; agriculture around it.\"}",
+    "mla_name": "Gaddam Vinod",
+    "mla_party": "INC",
+    "constituency": "Bellampalli (SC)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town in the Singareni coal belt. The Wikipedia infobox figure of 66,789 is the 2001 figure (2001 census 66,660), not 2011; mandal population 80,897 and the 2024 figure 71,077 are not used. Constituency is Bellampalli (SC) in MyNeta, Bellampalle in Wikipedia; the town is spelled Bellampally as in the STP/drains drafts.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.48806,
+     19.07556
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhainsa",
+    "state": "Telangana",
+    "population_2011": "49764",
+    "population_basis": "Wikipedia (Census 2011) - Bhainsa town",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture, cotton and turmeric trade; market town.\"}",
+    "mla_name": "Ram Rao Pawar",
+    "mla_party": "BJP",
+    "constituency": "Mudhole",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Penganga. The infobox labels the figure 2016 but the article text says 2011 census. Mandal population 89,417 and the 2026 projection 96,560 are not used. Area left blank: telanganaonline says 31 km2, a single unverified source. MLA is also styled Pawar Ramarao Patel.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.9667,
+     19.1
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Bhupalpally",
+    "state": "Telangana",
+    "population_2011": "42387",
+    "population_basis": "Census of India 2011 - Bhupalpally (CT)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "943",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining and agriculture; district town.\"}",
+    "mla_name": "Gandra Satyanarayana Rao",
+    "mla_party": "INC",
+    "constituency": "Bhupalpalle",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Maneru. Census-town figure (onefivenine: 21,810 male / 20,577 female). Mandal population 86,729 and district population 416,763 are not the town figure; the district portal's urban figure of 57,138 is a different district recast and is not used. Area left blank: 52.62 km2 per vivu.tv is a single unverified source. Literacy left blank: 29,721 literate implies ~76.6% of the 7+ population, but that is computed, not stated. Constituency is spelled Bhupalpalle in MyNeta/Wikipedia; the town is spelled Bhupalpally as in the STP/drains drafts.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8635,
+     18.4293
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Chennur",
+    "state": "Telangana",
+    "population_2011": "23579",
+    "population_basis": "Census of India 2011 - Chennur (CT)",
+    "area_km2": "24.53",
+    "population_density_per_sqkm": "961",
+    "literacy_pct": "",
+    "sex_ratio": "997",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining and agriculture; market town.\"}",
+    "mla_name": "Gaddam Vivekanand",
+    "mla_party": "INC",
+    "constituency": "Chennur (SC)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari (Wardha confluence). Census-town figure (11,809 male / 11,770 female). Mandal population 54,692 and the 2024 figure 31,663 are not used. Chennur in Kadapa (16,126) is a different town. Literacy left blank: 15,301 literate implies ~72% of the 7+ population, but that is computed, not stated. MLA name variants in other sources: 'G. Vivek Venkatswamy' / 'Vivek Venkat Swamy'; the MyNeta form Gaddam Vivekanand is used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7826,
+     18.8535
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Dharmapuri",
+    "state": "Telangana",
+    "population_2011": "17243",
+    "population_basis": "Census of India 2011 (village directory) - Dharmapuri",
+    "area_km2": "20.14",
+    "population_density_per_sqkm": "856",
+    "literacy_pct": "",
+    "sex_ratio": "1036",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Pilgrimage town (Lakshmi Narasimha Swamy temple); agriculture.\"}",
+    "mla_name": "Adluri Laxman Kumar",
+    "mla_party": "INC",
+    "constituency": "Dharmapuri (SC)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari. Village-record figure (8,469 male / 8,774 female). The Wikipedia infobox figure of 18,882 is a 2018 figure, not Census 2011; mandal population 60,899 is not the town figure. MLA name variant: some sources give 'Adluri Laxman Rao'; the 2023 results table form Adluri Laxman Kumar is used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.094,
+     18.9475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Huzurabad",
+    "state": "Telangana",
+    "population_2011": "37665",
+    "population_basis": "Wikipedia (Census 2011) - Huzurabad town",
+    "area_km2": "32.29",
+    "population_density_per_sqkm": "1166",
+    "literacy_pct": "",
+    "sex_ratio": "961",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town.\"}",
+    "mla_name": "Kaushik Reddy Padi",
+    "mla_party": "BRS",
+    "constituency": "Huzurabad",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Maneru. Town figure (19,208 male / 18,457 female); the Wikipedia infobox figure of 37,656 is a 9-person typo and is not used; mandal population 74,721 is not the town figure. Sex ratio 961 is stated in the article text and matches the derived figure. Area is the Census village-record area (3,229 ha). MLA is also styled Padi Kaushik Reddy / Kaushik Reddy.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.39634028,
+     18.20196083
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Jagtial",
+    "state": "Telangana",
+    "population_2011": "103930",
+    "population_basis": "citypopulation.de (Census 2011) - Jagtial (Municipality with Outgrowth)",
+    "area_km2": "17.8",
+    "population_density_per_sqkm": "5839",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture, turmeric and trade; district market town.\"}",
+    "mla_name": "M. Sanjay Kumar",
+    "mla_party": "BRS",
+    "constituency": "Jagtial",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Godavari. Municipality-with-Outgrowth figure (citypopulation.de Karimnagar towns list; 2001: 85,521). The municipality-proper figure of 96,460 (district government portal, mapsofindia, telanganaonline) is the smaller boundary and is not used; this follows the draft's Karimnagar precedent (M Corp + OG). District population 988,913 is not the town figure. Sex ratio left blank: male/female counts are known only for the 96,460 figure (48,404 female / 48,056 male = 1,007) and are not attached to the 103,930 figure. MLA party: he won as BRS in 2023, joined INC on 23 June 2024, BRS sought disqualification, and the Speaker dismissed the petition in Feb 2026 ruling he remains a BRS legislator; the Wikipedia infobox calling him INC / 'Elected year 2024' is wrong. Recorded as BRS, 2023.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.93,
+     18.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Jammikunta",
+    "state": "Telangana",
+    "population_2011": "28073",
+    "population_basis": "Jammikunta Municipality official website - Census 2011",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town.\"}",
+    "mla_name": "Kaushik Reddy Padi",
+    "mla_party": "BRS",
+    "constituency": "Huzurabad",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (STP geocode cache)",
+    "notes": "Tier 2: STP/drains town on the Maneru. Municipality figure from the Jammikunta Municipality official site ('Total Population as per Census 2011', also on its water-supply page). The 32,645 figure (Census village record code 572550: 16,894 male / 15,751 female) is the village-directory record and is not used; mandal/sub-district 103,429 and tehsil 72,666 are not the town figure. Jammikunta mandal is in Huzurabad AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.4739441,
+     18.2897332
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Khanapur",
+    "state": "Telangana",
+    "population_2011": "7081",
+    "population_basis": "Census of India 2011 (village directory) - Khanapur",
+    "area_km2": "4.69",
+    "population_density_per_sqkm": "1510",
+    "literacy_pct": "",
+    "sex_ratio": "1001",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; mandal town.\"}",
+    "mla_name": "Vedma Bhojju",
+    "mla_party": "INC",
+    "constituency": "Khanapur (ST)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town in the Nirmal area. Village-record figure (code 570452: 3,538 male / 3,543 female). The Wikipedia Nirmal article infobox figure of 88,950 is a 2014 figure, not Census 2011; mandal population 61,984 is not the town figure. Khanapur, Karnataka (town 18,535) is a different town.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6667,
+     19.0333
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Korutla",
+    "state": "Telangana",
+    "population_2011": "66504",
+    "population_basis": "Wikipedia infobox (Census 2011) - Korutla town",
+    "area_km2": "34.12",
+    "population_density_per_sqkm": "1949",
+    "literacy_pct": "74.99",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and handloom weaving; market town.\"}",
+    "mla_name": "Kalvakuntla Sanjay",
+    "mla_party": "BRS",
+    "constituency": "Koratla",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Maneru. The government portal male/female counts (33,124 / 33,169) sum to 66,293, not 66,504, and the municipal profile gives 69,479, so the sex ratio is left blank. Constituency is spelled Koratla in MyNeta/Wikipedia; the town is spelled Korutla as in the STP/drains drafts. Koratla AC mandals: Koratla, Metpally, Mallapur, Ibrahimpatnam.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.7119,
+     18.8215
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kothapalli",
+    "state": "Telangana",
+    "population_2011": "402",
+    "population_basis": "Census of India 2011 (village directory) - Kothapalle, Kataram mandal",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "51.02",
+    "sex_ratio": "990",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Small village; agriculture.\"}",
+    "mla_name": "Duddilla Sridhar Babu",
+    "mla_party": "INC",
+    "constituency": "Manthani",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (STP geocode cache)",
+    "notes": "Tier 2: STP town in Kataram mandal, Jayashankar Bhupalpally. This is the STP town (STP-TS-075/076: 'Kothapalli, Kataram mandal'), NOT Kothapalli (Haveli), Karimnagar (11,058) and NOT Kothapally Municipality, Karimnagar (11,614) - those are different settlements and are not used. The Kataram Kothapalle village (code 571842) Census 2011 population is 402 (202 male / 200 female). This is a tiny village, not a town. Constituency is Manthani, NOT Bhupalpalle: onefivenine records for Kothapalli Village, Kataram Mandal, and for Vilasagar / Srinivasa Colony / Veerapoor / Gudoor (all Kataram mandal) all list Manthani AC; Bhupalpalle AC mandals (Bhupalpalle, Mogullapalle, Chityal, Ghanpur, Regonda, Shyampet, Kothapallygori) do not include Kataram.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.8669147,
+     18.6644205
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Kyathanpally",
+    "state": "Telangana",
+    "population_2011": "32385",
+    "population_basis": "citypopulation.de (Census 2011) - Kyathanpally (CT)",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "71.69",
+    "sex_ratio": "931",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining town; agriculture around it.\"}",
+    "mla_name": "Gaddam Vivekanand",
+    "mla_party": "INC",
+    "constituency": "Chennur (SC)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town in the Singareni coal belt. Census-town figure (citypopulation.de towns list; mapsofindia Kyathampalle (Ct) code 570569). The Wikipedia infobox figure of 32,275 is a close typo and is not used; the article text figure of 42,275 is the 2001 figure. The separate Kyathanpalle village in Vemanpalle (1,434) is a different settlement. The 2024 figure of 56,773 is not used. Kyathampalle (CT) is in Mandamarri tehsil; Chennur AC mandals are Chennur, Mandamarri, Kotapally, Jaipur, Bheemaram.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.458705,
+     18.92337
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Luxettipet",
+    "state": "Telangana",
+    "population_2011": "29524",
+    "population_basis": "Wikipedia historical table (Census 2011) - Luxettipet Municipality",
+    "area_km2": "33.94",
+    "population_density_per_sqkm": "870",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining and agriculture; market town.\"}",
+    "mla_name": "Kokkirala Premsagar Rao",
+    "mla_party": "INC",
+    "constituency": "Mancherial",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town in the Singareni coal belt. Post-merger municipality figure: historical table 2011 29,524 (+36.5% on 2001 21,629); the article text says 'Luxettipet Municipality population is 29524 ... geographical area 33.94 Sq.Kms'; the municipality was constituted in 2018 by merging Uthkur, Itikyal and Modela GPs. The 11,322 figure (CT; mapsofindia, Ladin, onefivenine: 5,627 male / 5,695 female) is the pre-merger census-town figure and is not used - same precedent as Jagtial M+OG and Siddipet. Mandal population 50,674 (urban 11,322, rural 39,352) and the 2024 figure 36,132 are not used. Luxettipet mandal is in Mancherial AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.2167,
+     18.8667
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Mandamarri",
+    "state": "Telangana",
+    "population_2011": "52352",
+    "population_basis": "Wikipedia (Census 2011) - Mandamarri (M)",
+    "area_km2": "38.84",
+    "population_density_per_sqkm": "1348",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining town; agriculture around it.\"}",
+    "mla_name": "Gaddam Vivekanand",
+    "mla_party": "INC",
+    "constituency": "Chennur (SC)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town in the Singareni coal belt. Municipality figure (mapsofindia, Ladin). The Wikipedia infobox figure of 66,176 is the 2001 figure ('As of 2001 ... 66,176'), not 2011; the agglomeration figure of 84,737 (citypopulation.de) and mandal population 100,109 are not used; the 2024 figure of 78,933 is not used. Mandamarri mandal is in Chennur (SC) AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.48111,
+     18.98222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Manthani",
+    "state": "Telangana",
+    "population_2011": "17927",
+    "population_basis": "Census of India 2011 (village directory) - Manthani",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture; historic temple town on the Godavari.\"}",
+    "mla_name": "Duddilla Sridhar Babu",
+    "mla_party": "INC",
+    "constituency": "Manthani",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari. Village/CT record figure (code 571808). The Wikipedia infobox figure of 23,000 is a 2017 figure, not Census 2011; mandal population 54,669 is not the town figure. The other Manthani in Armur/Nizamabad (3,128) is a different settlement.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.667,
+     18.65
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Manuguru",
+    "state": "Telangana",
+    "population_2011": "32091",
+    "population_basis": "Wikipedia (Census 2011) - Manuguru",
+    "area_km2": "24.86",
+    "population_density_per_sqkm": "1291",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining and heavy water plant; agriculture around it.\"}",
+    "mla_name": "Payam Venkateswarlu",
+    "mla_party": "INC",
+    "constituency": "Pinapaka (ST)",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari. The municipality site gives 32,065, a 26-person difference, noted here and not used. Mandal population 72,117 and the 2024 figure 54,954 are not used. The municipality site states the constituency is Pinapaka AC. Infobox coordinates used; the article text alternate 17.98139, 80.75 is a different point and is not used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.81852,
+     17.937255
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Metpally",
+    "state": "Telangana",
+    "population_2011": "50902",
+    "population_basis": "citypopulation.de (Census 2011) - Metpally Municipality",
+    "area_km2": "28.5",
+    "population_density_per_sqkm": "1786",
+    "literacy_pct": "",
+    "sex_ratio": "998",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town.\"}",
+    "mla_name": "Kalvakuntla Sanjay",
+    "mla_party": "BRS",
+    "constituency": "Koratla",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Maneru. Municipality figure (citypopulation.de Karimnagar towns list; 2001: 41,224; khulee 50,902 with 25,475 male / 25,427 female; mapsofindia 50,902). The Wikipedia infobox figure of 50,092 is a digit-transposition typo and is not used; mandal population 86,692 and the 2024 figure 69,782 are not used. Metpally mandal is in Koratla AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.6261,
+     18.8492
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Naspur",
+    "state": "Telangana",
+    "population_2011": "31244",
+    "population_basis": "citypopulation.de (Census 2011) - Naspur (CT)",
+    "area_km2": "23.72",
+    "population_density_per_sqkm": "1317",
+    "literacy_pct": "",
+    "sex_ratio": "953",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining town; agriculture around it.\"}",
+    "mla_name": "Kokkirala Premsagar Rao",
+    "mla_party": "INC",
+    "constituency": "Mancherial",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town in the Singareni coal belt. Census-town figure (citypopulation.de, Ladin, khulee: 15,996 male / 15,248 female). The Wikipedia infobox figure of 76,641 equals the mandal/tehsil total (mapsofindia tehsil 76,641) and is not used; the article text figure of 73,616 is also mandal-scale. The mapsofindia Naspur (Ct) village record of 10,792 is only part of the CT, not the CT total. Naspur mandal is in Mancherial AC.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.484882,
+     18.860402
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Nirmal",
+    "state": "Telangana",
+    "population_2011": "88433",
+    "population_basis": "Wikipedia (Census 2011) - Nirmal town",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "1007",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; known for Nirmal toys and woodcraft.\"}",
+    "mla_name": "Alleti Maheshwar Reddy",
+    "mla_party": "BJP",
+    "constituency": "Nirmal",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari. Town figure (historical table + article text). The infobox 'City 146,000' is a later/expanded figure and is not used; mandal population 139,570, district 709,418 and the 2014 household survey figure 116,800 are not used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.35,
+     19.1
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Palvancha",
+    "state": "Telangana",
+    "population_2011": "80199",
+    "population_basis": "Wikipedia historical table (Census 2011) - Palvancha",
+    "area_km2": "26.38",
+    "population_density_per_sqkm": "3040",
+    "literacy_pct": "",
+    "sex_ratio": "",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Coal mining and paper industry; agriculture and trade.\"}",
+    "mla_name": "Kunamneni Sambasiva Rao",
+    "mla_party": "CPI",
+    "constituency": "Kothagudem",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Kinnerasani. Historical-table figure (1991: 53,102; 2001: 69,088; 2011: 80,199; citypopulation.de agrees). The district government site gives 80,144, a 55-person difference, noted here and not used. Mandal population 113,872 is not the town figure. The Wikipedia text figure '130,199 ... Census India 2014' is erroneous (the male/female counts given sum to 100,199) and is not used. Palwancha mandal is in Kothagudem AC; the constituency article says it 'includes the towns of Kothagudem and Palwancha'.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.704213,
+     17.600131
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Parkal",
+    "state": "Telangana",
+    "population_2011": "20257",
+    "population_basis": "Census of India 2011 (village directory) - Parkal",
+    "area_km2": "",
+    "population_density_per_sqkm": "",
+    "literacy_pct": "",
+    "sex_ratio": "966",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town.\"}",
+    "mla_name": "Revuri Prakash Reddy",
+    "mla_party": "INC",
+    "constituency": "Parkal",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Nominatim (STP geocode cache)",
+    "notes": "Tier 2: STP/drains town on the Maneru. Census village/town record figure (10,304 male / 9,953 female). The Wikipedia infobox figure of 29,794 is likely an expanded-municipality figure and is not used; mandal population 80,542 and the 'UA 110,962' figure (indianetzone) are not used. Area left blank: the village record gives 13.79 km2 (1,379 ha) while Wikipedia gives 16.13 km2 - the two conflict and neither was chosen.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.7010601,
+     18.1983314
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Siddipet",
+    "state": "Telangana",
+    "population_2011": "111358",
+    "population_basis": "Wikipedia (Census 2011) - Siddipet municipality",
+    "area_km2": "36.03",
+    "population_density_per_sqkm": "3091",
+    "literacy_pct": "90.73",
+    "sex_ratio": "1009",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; education and district services.\"}",
+    "mla_name": "Thanneeru Harish Rao",
+    "mla_party": "BRS",
+    "constituency": "Siddipet",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: large city on the Maneru. Post-merger municipality figure (Wikipedia). The original 2011 town figures 66,737 (Ladin / Wikipedia note 'original 2011 census figure was 66,737') and 65,158 (mapsofindia) and the citypopulation.de CT figure of 40,707 are pre-merger / different boundaries and are not used. Mandal population 172,878 and district population 1,012,065 / 1,023,577 are not the town figure. Area 36.03 km2 is from the Wikipedia text ('Siddipet municipality ... spread over an area of 36.03 km2 with 34 municipal wards'); the infobox 42.72 km2 is the expanded area and is not used. Sex ratio 1,009 derived from telanganaonline male/female counts (55,432 male / 55,926 female).",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     78.85194,
+     18.10194
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Sultanabad",
+    "state": "Telangana",
+    "population_2011": "16116",
+    "population_basis": "Census of India 2011 (village directory) - Sultanabad",
+    "area_km2": "15.5",
+    "population_density_per_sqkm": "1040",
+    "literacy_pct": "",
+    "sex_ratio": "1000",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture and trade; market town.\"}",
+    "mla_name": "Chinthakunta Vijaya Ramana Rao",
+    "mla_party": "INC",
+    "constituency": "Peddapalle",
+    "mla_election_year": "2023",
+    "mla_source": "MyNeta (ADR) Telangana 2023 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Maneru. Village-record figure (8,056 male / 8,060 female). The Wikipedia infobox figure of 16,000 is rounded and is not used; mandal population 63,454 is not the town figure. MLA verified against the MyNeta Telangana 2023 winners list (PEDDAPALLE, INC, 118,888 votes, margin 55,108) and the Wikipedia Peddapalle Assembly constituency article (ECI results). Constituency is spelled Peddapalle in MyNeta/Wikipedia; the district/town is spelled Peddapalli. Sultanabad mandal is in Peddapalle AC (onefivenine records for Sultanabad mandal villages list Peddapalle AC). Infobox coordinates used; the article text gives 18.5333, 79.3333.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     79.32064944,
+     18.52777972
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Narasapuram",
+    "state": "Andhra Pradesh",
+    "population_2011": "58770",
+    "population_basis": "Wikipedia infobox (Census 2011) - Narasapuram municipality",
+    "area_km2": "11.32",
+    "population_density_per_sqkm": "5192",
+    "literacy_pct": "",
+    "sex_ratio": "1041",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Fishing and aquaculture; lace/handicraft and agriculture; port town.\"}",
+    "mla_name": "Bommidi Narayana Nayakar",
+    "mla_party": "Janasena Party",
+    "constituency": "Narasapuram",
+    "mla_election_year": "2024",
+    "mla_source": "ECI gazette notification No. 308/AP-LA/2024 (via Scribd); MyNeta (ADR) Andhra Pradesh 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: STP/drains town on the Godavari (Vasista). Municipality figure (28,796 male / 29,974 female). Mandal population 138,741 is not the town figure. T.Narasapuram village (9,516) and Narasapuram village in Narasapuram tehsil (905) are different settlements. Sex ratio 1,041 derived from the male/female counts; alchetron states 961, which appears inverted (male/female) and is not used. Area 11.32 km2 is from citypopulation.de; the Wikipedia text figure of 11.52 km2 conflicts and is not used. Spelling is Narasapuram (STP/drains drafts), not Narsapuram. MLA won as Janasena Party (ECI gazette No. 308/AP-LA/2024; MyNeta AP 2024 winners list); an earlier lead saying TDP was wrong.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.7016,
+     16.4361
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "town": "Polavaram",
+    "state": "Andhra Pradesh",
+    "population_2011": "13861",
+    "population_basis": "Census of India 2011 (village directory) - Polavaram",
+    "area_km2": "28.36",
+    "population_density_per_sqkm": "489",
+    "literacy_pct": "",
+    "sex_ratio": "1029",
+    "urban_pct": "",
+    "rural_pct": "",
+    "urban_rural_basis": "",
+    "livelihoods": "{\"basis\": \"Qualitative only \\u2014 no worker-category split compiled for Godavari towns; see people_NOTES.md.\", \"plain_language\": \"Agriculture; Polavaram irrigation project town.\"}",
+    "mla_name": "Chirri Balaraju",
+    "mla_party": "Janasena Party",
+    "constituency": "Polavaram (ST)",
+    "mla_election_year": "2024",
+    "mla_source": "ECI gazette notification No. 308/AP-LA/2024 (via Scribd); MyNeta (ADR) Andhra Pradesh 2024 winners list",
+    "data_vintage": "Census 2011; MLA as of Nov 2026",
+    "coord_source": "Wikipedia article coordinates",
+    "notes": "Tier 2: water-quality station town on the Godavari (Polavaram project town, Eluru district). Village-record figure (6,830 male / 7,031 female). Mandal population 45,392 is not the town figure. D Polavaram (6,709) and I. Polavaram (6,759) are different settlements. MLA won as Janasena Party (ECI gazette No. 308/AP-LA/2024; Wikipedia Polavaram AC; IndiaVotes); one source (knowyourmla Q&A) wrongly says TDP and is not used.",
+    "featured": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     81.6432,
+     17.2479
+    ]
+   }
+  }
+ ]
+}

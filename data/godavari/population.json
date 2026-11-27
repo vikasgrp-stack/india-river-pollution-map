@@ -1,0 +1,717 @@
+{
+ "corridor": {
+  "buffer_km": 10,
+  "total": 10626120,
+  "method": "10 km buffer (Lambert Azimuthal Equal-Area, centred 78.0718E/18.7891N) around the Godavari centreline: OSM relation 2826093 (Trimbakeshwar, Nashik district, Maharashtra to the Bay of Bengal at Antarvedi, 1511.3 km). GHSL GHS-POP R2023A 2020 epoch, 30 arc-second grid, clipped by cell centre inside the buffer; cell values summed.",
+  "raster": "GHSL GHS-POP R2023A, epoch 2020, 30 arc-second (4326_30ss), JRC open-data server / AWS mirror s3://jrc-ghsl",
+  "vintage": "2020",
+  "status": "computed",
+  "buffer_area_km2": 26295,
+  "centreline_length_km": 1511.3,
+  "cells_in_buffer": 32454,
+  "cross_check_worldpop_2020_100m_unadj": {
+   "total": 10559786,
+   "status": "computed",
+   "raster": "WorldPop India 2020, 100 m, UN-adjusted (ind_ppp_2020_UNadj.tif), CC-BY-4.0",
+   "cells_in_buffer": 3244355
+  }
+ },
+ "towns": [
+  {
+   "town": "Trimbakeshwar",
+   "state": "Maharashtra",
+   "population_2011": 12056,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Trimbakeshwar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nashik",
+   "state": "Maharashtra",
+   "population_2011": 1486053,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Nashik', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kopargaon",
+   "state": "Maharashtra",
+   "population_2011": 65273,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Kopargaon', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Shrirampur",
+   "state": "Maharashtra",
+   "population_2011": 89282,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Shrirampur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Vaijapur",
+   "state": "Maharashtra",
+   "population_2011": 41296,
+   "basis": "Census of India 2011, Vaijapur (MCI) - census2011.co.in town page",
+   "source": "Wikipedia 'Vaijapur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Paithan",
+   "state": "Maharashtra",
+   "population_2011": 41536,
+   "basis": "Census of India 2011, Paithan (MCI) - census2011.co.in town page",
+   "source": "Wikipedia 'Paithan', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gangakhed",
+   "state": "Maharashtra",
+   "population_2011": 49891,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Gangakhed', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nanded",
+   "state": "Maharashtra",
+   "population_2011": 550439,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Nanded', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Dharmabad",
+   "state": "Maharashtra",
+   "population_2011": 33741,
+   "basis": "citypopulation.de (Census 2011), Dharmabad (MCI)",
+   "source": "Wikipedia 'Dharmabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Basar",
+   "state": "Telangana",
+   "population_2011": 5865,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Basar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nizamabad",
+   "state": "Telangana",
+   "population_2011": 311152,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Nizamabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kaleshwaram",
+   "state": "Telangana",
+   "population_2011": 2335,
+   "basis": "Census of India 2011 (village directory) - mapsofindia village page",
+   "source": "Wikipedia 'Kaleshwaram', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mancherial",
+   "state": "Telangana",
+   "population_2011": 89935,
+   "basis": "Wikipedia infobox (Census 2011) - Mancherial (MCI)",
+   "source": "Wikipedia 'Mancherial', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ramagundam",
+   "state": "Telangana",
+   "population_2011": 229644,
+   "basis": "Wikipedia infobox (Census 2011) - Ramagundam (M Corp)",
+   "source": "Wikipedia 'Ramagundam', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kothagudem",
+   "state": "Telangana",
+   "population_2011": 79819,
+   "basis": "Census of India 2011 - Kothagudem town (citypopulation.de)",
+   "source": "Wikipedia 'Kothagudem', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhadrachalam",
+   "state": "Telangana",
+   "population_2011": 50087,
+   "basis": "Census of India 2011 (census town)",
+   "source": "Wikipedia 'Bhadrachalam', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kunavaram",
+   "state": "Andhra Pradesh",
+   "population_2011": 4798,
+   "basis": "Census of India 2011 (village directory) - vill.co.in / Ladin Wikipedia",
+   "source": "Wikipedia 'Kunavaram', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Rajahmundry",
+   "state": "Andhra Pradesh",
+   "population_2011": 341831,
+   "basis": "Wikipedia infobox (Census 2011) - city within 2011 boundaries",
+   "source": "Wikipedia 'Rajahmundry', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Yanam",
+   "state": "Puducherry",
+   "population_2011": 55626,
+   "basis": "Census of India 2011 - Yanam municipality (town + 6 villages), Wikipedia",
+   "source": "Wikipedia 'Yanam', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Antarvedi",
+   "state": "Andhra Pradesh",
+   "population_2011": 15605,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Antarvedi', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Karimnagar",
+   "state": "Telangana",
+   "population_2011": 289821,
+   "basis": "citypopulation.de (Census 2011), Karimnagar (M Corp + OG)",
+   "source": "Wikipedia 'Karimnagar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Adilabad",
+   "state": "Telangana",
+   "population_2011": 117167,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Adilabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Hingoli",
+   "state": "Maharashtra",
+   "population_2011": 85103,
+   "basis": "District Census Handbook (Census 2011) - Hingoli town",
+   "source": "Wikipedia 'Hingoli', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Parbhani",
+   "state": "Maharashtra",
+   "population_2011": 307170,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Parbhani', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Jalna",
+   "state": "Maharashtra",
+   "population_2011": 285577,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Jalna', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sangamner",
+   "state": "Maharashtra",
+   "population_2011": 65804,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Sangamner', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Shirdi",
+   "state": "Maharashtra",
+   "population_2011": 36004,
+   "basis": "Census of India 2011 - Shirdi (Nagar Panchayat)",
+   "source": "Wikipedia 'Shirdi', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sangareddy",
+   "state": "Telangana",
+   "population_2011": 72344,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Sangareddy', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Medak",
+   "state": "Telangana",
+   "population_2011": 44255,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Medak', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sircilla",
+   "state": "Telangana",
+   "population_2011": 83186,
+   "basis": "citypopulation.de (Census 2011), Sircilla (M + OG)",
+   "source": "Wikipedia 'Sircilla', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Jagdalpur",
+   "state": "Chhattisgarh",
+   "population_2011": 125463,
+   "basis": "Wikipedia infobox (Census 2011) - Jagdalpur (M Corp)",
+   "source": "Wikipedia 'Jagdalpur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Chintur",
+   "state": "Andhra Pradesh",
+   "population_2011": 3818,
+   "basis": "Census of India 2011 (village directory)",
+   "source": "Wikipedia 'Chintur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Warangal",
+   "state": "Telangana",
+   "population_2011": 615998,
+   "basis": "census2011.co.in (Census 2011), Warangal (M Corp)",
+   "source": "Wikipedia 'Warangal', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kakinada",
+   "state": "Andhra Pradesh",
+   "population_2011": 384128,
+   "basis": "Wikipedia infobox (Census 2011)",
+   "source": "Wikipedia 'Kakinada', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ardhapur",
+   "state": "Maharashtra",
+   "population_2011": 26000,
+   "basis": "Census of India 2011 (village directory) - Ardhapur village",
+   "source": "Wikipedia 'Ardhapur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ballarpur",
+   "state": "Maharashtra",
+   "population_2011": 89452,
+   "basis": "Wikipedia infobox (Census 2011) - Ballarpur (MCI)",
+   "source": "Wikipedia 'Ballarpur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Beed",
+   "state": "Maharashtra",
+   "population_2011": 146709,
+   "basis": "Wikipedia infobox (Census 2011) - Beed (MCI)",
+   "source": "Wikipedia 'Beed', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhagur",
+   "state": "Maharashtra",
+   "population_2011": 12353,
+   "basis": "Census of India 2011 - Bhagur (MCI)",
+   "source": "Wikipedia 'Bhagur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhandara",
+   "state": "Maharashtra",
+   "population_2011": 91845,
+   "basis": "Wikipedia infobox (Census 2011) - Bhandara (MCI)",
+   "source": "Wikipedia 'Bhandara', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhokar",
+   "state": "Maharashtra",
+   "population_2011": 32899,
+   "basis": "Wikipedia infobox (Census 2011) - Bhokar (MCI)",
+   "source": "Wikipedia 'Bhokar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bramhapuri",
+   "state": "Maharashtra",
+   "population_2011": 36025,
+   "basis": "Wikipedia infobox (Census 2011) - Bramhapuri (MCI)",
+   "source": "Wikipedia 'Bramhapuri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Chandrapur",
+   "state": "Maharashtra",
+   "population_2011": 320379,
+   "basis": "Wikipedia infobox (Census 2011) - Chandrapur (M Corp)",
+   "source": "Wikipedia 'Chandrapur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Chhatrapati Sambhajinagar",
+   "state": "Maharashtra",
+   "population_2011": 1175116,
+   "basis": "Wikipedia infobox (Census 2011) - city / Municipal Corporation",
+   "source": "Wikipedia 'Chhatrapati Sambhajinagar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Deolali",
+   "state": "Maharashtra",
+   "population_2011": 54027,
+   "basis": "Wikipedia infobox (Census 2011) - Deolali (Cantonment Board)",
+   "source": "Wikipedia 'Deolali', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gadchiroli",
+   "state": "Maharashtra",
+   "population_2011": 54152,
+   "basis": "Wikipedia infobox (Census 2011) - Gadchiroli town",
+   "source": "Wikipedia 'Gadchiroli', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Ghuggus",
+   "state": "Maharashtra",
+   "population_2011": 32654,
+   "basis": "Census of India 2011 - Ghugus (CT)",
+   "source": "Wikipedia 'Ghuggus', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Gondia",
+   "state": "Maharashtra",
+   "population_2011": 132813,
+   "basis": "List of cities in Maharashtra (Census 2011) - Gondia (MCI)",
+   "source": "Wikipedia 'Gondia', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Hinganghat",
+   "state": "Maharashtra",
+   "population_2011": 101805,
+   "basis": "Wikipedia infobox (Census 2011) - Hinganghat (MCI)",
+   "source": "Wikipedia 'Hinganghat', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kamptee",
+   "state": "Maharashtra",
+   "population_2011": 86793,
+   "basis": "Wikipedia infobox (Census 2011) - Kamptee (MCI)",
+   "source": "Wikipedia 'Kamptee', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kanhan Pimpri",
+   "state": "Maharashtra",
+   "population_2011": 22945,
+   "basis": "Census of India 2011 - Kanhan (Pipri) (CT)",
+   "source": "Wikipedia 'Kanhan Pimpri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Latur",
+   "state": "Maharashtra",
+   "population_2011": 382940,
+   "basis": "List of cities in Maharashtra (Census 2011) - Latur (M Corp)",
+   "source": "Wikipedia 'Latur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mehkar",
+   "state": "Maharashtra",
+   "population_2011": 45248,
+   "basis": "Wikipedia infobox (Census 2011) - Mehkar (MCI)",
+   "source": "Wikipedia 'Mehkar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mouda",
+   "state": "Maharashtra",
+   "population_2011": 14606,
+   "basis": "Wikipedia infobox (Census 2011) - Mouda (CT)",
+   "source": "Wikipedia 'Mouda', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mudkhed",
+   "state": "Maharashtra",
+   "population_2011": 23517,
+   "basis": "Wikipedia infobox (Census 2011) - Mudkhed (MCI)",
+   "source": "Wikipedia 'Mudkhed', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nagpur",
+   "state": "Maharashtra",
+   "population_2011": 2405665,
+   "basis": "Wikipedia infobox (Census 2011) - Nagpur (M Corp)",
+   "source": "Wikipedia 'Nagpur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Pauni",
+   "state": "Maharashtra",
+   "population_2011": 22821,
+   "basis": "Wikipedia infobox (Census 2011) - Pauni (MCI)",
+   "source": "Wikipedia 'Pauni', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Rajura",
+   "state": "Maharashtra",
+   "population_2011": 29668,
+   "basis": "Wikipedia infobox (Census 2011) - Rajura (MCI)",
+   "source": "Wikipedia 'Rajura', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sansari",
+   "state": "Maharashtra",
+   "population_2011": 5780,
+   "basis": "Census of India 2011 - Sansari (CT)",
+   "source": "Wikipedia 'Sansari', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Tumsar",
+   "state": "Maharashtra",
+   "population_2011": 44869,
+   "basis": "Wikipedia infobox (Census 2011) - Tumsar (MCI)",
+   "source": "Wikipedia 'Tumsar', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Umarkhed",
+   "state": "Maharashtra",
+   "population_2011": 47458,
+   "basis": "Wikipedia infobox (Census 2011) - Umarkhed (MCI)",
+   "source": "Wikipedia 'Umarkhed', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Wardha",
+   "state": "Maharashtra",
+   "population_2011": 106444,
+   "basis": "Wikipedia infobox (Census 2011) - Wardha (MCI)",
+   "source": "Wikipedia 'Wardha', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Armoor",
+   "state": "Telangana",
+   "population_2011": 64023,
+   "basis": "citypopulation.de (Census 2011) - Armoor municipality",
+   "source": "Wikipedia 'Armoor', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bellampally",
+   "state": "Telangana",
+   "population_2011": 55841,
+   "basis": "Wikipedia historical table (Census 2011) - Bellampally",
+   "source": "Wikipedia 'Bellampally', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhainsa",
+   "state": "Telangana",
+   "population_2011": 49764,
+   "basis": "Wikipedia (Census 2011) - Bhainsa town",
+   "source": "Wikipedia 'Bhainsa', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Bhupalpally",
+   "state": "Telangana",
+   "population_2011": 42387,
+   "basis": "Census of India 2011 - Bhupalpally (CT)",
+   "source": "Wikipedia 'Bhupalpally', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Chennur",
+   "state": "Telangana",
+   "population_2011": 23579,
+   "basis": "Census of India 2011 - Chennur (CT)",
+   "source": "Wikipedia 'Chennur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Dharmapuri",
+   "state": "Telangana",
+   "population_2011": 17243,
+   "basis": "Census of India 2011 (village directory) - Dharmapuri",
+   "source": "Wikipedia 'Dharmapuri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Huzurabad",
+   "state": "Telangana",
+   "population_2011": 37665,
+   "basis": "Wikipedia (Census 2011) - Huzurabad town",
+   "source": "Wikipedia 'Huzurabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Jagtial",
+   "state": "Telangana",
+   "population_2011": 103930,
+   "basis": "citypopulation.de (Census 2011) - Jagtial (Municipality with Outgrowth)",
+   "source": "Wikipedia 'Jagtial', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Jammikunta",
+   "state": "Telangana",
+   "population_2011": 28073,
+   "basis": "Jammikunta Municipality official website - Census 2011",
+   "source": "Wikipedia 'Jammikunta', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Khanapur",
+   "state": "Telangana",
+   "population_2011": 7081,
+   "basis": "Census of India 2011 (village directory) - Khanapur",
+   "source": "Wikipedia 'Khanapur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Korutla",
+   "state": "Telangana",
+   "population_2011": 66504,
+   "basis": "Wikipedia infobox (Census 2011) - Korutla town",
+   "source": "Wikipedia 'Korutla', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kothapalli",
+   "state": "Telangana",
+   "population_2011": 402,
+   "basis": "Census of India 2011 (village directory) - Kothapalle, Kataram mandal",
+   "source": "Wikipedia 'Kothapalli', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Kyathanpally",
+   "state": "Telangana",
+   "population_2011": 32385,
+   "basis": "citypopulation.de (Census 2011) - Kyathanpally (CT)",
+   "source": "Wikipedia 'Kyathanpally', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Luxettipet",
+   "state": "Telangana",
+   "population_2011": 29524,
+   "basis": "Wikipedia historical table (Census 2011) - Luxettipet Municipality",
+   "source": "Wikipedia 'Luxettipet', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Mandamarri",
+   "state": "Telangana",
+   "population_2011": 52352,
+   "basis": "Wikipedia (Census 2011) - Mandamarri (M)",
+   "source": "Wikipedia 'Mandamarri', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Manthani",
+   "state": "Telangana",
+   "population_2011": 17927,
+   "basis": "Census of India 2011 (village directory) - Manthani",
+   "source": "Wikipedia 'Manthani', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Manuguru",
+   "state": "Telangana",
+   "population_2011": 32091,
+   "basis": "Wikipedia (Census 2011) - Manuguru",
+   "source": "Wikipedia 'Manuguru', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Metpally",
+   "state": "Telangana",
+   "population_2011": 50902,
+   "basis": "citypopulation.de (Census 2011) - Metpally Municipality",
+   "source": "Wikipedia 'Metpally', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Naspur",
+   "state": "Telangana",
+   "population_2011": 31244,
+   "basis": "citypopulation.de (Census 2011) - Naspur (CT)",
+   "source": "Wikipedia 'Naspur', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Nirmal",
+   "state": "Telangana",
+   "population_2011": 88433,
+   "basis": "Wikipedia (Census 2011) - Nirmal town",
+   "source": "Wikipedia 'Nirmal', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Palvancha",
+   "state": "Telangana",
+   "population_2011": 80199,
+   "basis": "Wikipedia historical table (Census 2011) - Palvancha",
+   "source": "Wikipedia 'Palvancha', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Parkal",
+   "state": "Telangana",
+   "population_2011": 20257,
+   "basis": "Census of India 2011 (village directory) - Parkal",
+   "source": "Wikipedia 'Parkal', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Siddipet",
+   "state": "Telangana",
+   "population_2011": 111358,
+   "basis": "Wikipedia (Census 2011) - Siddipet municipality",
+   "source": "Wikipedia 'Siddipet', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Sultanabad",
+   "state": "Telangana",
+   "population_2011": 16116,
+   "basis": "Census of India 2011 (village directory) - Sultanabad",
+   "source": "Wikipedia 'Sultanabad', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Narasapuram",
+   "state": "Andhra Pradesh",
+   "population_2011": 58770,
+   "basis": "Wikipedia infobox (Census 2011) - Narasapuram municipality",
+   "source": "Wikipedia 'Narasapuram', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  },
+  {
+   "town": "Polavaram",
+   "state": "Andhra Pradesh",
+   "population_2011": 13861,
+   "basis": "Census of India 2011 (village directory) - Polavaram",
+   "source": "Wikipedia 'Polavaram', citing Census of India 2011",
+   "urban_agglomeration_2011": null
+  }
+ ]
+}

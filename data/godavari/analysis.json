@@ -1,0 +1,215 @@
+{
+ "river": {
+  "name": "Godavari",
+  "osm_relation": 2826093,
+  "centreline_length_km": 1511.3,
+  "from": "Trimbakeshwar, Nashik district, Maharashtra (73.5322, 19.9324)",
+  "to": "Bay of Bengal at Antarvedi, Andhra Pradesh (82.3536, 16.7414)",
+  "corridor_buffer_km": 10,
+  "buffer_area_km2": 26295
+ },
+ "drains": {
+  "count": 97,
+  "by_data_status": {
+   "unmeasured": 95,
+   "measured": 1,
+   "estimated": 1
+  },
+  "measured": {
+   "count": 1,
+   "flow_mld": 68.0,
+   "bod_tpd": 8.5
+  },
+  "estimated": {
+   "count": 1,
+   "flow_mld": 55.0,
+   "bod_tpd": 13.75
+  },
+  "unmeasured": {
+   "count": 95,
+   "flow_mld": 0.0,
+   "bod_tpd": 0.0
+  },
+  "note": "Measured and estimated totals are separate and are never summed into a single \"total pollution\" figure. Only 2 of 97 drains have a published flow; 95 have no published flow or BOD at all. Telangana MPRs count 54 Godavari + 13 Maneru + 11 Nakkavagu/Manjeera + 5 Karakavagu/Kinnerasani drains but never name or locate them, so they are not in this file.",
+  "bod_tpd_by_state_measured": {
+   "Maharashtra": 8.5
+  },
+  "flow_mld_by_state_measured": {
+   "Maharashtra": 68.0
+  },
+  "tapped_status": {
+   "Intercepted": 18,
+   "Untapped": 66,
+   "": 13
+  },
+  "top_10_by_bod_tpd": [
+   {
+    "drain": "Nalla Channel",
+    "town": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "bod_tpd": 13.75,
+    "flow_mld": 55.0,
+    "data_status": "estimated"
+   },
+   {
+    "drain": "Nashik city nallas - aggregate uncollected sewage",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 8.5,
+    "flow_mld": 68.0,
+    "data_status": "measured"
+   },
+   {
+    "drain": "Gangapur / Bardan Phata nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Someshwar 1 nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Someshwar 2 nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Chikhali nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Anandvalli nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Forest Nursery nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Asaram Bapu Ashram nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   },
+   {
+    "drain": "Chopda nalla",
+    "town": "Nashik",
+    "state": "Maharashtra",
+    "bod_tpd": 0.0,
+    "flow_mld": 0.0,
+    "data_status": "unmeasured"
+   }
+  ],
+  "top_towns_by_bod_tpd_measured": [
+   {
+    "town": "Nashik",
+    "bod_tpd": 8.5
+   }
+  ]
+ },
+ "stps": {
+  "count": 149,
+  "by_state": {
+   "Maharashtra": 70,
+   "Telangana": 76,
+   "Andhra Pradesh": 3
+  },
+  "capacity_mld_total": 2648.0,
+  "operational_status": {
+   "operational": 44,
+   "under construction": 18,
+   "not in operation": 7,
+   "proposed": 80
+  },
+  "utilised_mld_known_plants": 46,
+  "utilised_mld_total": 1053.95,
+  "utilised_mld_unknown_plants": 103,
+  "utilised_mld_assessed_capacity": 1410.25,
+  "utilisation_pct_of_assessed": 74.7,
+  "utilisation_by_state": {
+   "Andhra Pradesh": {
+    "plants_with_utilisation": 1,
+    "utilised_mld": 30.0,
+    "assessed_capacity_mld": 30.0
+   },
+   "Maharashtra": {
+    "plants_with_utilisation": 37,
+    "utilised_mld": 1007.95,
+    "assessed_capacity_mld": 1264.5
+   },
+   "Telangana": {
+    "plants_with_utilisation": 8,
+    "utilised_mld": 16.0,
+    "assessed_capacity_mld": 115.75
+   }
+  },
+  "ngt_compliant": 3,
+  "ngt_non_compliant": 23,
+  "ngt_compliance_null": 123,
+  "moefcc_compliant": 20,
+  "moefcc_non_compliant": 21,
+  "moefcc_compliance_null": 108,
+  "budgets": {
+   "undisclosed": 130,
+   "disclosed": 6,
+   "partially disclosed": 13
+  },
+  "note": "NGT compliance is derived from per-plant effluent values in the Maharashtra MPR Mar 2026 annexure where published (3 plants meet NGT norms: Shirdi 16 MLD, Chandrapur Pathanpura 45 MLD, Rehmat Nagar 25 MLD). No per-plant total nitrogen or faecal coliform value is published anywhere, and 123 of 149 plants have no effluent value at all, so \"0 meeting NGT\" would be a data limit, not a finding. All 12 Nagpur plants are Non-Comply. 80 plants are still proposed (510.5 MLD) and 18 under construction (714.25 MLD) — they are included so towns without a working plant do not vanish; operational_status therefore uses four values (operational / not in operation / under construction / proposed). Utilisation: 1,053.95 of 1,410.25 MLD assessed (74.7%); Telangana only 16.0 of 115.75 MLD (13.8%) vs Maharashtra 1,007.95 of 1,264.5 MLD (79.7%)."
+ },
+ "water_quality": {
+  "stations": 86,
+  "bod_trend": {
+   "stable": 79,
+   "improving": 5,
+   "worsening": 2
+  },
+  "series_years": "2019-21 maxima, Jun-Jul 2021 monthly, Jan 2025 single-month",
+  "note": "Series years are not like-for-like: 70 stations carry CPCB Polluted River Stretches 2022 maxima (2019-21, stored as 2021 values); 19 are NWMP-only or AP-MPR-only; Telangana stations have Jun-Jul 2021 monthly samples (the only two comparable points, hence the only real trends); AP stations are single Jan 2025 values. No station has a continuous annual series. Worst station: Vasistha D/s Narasapuram, BOD 58.0 mg/l (2019-21 max). Worst stretch: Maharashtra Godavari main stem, BOD max 28.0 mg/l (Kapila-Godavari confluence), Priority II. Worst DO: Nakkavagu at Bachugudem, 1.6 mg/l (Jun 2021)."
+ },
+ "people": {
+  "towns": 87,
+  "towns_with_population_2011": 87,
+  "towns_with_mla": 87,
+  "summed_town_population_2011": 12748996,
+  "note": "The summed town population is NOT the corridor population; see population below."
+ },
+ "population": {
+  "corridor_10km_ghsl_2020": 10626120,
+  "corridor_10km_worldpop_2020": 10559786,
+  "worldpop_status": "computed",
+  "buffer_area_km2": 26295,
+  "cells_in_buffer_ghsl": 32454
+ },
+ "industries": {
+  "rows": 10,
+  "note": "10 rows: 2 with a consented capacity figure (Waluj CETP, Chhatrapati Sambhajinagar, 10 MLD; Andhra Paper Ltd, Rajahmundry, 31.53 MLD; total 41.53 MLD) and 8 aggregate/belt rows with no figure. Effluent figures are consented capacities, never measurements, and are not added to any drain load. No CETP at all in the Andhra Pradesh Godavari stretch; no Godavari equivalent of the Yamuna GPI inspection exists."
+ },
+ "drain_courses": {
+  "rows": 0,
+  "note": "No drain course geometry is published for any Godavari drain; no OSM way carries a named Godavari drain course."
+ }
+}
