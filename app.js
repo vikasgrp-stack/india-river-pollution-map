@@ -592,7 +592,21 @@ $('#legendBtn').addEventListener('click', () => {
 function openPanel(html) {
   $('#panelContent').innerHTML = html;
   $('#detailPanel').hidden = false;
+  collapsePanelOnMobile();
 }
+function collapsePanelOnMobile() {
+  if (window.innerWidth <= 760) {
+    $('#controlPanel').classList.remove('open');
+    $('#panelToggle').setAttribute('aria-expanded', 'false');
+    $('#panelToggle').textContent = 'Controls';
+  }
+}
+$('#panelToggle').addEventListener('click', () => {
+  const panel = $('#controlPanel');
+  const open = panel.classList.toggle('open');
+  $('#panelToggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+  $('#panelToggle').textContent = open ? 'Hide controls' : 'Controls';
+});
 $('#panelClose').addEventListener('click', () => { $('#detailPanel').hidden = true; });
 function srcLine(source, asOf) {
   return '<p class="src">Source: ' + esc(source || '—') + (asOf ? ' · as of ' + esc(asOf) : '') + '. <a href="#" onclick="switchTab(\'data\');return false;">See methodology &amp; sources</a></p>';

@@ -243,11 +243,22 @@ p { margin: 0 0 12px; }
 .mk-icon svg { display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4)); }
 .mk-town { border-radius: 50%; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.35); }
 
+.panel-toggle { display: none; }
 @media (max-width: 760px) {
   h1 { font-size: 21px; }
   #mapView { height: calc(100vh - 110px); }
   .map-panel { width: calc(100vw - 24px); }
-  .detail-panel { width: calc(100vw - 24px); top: auto; bottom: 12px; max-height: 62vh; }
+  /* on phones the control panel collapses to a slim bar — title + filter +
+     a Controls button — so it never covers the map; tap to expand */
+  .panel-toggle {
+    display: inline-block; border: 1px solid var(--accent); background: #fff; color: var(--accent);
+    border-radius: 7px; padding: 6px 10px; font-size: 13px; font-weight: 700; cursor: pointer; white-space: nowrap;
+  }
+  #panelBody { display: none; }
+  .map-panel.open #panelBody { display: block; }
+  .map-panel.open { max-height: calc(100vh - 140px); overflow-y: auto; }
+  .detail-panel { width: calc(100vw - 24px); top: auto; bottom: 12px; max-height: 58vh; }
+  .legend-panel { left: 12px; right: 12px; width: auto; bottom: 56px; max-height: 55vh; }
   .header-counts { display: none; }
   .kv { grid-template-columns: 1fr 1fr; }
   .std-row { grid-template-columns: 120px 1fr 84px; }

@@ -32,7 +32,9 @@
           <option value="ganga">Ganga</option>
           <option value="yamuna">Yamuna</option>
         </select>
+        <button id="panelToggle" class="panel-toggle" type="button" aria-expanded="false" aria-controls="panelBody">Controls</button>
       </div>
+      <div id="panelBody">
       <div class="control-row">
         <div class="search-wrap">
           <input id="townSearch" type="search" placeholder="Search a town — Kanpur, Varanasi, Patna…" autocomplete="off">
@@ -59,6 +61,7 @@
         <span class="layer-note" id="layerNote"></span>
       </div>
       <div class="layer-legends" id="layerLegends"></div>
+      </div>
     </div>
 
     <button id="legendBtn" class="legend-btn" type="button" aria-expanded="false">ⓘ Legend</button>
