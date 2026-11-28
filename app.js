@@ -759,7 +759,7 @@ function showStp(p) {
   const isNew = p.is_new_plant === true;
   const util = p.utilisation_pct != null ? +p.utilisation_pct : (p.capacity_mld && p.utilised_mld != null ? (+p.utilised_mld / +p.capacity_mld) * 100 : null);
   let html = typeChip('Sewage treatment plant', 'Treats sewage before it reaches the river.', '#6d28d9') + '<h2>' + esc(p.plant_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
-  const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : p._river === 'yamuna' ? 'only 3 of 115 plants on the Yamuna do.' : p._river === 'sabarmati' ? 'the first on the Sabarmati to do so.' : p._river === 'cauvery' ? 'the first on the Cauvery to do so.' : 'one of only 3 plants on the Godavari that do — Shirdi (16 MLD), Pathanpura (45 MLD) and Rehmat Nagar (25 MLD).')
+  const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 151 plants on the Ganga do.' : p._river === 'yamuna' ? 'only 3 of 115 plants on the Yamuna do.' : p._river === 'sabarmati' ? 'the first on the Sabarmati to do so.' : p._river === 'cauvery' ? 'the first on the Cauvery to do so.' : 'one of only 3 plants on the Godavari that do — Shirdi (16 MLD), Pathanpura (45 MLD) and Rehmat Nagar (25 MLD).')
     : p.ngt_compliant === false ? 'Fails NGT norms' + (p.noncompliance_reason ? ' — ' + esc(p.noncompliance_reason) : '.') + ' Treated sewage that is still too dirty to meet the standard.'
     : 'Never assessed against NGT norms — its outlet quality is not publicly graded.';
   html += takeaway(take);
@@ -790,10 +790,10 @@ function showStp(p) {
     html += '<div class="kv">' +
       '<div class="cell"><div class="k">Sanctioned build cost</div><div class="v" style="font-size:14px">' + (cost || 'Not publicly disclosed') + '</div></div>' +
       '<div class="cell"><div class="k">Annual running budget (O&amp;M)</div><div class="v" style="font-size:14px">' + (fmtCrore(p.annual_om_crore) || 'Not publicly disclosed') + '</div></div></div>';
-    if (!p.annual_om_crore) html += '<p class="note-box">Only 27 of the 145 plants publish an annual O&amp;M figure — all of them in Uttar Pradesh. The other 118 do not disclose one.</p>';
-    html += '<p style="font-size:13.5px"><b>Funds released vs utilised:</b> published for <b>0 of 145</b> plants. That non-disclosure is itself a finding — the money trail cannot be checked from public sources.</p>';
+    if (!p.annual_om_crore) html += '<p class="note-box">Only 27 of the 151 plants publish an annual O&amp;M figure — all of them in Uttar Pradesh. The other 124 do not disclose one.</p>';
+    html += '<p style="font-size:13.5px"><b>Funds released vs utilised:</b> published for <b>0 of 151</b> plants. That non-disclosure is itself a finding — the money trail cannot be checked from public sources.</p>';
     if (p.contractor_name) html += '<p style="font-size:13.5px"><b>Contractor:</b> ' + esc(p.contractor_name) + (p.award_date ? ' · awarded ' + esc(p.award_date) : '') + '</p>';
-    else html += '<p style="font-size:13.5px"><b>Contractor:</b> not published (only 5 of 145 plants name one).</p>';
+    else html += '<p style="font-size:13.5px"><b>Contractor:</b> not published (only 5 of 151 plants name one).</p>';
     if (p.project_status) html += '<p style="font-size:13.5px"><b>Project status:</b> ' + esc(p.project_status) + (p.scheduled_completion ? ' · scheduled completion ' + esc(p.scheduled_completion) : '') + '</p>';
     html += '<h4>Who built it · who runs it now</h4>';
     const built = p.build_year ? (p.build_basis === 'sanctioned' ? 'sanctioned ' : '') + p.build_year : 'year not published';
@@ -1161,17 +1161,17 @@ function renderDataTabSingle(river) {
     kpi.innerHTML =
       '<div class="kpi"><div class="n"><span data-count="609" data-dec="0">609</span></div><div class="l">drains listed by CPCB (2023)</div><div class="s">374 measured · 64 estimated · 171 never measured</div></div>' +
       '<div class="kpi"><div class="n"><span data-count="585.17" data-dec="2">585.17</span> t/day</div><div class="l">measured BOD load into the river</div><div class="s">~96% of measured flow is untapped</div></div>' +
-      '<div class="kpi"><div class="n"><span data-count="19" data-dec="0">19</span> of 145</div><div class="l">treatment plants meet NGT norms</div><div class="s">104 fail · 22 not assessed</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="19" data-dec="0">19</span> of 151</div><div class="l">treatment plants meet NGT norms</div><div class="s">104 fail · 28 not assessed</div></div>' +
       '<div class="kpi"><div class="n"><span data-count="28" data-dec="0">28</span>%</div><div class="l">of sewage actually treated (national)</div><div class="s">20,235 of 72,368 MLD — CPCB 2021</div></div>' +
       '<div class="kpi"><div class="n">74–81M</div><div class="l">people in the 10 km corridor (2020)</div><div class="s">GHSL 81.2M vs WorldPop 74.2M — a range, not one number</div></div>' +
-      '<div class="kpi"><div class="n">₹7,466 cr</div><div class="l">verified sanctioned build cost</div><div class="s">across 60 distinct projects · funds released/utilised: disclosed for 0 of 145 plants</div></div>';
+      '<div class="kpi"><div class="n">₹7,466 cr</div><div class="l">verified sanctioned build cost</div><div class="s">across 60 distinct projects · funds released/utilised: disclosed for 0 of 151 plants</div></div>';
     $('#findingsText').innerHTML =
       '<p><b>About 96% of the measured drain flow is untapped</b> — it goes straight into the river. The single biggest drain is the Slaughter House / Odean Nallah in Meerut at 260.67 tonnes of BOD a day.</p>' +
-      '<p><b>Only 19 of 145 treatment plants meet NGT norms.</b> The worst value for money is Pankha (30 MLD, Kanpur): a ₹967.23 crore project whose outlet BOD is still 40.6 mg/l. At Badrinath, the outlet BOD is 1,237 mg/l — 124× the limit, essentially raw sewage.</p>' +
+      '<p><b>Only 19 of 151 treatment plants meet NGT norms.</b> The worst value for money is Pankha (30 MLD, Kanpur): a ₹967.23 crore project whose outlet BOD is still 40.6 mg/l. At Badrinath, the outlet BOD is 1,237 mg/l — 124× the limit, essentially raw sewage.</p>' +
       '<p><b>Utilisation is bimodal:</b> 42 plants run under 50% of capacity, while 18 run over 100%. Brajghat runs at 0.4% of capacity — effectively idle. Faecal coliform is the most common failure (80 of the 104 failing plants).</p>' +
       '<p><b>46 of the 101 plants with a confirmed build party were built under a different state party than the one managing them now</b> — West Bengal 26 of 26, Uttar Pradesh 14 of 33, Bihar 6 of 6.</p>';
     $('#accountabilityText').innerHTML =
-      '<p><b>Operator named</b> for 132 of 145 plants (54 of them state-pattern / HAM-scope, per-plant unconfirmed); 13 undisclosed. <b>Build cost disclosed</b> for 113 (₹7,466.16 crore verified across 60 distinct projects — each shared project counted once, never summed down the column); 32 not publicly disclosed. <b>Annual O&amp;M figure</b> for only 27 plants, all in Uttar Pradesh; 118 undisclosed. <b>Funds released vs utilised: disclosed for 0 of 145 plants.</b> Contractor named for only 5 plants; award date for 4; cost-overrun figure for 2.</p>' +
+      '<p><b>Operator named</b> for 132 of 151 plants (54 of them state-pattern / HAM-scope, per-plant unconfirmed); 19 undisclosed. <b>Build cost disclosed</b> for 113 (₹7,466.16 crore verified across 60 distinct projects — each shared project counted once, never summed down the column); 38 not publicly disclosed. <b>Annual O&amp;M figure</b> for only 27 plants, all in Uttar Pradesh; 124 undisclosed. <b>Funds released vs utilised: disclosed for 0 of 151 plants.</b> Contractor named for only 5 plants; award date for 4; cost-overrun figure for 2.</p>' +
       '<p>HAM concessions cover 18 plants / 918 MLD (34.8% of capacity), all with 15-year O&amp;M. The largest operator is KMDA (29 plants / 470 MLD). Kanpur&rsquo;s six plants sit with Kanpur River Management Pvt Ltd (Shapoorji Pallonji + SSG); Prayagraj&rsquo;s nine with Prayagraj Water Pvt Ltd.</p>';
     $('#methodText').innerHTML =
       '<p><b>Drains (609):</b> extracted from the CPCB report &ldquo;Status of drains, Pre-Monsoon 2023&rdquo; (437 main stem + 172 tributaries). Measured totals match the published CPCB figures (14,097.51 MLD flow; 585.17 TPD BOD). 63 drains were unmeasured in the report; their loads were estimated by apportioning each town&rsquo;s estimated sewage (population × 185 litres per person per day × 0.8) equally across that town&rsquo;s unmeasured drains — 1,861.68 MLD / 465.42 TPD across 64 drains — and every estimated value is labelled as estimated with the method. Note: the CPCB PDF itself could not be downloaded (its host returned errors), so extraction used a search-engine full-text copy of the PDF; re-check against the original when the host recovers.</p>' +
@@ -1192,7 +1192,7 @@ function renderDataTabSingle(river) {
       '<li><b>63 drains unmeasured</b> in the CPCB report — their loads are estimated, not measured, and labelled so.</li>' +
       '<li><b>Most plant points are still town centroids</b> — 33 of 151 plants are now plotted at their actual sites, verified on satellite imagery; 5 plants (incl. 4 commissioned 2024–2026) have no coordinates at all and are never plotted, and 2 more (Phaphamau, Jhunsi) could not be confirmed on satellite and stay at the town centroid.</li>' +
       '<li><b>5 water-quality stations</b> have no coordinates and are never plotted.</li>' +
-      '<li><b>Funds released vs utilised: disclosed for 0 of 145 plants.</b> The money trail cannot be checked from public sources.</li>' +
+      '<li><b>Funds released vs utilised: disclosed for 0 of 151 plants.</b> The money trail cannot be checked from public sources.</li>' +
       '<li><b>Annual O&amp;M disclosed for only 27 plants</b> (all in Uttar Pradesh); Bihar and Jharkhand publish no O&amp;M figure at all.</li>' +
       '<li><b>No per-plant total nitrogen value</b> is published anywhere.</li>' +
       '<li><b>41 plants have no published build year</b> — their &ldquo;built under&rdquo; party cannot be established and is stated as such, never guessed.</li>' +
@@ -1380,9 +1380,9 @@ function renderDataTab() {
     $('#kpiGrid').innerHTML =
       '<div class="kpi"><div class="n"><span data-count="781" data-dec="0">781</span></div><div class="l">drains listed by CPCB</div><div class="s">609 Ganga + 50 Yamuna + 11 Sabarmati + 14 Cauvery + 97 Godavari · 414 measured · 87 estimated · 280 never measured</div></div>' +
       '<div class="kpi"><div class="n"><span data-count="962.89" data-dec="2">962.89</span> t/day</div><div class="l">measured BOD load into the rivers</div><div class="s">585.17 Ganga + 358.42 Yamuna + 10.8 Sabarmati + 8.5 Godavari · Cauvery: no measured drain</div></div>' +
-      '<div class="kpi"><div class="n"><span data-count="25" data-dec="0">25</span> of 501</div><div class="l">treatment plants meet NGT norms</div><div class="s">19 Ganga + 3 Yamuna + 0 Sabarmati + 0 Cauvery + 3 Godavari · 235 fail · 241 not assessed</div></div>' +
+      '<div class="kpi"><div class="n"><span data-count="25" data-dec="0">25</span> of 507</div><div class="l">treatment plants meet NGT norms</div><div class="s">19 Ganga + 3 Yamuna + 0 Sabarmati + 0 Cauvery + 3 Godavari · 235 fail · 247 not assessed</div></div>' +
       '<div class="kpi"><div class="n">137–147M</div><div class="l">people in the 10 km corridors (2020)</div><div class="s">Ganga 74–81M + Yamuna 34.3–36.6M + Sabarmati 9.4M + Cauvery 9.0M + Godavari 10.6M — ranges, not one number (Sabarmati &amp; Cauvery GHSL only; Godavari GHSL 10.63M vs WorldPop 10.56M)</div></div>' +
-      '<div class="kpi"><div class="n">₹7,466 cr</div><div class="l">verified sanctioned build cost — Ganga</div><div class="s">across 60 distinct projects · funds released/utilised disclosed for 0 of 145 plants</div></div>' +
+      '<div class="kpi"><div class="n">₹7,466 cr</div><div class="l">verified sanctioned build cost — Ganga</div><div class="s">across 60 distinct projects · funds released/utilised disclosed for 0 of 151 plants</div></div>' +
       '<div class="kpi"><div class="n">77 of 115</div><div class="l">Yamuna plants disclose no budget at all</div><div class="s">only 2 fully disclosed · 36 partially</div></div>';
     $('#findingsText').innerHTML = '<h4>Ganga</h4>' + grab.findingsText.ganga + '<h4>Yamuna</h4>' + grab.findingsText.yamuna + '<h4>Sabarmati</h4>' + grab.findingsText.sabarmati + '<h4>Cauvery</h4>' + grab.findingsText.cauvery + '<h4>Godavari</h4>' + grab.findingsText.godavari;
     $('#accountabilityText').innerHTML = '<h4>Ganga</h4>' + grab.accountabilityText.ganga + '<h4>Yamuna</h4>' + grab.accountabilityText.yamuna + '<h4>Sabarmati</h4>' + grab.accountabilityText.sabarmati + '<h4>Cauvery</h4>' + grab.accountabilityText.cauvery + '<h4>Godavari</h4>' + grab.accountabilityText.godavari;
@@ -1661,13 +1661,13 @@ function updateHeaderCounts() {
     const data = state.data[river];
     drains += plottedCount(data.drains);
     stps += plottedCount(data.stps);
-    stpsTotal += river === 'ganga' ? 145 : data.stps.features.length;
+    stpsTotal += data.stps.features.length;
     wq += plottedCount(data.wq);
     wqTotal += data.wq.features.length;
     towns += plottedCount(data.people);
     courses += data.courses.features.length;
     ind += data.industries.features.length;
-    if (river === 'ganga') newNote = ' (+6 new, no location)';
+    if (river === 'ganga') newNote = ' (+6 new: 2 located, 4 without)';
   });
   const line = drains + ' drains · ' + stps + ' of ' + stpsTotal + ' plants' + newNote + ' · ' +
     wq + ' of ' + wqTotal + ' stations · ' + towns + ' towns · ' +
