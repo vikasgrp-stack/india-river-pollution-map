@@ -20,6 +20,7 @@
   <button id="tabMap" class="top-tab active" role="tab" type="button">Map</button>
   <button id="tabAction" class="top-tab" role="tab" type="button">Action list — top priorities</button>
   <button id="tabData" class="top-tab" role="tab" type="button">Data, charts &amp; sources</button>
+  <button id="tabLive" class="top-tab" role="tab" type="button">Watch live (when on)</button>
   <span class="header-counts" id="headerCounts"></span>
 </nav>
 
@@ -165,6 +166,43 @@
       </div>
     </div>
   </section>
+
+  <!-- ============ WATCH LIVE VIEW ============ -->
+  <section id="liveView" class="view" hidden>
+    <div class="page-wrap">
+      <h2>Watch live (when on)</h2>
+      <p class="page-intro">There is no open, 24/7, embeddable riverfront webcam network for these rivers. What exists is scheduled aarti / darshan streams — link-outs only, on at aarti hours, offline in between. YouTube video IDs change with each broadcast, so check the channel&apos;s Live tab if a link is stale. This panel is checked weekly.</p>
+
+      <div class="data-section">
+        <h3>Streams — link-outs only</h3>
+        <ul class="gaps-list" id="livePanelList"><li>Loading the live list… If this list does not load, <a href="data/live_panel.json" download>download data/live_panel.json</a>.</li></ul>
+      </div>
+
+      <div class="data-section">
+        <h3>Where no live camera was found</h3>
+        <ul class="gaps-list" id="liveGapsList"></ul>
+      </div>
+
+      <div class="data-section">
+        <h3>Live data instead of video</h3>
+        <p class="page-intro">For the river itself, live numbers beat a camera. CPCB runs about 40 Real-Time Water Quality Monitoring Stations on the Ganga and its tributaries, hourly — the dashboard load was not verified live in this session, and the 40-station figure rests on a Parliament answer of 16 Mar 2026. NMCG&apos;s GangaPulse shows STP performance from OCEMS sensors — a treatment layer, not a river-health layer.</p>
+        <ul class="download-list">
+          <li><a href="https://rtwqmsdb1.cpcb.gov.in/#/" target="_blank" rel="noopener">CPCB Real-Time Water Quality Monitoring Stations</a></li>
+          <li><a href="https://www.gangapulse.in/public/" target="_blank" rel="noopener">GangaPulse — STP performance (NMCG)</a></li>
+        </ul>
+      </div>
+
+      <div class="data-section">
+        <h3>Notes</h3>
+        <ul class="gaps-list">
+          <li>Manikarnika Ghat is excluded — photography / filming of cremations there is strictly prohibited.</li>
+          <li>Official streams only; link-outs preferred over embeds. No recording, archiving or face recognition.</li>
+          <li>Times are IST (UTC+05:30). A stream labelled &ldquo;temple, NOT a river view&rdquo; shows a temple, not the river — it is listed honestly, not as a riverfront view.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">

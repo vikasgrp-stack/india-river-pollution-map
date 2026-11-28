@@ -1609,17 +1609,35 @@ $('#locateMe').addEventListener('click', () => {
   }, { timeout: 10000, maximumAge: 60000 });
 });
 $('#wholeRiver').addEventListener('click', () => fitScope());
+async function renderLivePanel() {
+  const list = $('#livePanelList');
+  const gaps = $('#liveGapsList');
+  if (!list) return;
+  if (state.livePanelRendered) return;
+  try {
+    const data = await fetchJSON('data/live_panel.json');
+    list.innerHTML = (data.items || []).map((it) =>
+      '<li><b><a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.viewpoint) + '</a></b> — ' + esc(it.town) + ', ' + esc(it.river) + '. ' + esc(it.hours_ist) + '. ' + esc(it.kind) + '. Reliability: ' + esc(it.reliability) + '.</li>'
+    ).join('');
+    if (gaps) gaps.innerHTML = (data.gaps_no_cam_found || []).map((g) => '<li>' + esc(g) + ' — ' + esc(data.gaps_label || 'No public live webcam found.') + '</li>').join('');
+    state.livePanelRendered = true;
+  } catch (e) {
+    list.innerHTML = '<li>Could not load the live list. <a href="data/live_panel.json" download>Download data/live_panel.json</a> instead.</li>';
+  }
+}
 function switchTab(name) {
-  ['map', 'action', 'data'].forEach((t) => {
+  ['map', 'action', 'data', 'live'].forEach((t) => {
     $('#tab' + t[0].toUpperCase() + t.slice(1)).classList.toggle('active', t === name);
     $('#' + t + 'View').hidden = t !== name;
   });
   if (name === 'map') setTimeout(() => map.invalidateSize(), 50);
   if (name === 'data') renderStandards();
+  if (name === 'live') renderLivePanel();
 }
 $('#tabMap').addEventListener('click', () => switchTab('map'));
 $('#tabAction').addEventListener('click', () => switchTab('action'));
 $('#tabData').addEventListener('click', () => switchTab('data'));
+$('#tabLive').addEventListener('click', () => switchTab('live'));
 $('#shortcomingsOnly').addEventListener('change', (e) => {
   state.shortcomingsOnly = e.target.checked;
   buildLayers();
