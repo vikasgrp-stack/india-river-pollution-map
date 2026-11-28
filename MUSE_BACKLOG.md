@@ -95,11 +95,11 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 - [ ] Drains (Ganga): 609 Point, 603 distinct coords, no
   `coord_accuracy` field. Audit whether each point is a true outfall
   or a town offset. — claimed by s.advitya, 2026-11-28. Batch 1
-  done (see Log): the 52 main-stem drains >2 km from the river
-  checked against OSM waterways — 38 within 500 m of a channel
-  (21 within 100 m), 14 genuine misses. The fix for the 38 is
-  course-mapping (pin to river), not moving the pin. Working note:
-  `data/ganga/drains_audit_NOTES.md`.
+  courses mapped (see Log): 21 new drain courses added to
+  `drain_courses.geojson` (20 → 41 lines) — the 38 on/near-channel
+  drains' channels traced to the Ganga; 17 did not map (see
+  `data/ganga/drains_audit_NOTES.md`). 14 genuine misses still
+  open. Working note: `data/ganga/drains_audit_NOTES.md`.
 - [ ] Industries (Ganga): 25 Point, `coord_status` = approximate,
   plotted at town / in an area. Find exact sites where published. — unclaimed
 - [x] Nashik / Godavari STPs: satellite-verified 2026-11-27 by
@@ -466,4 +466,35 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   river line ~10.8 km away), several Fatua drains near the
   Punpun although their river field says Ganga, and Dargah
   shareef 81.34 km from the Ganga line. Branch
+  `s.advitya/ganga-drains-audit`.
+
+- 2026-11-28 — s.advitya: Ganga drains audit, batch 1 courses
+  mapped. Traced 21 new drain courses from the CPCB pin along the
+  OSM waterway to the Ganga confluence (Dijkstra shortest path on
+  the waterway graph; gaps up to 200 m bridged; each course
+  verified: pin within 500 m of the line, end 0–75 m from the
+  Ganga line). `drain_courses.geojson` now 41 lines (was 20);
+  app.js Data-tab label updated 20 → 41 lines. The 21: Bans Ghat
+  and Rajapur (Patna), Pandey Wala, Lal Mandir, Awas Vikas
+  (Haridwar), NTPC (Dalmau), Lakkar Ghat (Rishikesh), Gopalpul
+  (Sahebganj), Green belt canal (Haldia), and 12 Bhagalpur
+  drains on the shared Champa Nala channel (Champa Nala-1/-2,
+  Khirni, Koyal, Kuppa, Sarkikal, Hathiya Tilak Manjhi,
+  Hathiya intake well, Sahebganj Miyabari, Saklichand, STP
+  Nala, Adampur). Did NOT map (17): Mokama 3 (Tapaswi,
+  Kamaleshwari, Chaudhary — OSM path 97 km, the channel
+  connection to the Ganga is missing, so the graph route goes
+  the long way round); Khanua (Chapra), Jagjeetpur and Matra
+  Sadan (Haridwar), Raghopur (Baktiyarpur), Phuldera (Hapur) —
+  paths 41–60 km, same wandering problem; Loni (Unnao),
+  Kassavan (Haridwar), Bagad (Bijnor) — no path in OSM, the
+  channel does not connect to the Ganga in the data; Fatua 4
+  (Mastana, Kalighat, Kataiya, Devanti) — OSM "Ganga" way
+  ends 10.6 km from the repo Ganga line, the Fatua
+  discrepancy is still unresolved; Ponghat (Prayagraj) —
+  OSM API fetch failed (dense city, 50k-node limit). No
+  drain pins moved. The 14 genuine misses from batch 1 are
+  still open and are mostly low-BOD (highest is Rooma,
+  Kanpur, 2.64 tpd) — next: satellite check for a channel
+  OSM lacks, or mark town-centroid. Branch
   `s.advitya/ganga-drains-audit`.
