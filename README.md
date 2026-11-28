@@ -27,7 +27,7 @@ no government equivalent exists, labelled as such. Gaps are stated openly —
 where a figure is not publicly disclosed, the card says so instead of
 guessing.
 
-- `data/ganga/` — 609 drains, 145 treatment plants (+6 commissioned
+- `data/ganga/` — 609 drains, 151 treatment plants (145 + 6 commissioned
   2024–2026), 115 water-quality stations, 493 towns, 20 drain courses,
   25 industries, 10 km corridor
 - `data/yamuna/` — 50 drains, 115 treatment plants, 35 water-quality

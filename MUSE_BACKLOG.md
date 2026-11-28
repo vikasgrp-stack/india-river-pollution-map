@@ -186,13 +186,10 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Multi-select layer chips (vikas.singh.76, 2026-11-27): layer
-  chips toggle on/off so any combination of layers can be shown,
-  on branch `vikas.singh.76/layer-multi-select`.
-
-- Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
-  2026-11-27): webcams / live panel + Varanasi people contacts.
-  Branch `s.advitya/backlog-2026-11-27`.
+- Ganga / all-rivers plant counts (vikas.singh.76, 2026-11-27):
+  header and Data-tab figures used the stale 145-plant total;
+  correct them to 151 (507 all rivers), on branch
+  `vikas.singh.76/ganga-plant-counts`.
 
 - Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
   2026-11-27): webcams / live panel + Varanasi people contacts.
@@ -403,3 +400,36 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Validation: `node --check app.js` passes, `live_panel.json`
   is valid JSON, `index.html` parses. Needs a weekly link check —
   YouTube IDs churn in days. Branch `s.advitya/live-panel`.
+
+- 2026-11-27 — vikas.singh.76: Layer multi-select merged as PR #7
+  (merge commit `994d6553`). The merge first failed with a
+  conflict: PRs #8–#10 by s.advitya (backlog entries, README to 5
+  rivers, "Watch live" panel) had landed on main while PR #7 was
+  being tested. The only real conflict was `MUSE_BACKLOG.md`
+  (both sides appended log entries at the same end-of-file spot);
+  it was fixed on the branch by dropping this log entry from the
+  branch, so the branch's log matched main's, and the merge went
+  through clean. Verified live on the PR preview before merging:
+  toggling off five layers leaves exactly Drains + Treatment
+  plants selected together ("781 drains · 502 plants shown").
+  Note: the merge duplicated s.advitya's In Progress entry; the
+  duplicate is removed in the counts PR.
+- 2026-11-27 — vikas.singh.76: Ganga / all-rivers plant counts
+  fixed (header read "146 of 145 plants" for Ganga, "502 of 501"
+  for all rivers). Root cause: `updateHeaderCounts()` hard-coded
+  `stpsTotal = 145` for Ganga instead of using the loaded data
+  (151 features, 146 plotted). The header total now comes from
+  the data itself, so Ganga reads "146 of 151 plants" and all
+  rivers "502 of 507 plants". The "(+6 new, no location)" note
+  now reads "(+6 new: 2 located, 4 without)". The same stale 145
+  was in the Data tab and detail cards; all figures were
+  re-counted from `data/ganga/stp_accountability.geojson` (NGT:
+  19 meet, 104 fail, 28 not assessed — the 6 new plants have no
+  assessment data; operator named 132 of 151, build cost
+  disclosed 113, O&M figure 27, funds disclosed 0, contractor
+  named 5) and the denominators updated to 151, with the
+  undisclosed counts raised by 6; the site-wide KPI is now
+  "25 of 507" (235 fail, 247 not assessed). README Ganga line
+  now reads "151 treatment plants (145 + 6 commissioned
+  2024–2026)". No data files touched. Branch
+  `vikas.singh.76/ganga-plant-counts`.
