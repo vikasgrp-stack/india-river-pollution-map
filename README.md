@@ -1,11 +1,12 @@
-# Ganga + Yamuna River Pollution Map
+# India River Pollution Map
 
-A public, map-first view of pollution in the Ganga and Yamuna rivers: every
+A public, map-first view of pollution in India's rivers: every
 drain discharging into the river and what it adds, treatment plants and how
 well they work, water-quality stations, the people living along the corridor,
 and a prioritised action list (worst first) with who is responsible.
 
-Both rivers live on one page with a Ganga | Yamuna switcher.
+Five rivers live on one page with a river switcher: Ganga, Yamuna,
+Sabarmati, Cauvery, Godavari.
 
 ## Stack
 
@@ -31,6 +32,13 @@ guessing.
   25 industries, 10 km corridor
 - `data/yamuna/` — 50 drains, 115 treatment plants, 35 water-quality
   stations, 45 towns, 2 drain courses, corridor population
+- `data/sabarmati/` — 11 drains, 24 treatment plants, 10 water-quality
+  stations, 12 towns, 10 km corridor (counts from
+  `data/sabarmati/analysis.json`, verified 2026-11-27)
+- `data/cauvery/` — 14 drains, 68 treatment plants, 22 water-quality
+  stations, 41 towns
+- `data/godavari/` — 97 drains, 149 treatment plants, 86 water-quality
+  stations, 87 towns
 
 ## Run locally
 

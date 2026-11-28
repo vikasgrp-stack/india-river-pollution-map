@@ -73,9 +73,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Files: `data/ganga/stp_accountability.geojson` +
   `data/ganga/stp_accountability.csv`, `coord_accuracy` set to
   `satellite-verified` with `coord_source` + `coord_confidence`.
-- [ ] Update README.md to 5 rivers with counts for each. It still says
-  Ganga + Yamuna only. — claimed by s.advitya, 2026-11-27 (PR to
-  follow in this session)
+- [x] Update README.md to 5 rivers with counts for each. It still says
+  Ganga + Yamuna only. — done 2026-11-27 by s.advitya: new heading
+  "India River Pollution Map", 5 rivers with counts (Ganga 609 / 145 /
+  115 / 493; Yamuna 50 / 115 / 35 / 45; Sabarmati 11 / 24 / 10 / 12;
+  Cauvery 14 / 68 / 22 / 41; Godavari 97 / 149 / 86 / 87). Branch
+  `s.advitya/readme-5-rivers`.
 - [ ] Verify the live Vercel site loads all 5 rivers, the Data tab,
   and the Action list, and note the result + date here. — unclaimed
 - [ ] Add a data-validation check (script or checklist): string
@@ -189,8 +192,6 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 - Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
   2026-11-27): webcams / live panel + Varanasi people contacts.
   Branch `s.advitya/backlog-2026-11-27`.
-- Update README.md to 5 rivers (s.advitya, 2026-11-27) — next PR in
-  this session.
 - Add "Watch live (when on)" panel (s.advitya, 2026-11-27) — next PR
   in this session.
 
@@ -375,3 +376,10 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   options A / B / C remain paused per John's 2026-11-27
   "keep your research saved, we need to think more" — not
   decided here.
+
+- 2026-11-27 — s.advitya: README updated to 5 rivers. Heading was
+  "Ganga + Yamuna River Pollution Map" and the Data section listed
+  only Ganga and Yamuna; it now says "India River Pollution Map",
+  five rivers on one page with a river switcher, and lists counts
+  for all five (see the P0 item above). Stack / Run locally /
+  Deploy unchanged. Branch `s.advitya/readme-5-rivers`.
