@@ -18,16 +18,18 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
   background: var(--bg);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.55;
 }
 h1 { font-size: 26px; margin: 0 0 4px; font-weight: 700; letter-spacing: -0.01em; }
 h2 { font-size: 24px; margin: 0 0 10px; }
 h3 { font-size: 19px; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 h4 { font-size: 16px; margin: 18px 0 6px; }
+/* Distinctive serif for headings and big numbers; Inter for everything else */
+h1, h2, h3, .panel-title, .kpi .n, .big-pct, .stat-n, .action-list li::before { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
 p { margin: 0 0 12px; }
 
 /* ---------- top bar (tabs only — the map is the experience) ---------- */
@@ -42,7 +44,15 @@ p { margin: 0 0 12px; }
   padding: 10px 18px 8px; cursor: pointer; border-radius: 8px 8px 0 0;
 }
 .top-tab.active { background: var(--bg); border-color: var(--line); color: var(--accent); }
-.header-counts { margin-left: auto; align-self: center; font-size: 12.5px; color: var(--muted); padding-bottom: 6px; }
+/* ---------- stats strip (headline numbers, under the tabs) ---------- */
+.stats-strip {
+  max-width: 1240px; margin: 0 auto; padding: 8px 20px;
+  display: flex; align-items: center; gap: 28px;
+  background: var(--card); border-bottom: 1px solid var(--line);
+}
+.stat-n { font-size: 22px; font-weight: 800; color: var(--accent); line-height: 1.1; }
+.stat-l { font-size: 11.5px; color: var(--muted); }
+.stats-note { margin-left: auto; font-size: 12px; color: var(--muted); }
 
 /* ---------- views ---------- */
 .view[hidden] { display: none; }
@@ -50,7 +60,7 @@ p { margin: 0 0 12px; }
 .page-intro { color: var(--ink-soft); font-size: 15px; }
 
 /* ---------- map view ---------- */
-#mapView { position: relative; height: calc(100vh - 49px); min-height: 560px; }
+#mapView { position: relative; height: calc(100vh - 49px - 55px); min-height: 560px; }
 #map { position: absolute; inset: 0; background: #dce8f2; z-index: 1; }
 .leaflet-container { font-family: inherit; }
 .map-panel {
@@ -67,6 +77,11 @@ p { margin: 0 0 12px; }
   border-radius: 7px; padding: 6px 8px; font-size: 13.5px; font-weight: 600; cursor: pointer;
 }
 .control-row:last-child { margin-bottom: 0; }
+.panel-sub { font-size: 13px; color: var(--ink-soft); margin: 0 0 10px; }
+/* grouped controls inside the map panel: Find / Show / Basemap */
+.control-group { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 10px; }
+.control-group:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.control-group-title { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
 .control-label { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); width: 64px; flex: none; }
 #townSearch {
   width: 100%; padding: 8px 10px; font-size: 14px;
@@ -92,17 +107,17 @@ p { margin: 0 0 12px; }
 .you-are { font-size: 13px; color: var(--ink-soft); margin: 0 0 10px; }
 .btn {
   border: 1px solid var(--accent); background: #fff; color: var(--accent);
-  border-radius: 7px; padding: 7px 12px; font-size: 13.5px; font-weight: 600; cursor: pointer; white-space: nowrap;
+  border-radius: 7px; padding: 7px 12px; font-size: 13.5px; font-weight: 600; cursor: pointer; white-space: nowrap; min-height: 36px;
 }
 .btn:hover { background: var(--accent-soft); }
 .basemap-toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
-.bm-btn { border: 0; background: #fff; padding: 6px 14px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft); cursor: pointer; }
+.bm-btn { border: 0; background: #fff; padding: 6px 14px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft); cursor: pointer; min-height: 36px; }
 .bm-btn.active { background: var(--accent); color: #fff; }
 .basemap-attr { font-size: 11px; color: var(--muted); }
 .layer-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   border: 1px solid var(--line); background: #fff; border-radius: 999px;
-  padding: 5px 11px; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 11px; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; min-height: 36px;
 }
 .chip .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
@@ -143,7 +158,7 @@ p { margin: 0 0 12px; }
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 4px 18px rgba(20,40,60,0.18);
 }
 .panel-close {
-  position: sticky; top: 0; float: right; margin: 8px 8px 0 0; z-index: 2;
+  position: sticky; top: 0; float: right; margin: 8px 8px 0 0; z-index: 5;
   width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line);
   background: #fff; font-size: 18px; line-height: 1; cursor: pointer; color: var(--ink-soft);
 }
@@ -170,6 +185,10 @@ p { margin: 0 0 12px; }
 .type-chip { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 12px; padding: 9px 12px; border: 1px solid var(--line); border-left: 5px solid var(--chip); border-radius: 10px; background: #f8fafc; }
 .type-chip-label { display: inline-block; font-size: 14px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--chip); border-radius: 999px; padding: 3px 12px; white-space: nowrap; }
 .type-chip-desc { font-size: 13.5px; color: var(--ink-soft); }
+/* Sticky card header: the type chip + title stay pinned at the top of the
+   detail panel while the rest of the card scrolls (see .card-head in app.js). */
+.card-head { position: sticky; top: 0; z-index: 3; background: #fff; margin: -16px -18px 12px; padding: 16px 36px 10px 18px; border-bottom: 1px solid var(--line); }
+.card-head .type-chip { margin-bottom: 10px; }
 .callout {
   border: 1px solid #fcd34d; background: #fffbeb; border-radius: 8px; padding: 10px 12px; margin: 0 0 14px; font-size: 14px;
 }
@@ -221,12 +240,20 @@ p { margin: 0 0 12px; }
   font-size: 26px; font-weight: 800; color: #dbe4ec;
 }
 .action-list h3 { border: 0; padding: 0; margin: 0 0 4px; font-size: 17px; padding-right: 40px; }
-.action-list .fig { font-size: 14px; font-weight: 700; color: var(--bad); margin-bottom: 8px; }
+.action-list .fig { font-size: 16px; font-weight: 700; color: var(--bad); margin-bottom: 8px; }
+/* Severity tint on the Action list: worst items read worst at a glance.
+   Bands are relative — the item's value vs the biggest in its group. */
+.action-list li.sev-high { border-left: 5px solid #b91c1c; }
+.action-list li.sev-mid { border-left: 5px solid #b45309; }
+.action-list li.sev-low { border-left: 5px solid #64748b; }
 .action-list .what, .action-list .who { font-size: 14px; margin: 4px 0; }
 .action-list .what b, .action-list .who b { color: var(--accent); }
 
 /* data view */
-.data-section { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 18px; }
+.data-nav { position: sticky; top: 0; z-index: 100; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 10px; margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 6px; }
+.data-nav a { font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; min-height: 32px; display: inline-flex; align-items: center; }
+.data-nav a:hover { background: var(--accent-soft); }
+.data-section { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 18px; scroll-margin-top: 64px; }
 .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 12px 0 16px; }
 .kpi { background: #f8fafc; border: 1px solid #e6ebf0; border-radius: 8px; padding: 12px 14px; }
 .kpi .n { font-size: 24px; font-weight: 800; color: var(--accent); line-height: 1.15; }
@@ -243,7 +270,8 @@ p { margin: 0 0 12px; }
 .source-list li, .gaps-list li, .download-list li { margin-bottom: 7px; }
 .download-list a, .source-list a { color: var(--accent-2); }
 .site-footer { border-top: 1px solid var(--line); background: #fff; padding: 16px 20px; font-size: 12.5px; color: var(--muted); }
-.site-footer p { max-width: 980px; margin: 0 auto; }
+.site-footer p { max-width: 980px; margin: 0 auto 6px; }
+.site-footer p:last-child { margin-bottom: 0; }
 
 /* leaflet tweaks */
 .leaflet-control-attribution { font-size: 10.5px; }
@@ -256,7 +284,9 @@ p { margin: 0 0 12px; }
 .panel-toggle { display: none; }
 @media (max-width: 760px) {
   h1 { font-size: 21px; }
-  #mapView { height: calc(100vh - 110px); }
+  #mapView { height: calc(100vh - 110px - 100px); }
+  .stats-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
+  .stats-note { display: none; }
   .map-panel { width: calc(100vw - 24px); }
   /* on phones the control panel collapses to a slim bar — title + filter +
      a Controls button — so it never covers the map; tap to expand */
@@ -269,7 +299,6 @@ p { margin: 0 0 12px; }
   .map-panel.open { max-height: calc(100vh - 140px); overflow-y: auto; }
   .detail-panel { width: calc(100vw - 24px); top: auto; bottom: 12px; max-height: 58vh; }
   .legend-panel { left: 12px; right: 12px; width: auto; bottom: 56px; max-height: 55vh; }
-  .header-counts { display: none; }
   .kv { grid-template-columns: 1fr 1fr; }
   .std-row { grid-template-columns: 120px 1fr 84px; }
 }
@@ -290,7 +319,7 @@ svg [data-tip]:hover { opacity: 0.75; }
 .std-params { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 12px; }
 .std-param-btn {
   border: 1px solid var(--line); background: #fff; border-radius: 999px;
-  padding: 6px 13px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft); cursor: pointer;
+  padding: 6px 13px; font-size: 13.5px; font-weight: 600; color: var(--ink-soft); cursor: pointer; min-height: 36px;
 }
 .std-param-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 .std-chart { margin: 4px 0 8px; }
@@ -314,7 +343,7 @@ svg [data-tip]:hover { opacity: 0.75; }
 .action-list .where b { color: var(--accent); }
 .locate-btn {
   border: 1px solid var(--accent); background: #fff; color: var(--accent);
-  border-radius: 999px; padding: 4px 12px; font-size: 12.5px; font-weight: 700; cursor: pointer; margin-top: 8px;
+  border-radius: 999px; padding: 4px 12px; font-size: 12.5px; font-weight: 700; cursor: pointer; margin-top: 8px; min-height: 36px;
 }
 .locate-btn:hover { background: var(--accent-soft); }
 .action-bar { margin-top: 8px; }

@@ -191,9 +191,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Multi-select layer chips (vikas.singh.76, 2026-11-27): layer
-  chips toggle on/off so any combination of layers can be shown,
-  on branch `vikas.singh.76/layer-multi-select`.
+- Style polish — professional look + easier navigation (vikas.singh.76,
+  2026-11-27): stats strip under the tabs, shorter tab labels, one-line
+  map orientation, grouped map controls (Find / Show / Basemap), sticky
+  detail-card header, severity tint on the Action list, in-page nav on
+  the Data tab, Inter + Source Serif 4 typography, 36px touch targets,
+  split footer. Branch `vikas.singh.76/style-polish`.
 
 - Ganga drains location audit (s.advitya, 2026-11-28): verify each
   of the 609 drains against its receiving watercourse and move pins
@@ -414,6 +417,37 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Validation: `node --check app.js` passes, `live_panel.json`
   is valid JSON, `index.html` parses. Needs a weekly link check —
   YouTube IDs churn in days. Branch `s.advitya/live-panel`.
+
+- 2026-11-27 — vikas.singh.76: Style polish, the full set the user
+  asked for (8 suggestions). Stats strip under the tabs replaces the
+  old header-counts sentence: four big-number blocks (drains,
+  plants plotted of total, stations plotted of total, towns) fed by
+  `updateHeaderCounts()` — it reads the same variables, so the
+  counts fix in open PR #11 flows into the strip with no extra
+  work; the strip is visible on phones too (2×2 grid). Tabs
+  shortened to Map / Action list / Data & sources / Watch live
+  (page headings keep the full wording). Map panel gets a one-line
+  orientation ("Every drain, treatment plant and water-quality
+  reading on India's rivers. Tap any marker…") and grouped
+  controls — Find a place (search + Fit map + Near me), Show on
+  the map (layer chips + shortcomings + legends), Basemap; the
+  river filter stays in the title row so it stays visible on a
+  collapsed phone panel. Detail cards get a sticky header (type
+  chip + title pinned while the card scrolls, `.card-head` wrapper
+  in all six `show*` functions, close button raised above it).
+  Action list rows get a severity tint (red / amber / slate left
+  border, relative to the biggest in their group) and a larger
+  headline figure. Data tab gets a sticky in-page nav with anchor
+  links to all eight sections (`scroll-margin-top` so headings
+  are not hidden under it). Typography: Inter for UI, Source Serif
+  4 for headings and big numbers (one Google Fonts link, no build
+  step), base 15px -> 16px; chips, buttons and locate buttons get
+  a 36px minimum height. Footer split into two short lines +
+  "Content compiled November 2026". The map height calc subtracts
+  the strip (desktop 55px, mobile 100px) — verify on the preview
+  that the page does not scroll on the Map tab. No data files
+  touched; `node --check app.js` passes; `index.html` parses.
+  Branch `vikas.singh.76/style-polish`.
 
 - 2026-11-28 — s.advitya: Took on the Ganga drains location audit
   (user asked s.advitya to fix the drains properly). Triage, computed

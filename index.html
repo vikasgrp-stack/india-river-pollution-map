@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,700;8..60,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <!-- Vercel Web Analytics — page views + unique visitors, cookieless. Enable Web Analytics in the Vercel dashboard (project > Analytics) or this script does nothing. -->
 <script>
@@ -18,11 +21,18 @@
 <body>
 <nav class="topbar" role="tablist" aria-label="Views">
   <button id="tabMap" class="top-tab active" role="tab" type="button">Map</button>
-  <button id="tabAction" class="top-tab" role="tab" type="button">Action list — top priorities</button>
-  <button id="tabData" class="top-tab" role="tab" type="button">Data, charts &amp; sources</button>
-  <button id="tabLive" class="top-tab" role="tab" type="button">Watch live (when on)</button>
-  <span class="header-counts" id="headerCounts"></span>
+  <button id="tabAction" class="top-tab" role="tab" type="button">Action list</button>
+  <button id="tabData" class="top-tab" role="tab" type="button">Data &amp; sources</button>
+  <button id="tabLive" class="top-tab" role="tab" type="button">Watch live</button>
 </nav>
+
+<div class="stats-strip" role="status" aria-label="Site totals">
+  <div class="stat"><div class="stat-n" id="statDrains">—</div><div class="stat-l">Drains</div></div>
+  <div class="stat"><div class="stat-n" id="statPlants">—</div><div class="stat-l" id="statPlantsTotal">Treatment plants</div></div>
+  <div class="stat"><div class="stat-n" id="statStations">—</div><div class="stat-l" id="statStationsTotal">Water-quality stations</div></div>
+  <div class="stat"><div class="stat-n" id="statTowns">—</div><div class="stat-l">Towns</div></div>
+  <span class="stats-note">Records with a published location, placed on the map</span>
+</div>
 
 <main>
   <!-- ============ MAP VIEW ============ -->
@@ -43,33 +53,41 @@
         </select>
         <button id="panelToggle" class="panel-toggle" type="button" aria-expanded="false" aria-controls="panelBody">Controls</button>
       </div>
+      <p class="panel-sub">Every drain, treatment plant and water-quality reading on India's rivers. Tap any marker to see what it is.</p>
       <div id="panelBody">
-      <div class="control-row">
-        <div class="search-wrap">
-          <input id="townSearch" type="search" placeholder="Search a town — Kanpur, Varanasi, Patna…" autocomplete="off">
-          <div id="townSuggest" class="town-suggest" hidden></div>
+      <div class="control-group">
+        <div class="control-group-title">Find a place</div>
+        <div class="control-row">
+          <div class="search-wrap">
+            <input id="townSearch" type="search" placeholder="Search a town — Kanpur, Varanasi, Patna…" autocomplete="off">
+            <div id="townSuggest" class="town-suggest" hidden></div>
+          </div>
+          <button id="wholeRiver" class="btn" type="button">Fit map</button>
+          <button id="locateMe" class="btn" type="button">⌖ Near me</button>
         </div>
-        <button id="wholeRiver" class="btn" type="button">Fit map</button>
-        <button id="locateMe" class="btn" type="button">⌖ Near me</button>
+        <div id="locateStatus" class="locate-status" hidden></div>
       </div>
-      <div id="locateStatus" class="locate-status" hidden></div>
-      <div class="control-row basemap-row">
-        <span class="control-label">Basemap</span>
-        <div class="basemap-toggle" role="group" aria-label="Basemap">
-          <button id="bmStreets" class="bm-btn active" type="button">Streets</button>
-          <button id="bmSatellite" class="bm-btn" type="button">Satellite</button>
+      <div class="control-group">
+        <div class="control-group-title">Show on the map</div>
+        <div class="control-row layers-row">
+          <div class="layer-chips" id="layerChips"></div>
         </div>
-        <span class="basemap-attr" id="basemapAttr">© OpenStreetMap contributors</span>
+        <div class="control-row">
+          <label class="shortcomings"><input type="checkbox" id="shortcomingsOnly"> Shortcomings only</label>
+          <span class="layer-note" id="layerNote"></span>
+        </div>
+        <div class="layer-legends" id="layerLegends"></div>
       </div>
-      <div class="control-row layers-row">
-        <span class="control-label">Layers</span>
-        <div class="layer-chips" id="layerChips"></div>
+      <div class="control-group">
+        <div class="control-group-title">Basemap</div>
+        <div class="control-row basemap-row">
+          <div class="basemap-toggle" role="group" aria-label="Basemap">
+            <button id="bmStreets" class="bm-btn active" type="button">Streets</button>
+            <button id="bmSatellite" class="bm-btn" type="button">Satellite</button>
+          </div>
+          <span class="basemap-attr" id="basemapAttr">© OpenStreetMap contributors</span>
+        </div>
       </div>
-      <div class="control-row">
-        <label class="shortcomings"><input type="checkbox" id="shortcomingsOnly"> Shortcomings only</label>
-        <span class="layer-note" id="layerNote"></span>
-      </div>
-      <div class="layer-legends" id="layerLegends"></div>
       </div>
     </div>
 
@@ -97,6 +115,16 @@
   <section id="dataView" class="view" hidden>
     <div class="page-wrap">
       <h2>Data, charts &amp; sources</h2>
+      <nav class="data-nav" aria-label="Data sections">
+        <a href="#findingsSection">What the data says</a>
+        <a href="#glossarySection">Terms</a>
+        <a href="#standardsSection">Standards compared</a>
+        <a href="#accountabilitySection">Accountability</a>
+        <a href="#methodSection">Methodology</a>
+        <a href="#sourcesSection">Sources</a>
+        <a href="#downloadSection">Download the data</a>
+        <a href="#gapsSection">Gaps &amp; limitations</a>
+      </nav>
 
       <div class="data-section" id="findingsSection">
         <h3>What the data says</h3>
@@ -104,7 +132,7 @@
         <div id="findingsText"></div>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="glossarySection">
         <h3>What do these terms mean?</h3>
         <dl class="glossary">
           <dt>BOD — Biochemical Oxygen Demand</dt>
@@ -126,7 +154,7 @@
         </dl>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="standardsSection">
         <h3>How Indian norms compare with the world</h3>
         <p class="page-intro std-takeaway">India&rsquo;s NGT limits are among the strictest on paper for conventional pollutants — BOD 10 beats the EU&rsquo;s 25 and the US&rsquo;s 30 — but the notified MoEFCC 2017 rule is far looser, and the EU recast leads on nutrients and micropollutants.</p>
         <p class="fine-print">NGT figures are the <b>metro tier</b> of a tiered table (Class I towns: BOD 20), not a notified uniform rule. NH&#8324;-N 5 is a 2015 draft target, <b>not</b> an operative limit — the operative nutrient limit is total nitrogen 10. No per-plant total nitrogen value is published anywhere. Lower is stricter. Hover a bar for the exact value and the caveat; &ldquo;No limit&rdquo; means the regime sets no cap for that parameter.</p>
@@ -139,28 +167,28 @@
         </details>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="accountabilitySection">
         <h3>Accountability — what is known, and what is not</h3>
         <div id="accountabilityText"></div>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="methodSection">
         <h3>Methodology</h3>
         <div id="methodText"></div>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="sourcesSection">
         <h3>Sources</h3>
         <ul class="source-list" id="sourceList"></ul>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="downloadSection">
         <h3>Download the data</h3>
         <p class="page-intro">Every dataset behind this page, as published. CSV and GeoJSON — free to reuse with attribution.</p>
         <ul class="download-list" id="downloadList"></ul>
       </div>
 
-      <div class="data-section">
+      <div class="data-section" id="gapsSection">
         <h3>Gaps &amp; limitations — stated openly</h3>
         <ul class="gaps-list" id="gapsList"></ul>
       </div>
@@ -206,7 +234,8 @@
 </main>
 
 <footer class="site-footer">
-  <p>Built from government publications — CPCB, NMCG, Ganga Knowledge Portal, Census of India 2011, Election Commission of India, state pollution control boards. Non-government sources (GHSL, WorldPop, OpenStreetMap) are used only where no government equivalent exists and are labelled as such. Satellite imagery © Esri, Maxar, Earthstar Geographics, and the GIS User Community. Street map © OpenStreetMap contributors.</p>
+  <p>Built from government publications — CPCB, NMCG, Ganga Knowledge Portal, Census of India 2011, Election Commission of India, state pollution control boards. Non-government sources (GHSL, WorldPop, OpenStreetMap) are used only where no government equivalent exists and are labelled as such.</p>
+  <p>Satellite imagery © Esri, Maxar, Earthstar Geographics, and the GIS User Community. Street map © OpenStreetMap contributors. Content compiled November 2026. Data free to reuse with attribution.</p>
 </footer>
 
 <div id="chartTip" class="chart-tip" hidden></div>

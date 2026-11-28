@@ -717,7 +717,7 @@ function showDrain(p) {
     : load >= 50 ? 'One of the worst drains on this river — ' + num(load) + ' tonnes of BOD a day, ' + (p.tapped === true ? 'partly intercepted' : 'entirely untapped') + '.'
     : load >= 10 ? 'A large drain — ' + num(load) + ' tonnes of BOD a day into the river.'
     : 'A small drain by load — ' + num(load) + ' tonnes of BOD a day. Small, but still raw sewage: a drain is never green.';
-  let html = typeChip('Drain', 'Carries sewage and wastewater into the river.', '#dc2626') + '<h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.source_type || '') + ' · ' + esc(p.river || '') + '</p>';
+  let html = '<div class="card-head">' + typeChip('Drain', 'Carries sewage and wastewater into the river.', '#dc2626') + '<h2>' + esc(p.name) + '</h2></div><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.source_type || '') + ' · ' + esc(p.river || '') + '</p>';
   html += takeaway(take);
   html += '<p>' + statusBadge + ' <span class="badge ' + (measured ? 'green' : p.data_status === 'estimated' ? 'amber' : 'grey') + '">' + esc(p.data_status || 'unknown') + '</span></p>';
   html += '<div class="kv">' +
@@ -758,7 +758,7 @@ function showStp(p) {
   const R = RIVERS[p._river];
   const isNew = p.is_new_plant === true;
   const util = p.utilisation_pct != null ? +p.utilisation_pct : (p.capacity_mld && p.utilised_mld != null ? (+p.utilised_mld / +p.capacity_mld) * 100 : null);
-  let html = typeChip('Sewage treatment plant', 'Treats sewage before it reaches the river.', '#6d28d9') + '<h2>' + esc(p.plant_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
+  let html = '<div class="card-head">' + typeChip('Sewage treatment plant', 'Treats sewage before it reaches the river.', '#6d28d9') + '<h2>' + esc(p.plant_name) + '</h2></div><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · ' + esc(p.technology || '') + (isNew ? ' · <b>commissioned 2024–2026</b>' : '') + '</p>';
   const take = p.ngt_compliant === true ? 'One of the few plants that meets NGT norms — ' + (p._river === 'ganga' ? 'only 19 of 145 plants on the Ganga do.' : p._river === 'yamuna' ? 'only 3 of 115 plants on the Yamuna do.' : p._river === 'sabarmati' ? 'the first on the Sabarmati to do so.' : p._river === 'cauvery' ? 'the first on the Cauvery to do so.' : 'one of only 3 plants on the Godavari that do — Shirdi (16 MLD), Pathanpura (45 MLD) and Rehmat Nagar (25 MLD).')
     : p.ngt_compliant === false ? 'Fails NGT norms' + (p.noncompliance_reason ? ' — ' + esc(p.noncompliance_reason) : '.') + ' Treated sewage that is still too dirty to meet the standard.'
     : 'Never assessed against NGT norms — its outlet quality is not publicly graded.';
@@ -833,7 +833,7 @@ function showStp(p) {
 function showWq(p) {
   const bod = +p.bod_latest, doV = +p.do_latest;
   const over = !isNaN(bod) && bod > 3;
-  let html = typeChip('Water-quality monitoring station', 'Where river water is sampled and tested.', '#0369a1') + '<h2>' + esc(p.station) + '</h2><p class="sub">' + esc(p.state) + ' · water-quality station · ' + esc(p.source || 'Ganga Knowledge Portal') + '</p>';
+  let html = '<div class="card-head">' + typeChip('Water-quality monitoring station', 'Where river water is sampled and tested.', '#0369a1') + '<h2>' + esc(p.station) + '</h2></div><p class="sub">' + esc(p.state) + ' · water-quality station · ' + esc(p.source || 'Ganga Knowledge Portal') + '</p>';
   html += takeaway(isNaN(bod) ? 'No recent BOD reading published for this station.'
     : over ? 'Latest BOD ' + num(bod) + ' mg/l — ' + Math.round(bod / 3 * 10) / 10 + '× the 3 mg/l bathing standard. This stretch is not safe for bathing.'
     : 'Latest BOD ' + num(bod) + ' mg/l — within the 3 mg/l bathing standard.');
@@ -869,7 +869,7 @@ function showWq(p) {
   openPanel(html);
 }
 function showCourse(p) {
-  let html = typeChip('Drain course', 'The path this drain takes to the river.', '#b45309') + '<h2>' + esc(p.drain_name) + '</h2><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · drain course to the river</p>';
+  let html = '<div class="card-head">' + typeChip('Drain course', 'The path this drain takes to the river.', '#b45309') + '<h2>' + esc(p.drain_name) + '</h2></div><p class="sub">' + esc(p.town) + ' · ' + esc(p.state) + ' · drain course to the river</p>';
   html += takeaway('This drain runs ' + num(p.course_length_km) + ' km to the river, adding ' + num(p.bod_load_tpd) + ' tonnes of BOD a day — ' + (p.tapped_status === 'Tapped' ? 'intercepted' : 'untapped') + '.');
   html += '<div class="kv">' +
     '<div class="cell"><div class="k">Length</div><div class="v">' + num(p.course_length_km) + ' <small>km</small></div></div>' +
@@ -883,7 +883,7 @@ function showCourse(p) {
   openPanel(html);
 }
 function showIndustry(p) {
-  let html = typeChip('Industry', 'Industrial unit in the river catchment.', '#475569') + '<h2>' + esc(p.name) + '</h2><p class="sub">' + esc(p.industry_type || '') + ' · ' + esc(p.town) + ' · ' + esc(p.state) + '</p>';
+  let html = '<div class="card-head">' + typeChip('Industry', 'Industrial unit in the river catchment.', '#475569') + '<h2>' + esc(p.name) + '</h2></div><p class="sub">' + esc(p.industry_type || '') + ' · ' + esc(p.town) + ' · ' + esc(p.state) + '</p>';
   html += takeaway('Industry on the ' + esc(p.drain_name || 'river') + ' catchment. ' + (p.effluent_mld ? 'Consented/design effluent: ' + num(p.effluent_mld) + ' MLD.' : 'No effluent figure published for this unit.'));
   if (p.effluent_mld) html += '<div class="kv"><div class="cell"><div class="k">Effluent (consented/design)</div><div class="v">' + num(p.effluent_mld) + ' <small>MLD</small></div></div>' +
     '<div class="cell"><div class="k">Linked drain</div><div class="v" style="font-size:13px">' + esc(p.drain_name || 'catchment only') + '</div></div></div>';
@@ -900,7 +900,7 @@ function showTown(p) {
   const t = townStats(river, p.town);
   const anchor = river === 'ganga' && ANCHOR_TOWNS.includes(p.town);
   const rr = anchor && state.religionRuling ? state.religionRuling[p.town] : null;
-  let html = typeChip('Town', 'Town on the river corridor.', '#2563eb') + '<h2>' + esc(p.town) + '</h2><p class="sub">' + esc(p.state) + ' · Census 2011 town · ' + esc(p.population_basis || '') + '</p>';
+  let html = '<div class="card-head">' + typeChip('Town', 'Town on the river corridor.', '#2563eb') + '<h2>' + esc(p.town) + '</h2></div><p class="sub">' + esc(p.state) + ' · Census 2011 town · ' + esc(p.population_basis || '') + '</p>';
   if (state.userLoc) {
     const feat = state.data[river].people.features.find((f) => f.properties.town === p.town);
     if (feat && feat.geometry) {
@@ -1132,7 +1132,9 @@ function buildActionList() {
   $('#actionIntro').textContent = 'The worst problems on ' + scope + ', worst first — the biggest untapped drains, the biggest failing treatment plants, and the towns with the largest untreated gap. Each one says what must happen and who is responsible. Tap any row to fly the map to it.';
   $('#actionList').innerHTML = ordered.map((it, i) => {
     const bw = it.barMax > 0 ? Math.max(2, Math.min(100, (it.barValue / it.barMax) * 100)) : 0;
-    return '<li data-act="' + i + '" tabindex="0"><h3>' + esc(it.title) + '</h3>' +
+    const sev = it.barMax > 0 ? it.barValue / it.barMax : 0;
+    const sevClass = sev >= 0.5 ? 'sev-high' : sev >= 0.2 ? 'sev-mid' : 'sev-low';
+    return '<li data-act="' + i + '" class="' + sevClass + '" tabindex="0"><h3>' + esc(it.title) + '</h3>' +
       '<div class="where"><b>' + esc(riverLabel(it.river)) + '</b> · ' + esc(it.town) + ' · ' + esc(it.kind) + '</div>' +
       '<div class="fig">' + esc(it.fig) + '</div>' +
       '<div class="action-bar"><div class="hbar-track"><div class="hbar-fill" style="width:' + bw + '%;background:#dc2626" data-tip="' + esc(it.barLabel + ' — ' + it.kind + ' in ' + it.town + ', ' + riverLabel(it.river)) + '"></div></div></div>' +
@@ -1656,7 +1658,7 @@ $('#shortcomingsOnly').addEventListener('change', (e) => {
 });
 function updateHeaderCounts() {
   const rivers = activeRivers();
-  let drains = 0, stps = 0, stpsTotal = 0, wq = 0, wqTotal = 0, towns = 0, courses = 0, ind = 0, newNote = '';
+  let drains = 0, stps = 0, stpsTotal = 0, wq = 0, wqTotal = 0, towns = 0, newNote = '';
   rivers.forEach((river) => {
     const data = state.data[river];
     drains += plottedCount(data.drains);
@@ -1665,14 +1667,15 @@ function updateHeaderCounts() {
     wq += plottedCount(data.wq);
     wqTotal += data.wq.features.length;
     towns += plottedCount(data.people);
-    courses += data.courses.features.length;
-    ind += data.industries.features.length;
     if (river === 'ganga') newNote = ' (+6 new, no location)';
   });
-  const line = drains + ' drains · ' + stps + ' of ' + stpsTotal + ' plants' + newNote + ' · ' +
-    wq + ' of ' + wqTotal + ' stations · ' + towns + ' towns · ' +
-    courses + ' drain courses · ' + ind + ' industries';
-  $('#headerCounts').textContent = line + ' — records with a published location, placed on the map';
+  // Stats strip under the tabs (replaces the old header-counts sentence).
+  $('#statDrains').textContent = num(drains);
+  $('#statPlants').textContent = num(stps);
+  $('#statPlantsTotal').textContent = 'of ' + num(stpsTotal) + ' plants' + newNote;
+  $('#statStations').textContent = num(wq);
+  $('#statStationsTotal').textContent = 'of ' + num(wqTotal) + ' stations';
+  $('#statTowns').textContent = num(towns);
 }
 async function setRiverFilter(filter) {
   state.riverFilter = filter;
