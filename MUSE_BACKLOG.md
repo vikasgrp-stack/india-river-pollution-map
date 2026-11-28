@@ -447,7 +447,19 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   the strip (desktop 55px, mobile 100px) — verify on the preview
   that the page does not scroll on the Map tab. No data files
   touched; `node --check app.js` passes; `index.html` parses.
-  Branch `vikas.singh.76/style-polish`.
+  Branch `vikas.singh.76/style-polish`. Preview test 2026-11-27 (Vercel
+  preview, desktop): stats strip (781 drains, 502 of 501 plants, 263
+  of 268 stations, 679 towns), short tabs, grouped panel, sticky card
+  header, severity tint, data nav — all pass, no page errors. One
+  failure: the Map tab scrolled by the footer height — the map height
+  was a `calc(100vh …)` that left the footer below the fold, and
+  wheel-scroll over the header then leaked into map zoom. Fixed by
+  making the page a flex column (`body` flex, `main` flex: 1,
+  `#mapView` flex: 1) so the map ends exactly at the footer — no
+  magic viewport heights, desktop or mobile. Also fixed the Action
+  list intro, which said "both rivers" while rows cover all five.
+  Phone viewport was not verified (test browser could not resize)
+  — check on a phone before merging.
 
 - 2026-11-28 — s.advitya: Took on the Ganga drains location audit
   (user asked s.advitya to fix the drains properly). Triage, computed

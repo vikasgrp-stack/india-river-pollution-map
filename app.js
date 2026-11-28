@@ -1128,7 +1128,7 @@ function buildActionList() {
     });
   const ordered = items.slice(0, 30);
   state.actionItems = ordered;
-  const scope = state.riverFilter === 'all' ? 'both rivers' : 'the ' + RIVERS[state.riverFilter].label;
+  const scope = state.riverFilter === 'all' ? 'all five rivers' : 'the ' + RIVERS[state.riverFilter].label;
   $('#actionIntro').textContent = 'The worst problems on ' + scope + ', worst first — the biggest untapped drains, the biggest failing treatment plants, and the towns with the largest untreated gap. Each one says what must happen and who is responsible. Tap any row to fly the map to it.';
   $('#actionList').innerHTML = ordered.map((it, i) => {
     const bw = it.barMax > 0 ? Math.max(2, Math.min(100, (it.barValue / it.barMax) * 100)) : 0;
