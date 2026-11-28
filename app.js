@@ -66,7 +66,7 @@ const STATE_AGENCY_DEFAULT = 'state executing agency + State Pollution Control B
 const state = {
   riverFilter: 'all',   // 'all' | 'ganga' | 'yamuna' | 'sabarmati' | 'cauvery' | 'godavari' — the map shows ALL rivers at once by default
   basemap: 'streets',
-  activeLayer: 'all',       // 'all' or one of: drains, stps, wq, towns, courses, industries, corridor
+  activeLayers: ['drains', 'stps', 'wq', 'towns', 'courses', 'industries', 'corridor'], // selected layers; every key = all layers shown
   shortcomingsOnly: false,
   data: {},                 // per-river cache: { drains, stps, wq, people, courses, industries, river, corridor, population }
   layers: {},               // leaflet layer objects for the current scope
@@ -532,9 +532,9 @@ function buildLayers() {
   applyLayers();
 }
 function applyLayers() {
-  const L_ = state.layers, a = state.activeLayer;
+  const L_ = state.layers, a = state.activeLayers;
   const show = (key, layer) => {
-    const want = a === 'all' || a === key;
+    const want = a.indexOf(key) !== -1;
     if (want && !map.hasLayer(layer)) layer.addTo(map);
     if (!want && map.hasLayer(layer)) map.removeLayer(layer);
   };
@@ -569,19 +569,27 @@ const LAYER_LEGENDS = {
   industries: '<b>Industries</b> · diamond · letters = type · position approximate',
   corridor: '<b>10 km corridor</b> · shaded land within 10 km of the river',
 };
+function allLayerKeys() { return LAYER_DEFS.map((d) => d.key); }
 function updateLayerChips() {
   const el = $('#layerChips');
-  el.innerHTML = '<button class="chip' + (state.activeLayer === 'all' ? ' active' : '') + '" data-layer="all" type="button">All layers</button>' +
-    LAYER_DEFS.map((d) => '<button class="chip' + (state.activeLayer === d.key ? ' active' : '') + '" data-layer="' + d.key + '" type="button"><span class="dot" style="background:' + d.color + '"></span>' + d.label + '</button>').join('');
+  const allOn = state.activeLayers.length === LAYER_DEFS.length;
+  el.innerHTML = '<button class="chip' + (allOn ? ' active' : '') + '" data-layer="all" type="button">All layers</button>' +
+    LAYER_DEFS.map((d) => '<button class="chip' + (state.activeLayers.indexOf(d.key) !== -1 ? ' active' : '') + '" data-layer="' + d.key + '" type="button"><span class="dot" style="background:' + d.color + '"></span>' + d.label + '</button>').join('');
   el.querySelectorAll('.chip').forEach((c) => c.addEventListener('click', () => {
-    state.activeLayer = c.getAttribute('data-layer');
+    const key = c.getAttribute('data-layer');
+    if (key === 'all') { state.activeLayers = allLayerKeys(); }
+    else {
+      const i = state.activeLayers.indexOf(key);
+      if (i !== -1) state.activeLayers.splice(i, 1);
+      else state.activeLayers.push(key);
+    }
     applyLayers();
   }));
 }
 function updateLayerLegends() {
   const el = $('#layerLegends');
-  if (state.activeLayer === 'all') { el.innerHTML = ''; return; }
-  el.innerHTML = '<div class="ll">' + (LAYER_LEGENDS[state.activeLayer] || '') + '</div>';
+  if (state.activeLayers.length === LAYER_DEFS.length) { el.innerHTML = ''; return; }
+  el.innerHTML = state.activeLayers.map((k) => '<div class="ll">' + (LAYER_LEGENDS[k] || '') + '</div>').join('');
 }
 function updateLayerNote() {
   const rivers = activeRivers().filter((r) => state.data[r]);
@@ -592,9 +600,13 @@ function updateLayerNote() {
     counts.drains += plottedCount(R.drains); counts.stps += plottedCount(R.stps); counts.wq += plottedCount(R.wq);
     counts.towns += plottedCount(R.people); counts.courses += R.courses.features.length; counts.industries += R.industries.features.length;
   });
-  $('#layerNote').textContent = state.activeLayer === 'all'
-    ? counts.drains + ' drains · ' + counts.stps + ' plants · ' + counts.wq + ' stations · ' + counts.towns + ' towns on the map'
-    : counts[state.activeLayer] + ' shown';
+  if (state.activeLayers.length === LAYER_DEFS.length) {
+    $('#layerNote').textContent = counts.drains + ' drains · ' + counts.stps + ' plants · ' + counts.wq + ' stations · ' + counts.towns + ' towns on the map';
+    return;
+  }
+  if (!state.activeLayers.length) { $('#layerNote').textContent = 'No layers selected — tap a layer above to show it'; return; }
+  const labels = { drains: 'drains', stps: 'plants', wq: 'stations', towns: 'towns', courses: 'courses', industries: 'industries', corridor: '10 km corridor' };
+  $('#layerNote').textContent = state.activeLayers.map((k) => (counts[k] == null ? labels[k] : counts[k] + ' ' + (labels[k] || k))).join(' · ') + ' shown';
 }
 function renderLegend() {
   const maxLoad = Math.max.apply(null, activeRivers().map((r) => RIVERS[r].maxDrainLoad));
@@ -1032,7 +1044,7 @@ function openItemCard(kind, river, key) {
 }
 function locateActionItem(it) {
   switchTab('map');
-  state.activeLayer = 'all';
+  state.activeLayers = allLayerKeys();
   applyLayers();
   const f = findFeature(it.river, it.targetKind, it.targetKey);
   let ll = null;

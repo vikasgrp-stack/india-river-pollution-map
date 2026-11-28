@@ -186,12 +186,13 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 
 ## In Progress
 
-- Vercel Analytics script → CDN endpoint (vikas.singh.76,
-  2026-11-27): swap the analytics script in `index.html` from
-  `/_vercel/insights/script.js` to Vercel's official v2 CDN script
-  `https://cdn.vercel-insights.com/v1/script.js`, on branch
-  `vikas.singh.76/vercel-analytics-cdn`. Replicates the Vercel
-  bot's PR #5 (still a draft, so merged via this PR instead).
+- Multi-select layer chips (vikas.singh.76, 2026-11-27): layer
+  chips toggle on/off so any combination of layers can be shown,
+  on branch `vikas.singh.76/layer-multi-select`.
+
+- Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
+  2026-11-27): webcams / live panel + Varanasi people contacts.
+  Branch `s.advitya/backlog-2026-11-27`.
 
 - Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
   2026-11-27): webcams / live panel + Varanasi people contacts.
