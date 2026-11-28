@@ -94,7 +94,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   / ghat / bridge named in the source. — unclaimed
 - [ ] Drains (Ganga): 609 Point, 603 distinct coords, no
   `coord_accuracy` field. Audit whether each point is a true outfall
-  or a town offset. — unclaimed
+  or a town offset. — claimed by s.advitya, 2026-11-28. Triage done
+  (see Log): 249 main-stem drains <500 m from the river, 77 >1 km,
+  52 >2 km; 199 tributary drains need tributary lines. Pilot
+  satellite checks done for 5 drains (Varanasi, Kanpur, Unnao);
+  no coordinates moved yet. Working note:
+  `data/ganga/drains_audit_NOTES.md`.
 - [ ] Industries (Ganga): 25 Point, `coord_status` = approximate,
   plotted at town / in an area. Find exact sites where published. — unclaimed
 - [x] Nashik / Godavari STPs: satellite-verified 2026-11-27 by
@@ -189,6 +194,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 - Multi-select layer chips (vikas.singh.76, 2026-11-27): layer
   chips toggle on/off so any combination of layers can be shown,
   on branch `vikas.singh.76/layer-multi-select`.
+
+- Ganga drains location audit (s.advitya, 2026-11-28): verify each
+  of the 609 drains against its receiving watercourse and move pins
+  to true outfalls where visible on satellite; worst first
+  (main-stem drains >2 km from the river, 52). Branch
+  `s.advitya/ganga-drains-audit`.
 
 - Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
   2026-11-27): webcams / live panel + Varanasi people contacts.
@@ -403,3 +414,27 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Validation: `node --check app.js` passes, `live_panel.json`
   is valid JSON, `index.html` parses. Needs a weekly link check —
   YouTube IDs churn in days. Branch `s.advitya/live-panel`.
+
+- 2026-11-28 — s.advitya: Took on the Ganga drains location audit
+  (user asked s.advitya to fix the drains properly). Triage, computed
+  from the live files: 609 drains, all CPCB Pre-Monsoon 2023, no
+  `coord_accuracy` field, `coords_corrected` False for 608 and True
+  for 1. Distance to the Ganga main-stem line: <500 m 249, 500 m–
+  1 km 84, 1–2 km 25, 2–5 km 28, >5 km 24 for the 410 main-stem
+  drains; 147 of the 199 tributary drains are >5 km from the main
+  stem, as expected. No pin exactly matches its town's coordinate
+  in `people.geojson` (0 of 609). Pilot satellite checks (Esri
+  World Imagery): Gola Ghat Drain, Varanasi is on the riverfront
+  (plausibly right, outfall not visible — MEDIUM at best, not
+  claimed verified); Pagal Baba Masjid Drain sits on the Varuna
+  channel, so audit each drain against its own `river` field, not
+  the Ganga line; Sadar Bazar Drain, Varanasi, Loni River/Drain,
+  Unnao (20.52 km, in farmland) and Rooma Drain, Kanpur (2.01 km,
+  in farmland) are not at outfalls — but the true outfall was not
+  visible in the tiles, so no coordinates were moved and none
+  invented. Method and open items in
+  `data/ganga/drains_audit_NOTES.md`. Overpass (OSM waterways)
+  timed out from this environment on 2026-11-28 — retry, or get
+  the CPCB inventory's outfall coordinates, before moving pins
+  satellite alone cannot place. Branch
+  `s.advitya/ganga-drains-audit`.
