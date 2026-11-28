@@ -208,9 +208,68 @@ for a channel OSM lacks; if none is visible, mark
 lockstep) and leave the pin. Do not move a pin to a
 guessed point.
 
+## Batch 1 — the 14 misses, checked on satellite (2026-11-28)
+
+Esri World Imagery, zoom 15, pin marked. Result: 4 of the 14
+were not misses at all.
+
+**On a river bank after all (4) — no data change, notes only:**
+- Kodra Drain, Prayagraj — pin on the south bank of the
+  Yamuna (the river field says Ganga; the Yamuna is the
+  receiving river here, worth a look at the river field).
+- Lal Darwaja Drain, Munger — pin on the south bank of the
+  Ganga, ~200 m from the water.
+- Makshudpur drain (East) and (West), Fatua — pins on the
+  south bank of the Ganga, ~100 m from the water.
+
+**Repo river line is wrong (big finding):** the nearest
+repo-line point to Makshudpur East is 10.98 km away, to Lal
+Darwaja 3.65 km away — but the real river is 100–200 m from
+the pins. The repo `ganga_river.geojson` line does not
+follow the river's bend at Fatua (it stays ~11 km too far
+north) and is ~3.6 km off at Munger. This resolves the
+Fatua discrepancy: OSM's "Ganga" way is the real river.
+Consequences: the triage distances (all computed against
+the repo line) are unreliable around Fatua and Munger, and
+the 4 Fatua courses from batch 1 should be re-traced once
+the line is corrected. The line needs a correction pass
+before the 25 drains at 1–2 km are worked.
+
+**Marked `coord_accuracy` in `drains.csv` + `drains.geojson`
+(9 drains; new column, empty for the other 600; no
+coordinates moved):**
+- town-centroid (8): Rooma Drain, Kanpur (farmland, a
+  meandering channel 1.2 km east — not at the pin);
+  Shankarpur Road Nala, Dighwara (fields south of town);
+  Sadar Bazar Nala and Mumfordganj Drain, Prayagraj (dense
+  urban, no visible channel); DN Singh Drain, Bhagalpur
+  (urban); ITC Drain, Munger (urban, Ganga 1.5 km north);
+  Hathikhana Drain, Farrukhabad (town edge, river 1.5 km
+  east); Near milan telecome nala, Swargashram (forest; a
+  dry seasonal stream bed ~150 m west of the pin).
+- unlocated (1): Dargah shareef Drain, Chunar — pin in
+  forest, 81.34 km from the Ganga line, no town and no water
+  in the tile. A bad coordinate; needs CPCB outfall data,
+  satellite cannot place it.
+
+**Not marked yet (1):** Chetawala Drain, Hastinapur — a
+dark winding band (a possible unmapped channel) runs
+east-west through the pin area and joins a straight canal
+to the south-east. OSM has no waterway there. Needs a
+closer look (zoom 16–17) before deciding.
+
+**Pre-existing lockstep quirk (not from this audit):**
+"Muni Khali Khal (Akhra Ferry Ghat)" has town '' (empty
+string) in `drains.csv` and null in `drains.geojson`.
+Flagged for the data-validation check.
+
 ## What is still open
 
-- Resolve the 14 genuine misses (above).
+- Chetawala (Hastinapur): closer satellite look at the
+  possible unmapped channel, then decide.
+- Correct the repo Ganga river line at Fatua and Munger
+  (and check the rest of the line), then re-triage the
+  Fatua/Munger drains and re-trace the 4 Fatua courses.
 - Then the 25 main-stem drains at 1–2 km, then the 199
   tributary drains (needs tributary lines).
 - The same audit is still unclaimed for water-quality

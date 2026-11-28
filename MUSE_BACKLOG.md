@@ -95,11 +95,13 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 - [ ] Drains (Ganga): 609 Point, 603 distinct coords, no
   `coord_accuracy` field. Audit whether each point is a true outfall
   or a town offset. — claimed by s.advitya, 2026-11-28. Batch 1
-  courses mapped (see Log): 21 new drain courses added to
-  `drain_courses.geojson` (20 → 41 lines) — the 38 on/near-channel
-  drains' channels traced to the Ganga; 17 did not map (see
-  `data/ganga/drains_audit_NOTES.md`). 14 genuine misses still
-  open. Working note: `data/ganga/drains_audit_NOTES.md`.
+  done (see Log): 21 courses mapped, 14 misses checked on
+  satellite — 4 were not misses at all (on a river bank), 9
+  marked `coord_accuracy` in the drains data (8 town-centroid,
+  1 unlocated). Repo river line found wrong at Fatua (~11 km)
+  and Munger (~3.6 km) — the triage distances there are
+  unreliable; the line needs a correction pass. Working note:
+  `data/ganga/drains_audit_NOTES.md`.
 - [ ] Industries (Ganga): 25 Point, `coord_status` = approximate,
   plotted at town / in an area. Find exact sites where published. — unclaimed
 - [x] Nashik / Godavari STPs: satellite-verified 2026-11-27 by
@@ -497,4 +499,33 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   still open and are mostly low-BOD (highest is Rooma,
   Kanpur, 2.64 tpd) — next: satellite check for a channel
   OSM lacks, or mark town-centroid. Branch
+  `s.advitya/ganga-drains-audit`.
+
+- 2026-11-28 — s.advitya: Ganga drains audit, batch 1 misses
+  checked on Esri satellite imagery. Of the 14 genuine
+  misses, 4 are NOT misses: Kodra Drain (Prayagraj) sits on
+  the Yamuna bank, Lal Darwaja Drain (Munger) and Makshudpur
+  East/West (Fatua) sit on the Ganga bank — the repo
+  `ganga_river.geojson` line is wrong there (Fatua: line
+  10.98 km from the pin, real river ~100 m north; Munger:
+  line 3.65 km away, real river ~200 m north). The Fatua
+  discrepancy is resolved: OSM's "Ganga" way is the real
+  river; the repo line does not follow the bend. The 4 Fatua
+  courses from batch 1 should be re-traced against the
+  corrected line. 9 drains marked `coord_accuracy` in
+  `drains.csv` + `drains.geojson` (new column, empty for the
+  other 600; no coordinates moved): 8 town-centroid — Rooma
+  (Kanpur, farmland, channel 1.2 km east), Shankarpur Road
+  Nala (Dighwara, fields south of town), Sadar Bazar Nala and
+  Mumfordganj (Prayagraj, dense urban), DN Singh (Bhagalpur,
+  urban), ITC (Munger, urban), Hathikhana (Farrukhabad, town
+  edge), Near milan telecome nala (Swargashram, forest, a
+  seasonal stream ~150 m west) — and 1 unlocated: Dargah
+  shareef (Chunar), pin in forest 81 km from the river, a bad
+  coordinate that needs CPCB data. Chetawala (Hastinapur):
+  a dark winding band (possible unmapped channel) runs
+  through the pin — not marked yet, needs a closer look.
+  Pre-existing quirk found while validating lockstep:
+  "Muni Khali Khal (Akhra Ferry Ghat)" has town '' in the
+  CSV and null in the GeoJSON. Branch
   `s.advitya/ganga-drains-audit`.
