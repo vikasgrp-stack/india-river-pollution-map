@@ -13,6 +13,9 @@ Do not use the GitHub login to tell us apart — commits are all made as
 - **vikas.singh.76** — this Muse account (the one that created this file)
 - **vikas.grp** — the other Muse account (works on this repo most days;
   out of tokens until Wed 2026-12-02, 09:22 PT, then resumes)
+- **s.advitya** — this Muse account (joined 2026-11-27; research:
+  webcams / live panel, Varanasi people contacts, satellite AI
+  insights — satellite / aarti scope paused, see Log)
 
 Rules:
 - Read this file first, then check the repo for anything newer than it.
@@ -40,16 +43,18 @@ they exist (CPCB, NMCG, Ganga Knowledge Portal, Election Commission,
 Census of India, state boards), with the source shown next to every
 number.
 
-Rivers live (5), all added 2026-11-27 in 14 commits, last commit
-`6352a7bf` — Godavari:
+Rivers live (5), all added 2026-11-27 in 28 commits, last commit
+`7cc0b56` — Godavari:
 - Ganga — 609 drains, 145 STPs (+6 commissioned 2024-2026),
   115 water-quality stations, 493 towns. STP locations: 33 of 151
   plants now satellite-verified (Prayagraj, Varanasi, Kanpur, Patna,
   Haridwar), merged 2026-11-27 in PR #1 (merge commit `739023c1`,
   vikas.singh.76).
 - Yamuna — 50 drains, 115 STPs, 35 stations, 45 towns
-- Sabarmati — added 2026-11-27; counts not in README, verify in
-  `data/sabarmati/analysis.json`
+- Sabarmati — added 2026-11-27; 11 drains, 24 STPs, 10 water-quality
+  stations, 12 towns (from `data/sabarmati/analysis.json`, verified
+  2026-11-27 by s.advitya; not yet cross-checked against GeoJSON
+  row counts)
 - Cauvery — 14 drains, 68 STPs, 22 stations, 41 towns
 - Godavari — 97 drains, 149 STPs, 86 stations, 87 towns
 
@@ -68,8 +73,12 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Files: `data/ganga/stp_accountability.geojson` +
   `data/ganga/stp_accountability.csv`, `coord_accuracy` set to
   `satellite-verified` with `coord_source` + `coord_confidence`.
-- [ ] Update README.md to 5 rivers with counts for each. It still says
-  Ganga + Yamuna only. — unclaimed
+- [x] Update README.md to 5 rivers with counts for each. It still says
+  Ganga + Yamuna only. — done 2026-11-27 by s.advitya: new heading
+  "India River Pollution Map", 5 rivers with counts (Ganga 609 / 145 /
+  115 / 493; Yamuna 50 / 115 / 35 / 45; Sabarmati 11 / 24 / 10 / 12;
+  Cauvery 14 / 68 / 22 / 41; Godavari 97 / 149 / 86 / 87). Branch
+  `s.advitya/readme-5-rivers`.
 - [ ] Verify the live Vercel site loads all 5 rivers, the Data tab,
   and the Action list, and note the result + date here. — unclaimed
 - [ ] Add a data-validation check (script or checklist): string
@@ -101,6 +110,27 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   unconfirmed (Mankapur, Mokshadham, Hazari Pahad, Ambazari, Dabha,
   Ittabhatti — left at town-centroid). Somalwada -1/-2 split is NOT
   verified from maps and could be swapped (both MEDIUM).
+
+### P1 — s.advitya: live panel, people contacts, live data
+- [x] Add a "Watch live (when on)" link-out panel: 8 items, aarti
+  hours only, offline fallback, no hard-coded 24/7 embed. Needs a
+  weekly link check — YouTube IDs churn in days. — done 2026-11-27
+  by s.advitya: new top tab "Watch live (when on)", data in
+  `data/live_panel.json`, rendered from that file in `app.js`
+  (`renderLivePanel()`), with the CPCB RTWQMS + GangaPulse links
+  and the Manikarnika exclusion in the tab. Branch
+  `s.advitya/live-panel`.
+- [ ] Add a CPCB RTWQMS live-data layer (~40 stations, hourly) +
+  GangaPulse STP layer, cached as a daily snapshot in the repo — do
+  not depend on the government server at page load. Note: RTWQMS
+  dashboard load was NOT verified live; the 40-station figure rests
+  on a Parliament answer, 16 Mar 2026. — claimed by s.advitya,
+  2026-11-27 (proposed next after the live panel)
+- [ ] Add Varanasi people-cards + "Report a problem" data to the map
+  as a pilot, linked to the drains / STPs / stations each role
+  covers — then judge whether to extend to other towns. Research
+  done 2026-11-27 (see Log); map integration not yet started. —
+  claimed by s.advitya, 2026-11-27
 
 ### P1 — data gaps
 - [ ] Godavari: no CPCB drain inventory. 95 of 97 drains unmeasured.
@@ -143,8 +173,11 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   test load on a phone and on a slow connection. — unclaimed
 - [ ] Accessibility pass: keyboard, screen-reader labels on the
   map controls, colour-only legend. — unclaimed
-- [ ] Verify Sabarmati counts and update the Current state section
-  above with them. — unclaimed
+- [x] Verify Sabarmati counts and update the Current state section
+  above with them. — done 2026-11-27 by s.advitya: 11 drains,
+  24 STPs, 10 water-quality stations, 12 towns, from
+  `data/sabarmati/analysis.json` (not yet cross-checked against
+  GeoJSON row counts).
 
 ### Ideas / parked
 - Share / embed view for a single town or river stretch.
@@ -156,6 +189,10 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 - Multi-select layer chips (vikas.singh.76, 2026-11-27): layer
   chips toggle on/off so any combination of layers can be shown,
   on branch `vikas.singh.76/layer-multi-select`.
+
+- Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
+  2026-11-27): webcams / live panel + Varanasi people contacts.
+  Branch `s.advitya/backlog-2026-11-27`.
 
 ## Open questions for the user
 
@@ -254,6 +291,115 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   that separately). This replicates the Vercel bot's PR #5, which
   is still a draft and cannot be merged — this PR supersedes it.
   Branch `vikas.singh.76/vercel-analytics-cdn`.
+
+- 2026-11-27 — s.advitya: Webcam research for all 5 rivers, 23
+  candidates checked. Headline: no open, 24/7, embeddable riverfront
+  webcam network exists. What exists is scheduled YouTube aarti /
+  darshan streams (event-only, new video ID each time). Do NOT build
+  the map around live video. Verified dead / misleading: VizCams
+  Haridwar — badged LIVE, Play returned "This video is unavailable";
+  VizCams Delhi is a night city view, not the Yamuna; VizCams
+  Ahmedabad offline. No usable river cam found for Sabarmati
+  Riverfront, Cauvery (Srirangam / Trichy / Mysuru / Coorg),
+  Prayagraj Sangam, Kanpur, Delhi Yamuna, Rajahmundry, or Assi Ghat.
+  Exclusion: Manikarnika Ghat — photography / filming of cremations
+  is strictly prohibited; leave out of any visual layer. Full report
+  in the research page (India River Webcams Research). Proposed
+  next: an 8-item "Watch live (when on)" link-out panel — aarti
+  hours only, with offline fallback; no hard-coded 24/7 embed
+  (data: `live-panel.json`, needs a weekly link check); a CPCB
+  RTWQMS live-data layer (~40 stations, hourly) + GangaPulse STP
+  layer, cached as a daily snapshot — do not depend on the
+  government server at page load (RTWQMS dashboard load NOT
+  verified live; 40-station figure from a Parliament answer,
+  16 Mar 2026); longer term only, partner with a trust /
+  municipality at 1-2 towns to host a real camera and publish it
+  to Windy — needs written permission. Privacy guardrails: official
+  streams only, youtube-nocookie embeds, link-outs preferred; no
+  recording / archiving, no face recognition, no Manikarnika; add
+  a takedown contact. (Not legal advice — DPDP Act 2023.) Note:
+  the draft correction about PR #1 being described as open in the
+  backlog is moot — the backlog itself now records PR #1 merged
+  2026-11-27 (merge commit `739023c1`).
+- 2026-11-27 — s.advitya: Varanasi people contacts (pilot).
+  Public, official contacts only, checked 2026-11-27. Top 6 cards
+  to show first: UPPCB Regional Officer Varanasi (Avas Vikas
+  Complex, Bhelupur; 0542-2275951; rovaranasi@uppcb.in — office
+  only, holder name conflicts across 2024-26 sources, do not
+  publish a name); District Magistrate Varanasi, Chair District
+  Ganga Committee (Satyendra Kumar, IAS; 0542-2508585;
+  dmvar@nic.in); Varanasi Nagar Nigam Commissioner / helpline
+  1533 (1800-180-5567); NMCG Director General (Rajeev Kumar
+  Mital; 011-23049528; dg@nmcg.nic.in); SMCG-UP Project Director
+  (0522-2838106; pd@smcgup.org) + Varanasi DPO Aishwarya Mishra
+  (dgcvns111@gmail.com, as published); Sankat Mochan Foundation
+  (+91-542-2313884, Tulsi Ghat lab since 1993 — the only
+  Varanasi-based citizen monitor with a published contact). No
+  CPCB office in Varanasi itself — Lucknow Regional Directorate
+  covers it (rdlucknow.cpcb@gov.in). STPs: 6 sites / 7 units,
+  420 MLD total — Dinapur 140 + 80, Goithaha 120, Ramna 50,
+  Ramnagar 10, Bhagwanpur 8, BLW 12. No public contact for any
+  individual STP. JJM dashboard Nov 2026: Dinapur 140 and
+  Ramnagar 10 listed non-operational due to flood; BLW 12
+  non-compliant — treat status as "check live dashboard".
+  Ghat / aarti bodies: Ganga Seva Nidhi (Dashashwamedh aarti)
+  and Shri Kashi Vishwanath Temple Trust. Manikarnika excluded
+  from any visual layer. Researchers (institution only): 2024
+  Sentinel-2 Varanasi study team, IIT (BHU) Civil Engineering —
+  Mishra, Ohri, Singh, Gaur, Bhattacharjee; no private contact
+  details. Grievance channels, as a top-level "Report a problem"
+  tab per John's instruction 2026-11-27: CPGRAMS (India-wide,
+  pgportal.gov.in); Jansunwai / CM Helpline 1076 (UP state-wide);
+  CPCB SAMEER app; JJM 1800-121-2164 (sewerage / STPs); VNN
+  helpline 1533; NGT e-filing as escalation only (standing Ganga
+  matter OA 200/2014). Plus the evidence checklist: exact
+  location + drain / STP name, date / time, 2-3 geo-tagged
+  photos, CPCB reading if available. GangaPulse is a
+  vendor-operated STP dashboard, NOT a complaint channel — do
+  not present its vendor support line as a grievance route.
+  Gaps — no public contact found (say so on the map, do not
+  guess): individual STPs; named VNN drains / sewerage officer;
+  Jal Kal / Varanasi Jal Sansthan (its website returned unrelated
+  content 2026-11-27); NMCG Varanasi project office; UPPCB RO
+  named holder. 55 MLD Bhagwanpur STP, due 6 Dec 2025 — no
+  post-Dec-2025 completion status found. Maintenance warning:
+  names change fast — VNN Commissioner changed mid-Nov 2026
+  (Shashwat Tripurari). Cards must show role + office contact,
+  name "as of Nov 2026", with a re-check date. Research page:
+  Varanasi People Contacts. Proposed next: add the
+  people-cards + "Report a problem" data to the map as a pilot
+  for Varanasi only, linked to the drains / STPs / stations each
+  role covers; next research, if the user wants it: state
+  grievance portals for the other four rivers, so "Report a
+  problem" works beyond UP. Satellite scope and aarti layer
+  options A / B / C remain paused per John's 2026-11-27
+  "keep your research saved, we need to think more" — not
+  decided here.
+
+- 2026-11-27 — s.advitya: README updated to 5 rivers. Heading was
+  "Ganga + Yamuna River Pollution Map" and the Data section listed
+  only Ganga and Yamuna; it now says "India River Pollution Map",
+  five rivers on one page with a river switcher, and lists counts
+  for all five (see the P0 item above). Stack / Run locally /
+  Deploy unchanged. Branch `s.advitya/readme-5-rivers`.
+
+- 2026-11-27 — s.advitya: "Watch live (when on)" panel added as a
+  top tab on the site. New tab + `liveView` section in `index.html`;
+  `switchTab()` in `app.js` now includes 'live' and renders the
+  panel lazily from `data/live_panel.json` (`renderLivePanel()`,
+  with a download fallback if the fetch fails). The 8 items are
+  link-outs only, aarti hours only — no 24/7 embed, no hard-coded
+  video that rots; each item shows town, river, viewpoint, hours
+  (IST), kind and reliability. The tab also lists where no live
+  camera was found (Sabarmati Riverfront, Cauvery, Prayagraj
+  Sangam, Kanpur, Delhi Yamuna, Rajahmundry, Assi Ghat) and the
+  live-data alternative: CPCB RTWQMS (~40 stations, hourly;
+  dashboard load not verified live, figure from a Parliament
+  answer, 16 Mar 2026) and GangaPulse. Manikarnika excluded.
+  Validation: `node --check app.js` passes, `live_panel.json`
+  is valid JSON, `index.html` parses. Needs a weekly link check —
+  YouTube IDs churn in days. Branch `s.advitya/live-panel`.
+
 - 2026-11-27 — vikas.singh.76: Layer chips are now multi-select
   (user: only "All layers" or one layer could be shown). The map
   kept a single `activeLayer` string; it now keeps an
@@ -265,4 +411,7 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   shown") or "No layers selected" when none are on. "Locate" from
   the Action list still resets to all layers. No CSS change
   needed — the existing `.chip.active` style already marks
-  selected chips. Branch `vikas.singh.76/layer-multi-select`.
+  selected chips. Verified live on the PR preview: toggling off
+  five layers leaves exactly Drains + Treatment plants selected
+  together ("781 drains · 502 plants shown"), both chips active.
+  Branch `vikas.singh.76/layer-multi-select`.
