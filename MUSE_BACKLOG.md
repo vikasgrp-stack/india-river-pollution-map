@@ -459,7 +459,10 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   magic viewport heights, desktop or mobile. Also fixed the Action
   list intro, which said "both rivers" while rows cover all five.
   Phone viewport was not verified (test browser could not resize)
-  — check on a phone before merging.
+  — check on a phone before merging. Follow-up fix: the orientation
+  line was first placed outside #panelBody, so the collapsed phone
+  panel stayed tall; moved inside #panelBody so the collapsed bar
+  is slim again (title + river filter + Controls button only).
 
 - 2026-11-28 — s.advitya: Took on the Ganga drains location audit
   (user asked s.advitya to fix the drains properly). Triage, computed
