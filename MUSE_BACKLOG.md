@@ -112,10 +112,14 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   verified from maps and could be swapped (both MEDIUM).
 
 ### P1 — s.advitya: live panel, people contacts, live data
-- [ ] Add a "Watch live (when on)" link-out panel: 8 items, aarti
+- [x] Add a "Watch live (when on)" link-out panel: 8 items, aarti
   hours only, offline fallback, no hard-coded 24/7 embed. Needs a
-  weekly link check — YouTube IDs churn in days. — claimed by
-  s.advitya, 2026-11-27 (PR to follow in this session)
+  weekly link check — YouTube IDs churn in days. — done 2026-11-27
+  by s.advitya: new top tab "Watch live (when on)", data in
+  `data/live_panel.json`, rendered from that file in `app.js`
+  (`renderLivePanel()`), with the CPCB RTWQMS + GangaPulse links
+  and the Manikarnika exclusion in the tab. Branch
+  `s.advitya/live-panel`.
 - [ ] Add a CPCB RTWQMS live-data layer (~40 stations, hourly) +
   GangaPulse STP layer, cached as a daily snapshot in the repo — do
   not depend on the government server at page load. Note: RTWQMS
@@ -192,8 +196,6 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
 - Log both s.advitya research entries in MUSE_BACKLOG.md (s.advitya,
   2026-11-27): webcams / live panel + Varanasi people contacts.
   Branch `s.advitya/backlog-2026-11-27`.
-- Add "Watch live (when on)" panel (s.advitya, 2026-11-27) — next PR
-  in this session.
 
 ## Open questions for the user
 
@@ -383,3 +385,20 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   five rivers on one page with a river switcher, and lists counts
   for all five (see the P0 item above). Stack / Run locally /
   Deploy unchanged. Branch `s.advitya/readme-5-rivers`.
+
+- 2026-11-27 — s.advitya: "Watch live (when on)" panel added as a
+  top tab on the site. New tab + `liveView` section in `index.html`;
+  `switchTab()` in `app.js` now includes 'live' and renders the
+  panel lazily from `data/live_panel.json` (`renderLivePanel()`,
+  with a download fallback if the fetch fails). The 8 items are
+  link-outs only, aarti hours only — no 24/7 embed, no hard-coded
+  video that rots; each item shows town, river, viewpoint, hours
+  (IST), kind and reliability. The tab also lists where no live
+  camera was found (Sabarmati Riverfront, Cauvery, Prayagraj
+  Sangam, Kanpur, Delhi Yamuna, Rajahmundry, Assi Ghat) and the
+  live-data alternative: CPCB RTWQMS (~40 stations, hourly;
+  dashboard load not verified live, figure from a Parliament
+  answer, 16 Mar 2026) and GangaPulse. Manikarnika excluded.
+  Validation: `node --check app.js` passes, `live_panel.json`
+  is valid JSON, `index.html` parses. Needs a weekly link check —
+  YouTube IDs churn in days. Branch `s.advitya/live-panel`.
