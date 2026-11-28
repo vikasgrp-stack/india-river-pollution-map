@@ -94,11 +94,11 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   / ghat / bridge named in the source. — unclaimed
 - [ ] Drains (Ganga): 609 Point, 603 distinct coords, no
   `coord_accuracy` field. Audit whether each point is a true outfall
-  or a town offset. — claimed by s.advitya, 2026-11-28. Triage done
-  (see Log): 249 main-stem drains <500 m from the river, 77 >1 km,
-  52 >2 km; 199 tributary drains need tributary lines. Pilot
-  satellite checks done for 5 drains (Varanasi, Kanpur, Unnao);
-  no coordinates moved yet. Working note:
+  or a town offset. — claimed by s.advitya, 2026-11-28. Batch 1
+  done (see Log): the 52 main-stem drains >2 km from the river
+  checked against OSM waterways — 38 within 500 m of a channel
+  (21 within 100 m), 14 genuine misses. The fix for the 38 is
+  course-mapping (pin to river), not moving the pin. Working note:
   `data/ganga/drains_audit_NOTES.md`.
 - [ ] Industries (Ganga): 25 Point, `coord_status` = approximate,
   plotted at town / in an area. Find exact sites where published. — unclaimed
@@ -437,4 +437,33 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   timed out from this environment on 2026-11-28 — retry, or get
   the CPCB inventory's outfall coordinates, before moving pins
   satellite alone cannot place. Branch
+  `s.advitya/ganga-drains-audit`.
+
+- 2026-11-28 — s.advitya: Ganga drains audit, batch 1 done. The
+  first triage (distance to the Ganga line) misled: checked
+  against OSM waterways, 38 of the 52 main-stem drains >2 km
+  from the Ganga are within 500 m of a mapped channel (21
+  within 100 m — e.g. Bans Ghat, Patna 10 m from a stream;
+  Kassavan, Haridwar 4 m from a river; Rajapur, Patna 1 m
+  from a drain; Loni, Unnao 13 m from a river). The CPCB pin
+  is a measurement point on the drain's own channel, not the
+  outfall into the Ganga, so the fix for those 38 is to map
+  the course from the pin to the river (as the existing 20
+  courses in drain_courses.geojson do), not to move the pin.
+  Genuine misses (14): Rooma, Kanpur (1,176 m); Shankarpur,
+  Dighwara (1,134 m); Sadar Bazar, Prayagraj (1,020 m);
+  Near milan telecom, Swargashram (1,552 m); Dargah shareef,
+  Chunar (1,303 m); Mumfordganj, Prayagraj (856 m); Kodra,
+  Prayagraj (771 m); DN Singh, Bhagalpur (724 m); Chetawala,
+  Hastinapur, Lal Darwaja and ITC, Munger, Hathikhana,
+  Farrukhabad (no waterway in a ±1.5 km box); Makshudpur
+  East/West, Fatua (508/534 m from an OSM way named Ganga).
+  Method: Overpass is unreachable from this environment; the
+  OSM API map call works (small bboxes — Prayagraj hits the
+  50,000-node limit, use ±0.008° boxes). No coordinates moved
+  yet. Open discrepancies in drains_audit_NOTES.md: Fatua
+  (OSM Ganga way ~0.5 km from the Makshudpur pins vs repo
+  river line ~10.8 km away), several Fatua drains near the
+  Punpun although their river field says Ganga, and Dargah
+  shareef 81.34 km from the Ganga line. Branch
   `s.advitya/ganga-drains-audit`.
