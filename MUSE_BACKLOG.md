@@ -399,19 +399,3 @@ No open issues. No LICENSE, tests, or data-validation script in the repo.
   Validation: `node --check app.js` passes, `live_panel.json`
   is valid JSON, `index.html` parses. Needs a weekly link check —
   YouTube IDs churn in days. Branch `s.advitya/live-panel`.
-
-- 2026-11-27 — vikas.singh.76: Layer chips are now multi-select
-  (user: only "All layers" or one layer could be shown). The map
-  kept a single `activeLayer` string; it now keeps an
-  `activeLayers` list. Tapping a layer chip toggles just that
-  layer on/off (several chips can be active at once); "All layers"
-  selects all seven. The per-layer legend lines now show for each
-  selected layer (none when all are on, as before), and the count
-  note lists the selected layers ("609 drains · 145 plants
-  shown") or "No layers selected" when none are on. "Locate" from
-  the Action list still resets to all layers. No CSS change
-  needed — the existing `.chip.active` style already marks
-  selected chips. Verified live on the PR preview: toggling off
-  five layers leaves exactly Drains + Treatment plants selected
-  together ("781 drains · 502 plants shown"), both chips active.
-  Branch `vikas.singh.76/layer-multi-select`.
